@@ -1,6 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="io.scanbot.example.scanbot_sdk_example_xamarin_forms">
-	<uses-sdk android:minSdkVersion="15" />
+	<uses-sdk android:minSdkVersion="16" />
+	<uses-permission android:name="android.permission.CAMERA" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 	<application android:label="Scanbot SDK Example Xamarin Forms">
+		<!-- 
+        Eddy: Dummy "ocr_blobs_path" as a workaround. A real fix is already provided in the newest native SDK.
+        TODO Change it as soon as OCR feature is released for our Xamarin wrapper.
+        -->
+		<meta-data android:name="ocr_blobs_path" android:value="assets/scanbot-sdk-dummy" />
 	</application>
 </manifest>

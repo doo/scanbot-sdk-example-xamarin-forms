@@ -1,4 +1,34 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:scanbotsdkexamplexamarinforms" x:Class="scanbotsdkexamplexamarinforms.scanbot_sdk_example_xamarin_formsPage">
-	<Label Text="Welcome to Xamarin Forms!" VerticalOptions="Center" HorizontalOptions="Center" />
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:scanbotsdkexamplexamarinforms" x:Class="scanbotsdkexamplexamarinforms.scanbot_sdk_example_xamarin_formsPage" xmlns:vm="clr-namespace:scanbotsdkexamplexamarinforms;">
+
+    <ContentPage.BindingContext>
+        <vm:MainPageViewModel />
+    </ContentPage.BindingContext>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <ScrollView Grid.Row="1">
+
+            <StackLayout Orientation="Vertical" Padding="16,40,16,40" Spacing="10">
+
+                <Label FontSize="22">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <FormattedString.Spans>
+                                <Span Text="Example App for Scanbot SDK Xamarin Forms" FontAttributes="Bold" FontSize="22" />
+                            </FormattedString.Spans>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+
+                <Button Margin="0,10,0,0" Text="Scanning UI" Command="{Binding OpenScanningUiCommand}" BackgroundColor="Blue" TextColor="White" />
+                
+            </StackLayout>
+        </ScrollView>
+    </Grid>
+    
 </ContentPage>

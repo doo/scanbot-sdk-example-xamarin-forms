@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="io.scanbot.example.scanbot_sdk_example_xamarin_forms">
+	<uses-sdk android:minSdkVersion="15" />
+	<application android:label="Scanbot SDK Example Xamarin Forms">
+	</application>
+</manifest>

@@ -8,6 +8,7 @@ using Android.Views;
 using Android.Widget;
 using Android.OS;
 using ScanbotSDK.Xamarin.Android.Wrapper;
+using System.IO;
 
 namespace scanbotsdkexamplexamarinforms.Droid
 {
@@ -27,6 +28,13 @@ namespace scanbotsdkexamplexamarinforms.Droid
             global::Xamarin.Forms.Forms.Init(this, bundle);
 
             LoadApplication(new App());
+        }
+
+        public static string GetPublicExternalStorageDirectory()
+        {
+            var externalPublicPath = System.IO.Path.Combine(Android.OS.Environment.ExternalStorageDirectory.Path, "scanbot-sdk-example-xamarin-forms");
+            Directory.CreateDirectory(externalPublicPath);
+            return externalPublicPath;
         }
     }
 }

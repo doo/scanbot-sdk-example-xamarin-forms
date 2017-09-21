@@ -157,11 +157,11 @@ namespace scanbotsdkexamplexamarinforms.Droid.Activities
             {
                 var documentImage = detectionResult.Image as Bitmap;
                 var documentImgUri = MainActivity.TempImageStorage.AddImage(documentImage);
-                var originalImgUri = MainActivity.TempImageStorage.AddImage(originalBitmap);
+                //var originalImgUri = MainActivity.TempImageStorage.AddImage(originalBitmap);
 
                 Bundle extras = new Bundle();
                 extras.PutString(EXTRAS_ARG_DOC_IMAGE_FILE_URI, documentImgUri.ToString());
-                extras.PutString(EXTRAS_ARG_ORIGINAL_IMAGE_FILE_URI, originalImgUri.ToString());
+                //extras.PutString(EXTRAS_ARG_ORIGINAL_IMAGE_FILE_URI, originalImgUri.ToString());
                 Intent intent = new Intent();
                 intent.PutExtras(extras);
                 SetResult(Result.Ok, intent);

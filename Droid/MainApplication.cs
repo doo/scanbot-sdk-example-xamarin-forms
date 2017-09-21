@@ -15,7 +15,7 @@ namespace scanbotsdkexamplexamarinforms.Droid
     {
         static string LOG_TAG = typeof(MainApplication).Name;
 
-        // Add your Scanbot SDK license key here.
+        // TODO Add your Scanbot SDK license key here.
         // You can test all Scanbot SDK features and develop your app without a license. 
         // However, if you do not specify the license key when initializing the SDK, 
         // it will work in trial mode (trial period of 1 minute). 

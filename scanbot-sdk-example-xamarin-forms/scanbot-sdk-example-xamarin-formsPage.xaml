@@ -26,6 +26,8 @@
                 </Label>
 
                 <Button Margin="0,10,0,0" Text="Scanning UI" Command="{Binding OpenScanningUiCommand}" BackgroundColor="Blue" TextColor="White" />
+
+                <Button Margin="0,10,0,0" Text="Perform OCR" Command="{Binding StartOcrServiceCommand}" BackgroundColor="Blue" TextColor="White" />
                 
             </StackLayout>
         </ScrollView>

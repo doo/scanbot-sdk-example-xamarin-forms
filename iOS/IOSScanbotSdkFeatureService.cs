@@ -1,5 +1,4 @@
-﻿using System;
-using scanbotsdkexamplexamarinforms.Services;
+﻿using scanbotsdkexamplexamarinforms.Services;
 using Xamarin.Forms;
 using scanbotsdkexamplexamarinforms.iOS;
 using scanbotsdkexamplexamarinforms.iOS.ViewControllers;
@@ -17,6 +16,11 @@ namespace scanbotsdkexamplexamarinforms.iOS
         {
             var cameraViewController = new CameraDemoViewController();
             UIApplication.SharedApplication.KeyWindow.RootViewController.PresentViewController(cameraViewController, true, null);
+        }
+
+        public void StartOcrService()
+        {
+            // TODO not implemented yet
         }
 
         #endregion

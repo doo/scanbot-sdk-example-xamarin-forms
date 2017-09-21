@@ -1,4 +1,5 @@
-﻿using System.Windows.Input;
+﻿using System.Collections.Generic;
+using System.Windows.Input;
 using scanbotsdkexamplexamarinforms.Services;
 using Xamarin.Forms;
 
@@ -9,6 +10,7 @@ namespace scanbotsdkexamplexamarinforms
         IScanbotSdkFeatureService ScanbotSdkFeatureService;
 
         public ICommand OpenScanningUiCommand { get; }
+        public ICommand StartOcrServiceCommand { get; }
 
         public MainPageViewModel()
         {
@@ -17,6 +19,11 @@ namespace scanbotsdkexamplexamarinforms
             OpenScanningUiCommand = new Command(() =>
             {
                 ScanbotSdkFeatureService.StartScanningUi();
+            });
+
+            StartOcrServiceCommand = new Command(() =>
+            {
+                ScanbotSdkFeatureService.StartOcrService();
             });
 
         }

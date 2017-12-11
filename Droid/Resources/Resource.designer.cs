@@ -4101,6 +4101,9 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			// aapt resource value: 0x7f090046
 			public const int image = 2131296326;
 			
+			// aapt resource value: 0x7f090078
+			public const int imageProcessingProgress = 2131296376;
+			
 			// aapt resource value: 0x7f0900ae
 			public const int info = 2131296430;
 			
@@ -4266,17 +4269,14 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			// aapt resource value: 0x7f090073
 			public const int scanbotCameraView = 2131296371;
 			
-			// aapt resource value: 0x7f090077
-			public const int scanbotFlashButton = 2131296375;
+			// aapt resource value: 0x7f090076
+			public const int scanbotFlashButton = 2131296374;
 			
 			// aapt resource value: 0x7f090074
 			public const int scanbotPolygonView = 2131296372;
 			
 			// aapt resource value: 0x7f090075
-			public const int scanbotResultImageView = 2131296373;
-			
-			// aapt resource value: 0x7f090076
-			public const int scanbotSnapButton = 2131296374;
+			public const int scanbotSnapButton = 2131296373;
 			
 			// aapt resource value: 0x7f09001a
 			public const int screen = 2131296282;
@@ -4443,8 +4443,8 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			// aapt resource value: 0x7f090018
 			public const int useLogo = 2131296280;
 			
-			// aapt resource value: 0x7f090078
-			public const int userGuidanceTextView = 2131296376;
+			// aapt resource value: 0x7f090077
+			public const int userGuidanceTextView = 2131296375;
 			
 			// aapt resource value: 0x7f09000e
 			public const int view_offset_helper = 2131296270;

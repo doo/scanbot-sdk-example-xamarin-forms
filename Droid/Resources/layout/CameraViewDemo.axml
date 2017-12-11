@@ -16,11 +16,6 @@
             app:polygonStrokeWidth="3dp"
             app:polygonStrokeColor="@android:color/holo_blue_dark" />
     </net.doo.snap.camera.ScanbotCameraView>
-    <ImageView
-        android:id="@+id/scanbotResultImageView"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_gravity="bottom|right" />
     <Button
         android:id="@+id/scanbotSnapButton"
         android:layout_width="wrap_content"
@@ -39,4 +34,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical|center_horizontal" />
+    <ProgressBar
+        android:id="@+id/imageProcessingProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:indeterminate="true"
+        style="?android:attr/progressBarStyleLarge"
+        android:visibility="gone" />
 </FrameLayout>

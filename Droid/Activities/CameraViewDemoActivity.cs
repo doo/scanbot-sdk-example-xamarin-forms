@@ -24,8 +24,9 @@ namespace scanbotsdkexamplexamarinforms.Droid.Activities
     {
         static string LOG_TAG = typeof(CameraViewDemoActivity).Name;
 
-        public static string EXTRAS_ARG_DOC_IMAGE_FILE_URI = "documentImageFileUri";
-        public static string EXTRAS_ARG_ORIGINAL_IMAGE_FILE_URI = "originalImageFileUri";
+        public const int REQUEST_CODE_SCANBOT_CAMERA = 42001;
+        public const string EXTRAS_ARG_DOC_IMAGE_FILE_URI = "documentImageFileUri";
+        public const string EXTRAS_ARG_ORIGINAL_IMAGE_FILE_URI = "originalImageFileUri";
 
         protected ScanbotCameraView cameraView;
         protected AutoSnappingController autoSnappingController;
@@ -120,7 +121,7 @@ namespace scanbotsdkexamplexamarinforms.Droid.Activities
 
             if (result.DetectionResult == DetectionResult.Ok)
             {
-                guideText = "Don't move";
+                guideText = "Don't move.\nCapturing...";
                 color = Color.Green;
             }
             else if (result.DetectionResult == DetectionResult.OkButTooSmall)
@@ -130,6 +131,10 @@ namespace scanbotsdkexamplexamarinforms.Droid.Activities
             else if (result.DetectionResult == DetectionResult.OkButBadAngles)
             {
                 guideText = "Perspective";
+            }
+            else if (result.DetectionResult == DetectionResult.OkButBadAspectRatio)
+            {
+                guideText = "Wrong aspect ratio.\n Rotate your device";
             }
             else if (result.DetectionResult == DetectionResult.ErrorNothingDetected)
             {
@@ -148,7 +153,8 @@ namespace scanbotsdkexamplexamarinforms.Droid.Activities
             userGuidanceTextView.Post(() =>
             {
                 userGuidanceTextView.Text = guideText;
-                userGuidanceTextView.SetTextColor(color);
+                userGuidanceTextView.SetTextColor(Color.White);
+                userGuidanceTextView.SetBackgroundColor(color);
             });
 
             return false;
@@ -198,10 +204,10 @@ namespace scanbotsdkexamplexamarinforms.Droid.Activities
                 documentImgUri = originalImgUri;
             }
 
-            Bundle extras = new Bundle();
+            var extras = new Bundle();
             extras.PutString(EXTRAS_ARG_DOC_IMAGE_FILE_URI, documentImgUri.ToString());
             extras.PutString(EXTRAS_ARG_ORIGINAL_IMAGE_FILE_URI, originalImgUri.ToString());
-            Intent intent = new Intent();
+            var intent = new Intent();
             intent.PutExtras(extras);
             SetResult(Result.Ok, intent);
 

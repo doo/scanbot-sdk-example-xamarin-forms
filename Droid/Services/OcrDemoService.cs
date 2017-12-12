@@ -60,7 +60,7 @@ namespace scanbotsdkexamplexamarinforms.Droid.Services
             var images = MainActivity.TempImageStorage.GetImages();
             if (images.Length == 0)
             {
-                ErrorLog("No images provided. Please snap some images via Camera UI.");
+                ErrorLog("No images provided.");
                 return;
             }
 

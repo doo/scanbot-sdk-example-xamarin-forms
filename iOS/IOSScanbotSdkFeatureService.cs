@@ -31,7 +31,13 @@ namespace scanbotsdkexamplexamarinforms.iOS
             var images = TempImageStorage.GetImages();
             if (images.Length == 0)
             {
-                DebugLog("No images provided. Please snap some images via Camera UI.");
+                DebugLog("No images provided. Please snap some images via Scanning UI.");
+                var msg = new AlertMessage
+                {
+                    Title = "Info",
+                    Message = "Please snap some images via Scanning UI."
+                };
+                MessagingCenter.Send(msg, AlertMessage.ID);
                 return;
             }
 
@@ -68,14 +74,26 @@ namespace scanbotsdkexamplexamarinforms.iOS
 
         class CameraDemoDelegateHandler : CameraDemoDelegate
         {
-            public override void DidCaptureDocumentImage(UIImage documentImage)
-            {
-                TempImageStorage.AddImage(documentImage);
-            }
+            NSUrl documentImageFileUri, originalImageFileUri;
 
             public override void DidCaptureOriginalImage(UIImage originalImage)
             {
-                // TODO
+                originalImageFileUri = TempImageStorage.AddImage(originalImage);
+                DebugLog("originalImageFileUri = " + originalImageFileUri);
+            }
+
+            public override void DidCaptureDocumentImage(UIImage documentImage)
+            {
+                documentImageFileUri = TempImageStorage.AddImage(documentImage);
+                DebugLog("documentImageFileUri = " + documentImageFileUri);
+
+                // Send a message to the Xamarin Forms layer:
+                var msg = new ScanbotCameraResultMessage
+                {
+                    DocumentImageFileUri = documentImageFileUri.AbsoluteString,
+                    OriginalImageFileUri = originalImageFileUri.AbsoluteString
+                };
+                MessagingCenter.Send(msg, ScanbotCameraResultMessage.ID);
             }
         }
 
@@ -115,9 +133,9 @@ namespace scanbotsdkexamplexamarinforms.iOS
             return newRange;
         }
 
-        void DebugLog(string msg)
+        static void DebugLog(string msg)
         {
-            Console.WriteLine("Scanbot SDK Example: " + msg);
+            Console.WriteLine("IOSScanbotSdkFeatureService: " + msg);
         }
 
     }

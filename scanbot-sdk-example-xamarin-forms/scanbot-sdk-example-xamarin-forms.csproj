@@ -41,6 +41,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\IScanbotSdkFeatureService.cs" />
     <Compile Include="MainPageViewModel.cs" />
+    <Compile Include="Messages.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Services\" />

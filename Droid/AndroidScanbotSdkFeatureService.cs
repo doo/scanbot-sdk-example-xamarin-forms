@@ -1,4 +1,5 @@
-﻿using Android.Content;
+﻿using Android.App;
+using Android.Content;
 using Xamarin.Forms;
 
 using scanbotsdkexamplexamarinforms.Services;
@@ -16,12 +17,25 @@ namespace scanbotsdkexamplexamarinforms.Droid
 
         public void StartScanningUi()
         {
-            Intent intent = new Intent(Forms.Context, typeof(CameraViewDemoActivity));
-            Forms.Context.StartActivity(intent);
+            var intent = new Intent(Forms.Context, typeof(CameraViewDemoActivity));
+            var mainActivity = Forms.Context as Activity;
+            mainActivity.StartActivityForResult(intent, CameraViewDemoActivity.REQUEST_CODE_SCANBOT_CAMERA);
         }
 
         public void StartOcrService()
         {
+            var images = MainActivity.TempImageStorage.GetImages();
+            if (images.Length == 0)
+            {
+                var msg = new AlertMessage
+                {
+                    Title = "Info",
+                    Message = "Please snap some images via Scanning UI."
+                };
+                MessagingCenter.Send(msg, AlertMessage.ID);
+                return;
+            }
+
             var ocrIntent = new Intent(Forms.Context, typeof(OcrDemoService));
             Forms.Context.StartService(ocrIntent);
         }

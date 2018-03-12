@@ -96,13 +96,13 @@
       <HintPath>..\packages\Xamarin.Forms.2.3.4.270\lib\Xamarin.iOS10\Xamarin.Forms.Xaml.dll</HintPath>
     </Reference>
     <Reference Include="ScanbotSDK.iOS">
-      <HintPath>..\packages\ScanbotSDK.Xamarin.iOS.1.1.3\lib\Xamarin.iOS\ScanbotSDK.iOS.dll</HintPath>
+      <HintPath>..\packages\ScanbotSDK.Xamarin.iOS.1.1.5\lib\Xamarin.iOS\ScanbotSDK.iOS.dll</HintPath>
     </Reference>
     <Reference Include="ScanbotSDK.Xamarin">
-      <HintPath>..\packages\ScanbotSDK.Xamarin.iOS.1.1.3\lib\Xamarin.iOS\ScanbotSDK.Xamarin.dll</HintPath>
+      <HintPath>..\packages\ScanbotSDK.Xamarin.iOS.1.1.5\lib\Xamarin.iOS\ScanbotSDK.Xamarin.dll</HintPath>
     </Reference>
     <Reference Include="ScanbotSDK.Xamarin.iOS">
-      <HintPath>..\packages\ScanbotSDK.Xamarin.iOS.1.1.3\lib\Xamarin.iOS\ScanbotSDK.Xamarin.iOS.dll</HintPath>
+      <HintPath>..\packages\ScanbotSDK.Xamarin.iOS.1.1.5\lib\Xamarin.iOS\ScanbotSDK.Xamarin.iOS.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

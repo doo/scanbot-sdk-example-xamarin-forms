@@ -7,6 +7,8 @@ using scanbotsdkexamplexamarinforms.Droid;
 using scanbotsdkexamplexamarinforms.Droid.Activities;
 using scanbotsdkexamplexamarinforms.Droid.Services;
 
+using ScanbotSDK.Xamarin.Android.Wrapper;
+
 [assembly: Dependency(typeof(AndroidScanbotSdkFeatureService))]
 
 namespace scanbotsdkexamplexamarinforms.Droid
@@ -38,6 +40,11 @@ namespace scanbotsdkexamplexamarinforms.Droid
 
             var ocrIntent = new Intent(Forms.Context, typeof(OcrDemoService));
             Forms.Context.StartService(ocrIntent);
+        }
+
+        public bool IsLicenseValid()
+        {
+            return SBSDK.IsLicenseValid(Forms.Context as Activity);
         }
 
         #endregion

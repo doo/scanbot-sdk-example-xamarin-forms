@@ -64,6 +64,11 @@ namespace scanbotsdkexamplexamarinforms.iOS
             });
         }
 
+        public bool IsLicenseValid()
+        {
+            return SBSDK.IsLicenseValid();
+        }
+
         #endregion
 
 

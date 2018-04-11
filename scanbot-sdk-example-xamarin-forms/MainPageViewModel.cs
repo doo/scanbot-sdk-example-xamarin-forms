@@ -49,11 +49,15 @@ namespace scanbotsdkexamplexamarinforms
 
             OpenScanningUiCommand = new Command(() =>
             {
+                if (!CheckScanbotSDKLicense()) { return; }
+
                 ScanbotSdkFeatureService.StartScanningUi();
             });
 
             StartOcrServiceCommand = new Command(() =>
             {
+                if (!CheckScanbotSDKLicense()) { return; }
+
                 ScanbotSdkFeatureService.StartOcrService();
             });
 
@@ -62,6 +66,22 @@ namespace scanbotsdkexamplexamarinforms
         void NotifyPropertyChanged(string propertyName)
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        }
+
+        bool CheckScanbotSDKLicense()
+        {
+            if (ScanbotSdkFeatureService.IsLicenseValid())
+            {
+                return true;
+            }
+
+            var msg = new AlertMessage
+            {
+                Title = "Info",
+                Message = "Scanbot SDK (trial) license has expired!"
+            };
+            MessagingCenter.Send(msg, AlertMessage.ID);
+            return false;
         }
 
     }

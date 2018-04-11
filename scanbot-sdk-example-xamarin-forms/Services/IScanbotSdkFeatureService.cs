@@ -9,6 +9,8 @@ namespace scanbotsdkexamplexamarinforms.Services
 
         void StartOcrService();
 
+        bool IsLicenseValid();
+
         // TODO
         // void StartCroppingUi();
         // ...

@@ -44,7 +44,7 @@ namespace scanbotsdkexamplexamarinforms.Droid
 
         public bool IsLicenseValid()
         {
-            return SBSDK.IsLicenseValid(Forms.Context as Activity);
+            return SBSDK.IsLicenseValid();
         }
 
         #endregion

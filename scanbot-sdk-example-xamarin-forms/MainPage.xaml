@@ -25,12 +25,22 @@
                     </Label.FormattedText>
                 </Label>
 
-                <Button Margin="0,10,0,0" Text="Scanning UI" Command="{Binding OpenScanningUiCommand}" BackgroundColor="Blue" TextColor="White" />
+                <Button Margin="0,10,0,0" Text="Pick Photo" Command="{Binding PickPhotoCommand}" BackgroundColor="Blue" TextColor="White" />
+
+                <Button Margin="0,10,0,0" Text="Open Document Scanner" Command="{Binding OpenScanningUiCommand}" BackgroundColor="Blue" TextColor="White" />
 
                 <Image Margin="0,10,0,0" Source="{Binding DocumentImageSource}" />
 
+                <Button Margin="0,10,0,0" Text="Open Cropping Screen" Command="{Binding OpenCroppingScreenCommand}" BackgroundColor="Blue" TextColor="White" />
+
                 <Button Margin="0,10,0,0" Text="Perform OCR" Command="{Binding StartOcrServiceCommand}" BackgroundColor="Blue" TextColor="White" />
-                
+
+                <Button Margin="0,10,0,0" Text="Apply Filter" Command="{Binding ApplyFilterCommand}" BackgroundColor="Blue" TextColor="White" />
+
+                <Button Margin="0,10,0,0" Text="Open Barcode Scanner" Command="{Binding OpenBarcodeScannerCommand}" BackgroundColor="Blue" TextColor="White" />
+
+                <Button Margin="0,10,0,0" Text="Open MRZ Scanner" Command="{Binding OpenMrzScannerCommand}" BackgroundColor="Blue" TextColor="White" />
+
             </StackLayout>
         </ScrollView>
     </Grid>

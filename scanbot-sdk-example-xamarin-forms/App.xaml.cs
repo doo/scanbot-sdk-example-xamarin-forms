@@ -8,7 +8,10 @@ namespace scanbotsdkexamplexamarinforms
         {
             InitializeComponent();
 
-            MainPage = new scanbot_sdk_example_xamarin_formsPage();
+
+            var navigator = new NavigationPage();
+            navigator.Navigation.PushAsync(new scanbot_sdk_example_xamarin_formsPage());
+            MainPage = navigator;
         }
 
         protected override void OnStart()

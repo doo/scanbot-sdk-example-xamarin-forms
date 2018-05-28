@@ -2,8 +2,7 @@
 using Android.App;
 using Android.Runtime;
 using Android.Util;
-
-using ScanbotSDK.Xamarin.Android.Wrapper;
+using ScanbotSDK.Xamarin.Forms;
 
 namespace scanbotsdkexamplexamarinforms.Droid
 {
@@ -20,19 +19,17 @@ namespace scanbotsdkexamplexamarinforms.Droid
         // However, if you do not specify the license key when initializing the SDK, 
         // it will work in trial mode (trial period of 1 minute). 
         // To get another trial period you have to restart your app.
-        const string licenseKey = "";
-
+        const string licenseKey = null;
 
         public MainApplication(IntPtr javaReference, JniHandleOwnership transfer) : base(javaReference, transfer)
         { }
-
 
         public override void OnCreate()
         {
             base.OnCreate();
 
             Log.Debug(LOG_TAG, "Initializing Scanbot SDK...");
-            SBSDK.Initialize(this, licenseKey, true);
+            SBSDKInitializer.Initialize(this, licenseKey, true);
         }
     }
 }

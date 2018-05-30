@@ -96,10 +96,6 @@
     <Reference Include="Xamarin.Forms.Xaml">
       <HintPath>..\packages\Xamarin.Forms.2.5.0.122203\lib\Xamarin.iOS10\Xamarin.Forms.Xaml.dll</HintPath>
     </Reference>
-    <Reference Include="ScanbotSDK.Xamarin">
-      <HintPath>..\packages\ScanbotSDK.Xamarin.1.0.0\lib\portable45-net45+win8+wpa81\ScanbotSDK.Xamarin.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="ScanbotSDK.iOS">
       <HintPath>..\packages\ScanbotSDK.Xamarin.1.0.0\lib\Xamarin.iOS\ScanbotSDK.iOS.dll</HintPath>
     </Reference>

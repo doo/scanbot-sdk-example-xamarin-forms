@@ -29,7 +29,7 @@ namespace scanbotsdkexamplexamarinforms.Droid
             base.OnCreate();
 
             Log.Debug(LOG_TAG, "Initializing Scanbot SDK...");
-            SBSDKInitializer.Initialize(this, licenseKey, true);
+            SBSDKInitializer.Initialize(this, licenseKey, new SBSDKConfiguration { EnableLogging = true });
         }
     }
 }

@@ -68,7 +68,7 @@ namespace scanbotsdkexamplexamarinforms
                 var image = await DependencyService.Get<IImagePicker>().PickImageAsync();
                 if (image != null)
                 {
-                    page = await SBSDK.Instance.CreateScannedPageAsync(image);
+                    page = await SBSDK.Instance.PageFileStorage.CreateScannedPageAsync(image);
                     DocumentImageSource = page.Original;
                 }
             });
@@ -132,7 +132,7 @@ namespace scanbotsdkexamplexamarinforms
 
         bool CheckScanbotSDKLicense()
         {
-            if (ScanbotSdkFeatureService.IsLicenseValid())
+            if (SBSDK.Instance.IsLicenseValid)
             {
                 return true;
             }

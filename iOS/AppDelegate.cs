@@ -18,7 +18,7 @@ namespace scanbotsdkexamplexamarinforms.iOS
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
             Console.WriteLine("Scanbot SDK Example: Initializing Scanbot SDK...");
-            SBSDKInitializer.Initialize(app, licenseKey, true);
+            SBSDKInitializer.Initialize(app, licenseKey, new SBSDKConfiguration { EnableLogging = true });
 
             global::Xamarin.Forms.Forms.Init();
 

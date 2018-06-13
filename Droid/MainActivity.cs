@@ -1,16 +1,7 @@
-﻿using System;
-
+﻿
 using Android.App;
-using Android.Content;
 using Android.Content.PM;
-using Android.Runtime;
-using Android.Views;
-using Android.Widget;
 using Android.OS;
-using ScanbotSDK.Xamarin.Android.Wrapper;
-using System.IO;
-using Xamarin.Forms;
-using Android.Util;
 
 namespace scanbotsdkexamplexamarinforms.Droid
 {

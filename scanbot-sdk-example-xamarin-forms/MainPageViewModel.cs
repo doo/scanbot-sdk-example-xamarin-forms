@@ -42,10 +42,10 @@ namespace scanbotsdkexamplexamarinforms
             OpenScanningUiCommand = new Command(async () =>
             {
                 if (!CheckScanbotSDKLicense()) { return; }
-                var result = await SBSDK.Instance.LaunchDocumentScannerAsync();
-                if (result != null && result.Length > 0)
+                var result = await SBSDK.UI.LaunchDocumentScannerAsync();
+                if (result.Status == OperationResult.Ok)
                 {
-                    page = result[0];
+                    page = result.Pages[0];
                     DocumentImageSource = page.Document;
                 }
             });
@@ -56,10 +56,10 @@ namespace scanbotsdkexamplexamarinforms
                 {
                     return;
                 }
-                var result = await SBSDK.Instance.LaunchCroppingScreenAsync(page);
-                if (result != null)
+                var result = await SBSDK.UI.LaunchCroppingScreenAsync(page);
+                if (result.Status == OperationResult.Ok)
                 {
-                    page = result;
+                    page = result.Page;
                     DocumentImageSource = page.Document;
                 }
             });
@@ -68,7 +68,7 @@ namespace scanbotsdkexamplexamarinforms
                 var image = await DependencyService.Get<IImagePicker>().PickImageAsync();
                 if (image != null)
                 {
-                    page = await SBSDK.Instance.PageFileStorage.CreateScannedPageAsync(image);
+                    page = await SBSDK.Operations.CreateScannedPageAsync(image);
                     DocumentImageSource = page.Original;
                 }
             });
@@ -80,15 +80,15 @@ namespace scanbotsdkexamplexamarinforms
                 {
                     return;
                 }
-                var result = await SBSDK.Instance.PerformOCRAsync(new[] { DocumentImageSource }, new[] { "en", "de" });
+                var result = await SBSDK.Operations.PerformOcrAsync(new[] { DocumentImageSource }, new[] { "en", "de" });
                 MessagingCenter.Send(new AlertMessage { Message = result, Title = "OCR" }, AlertMessage.ID);
             });
 
             OpenBarcodeScannerCommand = new Command(async () =>
             {
                 if (!CheckScanbotSDKLicense()) { return; }
-                var result = await SBSDK.Instance.LaunchBarcodeScannerAsync();
-                if (result != null)
+                var result = await SBSDK.UI.LaunchBarcodeScannerAsync();
+                if (result.Status == OperationResult.Ok)
                 {
                     MessagingCenter.Send(new AlertMessage { Message = result.Text, Title = result.Format.ToString() }, AlertMessage.ID);
                 }
@@ -97,11 +97,11 @@ namespace scanbotsdkexamplexamarinforms
             OpenMrzScannerCommand = new Command(async () =>
             {
                 if (!CheckScanbotSDKLicense()) { return; }
-                var result = await SBSDK.Instance.LaunchMrzScannerAsync();
-                if (result != null)
+                var result = await SBSDK.UI.LaunchMrzScannerAsync();
+                if (result.Status == OperationResult.Ok)
                 {
                     var sb = new StringBuilder();
-                    foreach (var field in result)
+                    foreach (var field in result.Fields)
                     {
                         sb.AppendLine($"{field.Name}: {field.Value} ({field.Confidence:F2})");
                     }
@@ -118,9 +118,8 @@ namespace scanbotsdkexamplexamarinforms
 
                 if (page.Document != null)
                 {
-                    var document = SBSDK.Instance.ApplyImageFilterAsync(page.Document, ImageFilter.Binarized);
-                    await page.SetDocumentAsync(await document);
-                    DocumentImageSource = page.Document;
+                    var document = await SBSDK.Operations.ApplyImageFilterAsync(page.Document, ImageFilter.Binarized);
+                    DocumentImageSource = await page.SetDocumentAsync(document);
                 }
             });
         }
@@ -132,7 +131,7 @@ namespace scanbotsdkexamplexamarinforms
 
         bool CheckScanbotSDKLicense()
         {
-            if (SBSDK.Instance.IsLicenseValid)
+            if (SBSDK.Operations.IsLicenseValid)
             {
                 return true;
             }

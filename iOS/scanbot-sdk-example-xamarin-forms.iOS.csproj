@@ -111,6 +111,12 @@
     <Reference Include="ScanbotSDK.Xamarin.Forms.iOS">
       <HintPath>..\packages\ScanbotSDK.Xamarin.Forms.1.0.0\lib\Xamarin.iOS10\ScanbotSDK.Xamarin.Forms.iOS.dll</HintPath>
     </Reference>
+    <Reference Include="Plugin.ShareFile.Abstractions">
+      <HintPath>..\packages\Plugin.ShareFile.1.0.0\lib\Xamarin.iOS10\Plugin.ShareFile.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.ShareFile">
+      <HintPath>..\packages\Plugin.ShareFile.1.0.0\lib\Xamarin.iOS10\Plugin.ShareFile.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\scanbot-sdk-example-xamarin-forms\scanbot-sdk-example-xamarin-forms.csproj">

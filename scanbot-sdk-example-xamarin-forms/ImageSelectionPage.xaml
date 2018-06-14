@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="scanbotsdkexamplexamarinforms.ImageSelectionPage"
+    x:Name="page">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Remove All" Command="{Binding RemoveAll, Source={x:Reference page}}"/>
+    </ContentPage.ToolbarItems>
+
+    <ListView ItemsSource="{Binding Pages, Source={x:Reference page}}}">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="2*"/>
+                            <ColumnDefinition Width="2*"/>
+                            <ColumnDefinition Width="1*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Image Source="{Binding OriginalPreview}">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="Handle_Tapped"/>
+                            </Image.GestureRecognizers>
+                        </Image>
+                        <Image Grid.Column="1" Source="{Binding DocumentPreview}">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="Handle_Tapped"/>
+                            </Image.GestureRecognizers>
+                        </Image>
+
+                        <Button Grid.Column="2" Text="Remove" Command="{Binding RemoveCommand, Source={x:Reference page}}" CommandParameter="{Binding}"/>
+                    </Grid>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+</ContentPage>

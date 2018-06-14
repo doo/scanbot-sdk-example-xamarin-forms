@@ -193,6 +193,12 @@
     <Reference Include="ScanbotSDK.Xamarin.Forms">
       <HintPath>..\packages\ScanbotSDK.Xamarin.Forms.1.0.0\lib\MonoAndroid81\ScanbotSDK.Xamarin.Forms.dll</HintPath>
     </Reference>
+    <Reference Include="Plugin.ShareFile.Abstractions">
+      <HintPath>..\packages\Plugin.ShareFile.1.0.0\lib\MonoAndroid10\Plugin.ShareFile.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.ShareFile">
+      <HintPath>..\packages\Plugin.ShareFile.1.0.0\lib\MonoAndroid10\Plugin.ShareFile.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\scanbot-sdk-example-xamarin-forms\scanbot-sdk-example-xamarin-forms.csproj">

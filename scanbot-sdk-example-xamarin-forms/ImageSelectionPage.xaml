@@ -5,7 +5,7 @@
     x:Class="scanbotsdkexamplexamarinforms.ImageSelectionPage"
     x:Name="page">
     <ContentPage.ToolbarItems>
-        <ToolbarItem Text="Remove All" Command="{Binding RemoveAll, Source={x:Reference page}}"/>
+        <ToolbarItem Text="Remove All" Command="{Binding RemoveAllCommand, Source={x:Reference page}}"/>
     </ContentPage.ToolbarItems>
 
     <ListView ItemsSource="{Binding Pages, Source={x:Reference page}}}">

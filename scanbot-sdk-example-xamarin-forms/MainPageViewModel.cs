@@ -134,9 +134,7 @@ namespace scanbotsdkexamplexamarinforms
             {
                 if (!CheckScanbotSDKLicense() || !CheckDocumentSelected()) { return; }
 
-                var page = SelectedPage;
-                var document = await SBSDK.Operations.ApplyImageFilterAsync(page.Document, ImageFilter.Binarized);
-                await page.SetDocumentAsync(document);
+                await Application.Current.MainPage.Navigation.PushAsync(new FilterPage { CurrentPage = SelectedPage });
             });
 
             ShowExistingScansCommand = new Command(async () =>

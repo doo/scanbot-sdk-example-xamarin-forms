@@ -1,16 +1,12 @@
 # Example App for Scanbot SDK Xamarin Forms
 
-This example app shows how to integrate the Scanbot SDK in a **Xamarin Forms** project (Android & iOS).
-
-It only demonstrates the Scanning UI and OCR features. For more examples please see this demo app: https://github.com/doo/scanbot-sdk-example-xamarin
-
+This example app shows how to integrate the Scanbot SDK in a **Xamarin.Forms** project (Android & iOS).
 
 ## What is Scanbot SDK
 The Scanbot SDK brings scanning and document creation capabilities to your mobile apps. It contains modules which are individually licensable as license packages. For more details visit our website https://scanbot.io/sdk.html
 
-The Scanbot SDK is available as NuGet packages for the Xamarin Platform:
-- [ScanbotSDK.Xamarin.Android](https://www.nuget.org/packages/ScanbotSDK.Xamarin.Android)
-- [ScanbotSDK.Xamarin.iOS](https://www.nuget.org/packages/ScanbotSDK.Xamarin.iOS)
+The Scanbot SDK is available as a NuGet package for the Xamarin.Forms platform:
+[ScanbotSDK.Xamarin.Forms](https://www.nuget.org/packages/ScanbotSDK.Xamarin.Forms)
 
 
 ## Requirements

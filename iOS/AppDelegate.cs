@@ -1,9 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-
 using Foundation;
-using ScanbotSDK.Xamarin.iOS.Wrapper;
+using ScanbotSDK.Xamarin.Forms;
 using UIKit;
 
 namespace scanbotsdkexamplexamarinforms.iOS
@@ -16,12 +13,12 @@ namespace scanbotsdkexamplexamarinforms.iOS
         // However, if you do not specify the license key when initializing the SDK, 
         // it will work in trial mode (trial period of 1 minute). 
         // To get another trial period you have to restart your app.
-        const string licenseKey = "";
-
+        const string licenseKey = null;
+        
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
             Console.WriteLine("Scanbot SDK Example: Initializing Scanbot SDK...");
-            SBSDK.Initialize(app, licenseKey, true);
+            SBSDKInitializer.Initialize(app, licenseKey, new SBSDKConfiguration { EnableLogging = true });
 
             global::Xamarin.Forms.Forms.Init();
 

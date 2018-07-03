@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:scanbotsdkexamplexamarinforms"
+    x:Class="scanbotsdkexamplexamarinforms.scanbot_sdk_example_xamarin_formsPage"
+    >
+
+    <ContentPage.BindingContext>
+        <local:MainPageViewModel x:Name="vm" />
+    </ContentPage.BindingContext>
+
+    <ScrollView Grid.Row="1">
+
+        <StackLayout Orientation="Vertical" Padding="16,40,16,40" Spacing="10">
+
+            <Label FontSize="22">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <FormattedString.Spans>
+                            <Span Text="Example App for Scanbot SDK Xamarin Forms" FontAttributes="Bold" FontSize="22" />
+                        </FormattedString.Spans>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+            <local:HorizontalScrollList HeightRequest="100" ItemsSource="{Binding Pages}">
+                <local:HorizontalScrollList.ItemTemplate>
+                    <DataTemplate>
+                        <Image Source="{Binding AvailablePreview}"
+                               Aspect="AspectFit"
+                               Margin="5">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer
+                                    Command="{Binding HandlePreviewTapped, Source={x:Reference vm}}"
+                                    CommandParameter="{Binding}"/>
+                            </Image.GestureRecognizers>
+                        </Image>
+                    </DataTemplate>
+                </local:HorizontalScrollList.ItemTemplate>
+            </local:HorizontalScrollList>
+
+            <Button Margin="0,10,0,0" Text="Open Document Scanner" Command="{Binding OpenScanningUiCommand}" BackgroundColor="Blue" TextColor="White" />
+
+            <Button Margin="0,10,0,0" Text="Pick Photo" Command="{Binding PickPhotoCommand}" BackgroundColor="Blue" TextColor="White" />
+
+            <Button Margin="0,10,0,0" Text="Show Existing Scans" Command="{Binding ShowExistingScansCommand}" BackgroundColor="Blue" TextColor="White" />
+
+            <Button Margin="0,10,0,0" Text="Clear Document Selection" Command="{Binding ClearDocumentSelectionCommand}" BackgroundColor="Blue" TextColor="White" />
+
+            <Image Margin="0,10,0,0" BindingContext="{Binding SelectedPage}" Source="{Binding AvailablePreview}" />
+
+            <Button Margin="0,10,0,0" Text="Open Cropping Screen" Command="{Binding OpenCroppingScreenCommand}" BackgroundColor="Blue" TextColor="White" />
+
+            <Button Margin="0,10,0,0" Text="Detect Document and Crop" Command="{Binding DetectDocumentAndCropCommand}" BackgroundColor="Blue" TextColor="White" />
+
+            <Button Margin="0,10,0,0" Text="Perform OCR" Command="{Binding StartOcrServiceCommand}" BackgroundColor="Blue" TextColor="White" />
+
+            <Button Margin="0,10,0,0" Text="Apply Filter" Command="{Binding ApplyFilterCommand}" BackgroundColor="Blue" TextColor="White" />
+
+            <Button Margin="0,10,0,0" Text="Write to PDF " Command="{Binding CreatePdfCommand}" BackgroundColor="Blue" TextColor="White" />
+
+            <Button Margin="0,10,0,0" Text="Write to TIFF (1-bit)" Command="{Binding WriteBinarizedTiffCommand}" BackgroundColor="Blue" TextColor="White" />
+
+            <Button Margin="0,10,0,0" Text="Open Barcode Scanner" Command="{Binding OpenBarcodeScannerCommand}" BackgroundColor="Blue" TextColor="White" />
+
+            <Button Margin="0,10,0,0" Text="Open MRZ Scanner" Command="{Binding OpenMrzScannerCommand}" BackgroundColor="Blue" TextColor="White" />
+
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>

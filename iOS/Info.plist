@@ -4,8 +4,6 @@
 <dict>
 	<key>CFBundleDisplayName</key>
 	<string>Scanbot SDK Example Xamarin Forms</string>
-	<key>CFBundleName</key>
-	<string>Scanbot SDK Example Xamarin Forms</string>
 	<key>CFBundleIdentifier</key>
 	<string>io.scanbot.example.scanbot-sdk-example-xamarin-forms</string>
 	<key>CFBundleShortVersionString</key>
@@ -48,5 +46,7 @@
 	<string>This app needs access to your photo library to select photos.</string>
 	<key>UIFileSharingEnabled</key>
 	<true/>
+	<key>CFBundleName</key>
+	<string>GG</string>
 </dict>
 </plist>

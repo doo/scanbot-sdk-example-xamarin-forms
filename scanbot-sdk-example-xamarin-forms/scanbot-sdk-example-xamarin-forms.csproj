@@ -5,7 +5,6 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{FA6089BA-39C2-4897-B7CF-3B16C40A9C7C}</ProjectGuid>
     <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
-    <UseMSBuildEngine>true</UseMSBuildEngine>
     <OutputType>Library</OutputType>
     <RootNamespace>scanbotsdkexamplexamarinforms</RootNamespace>
     <AssemblyName>scanbot-sdk-example-xamarin-forms</AssemblyName>
@@ -29,19 +28,33 @@
   </PropertyGroup>
   <ItemGroup>
     <EmbeddedResource Include="App.xaml" />
-    <EmbeddedResource Include="scanbot-sdk-example-xamarin-formsPage.xaml" />
+    <EmbeddedResource Include="MainPage.xaml" />
+    <EmbeddedResource Include="ImageSelectionPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FilterPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="scanbot-sdk-example-xamarin-formsPage.xaml.cs">
-      <DependentUpon>scanbot-sdk-example-xamarin-formsPage.xaml</DependentUpon>
+    <Compile Include="MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Services\IScanbotSdkFeatureService.cs" />
     <Compile Include="MainPageViewModel.cs" />
     <Compile Include="Messages.cs" />
+    <Compile Include="ImageSelectionPage.xaml.cs">
+      <DependentUpon>ImageSelectionPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HorizontalScrollList.cs" />
+    <Compile Include="FilterPage.xaml.cs">
+      <DependentUpon>FilterPage.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Services\" />
@@ -55,6 +68,18 @@
     </Reference>
     <Reference Include="Xamarin.Forms.Xaml">
       <HintPath>..\packages\Xamarin.Forms.2.3.4.270\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.Xaml.dll</HintPath>
+    </Reference>
+    <Reference Include="ScanbotSDK.Xamarin">
+      <HintPath>..\packages\ScanbotSDK.Xamarin.1.0.0\lib\netstandard1.0\ScanbotSDK.Xamarin.dll</HintPath>
+    </Reference>
+    <Reference Include="ScanbotSDK.Xamarin.Forms">
+      <HintPath>..\packages\ScanbotSDK.Xamarin.Forms.1.0.0\lib\netstandard1.0\ScanbotSDK.Xamarin.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.ShareFile.Abstractions">
+      <HintPath>..\packages\Plugin.ShareFile.1.0.0\lib\portable-net45+win+wpa81+MonoTouch10+MonoAndroid10+xamarinmac20+xamarinios10\Plugin.ShareFile.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.ShareFile">
+      <HintPath>..\packages\Plugin.ShareFile.1.0.0\lib\portable-net45+win+wpa81+MonoTouch10+MonoAndroid10+xamarinmac20+xamarinios10\Plugin.ShareFile.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

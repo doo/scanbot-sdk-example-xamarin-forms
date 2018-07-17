@@ -57,7 +57,13 @@ namespace scanbotsdkexamplexamarinforms
             OpenScanningUiCommand = new Command(async () =>
             {
                 if (!CheckScanbotSDKLicense()) { return; }
-                var result = await SBSDK.UI.LaunchDocumentScannerAsync();
+
+                var configuration = new DocumentScannerConfiguration
+                {
+                    CameraPreviewMode = CameraPreviewMode.FitIn,
+                    // Customize colors, text resources, etc ...
+                };
+                var result = await SBSDK.UI.LaunchDocumentScannerAsync(configuration);
                 if (result.Status == OperationResult.Ok)
                 {
                     Pages.Clear();

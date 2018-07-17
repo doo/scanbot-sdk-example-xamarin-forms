@@ -69,17 +69,17 @@
     <Reference Include="Xamarin.Forms.Xaml">
       <HintPath>..\packages\Xamarin.Forms.2.3.4.270\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.Xaml.dll</HintPath>
     </Reference>
-    <Reference Include="ScanbotSDK.Xamarin">
-      <HintPath>..\packages\ScanbotSDK.Xamarin.1.0.0\lib\netstandard1.0\ScanbotSDK.Xamarin.dll</HintPath>
-    </Reference>
-    <Reference Include="ScanbotSDK.Xamarin.Forms">
-      <HintPath>..\packages\ScanbotSDK.Xamarin.Forms.1.0.0\lib\netstandard1.0\ScanbotSDK.Xamarin.Forms.dll</HintPath>
-    </Reference>
     <Reference Include="Plugin.ShareFile.Abstractions">
       <HintPath>..\packages\Plugin.ShareFile.1.0.0\lib\portable-net45+win+wpa81+MonoTouch10+MonoAndroid10+xamarinmac20+xamarinios10\Plugin.ShareFile.Abstractions.dll</HintPath>
     </Reference>
     <Reference Include="Plugin.ShareFile">
       <HintPath>..\packages\Plugin.ShareFile.1.0.0\lib\portable-net45+win+wpa81+MonoTouch10+MonoAndroid10+xamarinmac20+xamarinios10\Plugin.ShareFile.dll</HintPath>
+    </Reference>
+    <Reference Include="ScanbotSDK.Xamarin">
+      <HintPath>..\packages\ScanbotSDK.Xamarin.1.0.1\lib\netstandard1.0\ScanbotSDK.Xamarin.dll</HintPath>
+    </Reference>
+    <Reference Include="ScanbotSDK.Xamarin.Forms">
+      <HintPath>..\packages\ScanbotSDK.Xamarin.Forms.1.0.1\lib\netstandard1.0\ScanbotSDK.Xamarin.Forms.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

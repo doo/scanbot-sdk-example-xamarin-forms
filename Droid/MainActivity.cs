@@ -21,5 +21,5 @@ namespace scanbotsdkexamplexamarinforms.Droid
 
             LoadApplication(new App());
         }
-}
+    }
 }

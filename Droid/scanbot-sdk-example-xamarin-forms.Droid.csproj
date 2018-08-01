@@ -32,6 +32,7 @@
     <WarningLevel>4</WarningLevel>
     <AndroidLinkMode>None</AndroidLinkMode>
     <JavaMaximumHeapSize>4G</JavaMaximumHeapSize>
+    <AndroidSupportedAbis>armeabi-v7a;arm64-v8a;x86</AndroidSupportedAbis>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -193,10 +194,10 @@
       <HintPath>..\packages\ScanbotSDK.Xamarin.1.0.3\lib\MonoAndroid81\ScanbotSDK.Xamarin.dll</HintPath>
     </Reference>
     <Reference Include="ScanbotSDK.Xamarin.Forms.Android">
-      <HintPath>..\packages\ScanbotSDK.Xamarin.Forms.1.0.3\lib\MonoAndroid81\ScanbotSDK.Xamarin.Forms.Android.dll</HintPath>
+      <HintPath>..\packages\ScanbotSDK.Xamarin.Forms.1.0.4\lib\MonoAndroid81\ScanbotSDK.Xamarin.Forms.Android.dll</HintPath>
     </Reference>
     <Reference Include="ScanbotSDK.Xamarin.Forms">
-      <HintPath>..\packages\ScanbotSDK.Xamarin.Forms.1.0.3\lib\MonoAndroid81\ScanbotSDK.Xamarin.Forms.dll</HintPath>
+      <HintPath>..\packages\ScanbotSDK.Xamarin.Forms.1.0.4\lib\MonoAndroid81\ScanbotSDK.Xamarin.Forms.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

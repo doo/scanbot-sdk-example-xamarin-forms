@@ -103,19 +103,19 @@
       <HintPath>..\packages\Plugin.ShareFile.1.0.0\lib\Xamarin.iOS10\Plugin.ShareFile.dll</HintPath>
     </Reference>
     <Reference Include="ScanbotSDK.iOS">
-      <HintPath>..\packages\ScanbotSDK.Xamarin.1.0.5\lib\Xamarin.iOS10\ScanbotSDK.iOS.dll</HintPath>
+      <HintPath>..\packages\ScanbotSDK.Xamarin.1.0.6\lib\Xamarin.iOS10\ScanbotSDK.iOS.dll</HintPath>
     </Reference>
     <Reference Include="ScanbotSDK.Xamarin">
-      <HintPath>..\packages\ScanbotSDK.Xamarin.1.0.5\lib\Xamarin.iOS10\ScanbotSDK.Xamarin.dll</HintPath>
+      <HintPath>..\packages\ScanbotSDK.Xamarin.1.0.6\lib\Xamarin.iOS10\ScanbotSDK.Xamarin.dll</HintPath>
     </Reference>
     <Reference Include="ScanbotSDK.Xamarin.iOS">
-      <HintPath>..\packages\ScanbotSDK.Xamarin.1.0.5\lib\Xamarin.iOS10\ScanbotSDK.Xamarin.iOS.dll</HintPath>
+      <HintPath>..\packages\ScanbotSDK.Xamarin.1.0.6\lib\Xamarin.iOS10\ScanbotSDK.Xamarin.iOS.dll</HintPath>
     </Reference>
     <Reference Include="ScanbotSDK.Xamarin.Forms">
-      <HintPath>..\packages\ScanbotSDK.Xamarin.Forms.1.0.5\lib\Xamarin.iOS10\ScanbotSDK.Xamarin.Forms.dll</HintPath>
+      <HintPath>..\packages\ScanbotSDK.Xamarin.Forms.1.0.6\lib\Xamarin.iOS10\ScanbotSDK.Xamarin.Forms.dll</HintPath>
     </Reference>
     <Reference Include="ScanbotSDK.Xamarin.Forms.iOS">
-      <HintPath>..\packages\ScanbotSDK.Xamarin.Forms.1.0.5\lib\Xamarin.iOS10\ScanbotSDK.Xamarin.Forms.iOS.dll</HintPath>
+      <HintPath>..\packages\ScanbotSDK.Xamarin.Forms.1.0.6\lib\Xamarin.iOS10\ScanbotSDK.Xamarin.Forms.iOS.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

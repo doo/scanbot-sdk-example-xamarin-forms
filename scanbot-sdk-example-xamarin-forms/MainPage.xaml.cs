@@ -2,9 +2,9 @@
 
 namespace scanbotsdkexamplexamarinforms
 {
-    public partial class scanbot_sdk_example_xamarin_formsPage : ContentPage
+    public partial class MainPage : ContentPage
     {
-        public scanbot_sdk_example_xamarin_formsPage()
+        public MainPage()
         {
             InitializeComponent();
 

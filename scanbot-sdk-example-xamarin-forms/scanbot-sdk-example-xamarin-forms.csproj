@@ -74,11 +74,11 @@
     <Reference Include="Xamarin.Forms.Xaml">
       <HintPath>..\packages\Xamarin.Forms.2.5.0.122203\lib\portable-win+net45+wp80+win81+wpa81\Xamarin.Forms.Xaml.dll</HintPath>
     </Reference>
-    <Reference Include="ScanbotSDK.Xamarin.Forms">
-      <HintPath>..\packages\ScanbotSDK.Xamarin.Forms.1.0.7\lib\netstandard1.0\ScanbotSDK.Xamarin.Forms.dll</HintPath>
-    </Reference>
     <Reference Include="ScanbotSDK.Xamarin">
-      <HintPath>..\packages\ScanbotSDK.Xamarin.1.0.7\lib\netstandard1.0\ScanbotSDK.Xamarin.dll</HintPath>
+      <HintPath>..\packages\ScanbotSDK.Xamarin.1.1.0\lib\netstandard1.0\ScanbotSDK.Xamarin.dll</HintPath>
+    </Reference>
+    <Reference Include="ScanbotSDK.Xamarin.Forms">
+      <HintPath>..\packages\ScanbotSDK.Xamarin.Forms.1.1.0\lib\netstandard1.0\ScanbotSDK.Xamarin.Forms.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

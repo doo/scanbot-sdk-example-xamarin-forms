@@ -12,16 +12,14 @@
             It can be an external URL (like "http://example.com/my-orc-data/"),
             or local Assets folders (like "SBSDKLanguageData")
         -->
-
-        <!-- Configuration to fetch OCR blobs files from server: -->
-        <!--
+		<!-- Configuration to fetch OCR blobs files from server: -->
+		<!--
         <meta-data android:name="ocr_blobs_path" android:value="https://github.com/tesseract-ocr/tessdata/raw/3.04.00" />
         <meta-data android:name="language_classifier_blob_path" android:value="https://download.scanbot.io/di/android" />
         -->
-
-        <!-- Configuration to fetch OCR blobs files from a local directory "SBSDKLanguageData" provided via Assets: -->
-        <!-- The value must be a relative directory name to the Assets directory of your App. Place OCR blobs files into "<YOUR>Assets/SBSDKLanguageData/" -->
-        <meta-data android:name="ocr_blobs_path" android:value="SBSDKLanguageData" />
-        <meta-data android:name="language_classifier_blob_path" android:value="SBSDKLanguageData" />
-    </application>
+		<!-- Configuration to fetch OCR blobs files from a local directory "SBSDKLanguageData" provided via Assets: -->
+		<!-- The value must be a relative directory name to the Assets directory of your App. Place OCR blobs files into "<YOUR>Assets/SBSDKLanguageData/" -->
+		<meta-data android:name="ocr_blobs_path" android:value="SBSDKLanguageData" />
+		<meta-data android:name="language_classifier_blob_path" android:value="SBSDKLanguageData" />
+	</application>
 </manifest>

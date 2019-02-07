@@ -1,9 +1,11 @@
-# Example App for ScanbotSDK.Xamarin.Forms
+# Extract QR codes, MRZ, barcodes. Scan paper documents as image or PDF. Extract text using OCR.
+
+## Scanbot SDK example app for Xamarin.Forms
 
 This example app shows how to integrate the Scanbot SDK in a **Xamarin.Forms** project (Android & iOS).
 
 ## What is Scanbot SDK
-The Scanbot SDK brings scanning and document creation capabilities to your mobile apps. It contains modules which are individually licensable as license packages. For more details visit our website https://scanbot.io/sdk.html
+The Scanbot SDK brings scanning and document creation capabilities to your mobile apps. It contains modules which are individually licensable as license packages. For more details visit our website https://scanbot.io/sdk
 
 The Scanbot SDK is available as a NuGet package for the Xamarin.Forms platform:
 [ScanbotSDK.Xamarin.Forms](https://www.nuget.org/packages/ScanbotSDK.Xamarin.Forms)

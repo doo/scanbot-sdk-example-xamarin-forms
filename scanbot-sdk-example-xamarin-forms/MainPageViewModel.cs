@@ -18,17 +18,15 @@ namespace scanbotsdkexamplexamarinforms
 
         public ICommand OpenScanningUiCommand { get; }
         public ICommand OpenCroppingScreenCommand { get; }
-        public ICommand DetectDocumentAndCropCommand { get; }
-        public ICommand PickPhotoCommand { get; }
-        public ICommand ShowExistingScansCommand { get; }
-        public ICommand StartOcrServiceCommand { get; }
+        public ICommand ImportImageCommand { get; }
+        public ICommand PerformOcrCommand { get; }
         public ICommand OpenBarcodeScannerCommand { get; }
         public ICommand OpenMrzScannerCommand { get; }
         public ICommand ApplyFilterCommand { get; }
         public ICommand HandlePreviewTapped { get; }
-        public ICommand ClearDocumentSelectionCommand { get; }
         public ICommand CreatePdfCommand { get; }
         public ICommand WriteBinarizedTiffCommand { get; }
+        public ICommand CleanupCommand { get; }
 
         IScannedPage _selectedPage;
         public IScannedPage SelectedPage
@@ -61,6 +59,8 @@ namespace scanbotsdkexamplexamarinforms
                 var configuration = new DocumentScannerConfiguration
                 {
                     CameraPreviewMode = CameraPreviewMode.FitIn,
+                    PolygonColor = Color.Red,
+                    PolygonColorOK = Color.Green
                     // Customize colors, text resources, etc ...
                 };
                 var result = await SBSDK.UI.LaunchDocumentScannerAsync(configuration);
@@ -72,6 +72,7 @@ namespace scanbotsdkexamplexamarinforms
                     SelectedPage = Pages[0];
                 }
             });
+
             OpenCroppingScreenCommand = new Command(async () => 
             {
                 if (!CheckScanbotSDKLicense() || !CheckPageSelected()) { return; }
@@ -80,33 +81,35 @@ namespace scanbotsdkexamplexamarinforms
                 await SBSDK.UI.LaunchCroppingScreenAsync(page);
             });
 
-            DetectDocumentAndCropCommand = new Command(async () =>
-            {
-                if (!CheckScanbotSDKLicense() || !CheckPageSelected()) { return; }
-
-                await SelectedPage.DetectDocumentAsync();
-            });
-
-            PickPhotoCommand = new Command(async () =>
+            ImportImageCommand = new Command(async () =>
             {
                 var image = await DependencyService.Get<IImagePicker>().PickImageAsync();
                 if (image != null)
                 {
-                    SelectedPage = await SBSDK.Operations.CreateScannedPageAsync(image);
+                    if (!CheckScanbotSDKLicense()) { return; }
+
+                    // import the selected image as original image and create a Page object first:
+                    var importedPage = await SBSDK.Operations.CreateScannedPageAsync(image);
+                    // then run document detection on it:
+                    await importedPage.DetectDocumentAsync();
+                    SelectedPage = importedPage;
                     Pages.Add(SelectedPage);
                 }
             });
 
-            StartOcrServiceCommand = new Command(async () =>
+            PerformOcrCommand = new Command(async () =>
             {
-                if (!CheckScanbotSDKLicense() || !CheckDocumentSelected()) { return; }
-                var result = await SBSDK.Operations.PerformOcrAsync(new[] { SelectedPage.Document }, new[] { "en", "de" });
+                if (!CheckScanbotSDKLicense() || !CheckHasPages()) { return; }
+
+                var languages = new[] { "en" }; // or specify more languages like { "en", "de", ... }
+                var result = await SBSDK.Operations.PerformOcrAsync(DocumentSources, languages);
                 MessagingCenter.Send(new AlertMessage { Message = result, Title = "OCR" }, AlertMessage.ID);
             });
 
             OpenBarcodeScannerCommand = new Command(async () =>
             {
                 if (!CheckScanbotSDKLicense()) { return; }
+
                 var result = await SBSDK.UI.LaunchBarcodeScannerAsync();
                 if (result.Status == OperationResult.Ok)
                 {
@@ -143,29 +146,12 @@ namespace scanbotsdkexamplexamarinforms
                 await Application.Current.MainPage.Navigation.PushAsync(new FilterPage { CurrentPage = SelectedPage });
             });
 
-            ShowExistingScansCommand = new Command(async () =>
+            CleanupCommand = new Command(async () =>
             {
-                var selectionPage = new ImageSelectionPage();
-                selectionPage.Disappearing += (sender, e) =>
-                {
-                    for (int i = Pages.Count - 1; i >= 0; --i)
-                    {
-                        if (Pages[i].Original == null)
-                        {
-                            Pages.RemoveAt(i);
-                        }
-                    }
-                    if (SelectedPage != null && SelectedPage.Original == null)
-                    {
-                        SelectedPage = null;
-                    }
-                };
-                selectionPage.PageSelected += (sender, e) =>
-                {
-                    Pages.Add(e.Page);
-                    Application.Current.MainPage.Navigation.PopAsync();
-                };
-                await Application.Current.MainPage.Navigation.PushAsync(selectionPage);
+                await SBSDK.Operations.CleanUp();
+                Pages.Clear();
+                SelectedPage = null;
+                MessagingCenter.Send(new AlertMessage { Message = "Cleanup done. All scanned images and generated files (PDF, TIFF, etc) have been removed.", Title = "Info" }, AlertMessage.ID);
             });
 
             HandlePreviewTapped = new Command(arg =>
@@ -173,36 +159,28 @@ namespace scanbotsdkexamplexamarinforms
                 SelectedPage = arg as IScannedPage;
             });
 
-            ClearDocumentSelectionCommand = new Command(() =>
-            {
-                Pages.Clear();
-                SelectedPage = null;
-            });
-
             CreatePdfCommand = new Command(async () =>
             {
-                var fileUri = await SBSDK.Operations.CreatePdfAsync(DocumentSources);
-                if (Device.RuntimePlatform == Device.iOS)
-                {
-                    CrossShareFile.Current.ShareLocalFile(fileUri.AbsolutePath);
-                }
-                else
-                {
-                    MessagingCenter.Send(new AlertMessage { Message = $"File written to {fileUri.AbsolutePath}", Title = "PDF" }, AlertMessage.ID);
-                }
+                if (!CheckScanbotSDKLicense() || !CheckHasPages()) { return; }
+
+                var fileUri = await SBSDK.Operations.CreatePdfAsync(DocumentSources, PDFPageSize.FixedA4);
+
+                // Please note that on Android sharing works only with public accessible files.
+                // Files from internal, secure storage folders cannot be shared.
+                // (also see the SDK initialization with external (public) storage)
+                CrossShareFile.Current.ShareLocalFile(fileUri.AbsolutePath);
             });
 
             WriteBinarizedTiffCommand = new Command(async () =>
             {
+                if (!CheckScanbotSDKLicense() || !CheckHasPages()) { return; }
+
                 var fileUri = await SBSDK.Operations.WriteTiffAsync(DocumentSources, new TiffOptions { OneBitEncoded = true });
-                if (Device.RuntimePlatform == Device.iOS)
-                {
-                    CrossShareFile.Current.ShareLocalFile(fileUri.AbsolutePath);
-                }
-                else
-                {
-                    MessagingCenter.Send(new AlertMessage { Message = $"File written to {fileUri.AbsolutePath}", Title = "TIFF" }, AlertMessage.ID);
-                }
+
+                // Please note that on Android sharing works only with public accessible files.
+                // Files from internal, secure storage folders cannot be shared.
+                // (also see the SDK initialization with external (public) storage)
+                CrossShareFile.Current.ShareLocalFile(fileUri.AbsolutePath);
             });
         }
 
@@ -239,7 +217,7 @@ namespace scanbotsdkexamplexamarinforms
             var msg = new AlertMessage
             {
                 Title = "Info",
-                Message = "Selected a page first."
+                Message = "Please scan and select a page image first."
             };
             MessagingCenter.Send(msg, AlertMessage.ID);
             return false;
@@ -255,10 +233,27 @@ namespace scanbotsdkexamplexamarinforms
             var msg = new AlertMessage
             {
                 Title = "Info",
-                Message = "Selected a page with a detected document."
+                Message = "Please select a page with a detected document."
             };
             MessagingCenter.Send(msg, AlertMessage.ID);
             return false;
         }
+
+        bool CheckHasPages()
+        {
+            if (Pages?.Count > 0)
+            {
+                return true;
+            }
+
+            var msg = new AlertMessage
+            {
+                Title = "Info",
+                Message = "Please snap a document image via Document Scanner or import an image from the Photo Library."
+            };
+            MessagingCenter.Send(msg, AlertMessage.ID);
+            return false;
+        }
+
     }
 }

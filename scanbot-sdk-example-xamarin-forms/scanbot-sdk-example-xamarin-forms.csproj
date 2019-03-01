@@ -28,10 +28,6 @@
   <ItemGroup>
     <EmbeddedResource Include="App.xaml" />
     <EmbeddedResource Include="MainPage.xaml" />
-    <EmbeddedResource Include="ImageSelectionPage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
     <EmbeddedResource Include="FilterPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
@@ -47,16 +43,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="MainPageViewModel.cs" />
     <Compile Include="Messages.cs" />
-    <Compile Include="ImageSelectionPage.xaml.cs">
-      <DependentUpon>ImageSelectionPage.xaml</DependentUpon>
-    </Compile>
     <Compile Include="HorizontalScrollList.cs" />
     <Compile Include="FilterPage.xaml.cs">
       <DependentUpon>FilterPage.xaml</DependentUpon>
     </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Services\" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Plugin.ShareFile.Abstractions">
@@ -75,10 +65,10 @@
       <HintPath>..\packages\Xamarin.Forms.2.5.0.122203\lib\portable-win+net45+wp80+win81+wpa81\Xamarin.Forms.Xaml.dll</HintPath>
     </Reference>
     <Reference Include="ScanbotSDK.Xamarin">
-      <HintPath>..\packages\ScanbotSDK.Xamarin.1.2.0\lib\netstandard1.0\ScanbotSDK.Xamarin.dll</HintPath>
+      <HintPath>..\packages\ScanbotSDK.Xamarin.1.3.0\lib\netstandard1.0\ScanbotSDK.Xamarin.dll</HintPath>
     </Reference>
     <Reference Include="ScanbotSDK.Xamarin.Forms">
-      <HintPath>..\packages\ScanbotSDK.Xamarin.Forms.1.1.2\lib\netstandard1.0\ScanbotSDK.Xamarin.Forms.dll</HintPath>
+      <HintPath>..\packages\ScanbotSDK.Xamarin.Forms.1.3.0\lib\netstandard1.0\ScanbotSDK.Xamarin.Forms.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

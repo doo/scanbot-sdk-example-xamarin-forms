@@ -16,6 +16,7 @@ namespace scanbotsdkexamplexamarinforms
     {
         public event PropertyChangedEventHandler PropertyChanged;
 
+        public ICommand OpenWorkflowsCommand { get; }
         public ICommand OpenScanningUiCommand { get; }
         public ICommand OpenCroppingScreenCommand { get; }
         public ICommand ImportImageCommand { get; }
@@ -52,6 +53,11 @@ namespace scanbotsdkexamplexamarinforms
 
         public MainPageViewModel()
         {
+            OpenWorkflowsCommand = new Command(async () =>
+            {
+                await Application.Current.MainPage.Navigation.PushAsync(new WorkflowsPage());
+            });
+
             OpenScanningUiCommand = new Command(async () =>
             {
                 if (!CheckScanbotSDKLicense()) { return; }

@@ -36,8 +36,6 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			global::ScanbotSDK.Xamarin.Android.Resource.Animation.abc_slide_in_top = global::scanbotsdkexamplexamarinforms.Droid.Resource.Animation.abc_slide_in_top;
 			global::ScanbotSDK.Xamarin.Android.Resource.Animation.abc_slide_out_bottom = global::scanbotsdkexamplexamarinforms.Droid.Resource.Animation.abc_slide_out_bottom;
 			global::ScanbotSDK.Xamarin.Android.Resource.Animation.abc_slide_out_top = global::scanbotsdkexamplexamarinforms.Droid.Resource.Animation.abc_slide_out_top;
-			global::ScanbotSDK.Xamarin.Android.Resource.Animation.tooltip_enter = global::scanbotsdkexamplexamarinforms.Droid.Resource.Animation.tooltip_enter;
-			global::ScanbotSDK.Xamarin.Android.Resource.Animation.tooltip_exit = global::scanbotsdkexamplexamarinforms.Droid.Resource.Animation.tooltip_exit;
 			global::ScanbotSDK.Xamarin.Android.Resource.Array.document_types = global::scanbotsdkexamplexamarinforms.Droid.Resource.Array.document_types;
 			global::ScanbotSDK.Xamarin.Android.Resource.Attribute.actionBarDivider = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.actionBarDivider;
 			global::ScanbotSDK.Xamarin.Android.Resource.Attribute.actionBarItemBackground = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.actionBarItemBackground;
@@ -100,6 +98,8 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			global::ScanbotSDK.Xamarin.Android.Resource.Attribute.barLength = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.barLength;
 			global::ScanbotSDK.Xamarin.Android.Resource.Attribute.barcode_camera_overlay_color = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.barcode_camera_overlay_color;
 			global::ScanbotSDK.Xamarin.Android.Resource.Attribute.barcode_camera_overlay_stroke_color = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.barcode_camera_overlay_stroke_color;
+			global::ScanbotSDK.Xamarin.Android.Resource.Attribute.barrierAllowsGoneWidgets = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.barrierAllowsGoneWidgets;
+			global::ScanbotSDK.Xamarin.Android.Resource.Attribute.barrierDirection = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.barrierDirection;
 			global::ScanbotSDK.Xamarin.Android.Resource.Attribute.borderlessButtonStyle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.borderlessButtonStyle;
 			global::ScanbotSDK.Xamarin.Android.Resource.Attribute.bottomBarBackgroundColor = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.bottomBarBackgroundColor;
 			global::ScanbotSDK.Xamarin.Android.Resource.Attribute.bottomBarButtonsColor = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.bottomBarButtonsColor;
@@ -123,6 +123,7 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			global::ScanbotSDK.Xamarin.Android.Resource.Attribute.camera_startup_message_text_color = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.camera_startup_message_text_color;
 			global::ScanbotSDK.Xamarin.Android.Resource.Attribute.camera_tool_button_color_selector = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.camera_tool_button_color_selector;
 			global::ScanbotSDK.Xamarin.Android.Resource.Attribute.camera_top_toolbar_bg_transparent = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.camera_top_toolbar_bg_transparent;
+			global::ScanbotSDK.Xamarin.Android.Resource.Attribute.chainUseRtl = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.chainUseRtl;
 			global::ScanbotSDK.Xamarin.Android.Resource.Attribute.checkboxStyle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.checkboxStyle;
 			global::ScanbotSDK.Xamarin.Android.Resource.Attribute.checkedTextViewStyle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.checkedTextViewStyle;
 			global::ScanbotSDK.Xamarin.Android.Resource.Attribute.closeIcon = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.closeIcon;
@@ -141,6 +142,9 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			global::ScanbotSDK.Xamarin.Android.Resource.Attribute.colorPrimaryDark = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.colorPrimaryDark;
 			global::ScanbotSDK.Xamarin.Android.Resource.Attribute.colorSwitchThumbNormal = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.colorSwitchThumbNormal;
 			global::ScanbotSDK.Xamarin.Android.Resource.Attribute.commitIcon = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.commitIcon;
+			global::ScanbotSDK.Xamarin.Android.Resource.Attribute.constraintSet = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.constraintSet;
+			global::ScanbotSDK.Xamarin.Android.Resource.Attribute.constraint_referenced_ids = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.constraint_referenced_ids;
+			global::ScanbotSDK.Xamarin.Android.Resource.Attribute.content = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.content;
 			global::ScanbotSDK.Xamarin.Android.Resource.Attribute.contentDescription = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.contentDescription;
 			global::ScanbotSDK.Xamarin.Android.Resource.Attribute.contentInsetEnd = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.contentInsetEnd;
 			global::ScanbotSDK.Xamarin.Android.Resource.Attribute.contentInsetEndWithActions = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.contentInsetEndWithActions;
@@ -190,6 +194,7 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			global::ScanbotSDK.Xamarin.Android.Resource.Attribute.edit_polygon_toolbar_save_btn_text = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.edit_polygon_toolbar_save_btn_text;
 			global::ScanbotSDK.Xamarin.Android.Resource.Attribute.edit_polygon_toolbar_text_color = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.edit_polygon_toolbar_text_color;
 			global::ScanbotSDK.Xamarin.Android.Resource.Attribute.elevation = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.elevation;
+			global::ScanbotSDK.Xamarin.Android.Resource.Attribute.emptyVisibility = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.emptyVisibility;
 			global::ScanbotSDK.Xamarin.Android.Resource.Attribute.expandActivityOverflowButtonDrawable = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.expandActivityOverflowButtonDrawable;
 			global::ScanbotSDK.Xamarin.Android.Resource.Attribute.fixed_height = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.fixed_height;
 			global::ScanbotSDK.Xamarin.Android.Resource.Attribute.fixed_width = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.fixed_width;
@@ -220,7 +225,64 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			global::ScanbotSDK.Xamarin.Android.Resource.Attribute.initialActivityCount = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.initialActivityCount;
 			global::ScanbotSDK.Xamarin.Android.Resource.Attribute.isLightTheme = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.isLightTheme;
 			global::ScanbotSDK.Xamarin.Android.Resource.Attribute.itemPadding = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.itemPadding;
+			global::ScanbotSDK.Xamarin.Android.Resource.Attribute.keylines = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.keylines;
 			global::ScanbotSDK.Xamarin.Android.Resource.Attribute.layout = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.layout;
+			global::ScanbotSDK.Xamarin.Android.Resource.Attribute.layout_anchor = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.layout_anchor;
+			global::ScanbotSDK.Xamarin.Android.Resource.Attribute.layout_anchorGravity = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.layout_anchorGravity;
+			global::ScanbotSDK.Xamarin.Android.Resource.Attribute.layout_behavior = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.layout_behavior;
+			global::ScanbotSDK.Xamarin.Android.Resource.Attribute.layout_constrainedHeight = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.layout_constrainedHeight;
+			global::ScanbotSDK.Xamarin.Android.Resource.Attribute.layout_constrainedWidth = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.layout_constrainedWidth;
+			global::ScanbotSDK.Xamarin.Android.Resource.Attribute.layout_constraintBaseline_creator = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.layout_constraintBaseline_creator;
+			global::ScanbotSDK.Xamarin.Android.Resource.Attribute.layout_constraintBaseline_toBaselineOf = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.layout_constraintBaseline_toBaselineOf;
+			global::ScanbotSDK.Xamarin.Android.Resource.Attribute.layout_constraintBottom_creator = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.layout_constraintBottom_creator;
+			global::ScanbotSDK.Xamarin.Android.Resource.Attribute.layout_constraintBottom_toBottomOf = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.layout_constraintBottom_toBottomOf;
+			global::ScanbotSDK.Xamarin.Android.Resource.Attribute.layout_constraintBottom_toTopOf = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.layout_constraintBottom_toTopOf;
+			global::ScanbotSDK.Xamarin.Android.Resource.Attribute.layout_constraintCircle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.layout_constraintCircle;
+			global::ScanbotSDK.Xamarin.Android.Resource.Attribute.layout_constraintCircleAngle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.layout_constraintCircleAngle;
+			global::ScanbotSDK.Xamarin.Android.Resource.Attribute.layout_constraintCircleRadius = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.layout_constraintCircleRadius;
+			global::ScanbotSDK.Xamarin.Android.Resource.Attribute.layout_constraintDimensionRatio = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.layout_constraintDimensionRatio;
+			global::ScanbotSDK.Xamarin.Android.Resource.Attribute.layout_constraintEnd_toEndOf = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.layout_constraintEnd_toEndOf;
+			global::ScanbotSDK.Xamarin.Android.Resource.Attribute.layout_constraintEnd_toStartOf = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.layout_constraintEnd_toStartOf;
+			global::ScanbotSDK.Xamarin.Android.Resource.Attribute.layout_constraintGuide_begin = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.layout_constraintGuide_begin;
+			global::ScanbotSDK.Xamarin.Android.Resource.Attribute.layout_constraintGuide_end = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.layout_constraintGuide_end;
+			global::ScanbotSDK.Xamarin.Android.Resource.Attribute.layout_constraintGuide_percent = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.layout_constraintGuide_percent;
+			global::ScanbotSDK.Xamarin.Android.Resource.Attribute.layout_constraintHeight_default = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.layout_constraintHeight_default;
+			global::ScanbotSDK.Xamarin.Android.Resource.Attribute.layout_constraintHeight_max = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.layout_constraintHeight_max;
+			global::ScanbotSDK.Xamarin.Android.Resource.Attribute.layout_constraintHeight_min = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.layout_constraintHeight_min;
+			global::ScanbotSDK.Xamarin.Android.Resource.Attribute.layout_constraintHeight_percent = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.layout_constraintHeight_percent;
+			global::ScanbotSDK.Xamarin.Android.Resource.Attribute.layout_constraintHorizontal_bias = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.layout_constraintHorizontal_bias;
+			global::ScanbotSDK.Xamarin.Android.Resource.Attribute.layout_constraintHorizontal_chainStyle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.layout_constraintHorizontal_chainStyle;
+			global::ScanbotSDK.Xamarin.Android.Resource.Attribute.layout_constraintHorizontal_weight = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.layout_constraintHorizontal_weight;
+			global::ScanbotSDK.Xamarin.Android.Resource.Attribute.layout_constraintLeft_creator = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.layout_constraintLeft_creator;
+			global::ScanbotSDK.Xamarin.Android.Resource.Attribute.layout_constraintLeft_toLeftOf = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.layout_constraintLeft_toLeftOf;
+			global::ScanbotSDK.Xamarin.Android.Resource.Attribute.layout_constraintLeft_toRightOf = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.layout_constraintLeft_toRightOf;
+			global::ScanbotSDK.Xamarin.Android.Resource.Attribute.layout_constraintRight_creator = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.layout_constraintRight_creator;
+			global::ScanbotSDK.Xamarin.Android.Resource.Attribute.layout_constraintRight_toLeftOf = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.layout_constraintRight_toLeftOf;
+			global::ScanbotSDK.Xamarin.Android.Resource.Attribute.layout_constraintRight_toRightOf = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.layout_constraintRight_toRightOf;
+			global::ScanbotSDK.Xamarin.Android.Resource.Attribute.layout_constraintStart_toEndOf = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.layout_constraintStart_toEndOf;
+			global::ScanbotSDK.Xamarin.Android.Resource.Attribute.layout_constraintStart_toStartOf = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.layout_constraintStart_toStartOf;
+			global::ScanbotSDK.Xamarin.Android.Resource.Attribute.layout_constraintTop_creator = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.layout_constraintTop_creator;
+			global::ScanbotSDK.Xamarin.Android.Resource.Attribute.layout_constraintTop_toBottomOf = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.layout_constraintTop_toBottomOf;
+			global::ScanbotSDK.Xamarin.Android.Resource.Attribute.layout_constraintTop_toTopOf = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.layout_constraintTop_toTopOf;
+			global::ScanbotSDK.Xamarin.Android.Resource.Attribute.layout_constraintVertical_bias = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.layout_constraintVertical_bias;
+			global::ScanbotSDK.Xamarin.Android.Resource.Attribute.layout_constraintVertical_chainStyle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.layout_constraintVertical_chainStyle;
+			global::ScanbotSDK.Xamarin.Android.Resource.Attribute.layout_constraintVertical_weight = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.layout_constraintVertical_weight;
+			global::ScanbotSDK.Xamarin.Android.Resource.Attribute.layout_constraintWidth_default = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.layout_constraintWidth_default;
+			global::ScanbotSDK.Xamarin.Android.Resource.Attribute.layout_constraintWidth_max = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.layout_constraintWidth_max;
+			global::ScanbotSDK.Xamarin.Android.Resource.Attribute.layout_constraintWidth_min = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.layout_constraintWidth_min;
+			global::ScanbotSDK.Xamarin.Android.Resource.Attribute.layout_constraintWidth_percent = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.layout_constraintWidth_percent;
+			global::ScanbotSDK.Xamarin.Android.Resource.Attribute.layout_dodgeInsetEdges = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.layout_dodgeInsetEdges;
+			global::ScanbotSDK.Xamarin.Android.Resource.Attribute.layout_editor_absoluteX = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.layout_editor_absoluteX;
+			global::ScanbotSDK.Xamarin.Android.Resource.Attribute.layout_editor_absoluteY = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.layout_editor_absoluteY;
+			global::ScanbotSDK.Xamarin.Android.Resource.Attribute.layout_goneMarginBottom = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.layout_goneMarginBottom;
+			global::ScanbotSDK.Xamarin.Android.Resource.Attribute.layout_goneMarginEnd = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.layout_goneMarginEnd;
+			global::ScanbotSDK.Xamarin.Android.Resource.Attribute.layout_goneMarginLeft = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.layout_goneMarginLeft;
+			global::ScanbotSDK.Xamarin.Android.Resource.Attribute.layout_goneMarginRight = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.layout_goneMarginRight;
+			global::ScanbotSDK.Xamarin.Android.Resource.Attribute.layout_goneMarginStart = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.layout_goneMarginStart;
+			global::ScanbotSDK.Xamarin.Android.Resource.Attribute.layout_goneMarginTop = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.layout_goneMarginTop;
+			global::ScanbotSDK.Xamarin.Android.Resource.Attribute.layout_insetEdge = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.layout_insetEdge;
+			global::ScanbotSDK.Xamarin.Android.Resource.Attribute.layout_keyline = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.layout_keyline;
+			global::ScanbotSDK.Xamarin.Android.Resource.Attribute.layout_optimizationLevel = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.layout_optimizationLevel;
 			global::ScanbotSDK.Xamarin.Android.Resource.Attribute.listChoiceBackgroundIndicator = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.listChoiceBackgroundIndicator;
 			global::ScanbotSDK.Xamarin.Android.Resource.Attribute.listDividerAlertDialog = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.listDividerAlertDialog;
 			global::ScanbotSDK.Xamarin.Android.Resource.Attribute.listItemLayout = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.listItemLayout;
@@ -252,6 +314,7 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			global::ScanbotSDK.Xamarin.Android.Resource.Attribute.navigationMode = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.navigationMode;
 			global::ScanbotSDK.Xamarin.Android.Resource.Attribute.nothing_detected_hint = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.nothing_detected_hint;
 			global::ScanbotSDK.Xamarin.Android.Resource.Attribute.numericModifiers = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.numericModifiers;
+			global::ScanbotSDK.Xamarin.Android.Resource.Attribute.off_center_hint = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.off_center_hint;
 			global::ScanbotSDK.Xamarin.Android.Resource.Attribute.overlapAnchor = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.overlapAnchor;
 			global::ScanbotSDK.Xamarin.Android.Resource.Attribute.overlay_color = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.overlay_color;
 			global::ScanbotSDK.Xamarin.Android.Resource.Attribute.overlay_stroke_color = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.overlay_stroke_color;
@@ -302,6 +365,7 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			global::ScanbotSDK.Xamarin.Android.Resource.Attribute.srcCompat = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.srcCompat;
 			global::ScanbotSDK.Xamarin.Android.Resource.Attribute.src_tint = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.src_tint;
 			global::ScanbotSDK.Xamarin.Android.Resource.Attribute.state_above_anchor = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.state_above_anchor;
+			global::ScanbotSDK.Xamarin.Android.Resource.Attribute.statusBarBackground = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.statusBarBackground;
 			global::ScanbotSDK.Xamarin.Android.Resource.Attribute.stroke_width = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.stroke_width;
 			global::ScanbotSDK.Xamarin.Android.Resource.Attribute.subMenuArrow = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.subMenuArrow;
 			global::ScanbotSDK.Xamarin.Android.Resource.Attribute.submitBackground = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.submitBackground;
@@ -378,8 +442,6 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			global::ScanbotSDK.Xamarin.Android.Resource.Boolean.abc_action_bar_embed_tabs = global::scanbotsdkexamplexamarinforms.Droid.Resource.Boolean.abc_action_bar_embed_tabs;
 			global::ScanbotSDK.Xamarin.Android.Resource.Boolean.abc_allow_stacked_button_bar = global::scanbotsdkexamplexamarinforms.Droid.Resource.Boolean.abc_allow_stacked_button_bar;
 			global::ScanbotSDK.Xamarin.Android.Resource.Boolean.abc_config_actionMenuItemAllCaps = global::scanbotsdkexamplexamarinforms.Droid.Resource.Boolean.abc_config_actionMenuItemAllCaps;
-			global::ScanbotSDK.Xamarin.Android.Resource.Boolean.abc_config_closeDialogWhenTouchOutside = global::scanbotsdkexamplexamarinforms.Droid.Resource.Boolean.abc_config_closeDialogWhenTouchOutside;
-			global::ScanbotSDK.Xamarin.Android.Resource.Boolean.abc_config_showMenuShortcutsWhenKeyboardPresent = global::scanbotsdkexamplexamarinforms.Droid.Resource.Boolean.abc_config_showMenuShortcutsWhenKeyboardPresent;
 			global::ScanbotSDK.Xamarin.Android.Resource.Color.abc_background_cache_hint_selector_material_dark = global::scanbotsdkexamplexamarinforms.Droid.Resource.Color.abc_background_cache_hint_selector_material_dark;
 			global::ScanbotSDK.Xamarin.Android.Resource.Color.abc_background_cache_hint_selector_material_light = global::scanbotsdkexamplexamarinforms.Droid.Resource.Color.abc_background_cache_hint_selector_material_light;
 			global::ScanbotSDK.Xamarin.Android.Resource.Color.abc_btn_colored_borderless_text_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.Color.abc_btn_colored_borderless_text_material;
@@ -436,7 +498,6 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			global::ScanbotSDK.Xamarin.Android.Resource.Color.dim_foreground_material_dark = global::scanbotsdkexamplexamarinforms.Droid.Resource.Color.dim_foreground_material_dark;
 			global::ScanbotSDK.Xamarin.Android.Resource.Color.dim_foreground_material_light = global::scanbotsdkexamplexamarinforms.Droid.Resource.Color.dim_foreground_material_light;
 			global::ScanbotSDK.Xamarin.Android.Resource.Color.edit_polygon_bg = global::scanbotsdkexamplexamarinforms.Droid.Resource.Color.edit_polygon_bg;
-			global::ScanbotSDK.Xamarin.Android.Resource.Color.error_color_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.Color.error_color_material;
 			global::ScanbotSDK.Xamarin.Android.Resource.Color.foreground_material_dark = global::scanbotsdkexamplexamarinforms.Droid.Resource.Color.foreground_material_dark;
 			global::ScanbotSDK.Xamarin.Android.Resource.Color.foreground_material_light = global::scanbotsdkexamplexamarinforms.Droid.Resource.Color.foreground_material_light;
 			global::ScanbotSDK.Xamarin.Android.Resource.Color.highlighted_text_material_dark = global::scanbotsdkexamplexamarinforms.Droid.Resource.Color.highlighted_text_material_dark;
@@ -483,6 +544,7 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			global::ScanbotSDK.Xamarin.Android.Resource.Color.ui_polygonStrokeColor = global::scanbotsdkexamplexamarinforms.Droid.Resource.Color.ui_polygonStrokeColor;
 			global::ScanbotSDK.Xamarin.Android.Resource.Color.ui_scanning_manual_tint = global::scanbotsdkexamplexamarinforms.Droid.Resource.Color.ui_scanning_manual_tint;
 			global::ScanbotSDK.Xamarin.Android.Resource.Color.ui_shutterButtonColor = global::scanbotsdkexamplexamarinforms.Droid.Resource.Color.ui_shutterButtonColor;
+			global::ScanbotSDK.Xamarin.Android.Resource.Color.workflow_camera_hint_bg = global::scanbotsdkexamplexamarinforms.Droid.Resource.Color.workflow_camera_hint_bg;
 			global::ScanbotSDK.Xamarin.Android.Resource.Dimension.abc_action_bar_content_inset_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.abc_action_bar_content_inset_material;
 			global::ScanbotSDK.Xamarin.Android.Resource.Dimension.abc_action_bar_content_inset_with_nav = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.abc_action_bar_content_inset_with_nav;
 			global::ScanbotSDK.Xamarin.Android.Resource.Dimension.abc_action_bar_default_height_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.abc_action_bar_default_height_material;
@@ -492,7 +554,6 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			global::ScanbotSDK.Xamarin.Android.Resource.Dimension.abc_action_bar_icon_vertical_padding_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.abc_action_bar_icon_vertical_padding_material;
 			global::ScanbotSDK.Xamarin.Android.Resource.Dimension.abc_action_bar_overflow_padding_end_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.abc_action_bar_overflow_padding_end_material;
 			global::ScanbotSDK.Xamarin.Android.Resource.Dimension.abc_action_bar_overflow_padding_start_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.abc_action_bar_overflow_padding_start_material;
-			global::ScanbotSDK.Xamarin.Android.Resource.Dimension.abc_action_bar_progress_bar_size = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.abc_action_bar_progress_bar_size;
 			global::ScanbotSDK.Xamarin.Android.Resource.Dimension.abc_action_bar_stacked_max_height = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.abc_action_bar_stacked_max_height;
 			global::ScanbotSDK.Xamarin.Android.Resource.Dimension.abc_action_bar_stacked_tab_max_width = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.abc_action_bar_stacked_tab_max_width;
 			global::ScanbotSDK.Xamarin.Android.Resource.Dimension.abc_action_bar_subtitle_bottom_margin_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.abc_action_bar_subtitle_bottom_margin_material;
@@ -564,7 +625,10 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			global::ScanbotSDK.Xamarin.Android.Resource.Dimension.compat_button_padding_vertical_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.compat_button_padding_vertical_material;
 			global::ScanbotSDK.Xamarin.Android.Resource.Dimension.compat_control_corner_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.compat_control_corner_material;
 			global::ScanbotSDK.Xamarin.Android.Resource.Dimension.default_finder_corner_radius = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.default_finder_corner_radius;
+			global::ScanbotSDK.Xamarin.Android.Resource.Dimension.default_finder_inner_threshold = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.default_finder_inner_threshold;
+			global::ScanbotSDK.Xamarin.Android.Resource.Dimension.default_finder_outer_threshold = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.default_finder_outer_threshold;
 			global::ScanbotSDK.Xamarin.Android.Resource.Dimension.default_finder_stroke_width = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.default_finder_stroke_width;
+			global::ScanbotSDK.Xamarin.Android.Resource.Dimension.default_hint_corner_radius = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.default_hint_corner_radius;
 			global::ScanbotSDK.Xamarin.Android.Resource.Dimension.default_min_finder_padding = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.default_min_finder_padding;
 			global::ScanbotSDK.Xamarin.Android.Resource.Dimension.disabled_alpha_material_dark = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.disabled_alpha_material_dark;
 			global::ScanbotSDK.Xamarin.Android.Resource.Dimension.disabled_alpha_material_light = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.disabled_alpha_material_light;
@@ -731,6 +795,7 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			global::ScanbotSDK.Xamarin.Android.Resource.Drawable.ui_scanning_flash_on = global::scanbotsdkexamplexamarinforms.Droid.Resource.Drawable.ui_scanning_flash_on;
 			global::ScanbotSDK.Xamarin.Android.Resource.Drawable.ui_scanning_manual = global::scanbotsdkexamplexamarinforms.Droid.Resource.Drawable.ui_scanning_manual;
 			global::ScanbotSDK.Xamarin.Android.Resource.Drawable.ui_scanning_no_permission = global::scanbotsdkexamplexamarinforms.Droid.Resource.Drawable.ui_scanning_no_permission;
+			global::ScanbotSDK.Xamarin.Android.Resource.Drawable.workflow_camera_hint_bg = global::scanbotsdkexamplexamarinforms.Droid.Resource.Drawable.workflow_camera_hint_bg;
 			global::ScanbotSDK.Xamarin.Android.Resource.Id.ALT = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.ALT;
 			global::ScanbotSDK.Xamarin.Android.Resource.Id.CTRL = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.CTRL;
 			global::ScanbotSDK.Xamarin.Android.Resource.Id.FUNCTION = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.FUNCTION;
@@ -759,6 +824,7 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			global::ScanbotSDK.Xamarin.Android.Resource.Id.activity_chooser_view_content = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.activity_chooser_view_content;
 			global::ScanbotSDK.Xamarin.Android.Resource.Id.add = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.add;
 			global::ScanbotSDK.Xamarin.Android.Resource.Id.alertTitle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.alertTitle;
+			global::ScanbotSDK.Xamarin.Android.Resource.Id.all = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.all;
 			global::ScanbotSDK.Xamarin.Android.Resource.Id.always = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.always;
 			global::ScanbotSDK.Xamarin.Android.Resource.Id.async = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.async;
 			global::ScanbotSDK.Xamarin.Android.Resource.Id.autoSnapBtn = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.autoSnapBtn;
@@ -766,6 +832,7 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			global::ScanbotSDK.Xamarin.Android.Resource.Id.automatic_text = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.automatic_text;
 			global::ScanbotSDK.Xamarin.Android.Resource.Id.backgroundView = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.backgroundView;
 			global::ScanbotSDK.Xamarin.Android.Resource.Id.barcodeCameraView = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.barcodeCameraView;
+			global::ScanbotSDK.Xamarin.Android.Resource.Id.barrier = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.barrier;
 			global::ScanbotSDK.Xamarin.Android.Resource.Id.beginning = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.beginning;
 			global::ScanbotSDK.Xamarin.Android.Resource.Id.blocking = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.blocking;
 			global::ScanbotSDK.Xamarin.Android.Resource.Id.bottom = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.bottom;
@@ -781,8 +848,14 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			global::ScanbotSDK.Xamarin.Android.Resource.Id.cancel = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.cancel;
 			global::ScanbotSDK.Xamarin.Android.Resource.Id.cancelBtn = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.cancelBtn;
 			global::ScanbotSDK.Xamarin.Android.Resource.Id.cancel_action = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.cancel_action;
+			global::ScanbotSDK.Xamarin.Android.Resource.Id.center = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.center;
+			global::ScanbotSDK.Xamarin.Android.Resource.Id.center_horizontal = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.center_horizontal;
+			global::ScanbotSDK.Xamarin.Android.Resource.Id.center_vertical = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.center_vertical;
+			global::ScanbotSDK.Xamarin.Android.Resource.Id.chains = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.chains;
 			global::ScanbotSDK.Xamarin.Android.Resource.Id.checkbox = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.checkbox;
 			global::ScanbotSDK.Xamarin.Android.Resource.Id.chronometer = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.chronometer;
+			global::ScanbotSDK.Xamarin.Android.Resource.Id.clip_horizontal = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.clip_horizontal;
+			global::ScanbotSDK.Xamarin.Android.Resource.Id.clip_vertical = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.clip_vertical;
 			global::ScanbotSDK.Xamarin.Android.Resource.Id.collapseActionView = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.collapseActionView;
 			global::ScanbotSDK.Xamarin.Android.Resource.Id.contentPanel = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.contentPanel;
 			global::ScanbotSDK.Xamarin.Android.Resource.Id.custom = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.custom;
@@ -790,6 +863,8 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			global::ScanbotSDK.Xamarin.Android.Resource.Id.decor_content_parent = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.decor_content_parent;
 			global::ScanbotSDK.Xamarin.Android.Resource.Id.default_activity_button = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.default_activity_button;
 			global::ScanbotSDK.Xamarin.Android.Resource.Id.detect = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.detect;
+			global::ScanbotSDK.Xamarin.Android.Resource.Id.dimensions = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.dimensions;
+			global::ScanbotSDK.Xamarin.Android.Resource.Id.direct = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.direct;
 			global::ScanbotSDK.Xamarin.Android.Resource.Id.disableHome = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.disableHome;
 			global::ScanbotSDK.Xamarin.Android.Resource.Id.done = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.done;
 			global::ScanbotSDK.Xamarin.Android.Resource.Id.edit_query = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.edit_query;
@@ -798,13 +873,19 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			global::ScanbotSDK.Xamarin.Android.Resource.Id.end_padder = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.end_padder;
 			global::ScanbotSDK.Xamarin.Android.Resource.Id.expand_activities_button = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.expand_activities_button;
 			global::ScanbotSDK.Xamarin.Android.Resource.Id.expanded_menu = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.expanded_menu;
+			global::ScanbotSDK.Xamarin.Android.Resource.Id.fill = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.fill;
+			global::ScanbotSDK.Xamarin.Android.Resource.Id.fill_horizontal = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.fill_horizontal;
+			global::ScanbotSDK.Xamarin.Android.Resource.Id.fill_vertical = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.fill_vertical;
 			global::ScanbotSDK.Xamarin.Android.Resource.Id.finder_description = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.finder_description;
+			global::ScanbotSDK.Xamarin.Android.Resource.Id.finder_message = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.finder_message;
 			global::ScanbotSDK.Xamarin.Android.Resource.Id.finder_overlay = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.finder_overlay;
+			global::ScanbotSDK.Xamarin.Android.Resource.Id.finder_title = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.finder_title;
 			global::ScanbotSDK.Xamarin.Android.Resource.Id.flashBtn = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.flashBtn;
 			global::ScanbotSDK.Xamarin.Android.Resource.Id.flash_icon = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.flash_icon;
 			global::ScanbotSDK.Xamarin.Android.Resource.Id.flash_text_view = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.flash_text_view;
 			global::ScanbotSDK.Xamarin.Android.Resource.Id.forever = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.forever;
 			global::ScanbotSDK.Xamarin.Android.Resource.Id.fragmentContainer = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.fragmentContainer;
+			global::ScanbotSDK.Xamarin.Android.Resource.Id.gone = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.gone;
 			global::ScanbotSDK.Xamarin.Android.Resource.Id.hint = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.hint;
 			global::ScanbotSDK.Xamarin.Android.Resource.Id.home = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.home;
 			global::ScanbotSDK.Xamarin.Android.Resource.Id.homeAsUp = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.homeAsUp;
@@ -813,7 +894,10 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			global::ScanbotSDK.Xamarin.Android.Resource.Id.ifRoom = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.ifRoom;
 			global::ScanbotSDK.Xamarin.Android.Resource.Id.image = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.image;
 			global::ScanbotSDK.Xamarin.Android.Resource.Id.info = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.info;
+			global::ScanbotSDK.Xamarin.Android.Resource.Id.info_bottom_bar = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.info_bottom_bar;
+			global::ScanbotSDK.Xamarin.Android.Resource.Id.invisible = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.invisible;
 			global::ScanbotSDK.Xamarin.Android.Resource.Id.italic = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.italic;
+			global::ScanbotSDK.Xamarin.Android.Resource.Id.left = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.left;
 			global::ScanbotSDK.Xamarin.Android.Resource.Id.line1 = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.line1;
 			global::ScanbotSDK.Xamarin.Android.Resource.Id.line3 = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.line3;
 			global::ScanbotSDK.Xamarin.Android.Resource.Id.listMode = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.listMode;
@@ -833,7 +917,10 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			global::ScanbotSDK.Xamarin.Android.Resource.Id.notification_background = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.notification_background;
 			global::ScanbotSDK.Xamarin.Android.Resource.Id.notification_main_column = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.notification_main_column;
 			global::ScanbotSDK.Xamarin.Android.Resource.Id.notification_main_column_container = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.notification_main_column_container;
+			global::ScanbotSDK.Xamarin.Android.Resource.Id.packed = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.packed;
+			global::ScanbotSDK.Xamarin.Android.Resource.Id.parent = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.parent;
 			global::ScanbotSDK.Xamarin.Android.Resource.Id.parentPanel = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.parentPanel;
+			global::ScanbotSDK.Xamarin.Android.Resource.Id.percent = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.percent;
 			global::ScanbotSDK.Xamarin.Android.Resource.Id.polygonView = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.polygonView;
 			global::ScanbotSDK.Xamarin.Android.Resource.Id.progress = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.progress;
 			global::ScanbotSDK.Xamarin.Android.Resource.Id.progressView = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.progressView;
@@ -841,6 +928,7 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			global::ScanbotSDK.Xamarin.Android.Resource.Id.progress_horizontal = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.progress_horizontal;
 			global::ScanbotSDK.Xamarin.Android.Resource.Id.radio = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.radio;
 			global::ScanbotSDK.Xamarin.Android.Resource.Id.reset = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.reset;
+			global::ScanbotSDK.Xamarin.Android.Resource.Id.right = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.right;
 			global::ScanbotSDK.Xamarin.Android.Resource.Id.right_icon = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.right_icon;
 			global::ScanbotSDK.Xamarin.Android.Resource.Id.right_side = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.right_side;
 			global::ScanbotSDK.Xamarin.Android.Resource.Id.rotate = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.rotate;
@@ -868,9 +956,13 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			global::ScanbotSDK.Xamarin.Android.Resource.Id.shutterBtn = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.shutterBtn;
 			global::ScanbotSDK.Xamarin.Android.Resource.Id.spacer = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.spacer;
 			global::ScanbotSDK.Xamarin.Android.Resource.Id.split_action_bar = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.split_action_bar;
+			global::ScanbotSDK.Xamarin.Android.Resource.Id.spread = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.spread;
+			global::ScanbotSDK.Xamarin.Android.Resource.Id.spread_inside = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.spread_inside;
 			global::ScanbotSDK.Xamarin.Android.Resource.Id.src_atop = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.src_atop;
 			global::ScanbotSDK.Xamarin.Android.Resource.Id.src_in = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.src_in;
 			global::ScanbotSDK.Xamarin.Android.Resource.Id.src_over = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.src_over;
+			global::ScanbotSDK.Xamarin.Android.Resource.Id.standard = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.standard;
+			global::ScanbotSDK.Xamarin.Android.Resource.Id.start = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.start;
 			global::ScanbotSDK.Xamarin.Android.Resource.Id.startup_massage = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.startup_massage;
 			global::ScanbotSDK.Xamarin.Android.Resource.Id.status_bar_latest_event_content = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.status_bar_latest_event_content;
 			global::ScanbotSDK.Xamarin.Android.Resource.Id.submenuarrow = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.submenuarrow;
@@ -897,6 +989,8 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			global::ScanbotSDK.Xamarin.Android.Resource.Id.up = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.up;
 			global::ScanbotSDK.Xamarin.Android.Resource.Id.useLogo = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.useLogo;
 			global::ScanbotSDK.Xamarin.Android.Resource.Id.withText = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.withText;
+			global::ScanbotSDK.Xamarin.Android.Resource.Id.workflowCameraView = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.workflowCameraView;
+			global::ScanbotSDK.Xamarin.Android.Resource.Id.wrap = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.wrap;
 			global::ScanbotSDK.Xamarin.Android.Resource.Id.wrap_content = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.wrap_content;
 			global::ScanbotSDK.Xamarin.Android.Resource.Integer.abc_config_activityDefaultDur = global::scanbotsdkexamplexamarinforms.Droid.Resource.Integer.abc_config_activityDefaultDur;
 			global::ScanbotSDK.Xamarin.Android.Resource.Integer.abc_config_activityShortDur = global::scanbotsdkexamplexamarinforms.Droid.Resource.Integer.abc_config_activityShortDur;
@@ -933,6 +1027,7 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			global::ScanbotSDK.Xamarin.Android.Resource.Layout.activity_camera = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.activity_camera;
 			global::ScanbotSDK.Xamarin.Android.Resource.Layout.activity_layout = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.activity_layout;
 			global::ScanbotSDK.Xamarin.Android.Resource.Layout.activity_mrz_camera = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.activity_mrz_camera;
+			global::ScanbotSDK.Xamarin.Android.Resource.Layout.activity_workflow_camera = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.activity_workflow_camera;
 			global::ScanbotSDK.Xamarin.Android.Resource.Layout.barcode_camera_view = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.barcode_camera_view;
 			global::ScanbotSDK.Xamarin.Android.Resource.Layout.camera_permission_placeholder = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.camera_permission_placeholder;
 			global::ScanbotSDK.Xamarin.Android.Resource.Layout.camera_view = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.camera_view;
@@ -940,6 +1035,7 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			global::ScanbotSDK.Xamarin.Android.Resource.Layout.fragment_camera = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.fragment_camera;
 			global::ScanbotSDK.Xamarin.Android.Resource.Layout.fragment_edit_polygon = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.fragment_edit_polygon;
 			global::ScanbotSDK.Xamarin.Android.Resource.Layout.fragment_mrz_camera = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.fragment_mrz_camera;
+			global::ScanbotSDK.Xamarin.Android.Resource.Layout.fragment_workflow_camera = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.fragment_workflow_camera;
 			global::ScanbotSDK.Xamarin.Android.Resource.Layout.mrz_camera_view = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.mrz_camera_view;
 			global::ScanbotSDK.Xamarin.Android.Resource.Layout.notification_action = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.notification_action;
 			global::ScanbotSDK.Xamarin.Android.Resource.Layout.notification_action_tombstone = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.notification_action_tombstone;
@@ -962,7 +1058,7 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			global::ScanbotSDK.Xamarin.Android.Resource.Layout.select_dialog_singlechoice_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.select_dialog_singlechoice_material;
 			global::ScanbotSDK.Xamarin.Android.Resource.Layout.shutter_button = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.shutter_button;
 			global::ScanbotSDK.Xamarin.Android.Resource.Layout.support_simple_spinner_dropdown_item = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.support_simple_spinner_dropdown_item;
-			global::ScanbotSDK.Xamarin.Android.Resource.Layout.tooltip = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.tooltip;
+			global::ScanbotSDK.Xamarin.Android.Resource.Layout.workflow_camera_view = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.workflow_camera_view;
 			global::ScanbotSDK.Xamarin.Android.Resource.Plurals.snapped_pages_count = global::scanbotsdkexamplexamarinforms.Droid.Resource.Plurals.snapped_pages_count;
 			global::ScanbotSDK.Xamarin.Android.Resource.Raw.bing = global::scanbotsdkexamplexamarinforms.Droid.Resource.Raw.bing;
 			global::ScanbotSDK.Xamarin.Android.Resource.Raw.bleep = global::scanbotsdkexamplexamarinforms.Droid.Resource.Raw.bleep;
@@ -1019,10 +1115,12 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			global::ScanbotSDK.Xamarin.Android.Resource.String.mrz_finder_description = global::scanbotsdkexamplexamarinforms.Droid.Resource.String.mrz_finder_description;
 			global::ScanbotSDK.Xamarin.Android.Resource.String.multi_page_option = global::scanbotsdkexamplexamarinforms.Droid.Resource.String.multi_page_option;
 			global::ScanbotSDK.Xamarin.Android.Resource.String.nothing_detected_hint = global::scanbotsdkexamplexamarinforms.Droid.Resource.String.nothing_detected_hint;
+			global::ScanbotSDK.Xamarin.Android.Resource.String.off_center_hint = global::scanbotsdkexamplexamarinforms.Droid.Resource.String.off_center_hint;
 			global::ScanbotSDK.Xamarin.Android.Resource.String.reset = global::scanbotsdkexamplexamarinforms.Droid.Resource.String.reset;
 			global::ScanbotSDK.Xamarin.Android.Resource.String.reset_to_default = global::scanbotsdkexamplexamarinforms.Droid.Resource.String.reset_to_default;
 			global::ScanbotSDK.Xamarin.Android.Resource.String.rotate = global::scanbotsdkexamplexamarinforms.Droid.Resource.String.rotate;
 			global::ScanbotSDK.Xamarin.Android.Resource.String.search_menu_title = global::scanbotsdkexamplexamarinforms.Droid.Resource.String.search_menu_title;
+			global::ScanbotSDK.Xamarin.Android.Resource.String.select_picture_title = global::scanbotsdkexamplexamarinforms.Droid.Resource.String.select_picture_title;
 			global::ScanbotSDK.Xamarin.Android.Resource.String.status_bar_notification_info_overflow = global::scanbotsdkexamplexamarinforms.Droid.Resource.String.status_bar_notification_info_overflow;
 			global::ScanbotSDK.Xamarin.Android.Resource.String.support_email_template = global::scanbotsdkexamplexamarinforms.Droid.Resource.String.support_email_template;
 			global::ScanbotSDK.Xamarin.Android.Resource.String.too_dark_hint = global::scanbotsdkexamplexamarinforms.Droid.Resource.String.too_dark_hint;
@@ -1109,11 +1207,6 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			global::ScanbotSDK.Xamarin.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog;
 			global::ScanbotSDK.Xamarin.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog_Alert = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog_Alert;
 			global::ScanbotSDK.Xamarin.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Light = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Light;
-			global::ScanbotSDK.Xamarin.Android.Resource.Style.Base_V11_Theme_AppCompat_Dialog = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_V11_Theme_AppCompat_Dialog;
-			global::ScanbotSDK.Xamarin.Android.Resource.Style.Base_V11_Theme_AppCompat_Light_Dialog = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_V11_Theme_AppCompat_Light_Dialog;
-			global::ScanbotSDK.Xamarin.Android.Resource.Style.Base_V11_ThemeOverlay_AppCompat_Dialog = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_V11_ThemeOverlay_AppCompat_Dialog;
-			global::ScanbotSDK.Xamarin.Android.Resource.Style.Base_V12_Widget_AppCompat_AutoCompleteTextView = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_V12_Widget_AppCompat_AutoCompleteTextView;
-			global::ScanbotSDK.Xamarin.Android.Resource.Style.Base_V12_Widget_AppCompat_EditText = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_V12_Widget_AppCompat_EditText;
 			global::ScanbotSDK.Xamarin.Android.Resource.Style.Base_V21_Theme_AppCompat = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_V21_Theme_AppCompat;
 			global::ScanbotSDK.Xamarin.Android.Resource.Style.Base_V21_Theme_AppCompat_Dialog = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_V21_Theme_AppCompat_Dialog;
 			global::ScanbotSDK.Xamarin.Android.Resource.Style.Base_V21_Theme_AppCompat_Light = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_V21_Theme_AppCompat_Light;
@@ -1196,10 +1289,6 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			global::ScanbotSDK.Xamarin.Android.Resource.Style.Platform_ThemeOverlay_AppCompat = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat;
 			global::ScanbotSDK.Xamarin.Android.Resource.Style.Platform_ThemeOverlay_AppCompat_Dark = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat_Dark;
 			global::ScanbotSDK.Xamarin.Android.Resource.Style.Platform_ThemeOverlay_AppCompat_Light = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat_Light;
-			global::ScanbotSDK.Xamarin.Android.Resource.Style.Platform_V11_AppCompat = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Platform_V11_AppCompat;
-			global::ScanbotSDK.Xamarin.Android.Resource.Style.Platform_V11_AppCompat_Light = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Platform_V11_AppCompat_Light;
-			global::ScanbotSDK.Xamarin.Android.Resource.Style.Platform_V14_AppCompat = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Platform_V14_AppCompat;
-			global::ScanbotSDK.Xamarin.Android.Resource.Style.Platform_V14_AppCompat_Light = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Platform_V14_AppCompat_Light;
 			global::ScanbotSDK.Xamarin.Android.Resource.Style.Platform_V21_AppCompat = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Platform_V21_AppCompat;
 			global::ScanbotSDK.Xamarin.Android.Resource.Style.Platform_V21_AppCompat_Light = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Platform_V21_AppCompat_Light;
 			global::ScanbotSDK.Xamarin.Android.Resource.Style.Platform_V25_AppCompat = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Platform_V25_AppCompat;
@@ -1612,6 +1701,154 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.CompoundButton_android_button = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.CompoundButton_android_button;
 			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.CompoundButton_buttonTint = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.CompoundButton_buttonTint;
 			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.CompoundButton_buttonTintMode = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.CompoundButton_buttonTintMode;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintLayout_Layout = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintLayout_Layout;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintLayout_Layout_android_maxHeight = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintLayout_Layout_android_maxHeight;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintLayout_Layout_android_maxWidth = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintLayout_Layout_android_maxWidth;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintLayout_Layout_android_minHeight = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintLayout_Layout_android_minHeight;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintLayout_Layout_android_minWidth = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintLayout_Layout_android_minWidth;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintLayout_Layout_android_orientation = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintLayout_Layout_android_orientation;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintLayout_Layout_barrierAllowsGoneWidgets = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintLayout_Layout_barrierAllowsGoneWidgets;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintLayout_Layout_barrierDirection = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintLayout_Layout_barrierDirection;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintLayout_Layout_chainUseRtl = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintLayout_Layout_chainUseRtl;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintLayout_Layout_constraintSet = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintLayout_Layout_constraintSet;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintLayout_Layout_constraint_referenced_ids = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintLayout_Layout_constraint_referenced_ids;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintLayout_Layout_layout_constrainedHeight = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintLayout_Layout_layout_constrainedHeight;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintLayout_Layout_layout_constrainedWidth = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintLayout_Layout_layout_constrainedWidth;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintLayout_Layout_layout_constraintBaseline_creator = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintLayout_Layout_layout_constraintBaseline_creator;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintLayout_Layout_layout_constraintBaseline_toBaselineOf = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintLayout_Layout_layout_constraintBaseline_toBaselineOf;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintLayout_Layout_layout_constraintBottom_creator = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintLayout_Layout_layout_constraintBottom_creator;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintLayout_Layout_layout_constraintBottom_toBottomOf = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintLayout_Layout_layout_constraintBottom_toBottomOf;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintLayout_Layout_layout_constraintBottom_toTopOf = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintLayout_Layout_layout_constraintBottom_toTopOf;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintLayout_Layout_layout_constraintCircle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintLayout_Layout_layout_constraintCircle;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintLayout_Layout_layout_constraintCircleAngle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintLayout_Layout_layout_constraintCircleAngle;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintLayout_Layout_layout_constraintCircleRadius = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintLayout_Layout_layout_constraintCircleRadius;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintLayout_Layout_layout_constraintDimensionRatio = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintLayout_Layout_layout_constraintDimensionRatio;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintLayout_Layout_layout_constraintEnd_toEndOf = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintLayout_Layout_layout_constraintEnd_toEndOf;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintLayout_Layout_layout_constraintEnd_toStartOf = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintLayout_Layout_layout_constraintEnd_toStartOf;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintLayout_Layout_layout_constraintGuide_begin = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintLayout_Layout_layout_constraintGuide_begin;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintLayout_Layout_layout_constraintGuide_end = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintLayout_Layout_layout_constraintGuide_end;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintLayout_Layout_layout_constraintGuide_percent = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintLayout_Layout_layout_constraintGuide_percent;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintLayout_Layout_layout_constraintHeight_default = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintLayout_Layout_layout_constraintHeight_default;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintLayout_Layout_layout_constraintHeight_max = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintLayout_Layout_layout_constraintHeight_max;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintLayout_Layout_layout_constraintHeight_min = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintLayout_Layout_layout_constraintHeight_min;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintLayout_Layout_layout_constraintHeight_percent = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintLayout_Layout_layout_constraintHeight_percent;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintLayout_Layout_layout_constraintHorizontal_bias = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintLayout_Layout_layout_constraintHorizontal_bias;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintLayout_Layout_layout_constraintHorizontal_chainStyle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintLayout_Layout_layout_constraintHorizontal_chainStyle;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintLayout_Layout_layout_constraintHorizontal_weight = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintLayout_Layout_layout_constraintHorizontal_weight;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintLayout_Layout_layout_constraintLeft_creator = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintLayout_Layout_layout_constraintLeft_creator;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintLayout_Layout_layout_constraintLeft_toLeftOf = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintLayout_Layout_layout_constraintLeft_toLeftOf;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintLayout_Layout_layout_constraintLeft_toRightOf = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintLayout_Layout_layout_constraintLeft_toRightOf;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintLayout_Layout_layout_constraintRight_creator = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintLayout_Layout_layout_constraintRight_creator;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintLayout_Layout_layout_constraintRight_toLeftOf = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintLayout_Layout_layout_constraintRight_toLeftOf;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintLayout_Layout_layout_constraintRight_toRightOf = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintLayout_Layout_layout_constraintRight_toRightOf;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintLayout_Layout_layout_constraintStart_toEndOf = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintLayout_Layout_layout_constraintStart_toEndOf;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintLayout_Layout_layout_constraintStart_toStartOf = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintLayout_Layout_layout_constraintStart_toStartOf;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintLayout_Layout_layout_constraintTop_creator = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintLayout_Layout_layout_constraintTop_creator;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintLayout_Layout_layout_constraintTop_toBottomOf = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintLayout_Layout_layout_constraintTop_toBottomOf;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintLayout_Layout_layout_constraintTop_toTopOf = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintLayout_Layout_layout_constraintTop_toTopOf;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintLayout_Layout_layout_constraintVertical_bias = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintLayout_Layout_layout_constraintVertical_bias;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintLayout_Layout_layout_constraintVertical_chainStyle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintLayout_Layout_layout_constraintVertical_chainStyle;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintLayout_Layout_layout_constraintVertical_weight = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintLayout_Layout_layout_constraintVertical_weight;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintLayout_Layout_layout_constraintWidth_default = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintLayout_Layout_layout_constraintWidth_default;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintLayout_Layout_layout_constraintWidth_max = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintLayout_Layout_layout_constraintWidth_max;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintLayout_Layout_layout_constraintWidth_min = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintLayout_Layout_layout_constraintWidth_min;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintLayout_Layout_layout_constraintWidth_percent = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintLayout_Layout_layout_constraintWidth_percent;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintLayout_Layout_layout_editor_absoluteX = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintLayout_Layout_layout_editor_absoluteX;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintLayout_Layout_layout_editor_absoluteY = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintLayout_Layout_layout_editor_absoluteY;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintLayout_Layout_layout_goneMarginBottom = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintLayout_Layout_layout_goneMarginBottom;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintLayout_Layout_layout_goneMarginEnd = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintLayout_Layout_layout_goneMarginEnd;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintLayout_Layout_layout_goneMarginLeft = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintLayout_Layout_layout_goneMarginLeft;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintLayout_Layout_layout_goneMarginRight = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintLayout_Layout_layout_goneMarginRight;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintLayout_Layout_layout_goneMarginStart = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintLayout_Layout_layout_goneMarginStart;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintLayout_Layout_layout_goneMarginTop = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintLayout_Layout_layout_goneMarginTop;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintLayout_Layout_layout_optimizationLevel = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintLayout_Layout_layout_optimizationLevel;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintLayout_placeholder = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintLayout_placeholder;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintLayout_placeholder_content = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintLayout_placeholder_content;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintLayout_placeholder_emptyVisibility = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintLayout_placeholder_emptyVisibility;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintSet = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintSet_android_alpha = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_android_alpha;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintSet_android_elevation = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_android_elevation;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintSet_android_id = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_android_id;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintSet_android_layout_height = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_android_layout_height;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintSet_android_layout_marginBottom = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_android_layout_marginBottom;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintSet_android_layout_marginEnd = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_android_layout_marginEnd;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintSet_android_layout_marginLeft = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_android_layout_marginLeft;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintSet_android_layout_marginRight = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_android_layout_marginRight;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintSet_android_layout_marginStart = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_android_layout_marginStart;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintSet_android_layout_marginTop = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_android_layout_marginTop;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintSet_android_layout_width = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_android_layout_width;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintSet_android_orientation = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_android_orientation;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintSet_android_rotation = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_android_rotation;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintSet_android_rotationX = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_android_rotationX;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintSet_android_rotationY = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_android_rotationY;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintSet_android_scaleX = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_android_scaleX;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintSet_android_scaleY = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_android_scaleY;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintSet_android_transformPivotX = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_android_transformPivotX;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintSet_android_transformPivotY = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_android_transformPivotY;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintSet_android_translationX = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_android_translationX;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintSet_android_translationY = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_android_translationY;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintSet_android_translationZ = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_android_translationZ;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintSet_android_visibility = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_android_visibility;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintSet_layout_constrainedHeight = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_layout_constrainedHeight;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintSet_layout_constrainedWidth = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_layout_constrainedWidth;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintSet_layout_constraintBaseline_creator = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_layout_constraintBaseline_creator;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintSet_layout_constraintBaseline_toBaselineOf = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_layout_constraintBaseline_toBaselineOf;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintSet_layout_constraintBottom_creator = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_layout_constraintBottom_creator;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintSet_layout_constraintBottom_toBottomOf = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_layout_constraintBottom_toBottomOf;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintSet_layout_constraintBottom_toTopOf = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_layout_constraintBottom_toTopOf;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintSet_layout_constraintCircle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_layout_constraintCircle;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintSet_layout_constraintCircleAngle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_layout_constraintCircleAngle;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintSet_layout_constraintCircleRadius = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_layout_constraintCircleRadius;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintSet_layout_constraintDimensionRatio = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_layout_constraintDimensionRatio;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintSet_layout_constraintEnd_toEndOf = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_layout_constraintEnd_toEndOf;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintSet_layout_constraintEnd_toStartOf = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_layout_constraintEnd_toStartOf;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintSet_layout_constraintGuide_begin = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_layout_constraintGuide_begin;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintSet_layout_constraintGuide_end = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_layout_constraintGuide_end;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintSet_layout_constraintGuide_percent = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_layout_constraintGuide_percent;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintSet_layout_constraintHeight_default = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_layout_constraintHeight_default;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintSet_layout_constraintHeight_max = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_layout_constraintHeight_max;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintSet_layout_constraintHeight_min = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_layout_constraintHeight_min;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintSet_layout_constraintHeight_percent = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_layout_constraintHeight_percent;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintSet_layout_constraintHorizontal_bias = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_layout_constraintHorizontal_bias;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintSet_layout_constraintHorizontal_chainStyle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_layout_constraintHorizontal_chainStyle;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintSet_layout_constraintHorizontal_weight = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_layout_constraintHorizontal_weight;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintSet_layout_constraintLeft_creator = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_layout_constraintLeft_creator;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintSet_layout_constraintLeft_toLeftOf = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_layout_constraintLeft_toLeftOf;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintSet_layout_constraintLeft_toRightOf = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_layout_constraintLeft_toRightOf;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintSet_layout_constraintRight_creator = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_layout_constraintRight_creator;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintSet_layout_constraintRight_toLeftOf = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_layout_constraintRight_toLeftOf;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintSet_layout_constraintRight_toRightOf = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_layout_constraintRight_toRightOf;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintSet_layout_constraintStart_toEndOf = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_layout_constraintStart_toEndOf;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintSet_layout_constraintStart_toStartOf = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_layout_constraintStart_toStartOf;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintSet_layout_constraintTop_creator = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_layout_constraintTop_creator;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintSet_layout_constraintTop_toBottomOf = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_layout_constraintTop_toBottomOf;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintSet_layout_constraintTop_toTopOf = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_layout_constraintTop_toTopOf;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintSet_layout_constraintVertical_bias = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_layout_constraintVertical_bias;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintSet_layout_constraintVertical_chainStyle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_layout_constraintVertical_chainStyle;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintSet_layout_constraintVertical_weight = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_layout_constraintVertical_weight;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintSet_layout_constraintWidth_default = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_layout_constraintWidth_default;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintSet_layout_constraintWidth_max = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_layout_constraintWidth_max;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintSet_layout_constraintWidth_min = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_layout_constraintWidth_min;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintSet_layout_constraintWidth_percent = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_layout_constraintWidth_percent;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintSet_layout_editor_absoluteX = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_layout_editor_absoluteX;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintSet_layout_editor_absoluteY = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_layout_editor_absoluteY;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintSet_layout_goneMarginBottom = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_layout_goneMarginBottom;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintSet_layout_goneMarginEnd = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_layout_goneMarginEnd;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintSet_layout_goneMarginLeft = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_layout_goneMarginLeft;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintSet_layout_goneMarginRight = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_layout_goneMarginRight;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintSet_layout_goneMarginStart = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_layout_goneMarginStart;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.ConstraintSet_layout_goneMarginTop = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_layout_goneMarginTop;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.CoordinatorLayout = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.CoordinatorLayout;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.CoordinatorLayout_keylines = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.CoordinatorLayout_keylines;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.CoordinatorLayout_statusBarBackground = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.CoordinatorLayout_statusBarBackground;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.CoordinatorLayout_Layout = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.CoordinatorLayout_Layout;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.CoordinatorLayout_Layout_android_layout_gravity = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.CoordinatorLayout_Layout_android_layout_gravity;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.CoordinatorLayout_Layout_layout_anchor = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_anchor;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.CoordinatorLayout_Layout_layout_anchorGravity = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_anchorGravity;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.CoordinatorLayout_Layout_layout_behavior = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_behavior;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.CoordinatorLayout_Layout_layout_dodgeInsetEdges = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_dodgeInsetEdges;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.CoordinatorLayout_Layout_layout_insetEdge = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_insetEdge;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.CoordinatorLayout_Layout_layout_keyline = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_keyline;
 			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.DrawerArrowToggle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.DrawerArrowToggle;
 			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.DrawerArrowToggle_arrowHeadLength = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.DrawerArrowToggle_arrowHeadLength;
 			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.DrawerArrowToggle_arrowShaftLength = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.DrawerArrowToggle_arrowShaftLength;
@@ -1651,6 +1888,8 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.FontFamilyFont_font = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.FontFamilyFont_font;
 			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.FontFamilyFont_fontStyle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.FontFamilyFont_fontStyle;
 			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.FontFamilyFont_fontWeight = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.FontFamilyFont_fontWeight;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.LinearConstraintLayout = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.LinearConstraintLayout;
+			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.LinearConstraintLayout_android_orientation = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.LinearConstraintLayout_android_orientation;
 			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.LinearLayoutCompat = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.LinearLayoutCompat;
 			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.LinearLayoutCompat_android_baselineAligned = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.LinearLayoutCompat_android_baselineAligned;
 			global::ScanbotSDK.Xamarin.Android.Resource.Styleable.LinearLayoutCompat_android_baselineAlignedChildIndex = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.LinearLayoutCompat_android_baselineAlignedChildIndex;
@@ -1849,8 +2088,10 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Animation.design_bottom_sheet_slide_out = global::scanbotsdkexamplexamarinforms.Droid.Resource.Animation.design_bottom_sheet_slide_out;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Animation.design_snackbar_in = global::scanbotsdkexamplexamarinforms.Droid.Resource.Animation.design_snackbar_in;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Animation.design_snackbar_out = global::scanbotsdkexamplexamarinforms.Droid.Resource.Animation.design_snackbar_out;
-			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Animation.tooltip_enter = global::scanbotsdkexamplexamarinforms.Droid.Resource.Animation.tooltip_enter;
-			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Animation.tooltip_exit = global::scanbotsdkexamplexamarinforms.Droid.Resource.Animation.tooltip_exit;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Animation.EnterFromLeft = global::scanbotsdkexamplexamarinforms.Droid.Resource.Animation.EnterFromLeft;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Animation.EnterFromRight = global::scanbotsdkexamplexamarinforms.Droid.Resource.Animation.EnterFromRight;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Animation.ExitToLeft = global::scanbotsdkexamplexamarinforms.Droid.Resource.Animation.ExitToLeft;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Animation.ExitToRight = global::scanbotsdkexamplexamarinforms.Droid.Resource.Animation.ExitToRight;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Animator.design_appbar_state_list_animator = global::scanbotsdkexamplexamarinforms.Droid.Resource.Animator.design_appbar_state_list_animator;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Array.document_types = global::scanbotsdkexamplexamarinforms.Droid.Resource.Array.document_types;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Attribute.actionBarDivider = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.actionBarDivider;
@@ -1914,6 +2155,8 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Attribute.barLength = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.barLength;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Attribute.barcode_camera_overlay_color = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.barcode_camera_overlay_color;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Attribute.barcode_camera_overlay_stroke_color = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.barcode_camera_overlay_stroke_color;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Attribute.barrierAllowsGoneWidgets = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.barrierAllowsGoneWidgets;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Attribute.barrierDirection = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.barrierDirection;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Attribute.behavior_autoHide = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.behavior_autoHide;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Attribute.behavior_hideable = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.behavior_hideable;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Attribute.behavior_overlapTop = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.behavior_overlapTop;
@@ -1951,6 +2194,7 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Attribute.cardMaxElevation = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.cardMaxElevation;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Attribute.cardPreventCornerOverlap = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.cardPreventCornerOverlap;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Attribute.cardUseCompatPadding = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.cardUseCompatPadding;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Attribute.chainUseRtl = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.chainUseRtl;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Attribute.checkboxStyle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.checkboxStyle;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Attribute.checkedTextViewStyle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.checkedTextViewStyle;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Attribute.closeIcon = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.closeIcon;
@@ -1971,6 +2215,9 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Attribute.colorPrimaryDark = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.colorPrimaryDark;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Attribute.colorSwitchThumbNormal = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.colorSwitchThumbNormal;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Attribute.commitIcon = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.commitIcon;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Attribute.constraintSet = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.constraintSet;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Attribute.constraint_referenced_ids = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.constraint_referenced_ids;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Attribute.content = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.content;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Attribute.contentDescription = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.contentDescription;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Attribute.contentInsetEnd = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.contentInsetEnd;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Attribute.contentInsetEndWithActions = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.contentInsetEndWithActions;
@@ -2030,6 +2277,7 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Attribute.edit_polygon_toolbar_save_btn_text = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.edit_polygon_toolbar_save_btn_text;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Attribute.edit_polygon_toolbar_text_color = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.edit_polygon_toolbar_text_color;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Attribute.elevation = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.elevation;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Attribute.emptyVisibility = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.emptyVisibility;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Attribute.errorEnabled = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.errorEnabled;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Attribute.errorTextAppearance = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.errorTextAppearance;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Attribute.expandActivityOverflowButtonDrawable = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.expandActivityOverflowButtonDrawable;
@@ -2095,9 +2343,59 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Attribute.layout_behavior = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.layout_behavior;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Attribute.layout_collapseMode = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.layout_collapseMode;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Attribute.layout_collapseParallaxMultiplier = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.layout_collapseParallaxMultiplier;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Attribute.layout_constrainedHeight = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.layout_constrainedHeight;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Attribute.layout_constrainedWidth = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.layout_constrainedWidth;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Attribute.layout_constraintBaseline_creator = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.layout_constraintBaseline_creator;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Attribute.layout_constraintBaseline_toBaselineOf = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.layout_constraintBaseline_toBaselineOf;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Attribute.layout_constraintBottom_creator = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.layout_constraintBottom_creator;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Attribute.layout_constraintBottom_toBottomOf = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.layout_constraintBottom_toBottomOf;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Attribute.layout_constraintBottom_toTopOf = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.layout_constraintBottom_toTopOf;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Attribute.layout_constraintCircle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.layout_constraintCircle;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Attribute.layout_constraintCircleAngle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.layout_constraintCircleAngle;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Attribute.layout_constraintCircleRadius = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.layout_constraintCircleRadius;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Attribute.layout_constraintDimensionRatio = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.layout_constraintDimensionRatio;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Attribute.layout_constraintEnd_toEndOf = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.layout_constraintEnd_toEndOf;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Attribute.layout_constraintEnd_toStartOf = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.layout_constraintEnd_toStartOf;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Attribute.layout_constraintGuide_begin = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.layout_constraintGuide_begin;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Attribute.layout_constraintGuide_end = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.layout_constraintGuide_end;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Attribute.layout_constraintGuide_percent = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.layout_constraintGuide_percent;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Attribute.layout_constraintHeight_default = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.layout_constraintHeight_default;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Attribute.layout_constraintHeight_max = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.layout_constraintHeight_max;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Attribute.layout_constraintHeight_min = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.layout_constraintHeight_min;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Attribute.layout_constraintHeight_percent = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.layout_constraintHeight_percent;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Attribute.layout_constraintHorizontal_bias = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.layout_constraintHorizontal_bias;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Attribute.layout_constraintHorizontal_chainStyle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.layout_constraintHorizontal_chainStyle;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Attribute.layout_constraintHorizontal_weight = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.layout_constraintHorizontal_weight;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Attribute.layout_constraintLeft_creator = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.layout_constraintLeft_creator;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Attribute.layout_constraintLeft_toLeftOf = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.layout_constraintLeft_toLeftOf;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Attribute.layout_constraintLeft_toRightOf = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.layout_constraintLeft_toRightOf;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Attribute.layout_constraintRight_creator = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.layout_constraintRight_creator;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Attribute.layout_constraintRight_toLeftOf = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.layout_constraintRight_toLeftOf;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Attribute.layout_constraintRight_toRightOf = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.layout_constraintRight_toRightOf;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Attribute.layout_constraintStart_toEndOf = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.layout_constraintStart_toEndOf;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Attribute.layout_constraintStart_toStartOf = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.layout_constraintStart_toStartOf;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Attribute.layout_constraintTop_creator = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.layout_constraintTop_creator;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Attribute.layout_constraintTop_toBottomOf = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.layout_constraintTop_toBottomOf;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Attribute.layout_constraintTop_toTopOf = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.layout_constraintTop_toTopOf;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Attribute.layout_constraintVertical_bias = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.layout_constraintVertical_bias;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Attribute.layout_constraintVertical_chainStyle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.layout_constraintVertical_chainStyle;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Attribute.layout_constraintVertical_weight = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.layout_constraintVertical_weight;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Attribute.layout_constraintWidth_default = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.layout_constraintWidth_default;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Attribute.layout_constraintWidth_max = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.layout_constraintWidth_max;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Attribute.layout_constraintWidth_min = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.layout_constraintWidth_min;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Attribute.layout_constraintWidth_percent = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.layout_constraintWidth_percent;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Attribute.layout_dodgeInsetEdges = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.layout_dodgeInsetEdges;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Attribute.layout_editor_absoluteX = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.layout_editor_absoluteX;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Attribute.layout_editor_absoluteY = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.layout_editor_absoluteY;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Attribute.layout_goneMarginBottom = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.layout_goneMarginBottom;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Attribute.layout_goneMarginEnd = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.layout_goneMarginEnd;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Attribute.layout_goneMarginLeft = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.layout_goneMarginLeft;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Attribute.layout_goneMarginRight = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.layout_goneMarginRight;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Attribute.layout_goneMarginStart = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.layout_goneMarginStart;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Attribute.layout_goneMarginTop = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.layout_goneMarginTop;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Attribute.layout_insetEdge = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.layout_insetEdge;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Attribute.layout_keyline = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.layout_keyline;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Attribute.layout_optimizationLevel = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.layout_optimizationLevel;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Attribute.layout_scrollFlags = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.layout_scrollFlags;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Attribute.layout_scrollInterpolator = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.layout_scrollInterpolator;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Attribute.listChoiceBackgroundIndicator = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.listChoiceBackgroundIndicator;
@@ -2146,6 +2444,7 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Attribute.navigationMode = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.navigationMode;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Attribute.nothing_detected_hint = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.nothing_detected_hint;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Attribute.numericModifiers = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.numericModifiers;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Attribute.off_center_hint = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.off_center_hint;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Attribute.overlapAnchor = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.overlapAnchor;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Attribute.overlay_color = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.overlay_color;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Attribute.overlay_stroke_color = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.overlay_stroke_color;
@@ -2250,7 +2549,6 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Attribute.textAppearanceSearchResultTitle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.textAppearanceSearchResultTitle;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Attribute.textAppearanceSmallPopupMenu = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.textAppearanceSmallPopupMenu;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Attribute.textColorAlertDialogListItem = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.textColorAlertDialogListItem;
-			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Attribute.textColorError = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.textColorError;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Attribute.textColorSearchUrl = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.textColorSearchUrl;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Attribute.theme = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.theme;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Attribute.thickness = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.thickness;
@@ -2308,8 +2606,6 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Boolean.abc_action_bar_embed_tabs = global::scanbotsdkexamplexamarinforms.Droid.Resource.Boolean.abc_action_bar_embed_tabs;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Boolean.abc_allow_stacked_button_bar = global::scanbotsdkexamplexamarinforms.Droid.Resource.Boolean.abc_allow_stacked_button_bar;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Boolean.abc_config_actionMenuItemAllCaps = global::scanbotsdkexamplexamarinforms.Droid.Resource.Boolean.abc_config_actionMenuItemAllCaps;
-			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Boolean.abc_config_closeDialogWhenTouchOutside = global::scanbotsdkexamplexamarinforms.Droid.Resource.Boolean.abc_config_closeDialogWhenTouchOutside;
-			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Boolean.abc_config_showMenuShortcutsWhenKeyboardPresent = global::scanbotsdkexamplexamarinforms.Droid.Resource.Boolean.abc_config_showMenuShortcutsWhenKeyboardPresent;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Color.abc_background_cache_hint_selector_material_dark = global::scanbotsdkexamplexamarinforms.Droid.Resource.Color.abc_background_cache_hint_selector_material_dark;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Color.abc_background_cache_hint_selector_material_light = global::scanbotsdkexamplexamarinforms.Droid.Resource.Color.abc_background_cache_hint_selector_material_light;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Color.abc_btn_colored_borderless_text_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.Color.abc_btn_colored_borderless_text_material;
@@ -2381,7 +2677,6 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Color.dim_foreground_material_dark = global::scanbotsdkexamplexamarinforms.Droid.Resource.Color.dim_foreground_material_dark;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Color.dim_foreground_material_light = global::scanbotsdkexamplexamarinforms.Droid.Resource.Color.dim_foreground_material_light;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Color.edit_polygon_bg = global::scanbotsdkexamplexamarinforms.Droid.Resource.Color.edit_polygon_bg;
-			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Color.error_color_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.Color.error_color_material;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Color.foreground_material_dark = global::scanbotsdkexamplexamarinforms.Droid.Resource.Color.foreground_material_dark;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Color.foreground_material_light = global::scanbotsdkexamplexamarinforms.Droid.Resource.Color.foreground_material_light;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Color.highlighted_text_material_dark = global::scanbotsdkexamplexamarinforms.Droid.Resource.Color.highlighted_text_material_dark;
@@ -2428,6 +2723,7 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Color.ui_polygonStrokeColor = global::scanbotsdkexamplexamarinforms.Droid.Resource.Color.ui_polygonStrokeColor;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Color.ui_scanning_manual_tint = global::scanbotsdkexamplexamarinforms.Droid.Resource.Color.ui_scanning_manual_tint;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Color.ui_shutterButtonColor = global::scanbotsdkexamplexamarinforms.Droid.Resource.Color.ui_shutterButtonColor;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Color.workflow_camera_hint_bg = global::scanbotsdkexamplexamarinforms.Droid.Resource.Color.workflow_camera_hint_bg;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Dimension.abc_action_bar_content_inset_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.abc_action_bar_content_inset_material;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Dimension.abc_action_bar_content_inset_with_nav = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.abc_action_bar_content_inset_with_nav;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Dimension.abc_action_bar_default_height_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.abc_action_bar_default_height_material;
@@ -2437,7 +2733,6 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Dimension.abc_action_bar_icon_vertical_padding_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.abc_action_bar_icon_vertical_padding_material;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Dimension.abc_action_bar_overflow_padding_end_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.abc_action_bar_overflow_padding_end_material;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Dimension.abc_action_bar_overflow_padding_start_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.abc_action_bar_overflow_padding_start_material;
-			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Dimension.abc_action_bar_progress_bar_size = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.abc_action_bar_progress_bar_size;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Dimension.abc_action_bar_stacked_max_height = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.abc_action_bar_stacked_max_height;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Dimension.abc_action_bar_stacked_tab_max_width = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.abc_action_bar_stacked_tab_max_width;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Dimension.abc_action_bar_subtitle_bottom_margin_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.abc_action_bar_subtitle_bottom_margin_material;
@@ -2512,7 +2807,10 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Dimension.compat_button_padding_vertical_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.compat_button_padding_vertical_material;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Dimension.compat_control_corner_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.compat_control_corner_material;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Dimension.default_finder_corner_radius = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.default_finder_corner_radius;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Dimension.default_finder_inner_threshold = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.default_finder_inner_threshold;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Dimension.default_finder_outer_threshold = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.default_finder_outer_threshold;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Dimension.default_finder_stroke_width = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.default_finder_stroke_width;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Dimension.default_hint_corner_radius = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.default_hint_corner_radius;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Dimension.default_min_finder_padding = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.default_min_finder_padding;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Dimension.design_appbar_elevation = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.design_appbar_elevation;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Dimension.design_bottom_navigation_active_item_max_width = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.design_bottom_navigation_active_item_max_width;
@@ -2941,6 +3239,7 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Drawable.ui_scanning_flash_on = global::scanbotsdkexamplexamarinforms.Droid.Resource.Drawable.ui_scanning_flash_on;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Drawable.ui_scanning_manual = global::scanbotsdkexamplexamarinforms.Droid.Resource.Drawable.ui_scanning_manual;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Drawable.ui_scanning_no_permission = global::scanbotsdkexamplexamarinforms.Droid.Resource.Drawable.ui_scanning_no_permission;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Drawable.workflow_camera_hint_bg = global::scanbotsdkexamplexamarinforms.Droid.Resource.Drawable.workflow_camera_hint_bg;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Id.ALT = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.ALT;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Id.CTRL = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.CTRL;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Id.FUNCTION = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.FUNCTION;
@@ -2978,10 +3277,13 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Id.automatic_text = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.automatic_text;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Id.backgroundView = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.backgroundView;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Id.barcodeCameraView = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.barcodeCameraView;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Id.barrier = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.barrier;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Id.beginning = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.beginning;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Id.blocking = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.blocking;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Id.bottom = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.bottom;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Id.bottomBar = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.bottomBar;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Id.bottomtab_navarea = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.bottomtab_navarea;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Id.bottomtab_tabbar = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.bottomtab_tabbar;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Id.buttonPanel = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.buttonPanel;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Id.cameraHolder = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.cameraHolder;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Id.cameraPermissionView = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.cameraPermissionView;
@@ -2996,6 +3298,7 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Id.center = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.center;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Id.center_horizontal = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.center_horizontal;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Id.center_vertical = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.center_vertical;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Id.chains = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.chains;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Id.checkbox = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.checkbox;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Id.chronometer = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.chronometer;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Id.clip_horizontal = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.clip_horizontal;
@@ -3014,6 +3317,8 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Id.design_menu_item_text = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.design_menu_item_text;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Id.design_navigation_view = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.design_navigation_view;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Id.detect = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.detect;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Id.dimensions = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.dimensions;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Id.direct = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.direct;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Id.disableHome = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.disableHome;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Id.done = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.done;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Id.edit_query = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.edit_query;
@@ -3029,14 +3334,19 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Id.fill_horizontal = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.fill_horizontal;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Id.fill_vertical = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.fill_vertical;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Id.finder_description = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.finder_description;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Id.finder_message = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.finder_message;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Id.finder_overlay = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.finder_overlay;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Id.finder_title = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.finder_title;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Id.@fixed = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.@fixed;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Id.flashBtn = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.flashBtn;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Id.flash_icon = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.flash_icon;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Id.flash_text_view = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.flash_text_view;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Id.flyoutcontent_appbar = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.flyoutcontent_appbar;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Id.flyoutcontent_recycler = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.flyoutcontent_recycler;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Id.forever = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.forever;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Id.fragmentContainer = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.fragmentContainer;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Id.ghost_view = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.ghost_view;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Id.gone = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.gone;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Id.hint = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.hint;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Id.home = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.home;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Id.homeAsUp = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.homeAsUp;
@@ -3045,6 +3355,8 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Id.ifRoom = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.ifRoom;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Id.image = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.image;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Id.info = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.info;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Id.info_bottom_bar = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.info_bottom_bar;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Id.invisible = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.invisible;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Id.italic = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.italic;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Id.item_touch_helper_previous_elevation = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.item_touch_helper_previous_elevation;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Id.largeLabel = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.largeLabel;
@@ -3054,6 +3366,10 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Id.listMode = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.listMode;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Id.list_item = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.list_item;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Id.magnifier = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.magnifier;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Id.main_appbar = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.main_appbar;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Id.main_scrollview = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.main_scrollview;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Id.main_tablayout = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.main_tablayout;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Id.main_toolbar = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.main_toolbar;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Id.masked = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.masked;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Id.media_actions = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.media_actions;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Id.message = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.message;
@@ -3096,9 +3412,12 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Id.notification_background = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.notification_background;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Id.notification_main_column = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.notification_main_column;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Id.notification_main_column_container = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.notification_main_column_container;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Id.packed = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.packed;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Id.parallax = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.parallax;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Id.parent = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.parent;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Id.parentPanel = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.parentPanel;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Id.parent_matrix = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.parent_matrix;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Id.percent = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.percent;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Id.pin = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.pin;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Id.polygonView = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.polygonView;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Id.progress = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.progress;
@@ -3133,6 +3452,9 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Id.search_src_text = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.search_src_text;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Id.search_voice_btn = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.search_voice_btn;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Id.select_dialog_listview = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.select_dialog_listview;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Id.shellcontent_appbar = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.shellcontent_appbar;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Id.shellcontent_scrollview = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.shellcontent_scrollview;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Id.shellcontent_toolbar = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.shellcontent_toolbar;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Id.shortcut = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.shortcut;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Id.showCustom = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.showCustom;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Id.showHome = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.showHome;
@@ -3144,9 +3466,12 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Id.snap = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.snap;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Id.spacer = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.spacer;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Id.split_action_bar = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.split_action_bar;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Id.spread = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.spread;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Id.spread_inside = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.spread_inside;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Id.src_atop = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.src_atop;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Id.src_in = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.src_in;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Id.src_over = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.src_over;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Id.standard = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.standard;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Id.start = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.start;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Id.startup_massage = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.startup_massage;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Id.status_bar_latest_event_content = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.status_bar_latest_event_content;
@@ -3186,6 +3511,8 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Id.visible = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.visible;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Id.volume_item_container = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.volume_item_container;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Id.withText = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.withText;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Id.workflowCameraView = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.workflowCameraView;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Id.wrap = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.wrap;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Id.wrap_content = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.wrap_content;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Integer.abc_config_activityDefaultDur = global::scanbotsdkexamplexamarinforms.Droid.Resource.Integer.abc_config_activityDefaultDur;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Integer.abc_config_activityShortDur = global::scanbotsdkexamplexamarinforms.Droid.Resource.Integer.abc_config_activityShortDur;
@@ -3232,7 +3559,9 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Layout.activity_camera = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.activity_camera;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Layout.activity_layout = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.activity_layout;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Layout.activity_mrz_camera = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.activity_mrz_camera;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Layout.activity_workflow_camera = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.activity_workflow_camera;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Layout.barcode_camera_view = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.barcode_camera_view;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Layout.BottomTabLayout = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.BottomTabLayout;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Layout.camera_permission_placeholder = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.camera_permission_placeholder;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Layout.camera_view = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.camera_view;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Layout.design_bottom_navigation_item = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.design_bottom_navigation_item;
@@ -3249,10 +3578,12 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Layout.design_navigation_menu = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.design_navigation_menu;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Layout.design_navigation_menu_item = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.design_navigation_menu_item;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Layout.design_text_input_password_icon = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.design_text_input_password_icon;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Layout.FlyoutContent = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.FlyoutContent;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Layout.fragment_barcode_camera = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.fragment_barcode_camera;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Layout.fragment_camera = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.fragment_camera;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Layout.fragment_edit_polygon = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.fragment_edit_polygon;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Layout.fragment_mrz_camera = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.fragment_mrz_camera;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Layout.fragment_workflow_camera = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.fragment_workflow_camera;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Layout.mr_chooser_dialog = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.mr_chooser_dialog;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Layout.mr_chooser_list_item = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.mr_chooser_list_item;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Layout.mr_controller_material_dialog_b = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.mr_controller_material_dialog_b;
@@ -3276,12 +3607,14 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Layout.notification_template_part_chronometer = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.notification_template_part_chronometer;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Layout.notification_template_part_time = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.notification_template_part_time;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Layout.polygon_view = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.polygon_view;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Layout.RootLayout = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.RootLayout;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Layout.select_dialog_item_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.select_dialog_item_material;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Layout.select_dialog_multichoice_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.select_dialog_multichoice_material;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Layout.select_dialog_singlechoice_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.select_dialog_singlechoice_material;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Layout.ShellContent = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.ShellContent;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Layout.shutter_button = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.shutter_button;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Layout.support_simple_spinner_dropdown_item = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.support_simple_spinner_dropdown_item;
-			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Layout.tooltip = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.tooltip;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Layout.workflow_camera_view = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.workflow_camera_view;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Plurals.snapped_pages_count = global::scanbotsdkexamplexamarinforms.Droid.Resource.Plurals.snapped_pages_count;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Raw.bing = global::scanbotsdkexamplexamarinforms.Droid.Resource.Raw.bing;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Raw.bleep = global::scanbotsdkexamplexamarinforms.Droid.Resource.Raw.bleep;
@@ -3362,6 +3695,7 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.String.mrz_finder_description = global::scanbotsdkexamplexamarinforms.Droid.Resource.String.mrz_finder_description;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.String.multi_page_option = global::scanbotsdkexamplexamarinforms.Droid.Resource.String.multi_page_option;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.String.nothing_detected_hint = global::scanbotsdkexamplexamarinforms.Droid.Resource.String.nothing_detected_hint;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.String.off_center_hint = global::scanbotsdkexamplexamarinforms.Droid.Resource.String.off_center_hint;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.String.password_toggle_content_description = global::scanbotsdkexamplexamarinforms.Droid.Resource.String.password_toggle_content_description;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.String.path_password_eye = global::scanbotsdkexamplexamarinforms.Droid.Resource.String.path_password_eye;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.String.path_password_eye_mask_strike_through = global::scanbotsdkexamplexamarinforms.Droid.Resource.String.path_password_eye_mask_strike_through;
@@ -3371,6 +3705,7 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.String.reset_to_default = global::scanbotsdkexamplexamarinforms.Droid.Resource.String.reset_to_default;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.String.rotate = global::scanbotsdkexamplexamarinforms.Droid.Resource.String.rotate;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.String.search_menu_title = global::scanbotsdkexamplexamarinforms.Droid.Resource.String.search_menu_title;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.String.select_picture_title = global::scanbotsdkexamplexamarinforms.Droid.Resource.String.select_picture_title;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.String.status_bar_notification_info_overflow = global::scanbotsdkexamplexamarinforms.Droid.Resource.String.status_bar_notification_info_overflow;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.String.support_email_template = global::scanbotsdkexamplexamarinforms.Droid.Resource.String.support_email_template;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.String.too_dark_hint = global::scanbotsdkexamplexamarinforms.Droid.Resource.String.too_dark_hint;
@@ -3459,18 +3794,11 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog_Alert = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog_Alert;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Light = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Light;
-			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Style.Base_V11_Theme_AppCompat_Dialog = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_V11_Theme_AppCompat_Dialog;
-			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Style.Base_V11_Theme_AppCompat_Light_Dialog = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_V11_Theme_AppCompat_Light_Dialog;
-			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Style.Base_V11_ThemeOverlay_AppCompat_Dialog = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_V11_ThemeOverlay_AppCompat_Dialog;
-			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Style.Base_V12_Widget_AppCompat_AutoCompleteTextView = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_V12_Widget_AppCompat_AutoCompleteTextView;
-			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Style.Base_V12_Widget_AppCompat_EditText = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_V12_Widget_AppCompat_EditText;
-			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Style.Base_V14_Widget_Design_AppBarLayout = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_V14_Widget_Design_AppBarLayout;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Style.Base_V21_Theme_AppCompat = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_V21_Theme_AppCompat;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Style.Base_V21_Theme_AppCompat_Dialog = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_V21_Theme_AppCompat_Dialog;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Style.Base_V21_Theme_AppCompat_Light = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_V21_Theme_AppCompat_Light;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Style.Base_V21_ThemeOverlay_AppCompat_Dialog = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_V21_ThemeOverlay_AppCompat_Dialog;
-			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Style.Base_V21_Widget_Design_AppBarLayout = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_V21_Widget_Design_AppBarLayout;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Style.Base_V22_Theme_AppCompat = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_V22_Theme_AppCompat;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Style.Base_V22_Theme_AppCompat_Light = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_V22_Theme_AppCompat_Light;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Style.Base_V23_Theme_AppCompat = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_V23_Theme_AppCompat;
@@ -3478,7 +3806,6 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Style.Base_V26_Theme_AppCompat = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_V26_Theme_AppCompat;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Style.Base_V26_Theme_AppCompat_Light = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_V26_Theme_AppCompat_Light;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Style.Base_V26_Widget_AppCompat_Toolbar = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_V26_Widget_AppCompat_Toolbar;
-			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Style.Base_V26_Widget_Design_AppBarLayout = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_V26_Widget_Design_AppBarLayout;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Style.Base_V7_Theme_AppCompat = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_V7_Theme_AppCompat;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Style.Base_V7_Theme_AppCompat_Dialog = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_V7_Theme_AppCompat_Dialog;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Style.Base_V7_Theme_AppCompat_Light = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_V7_Theme_AppCompat_Light;
@@ -3544,7 +3871,6 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Style.Base_Widget_AppCompat_Toolbar = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_Widget_AppCompat_Toolbar;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation;
-			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Style.Base_Widget_Design_AppBarLayout = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_Widget_Design_AppBarLayout;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Style.Base_Widget_Design_TabLayout = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_Widget_Design_TabLayout;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Style.CardView = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.CardView;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Style.CardView_Dark = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.CardView_Dark;
@@ -3554,10 +3880,6 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Style.Platform_ThemeOverlay_AppCompat = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Style.Platform_ThemeOverlay_AppCompat_Dark = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat_Dark;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Style.Platform_ThemeOverlay_AppCompat_Light = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat_Light;
-			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Style.Platform_V11_AppCompat = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Platform_V11_AppCompat;
-			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Style.Platform_V11_AppCompat_Light = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Platform_V11_AppCompat_Light;
-			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Style.Platform_V14_AppCompat = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Platform_V14_AppCompat;
-			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Style.Platform_V14_AppCompat_Light = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Platform_V14_AppCompat_Light;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Style.Platform_V21_AppCompat = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Platform_V21_AppCompat;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Style.Platform_V21_AppCompat_Light = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Platform_V21_AppCompat_Light;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Style.Platform_V25_AppCompat = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Platform_V25_AppCompat;
@@ -3770,7 +4092,6 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Style.Widget_Design_BottomNavigationView = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Widget_Design_BottomNavigationView;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Style.Widget_Design_BottomSheet_Modal = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Widget_Design_BottomSheet_Modal;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Style.Widget_Design_CollapsingToolbar = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Widget_Design_CollapsingToolbar;
-			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Style.Widget_Design_CoordinatorLayout = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Widget_Design_CoordinatorLayout;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Style.Widget_Design_FloatingActionButton = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Widget_Design_FloatingActionButton;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Style.Widget_Design_NavigationView = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Widget_Design_NavigationView;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Style.Widget_Design_ScrimInsetsFrameLayout = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Widget_Design_ScrimInsetsFrameLayout;
@@ -4061,6 +4382,143 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.CompoundButton_android_button = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.CompoundButton_android_button;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.CompoundButton_buttonTint = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.CompoundButton_buttonTint;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.CompoundButton_buttonTintMode = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.CompoundButton_buttonTintMode;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintLayout_Layout = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintLayout_Layout;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintLayout_Layout_android_maxHeight = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintLayout_Layout_android_maxHeight;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintLayout_Layout_android_maxWidth = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintLayout_Layout_android_maxWidth;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintLayout_Layout_android_minHeight = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintLayout_Layout_android_minHeight;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintLayout_Layout_android_minWidth = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintLayout_Layout_android_minWidth;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintLayout_Layout_android_orientation = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintLayout_Layout_android_orientation;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintLayout_Layout_barrierAllowsGoneWidgets = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintLayout_Layout_barrierAllowsGoneWidgets;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintLayout_Layout_barrierDirection = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintLayout_Layout_barrierDirection;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintLayout_Layout_chainUseRtl = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintLayout_Layout_chainUseRtl;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintLayout_Layout_constraintSet = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintLayout_Layout_constraintSet;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintLayout_Layout_constraint_referenced_ids = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintLayout_Layout_constraint_referenced_ids;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintLayout_Layout_layout_constrainedHeight = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintLayout_Layout_layout_constrainedHeight;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintLayout_Layout_layout_constrainedWidth = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintLayout_Layout_layout_constrainedWidth;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintLayout_Layout_layout_constraintBaseline_creator = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintLayout_Layout_layout_constraintBaseline_creator;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintLayout_Layout_layout_constraintBaseline_toBaselineOf = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintLayout_Layout_layout_constraintBaseline_toBaselineOf;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintLayout_Layout_layout_constraintBottom_creator = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintLayout_Layout_layout_constraintBottom_creator;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintLayout_Layout_layout_constraintBottom_toBottomOf = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintLayout_Layout_layout_constraintBottom_toBottomOf;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintLayout_Layout_layout_constraintBottom_toTopOf = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintLayout_Layout_layout_constraintBottom_toTopOf;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintLayout_Layout_layout_constraintCircle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintLayout_Layout_layout_constraintCircle;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintLayout_Layout_layout_constraintCircleAngle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintLayout_Layout_layout_constraintCircleAngle;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintLayout_Layout_layout_constraintCircleRadius = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintLayout_Layout_layout_constraintCircleRadius;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintLayout_Layout_layout_constraintDimensionRatio = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintLayout_Layout_layout_constraintDimensionRatio;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintLayout_Layout_layout_constraintEnd_toEndOf = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintLayout_Layout_layout_constraintEnd_toEndOf;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintLayout_Layout_layout_constraintEnd_toStartOf = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintLayout_Layout_layout_constraintEnd_toStartOf;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintLayout_Layout_layout_constraintGuide_begin = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintLayout_Layout_layout_constraintGuide_begin;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintLayout_Layout_layout_constraintGuide_end = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintLayout_Layout_layout_constraintGuide_end;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintLayout_Layout_layout_constraintGuide_percent = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintLayout_Layout_layout_constraintGuide_percent;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintLayout_Layout_layout_constraintHeight_default = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintLayout_Layout_layout_constraintHeight_default;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintLayout_Layout_layout_constraintHeight_max = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintLayout_Layout_layout_constraintHeight_max;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintLayout_Layout_layout_constraintHeight_min = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintLayout_Layout_layout_constraintHeight_min;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintLayout_Layout_layout_constraintHeight_percent = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintLayout_Layout_layout_constraintHeight_percent;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintLayout_Layout_layout_constraintHorizontal_bias = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintLayout_Layout_layout_constraintHorizontal_bias;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintLayout_Layout_layout_constraintHorizontal_chainStyle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintLayout_Layout_layout_constraintHorizontal_chainStyle;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintLayout_Layout_layout_constraintHorizontal_weight = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintLayout_Layout_layout_constraintHorizontal_weight;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintLayout_Layout_layout_constraintLeft_creator = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintLayout_Layout_layout_constraintLeft_creator;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintLayout_Layout_layout_constraintLeft_toLeftOf = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintLayout_Layout_layout_constraintLeft_toLeftOf;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintLayout_Layout_layout_constraintLeft_toRightOf = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintLayout_Layout_layout_constraintLeft_toRightOf;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintLayout_Layout_layout_constraintRight_creator = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintLayout_Layout_layout_constraintRight_creator;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintLayout_Layout_layout_constraintRight_toLeftOf = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintLayout_Layout_layout_constraintRight_toLeftOf;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintLayout_Layout_layout_constraintRight_toRightOf = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintLayout_Layout_layout_constraintRight_toRightOf;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintLayout_Layout_layout_constraintStart_toEndOf = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintLayout_Layout_layout_constraintStart_toEndOf;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintLayout_Layout_layout_constraintStart_toStartOf = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintLayout_Layout_layout_constraintStart_toStartOf;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintLayout_Layout_layout_constraintTop_creator = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintLayout_Layout_layout_constraintTop_creator;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintLayout_Layout_layout_constraintTop_toBottomOf = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintLayout_Layout_layout_constraintTop_toBottomOf;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintLayout_Layout_layout_constraintTop_toTopOf = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintLayout_Layout_layout_constraintTop_toTopOf;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintLayout_Layout_layout_constraintVertical_bias = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintLayout_Layout_layout_constraintVertical_bias;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintLayout_Layout_layout_constraintVertical_chainStyle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintLayout_Layout_layout_constraintVertical_chainStyle;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintLayout_Layout_layout_constraintVertical_weight = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintLayout_Layout_layout_constraintVertical_weight;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintLayout_Layout_layout_constraintWidth_default = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintLayout_Layout_layout_constraintWidth_default;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintLayout_Layout_layout_constraintWidth_max = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintLayout_Layout_layout_constraintWidth_max;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintLayout_Layout_layout_constraintWidth_min = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintLayout_Layout_layout_constraintWidth_min;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintLayout_Layout_layout_constraintWidth_percent = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintLayout_Layout_layout_constraintWidth_percent;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintLayout_Layout_layout_editor_absoluteX = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintLayout_Layout_layout_editor_absoluteX;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintLayout_Layout_layout_editor_absoluteY = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintLayout_Layout_layout_editor_absoluteY;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintLayout_Layout_layout_goneMarginBottom = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintLayout_Layout_layout_goneMarginBottom;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintLayout_Layout_layout_goneMarginEnd = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintLayout_Layout_layout_goneMarginEnd;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintLayout_Layout_layout_goneMarginLeft = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintLayout_Layout_layout_goneMarginLeft;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintLayout_Layout_layout_goneMarginRight = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintLayout_Layout_layout_goneMarginRight;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintLayout_Layout_layout_goneMarginStart = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintLayout_Layout_layout_goneMarginStart;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintLayout_Layout_layout_goneMarginTop = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintLayout_Layout_layout_goneMarginTop;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintLayout_Layout_layout_optimizationLevel = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintLayout_Layout_layout_optimizationLevel;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintLayout_placeholder = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintLayout_placeholder;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintLayout_placeholder_content = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintLayout_placeholder_content;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintLayout_placeholder_emptyVisibility = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintLayout_placeholder_emptyVisibility;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintSet = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintSet_android_alpha = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_android_alpha;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintSet_android_elevation = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_android_elevation;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintSet_android_id = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_android_id;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintSet_android_layout_height = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_android_layout_height;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintSet_android_layout_marginBottom = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_android_layout_marginBottom;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintSet_android_layout_marginEnd = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_android_layout_marginEnd;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintSet_android_layout_marginLeft = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_android_layout_marginLeft;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintSet_android_layout_marginRight = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_android_layout_marginRight;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintSet_android_layout_marginStart = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_android_layout_marginStart;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintSet_android_layout_marginTop = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_android_layout_marginTop;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintSet_android_layout_width = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_android_layout_width;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintSet_android_orientation = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_android_orientation;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintSet_android_rotation = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_android_rotation;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintSet_android_rotationX = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_android_rotationX;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintSet_android_rotationY = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_android_rotationY;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintSet_android_scaleX = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_android_scaleX;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintSet_android_scaleY = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_android_scaleY;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintSet_android_transformPivotX = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_android_transformPivotX;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintSet_android_transformPivotY = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_android_transformPivotY;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintSet_android_translationX = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_android_translationX;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintSet_android_translationY = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_android_translationY;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintSet_android_translationZ = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_android_translationZ;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintSet_android_visibility = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_android_visibility;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintSet_layout_constrainedHeight = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_layout_constrainedHeight;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintSet_layout_constrainedWidth = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_layout_constrainedWidth;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintSet_layout_constraintBaseline_creator = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_layout_constraintBaseline_creator;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintSet_layout_constraintBaseline_toBaselineOf = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_layout_constraintBaseline_toBaselineOf;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintSet_layout_constraintBottom_creator = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_layout_constraintBottom_creator;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintSet_layout_constraintBottom_toBottomOf = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_layout_constraintBottom_toBottomOf;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintSet_layout_constraintBottom_toTopOf = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_layout_constraintBottom_toTopOf;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintSet_layout_constraintCircle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_layout_constraintCircle;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintSet_layout_constraintCircleAngle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_layout_constraintCircleAngle;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintSet_layout_constraintCircleRadius = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_layout_constraintCircleRadius;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintSet_layout_constraintDimensionRatio = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_layout_constraintDimensionRatio;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintSet_layout_constraintEnd_toEndOf = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_layout_constraintEnd_toEndOf;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintSet_layout_constraintEnd_toStartOf = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_layout_constraintEnd_toStartOf;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintSet_layout_constraintGuide_begin = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_layout_constraintGuide_begin;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintSet_layout_constraintGuide_end = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_layout_constraintGuide_end;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintSet_layout_constraintGuide_percent = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_layout_constraintGuide_percent;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintSet_layout_constraintHeight_default = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_layout_constraintHeight_default;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintSet_layout_constraintHeight_max = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_layout_constraintHeight_max;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintSet_layout_constraintHeight_min = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_layout_constraintHeight_min;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintSet_layout_constraintHeight_percent = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_layout_constraintHeight_percent;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintSet_layout_constraintHorizontal_bias = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_layout_constraintHorizontal_bias;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintSet_layout_constraintHorizontal_chainStyle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_layout_constraintHorizontal_chainStyle;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintSet_layout_constraintHorizontal_weight = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_layout_constraintHorizontal_weight;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintSet_layout_constraintLeft_creator = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_layout_constraintLeft_creator;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintSet_layout_constraintLeft_toLeftOf = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_layout_constraintLeft_toLeftOf;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintSet_layout_constraintLeft_toRightOf = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_layout_constraintLeft_toRightOf;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintSet_layout_constraintRight_creator = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_layout_constraintRight_creator;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintSet_layout_constraintRight_toLeftOf = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_layout_constraintRight_toLeftOf;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintSet_layout_constraintRight_toRightOf = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_layout_constraintRight_toRightOf;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintSet_layout_constraintStart_toEndOf = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_layout_constraintStart_toEndOf;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintSet_layout_constraintStart_toStartOf = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_layout_constraintStart_toStartOf;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintSet_layout_constraintTop_creator = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_layout_constraintTop_creator;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintSet_layout_constraintTop_toBottomOf = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_layout_constraintTop_toBottomOf;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintSet_layout_constraintTop_toTopOf = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_layout_constraintTop_toTopOf;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintSet_layout_constraintVertical_bias = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_layout_constraintVertical_bias;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintSet_layout_constraintVertical_chainStyle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_layout_constraintVertical_chainStyle;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintSet_layout_constraintVertical_weight = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_layout_constraintVertical_weight;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintSet_layout_constraintWidth_default = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_layout_constraintWidth_default;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintSet_layout_constraintWidth_max = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_layout_constraintWidth_max;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintSet_layout_constraintWidth_min = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_layout_constraintWidth_min;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintSet_layout_constraintWidth_percent = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_layout_constraintWidth_percent;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintSet_layout_editor_absoluteX = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_layout_editor_absoluteX;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintSet_layout_editor_absoluteY = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_layout_editor_absoluteY;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintSet_layout_goneMarginBottom = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_layout_goneMarginBottom;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintSet_layout_goneMarginEnd = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_layout_goneMarginEnd;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintSet_layout_goneMarginLeft = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_layout_goneMarginLeft;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintSet_layout_goneMarginRight = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_layout_goneMarginRight;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintSet_layout_goneMarginStart = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_layout_goneMarginStart;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ConstraintSet_layout_goneMarginTop = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ConstraintSet_layout_goneMarginTop;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.CoordinatorLayout = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.CoordinatorLayout;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.CoordinatorLayout_keylines = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.CoordinatorLayout_keylines;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.CoordinatorLayout_statusBarBackground = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.CoordinatorLayout_statusBarBackground;
@@ -4075,7 +4533,6 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.DesignTheme = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.DesignTheme;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.DesignTheme_bottomSheetDialogTheme = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.DesignTheme_bottomSheetDialogTheme;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.DesignTheme_bottomSheetStyle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.DesignTheme_bottomSheetStyle;
-			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.DesignTheme_textColorError = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.DesignTheme_textColorError;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.DrawerArrowToggle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.DrawerArrowToggle;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.DrawerArrowToggle_arrowHeadLength = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.DrawerArrowToggle_arrowHeadLength;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.DrawerArrowToggle_arrowShaftLength = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.DrawerArrowToggle_arrowShaftLength;
@@ -4130,6 +4587,8 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ForegroundLinearLayout_android_foreground = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ForegroundLinearLayout_android_foreground;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ForegroundLinearLayout_android_foregroundGravity = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ForegroundLinearLayout_android_foregroundGravity;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ForegroundLinearLayout_foregroundInsidePadding = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ForegroundLinearLayout_foregroundInsidePadding;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.LinearConstraintLayout = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.LinearConstraintLayout;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.LinearConstraintLayout_android_orientation = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.LinearConstraintLayout_android_orientation;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.LinearLayoutCompat = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.LinearLayoutCompat;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.LinearLayoutCompat_android_baselineAligned = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.LinearLayoutCompat_android_baselineAligned;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.LinearLayoutCompat_android_baselineAlignedChildIndex = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.LinearLayoutCompat_android_baselineAlignedChildIndex;
@@ -4388,7 +4847,1998 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ViewStubCompat_android_id = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ViewStubCompat_android_id;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ViewStubCompat_android_inflatedId = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ViewStubCompat_android_inflatedId;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Styleable.ViewStubCompat_android_layout = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ViewStubCompat_android_layout;
+			global::Xamarin.Forms.Platform.Android.Resource.Animation.abc_fade_in = global::scanbotsdkexamplexamarinforms.Droid.Resource.Animation.abc_fade_in;
+			global::Xamarin.Forms.Platform.Android.Resource.Animation.abc_fade_out = global::scanbotsdkexamplexamarinforms.Droid.Resource.Animation.abc_fade_out;
+			global::Xamarin.Forms.Platform.Android.Resource.Animation.abc_grow_fade_in_from_bottom = global::scanbotsdkexamplexamarinforms.Droid.Resource.Animation.abc_grow_fade_in_from_bottom;
+			global::Xamarin.Forms.Platform.Android.Resource.Animation.abc_popup_enter = global::scanbotsdkexamplexamarinforms.Droid.Resource.Animation.abc_popup_enter;
+			global::Xamarin.Forms.Platform.Android.Resource.Animation.abc_popup_exit = global::scanbotsdkexamplexamarinforms.Droid.Resource.Animation.abc_popup_exit;
+			global::Xamarin.Forms.Platform.Android.Resource.Animation.abc_shrink_fade_out_from_bottom = global::scanbotsdkexamplexamarinforms.Droid.Resource.Animation.abc_shrink_fade_out_from_bottom;
+			global::Xamarin.Forms.Platform.Android.Resource.Animation.abc_slide_in_bottom = global::scanbotsdkexamplexamarinforms.Droid.Resource.Animation.abc_slide_in_bottom;
+			global::Xamarin.Forms.Platform.Android.Resource.Animation.abc_slide_in_top = global::scanbotsdkexamplexamarinforms.Droid.Resource.Animation.abc_slide_in_top;
+			global::Xamarin.Forms.Platform.Android.Resource.Animation.abc_slide_out_bottom = global::scanbotsdkexamplexamarinforms.Droid.Resource.Animation.abc_slide_out_bottom;
+			global::Xamarin.Forms.Platform.Android.Resource.Animation.abc_slide_out_top = global::scanbotsdkexamplexamarinforms.Droid.Resource.Animation.abc_slide_out_top;
+			global::Xamarin.Forms.Platform.Android.Resource.Animation.design_bottom_sheet_slide_in = global::scanbotsdkexamplexamarinforms.Droid.Resource.Animation.design_bottom_sheet_slide_in;
+			global::Xamarin.Forms.Platform.Android.Resource.Animation.design_bottom_sheet_slide_out = global::scanbotsdkexamplexamarinforms.Droid.Resource.Animation.design_bottom_sheet_slide_out;
+			global::Xamarin.Forms.Platform.Android.Resource.Animation.design_snackbar_in = global::scanbotsdkexamplexamarinforms.Droid.Resource.Animation.design_snackbar_in;
+			global::Xamarin.Forms.Platform.Android.Resource.Animation.design_snackbar_out = global::scanbotsdkexamplexamarinforms.Droid.Resource.Animation.design_snackbar_out;
+			global::Xamarin.Forms.Platform.Android.Resource.Animation.EnterFromLeft = global::scanbotsdkexamplexamarinforms.Droid.Resource.Animation.EnterFromLeft;
+			global::Xamarin.Forms.Platform.Android.Resource.Animation.EnterFromRight = global::scanbotsdkexamplexamarinforms.Droid.Resource.Animation.EnterFromRight;
+			global::Xamarin.Forms.Platform.Android.Resource.Animation.ExitToLeft = global::scanbotsdkexamplexamarinforms.Droid.Resource.Animation.ExitToLeft;
+			global::Xamarin.Forms.Platform.Android.Resource.Animation.ExitToRight = global::scanbotsdkexamplexamarinforms.Droid.Resource.Animation.ExitToRight;
+			global::Xamarin.Forms.Platform.Android.Resource.Animation.tooltip_enter = global::scanbotsdkexamplexamarinforms.Droid.Resource.Animation.tooltip_enter;
+			global::Xamarin.Forms.Platform.Android.Resource.Animation.tooltip_exit = global::scanbotsdkexamplexamarinforms.Droid.Resource.Animation.tooltip_exit;
+			global::Xamarin.Forms.Platform.Android.Resource.Animator.design_appbar_state_list_animator = global::scanbotsdkexamplexamarinforms.Droid.Resource.Animator.design_appbar_state_list_animator;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarDivider = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.actionBarDivider;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarItemBackground = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.actionBarItemBackground;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarPopupTheme = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.actionBarPopupTheme;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarSize = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.actionBarSize;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarSplitStyle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.actionBarSplitStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarStyle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.actionBarStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarTabBarStyle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.actionBarTabBarStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarTabStyle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.actionBarTabStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarTabTextStyle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.actionBarTabTextStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarTheme = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.actionBarTheme;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarWidgetTheme = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.actionBarWidgetTheme;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionButtonStyle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.actionButtonStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionDropDownStyle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.actionDropDownStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionLayout = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.actionLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionMenuTextAppearance = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.actionMenuTextAppearance;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionMenuTextColor = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.actionMenuTextColor;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionModeBackground = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.actionModeBackground;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionModeCloseButtonStyle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.actionModeCloseButtonStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionModeCloseDrawable = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.actionModeCloseDrawable;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionModeCopyDrawable = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.actionModeCopyDrawable;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionModeCutDrawable = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.actionModeCutDrawable;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionModeFindDrawable = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.actionModeFindDrawable;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionModePasteDrawable = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.actionModePasteDrawable;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionModePopupWindowStyle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.actionModePopupWindowStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionModeSelectAllDrawable = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.actionModeSelectAllDrawable;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionModeShareDrawable = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.actionModeShareDrawable;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionModeSplitBackground = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.actionModeSplitBackground;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionModeStyle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.actionModeStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionModeWebSearchDrawable = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.actionModeWebSearchDrawable;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionOverflowButtonStyle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.actionOverflowButtonStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionOverflowMenuStyle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.actionOverflowMenuStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionProviderClass = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.actionProviderClass;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionViewClass = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.actionViewClass;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.activityChooserViewStyle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.activityChooserViewStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.alertDialogButtonGroupStyle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.alertDialogButtonGroupStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.alertDialogCenterButtons = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.alertDialogCenterButtons;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.alertDialogStyle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.alertDialogStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.alertDialogTheme = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.alertDialogTheme;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.allowStacking = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.allowStacking;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.alpha = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.alpha;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.alphabeticModifiers = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.alphabeticModifiers;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.arrowHeadLength = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.arrowHeadLength;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.arrowShaftLength = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.arrowShaftLength;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.autoCompleteTextViewStyle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.autoCompleteTextViewStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.autoSizeMaxTextSize = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.autoSizeMaxTextSize;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.autoSizeMinTextSize = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.autoSizeMinTextSize;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.autoSizePresetSizes = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.autoSizePresetSizes;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.autoSizeStepGranularity = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.autoSizeStepGranularity;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.autoSizeTextType = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.autoSizeTextType;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.background = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.background;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.backgroundSplit = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.backgroundSplit;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.backgroundStacked = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.backgroundStacked;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.backgroundTint = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.backgroundTint;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.backgroundTintMode = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.backgroundTintMode;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.barLength = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.barLength;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.behavior_autoHide = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.behavior_autoHide;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.behavior_hideable = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.behavior_hideable;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.behavior_overlapTop = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.behavior_overlapTop;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.behavior_peekHeight = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.behavior_peekHeight;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.behavior_skipCollapsed = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.behavior_skipCollapsed;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.borderWidth = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.borderWidth;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.borderlessButtonStyle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.borderlessButtonStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.bottomSheetDialogTheme = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.bottomSheetDialogTheme;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.bottomSheetStyle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.bottomSheetStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.buttonBarButtonStyle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.buttonBarButtonStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.buttonBarNegativeButtonStyle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.buttonBarNegativeButtonStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.buttonBarNeutralButtonStyle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.buttonBarNeutralButtonStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.buttonBarPositiveButtonStyle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.buttonBarPositiveButtonStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.buttonBarStyle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.buttonBarStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.buttonGravity = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.buttonGravity;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.buttonPanelSideLayout = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.buttonPanelSideLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.buttonStyle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.buttonStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.buttonStyleSmall = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.buttonStyleSmall;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.buttonTint = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.buttonTint;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.buttonTintMode = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.buttonTintMode;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.cardBackgroundColor = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.cardBackgroundColor;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.cardCornerRadius = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.cardCornerRadius;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.cardElevation = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.cardElevation;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.cardMaxElevation = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.cardMaxElevation;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.cardPreventCornerOverlap = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.cardPreventCornerOverlap;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.cardUseCompatPadding = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.cardUseCompatPadding;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.checkboxStyle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.checkboxStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.checkedTextViewStyle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.checkedTextViewStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.closeIcon = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.closeIcon;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.closeItemLayout = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.closeItemLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.collapseContentDescription = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.collapseContentDescription;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.collapseIcon = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.collapseIcon;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.collapsedTitleGravity = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.collapsedTitleGravity;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.collapsedTitleTextAppearance = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.collapsedTitleTextAppearance;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.color = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.color;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.colorAccent = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.colorAccent;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.colorBackgroundFloating = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.colorBackgroundFloating;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.colorButtonNormal = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.colorButtonNormal;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.colorControlActivated = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.colorControlActivated;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.colorControlHighlight = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.colorControlHighlight;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.colorControlNormal = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.colorControlNormal;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.colorError = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.colorError;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.colorPrimary = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.colorPrimary;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.colorPrimaryDark = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.colorPrimaryDark;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.colorSwitchThumbNormal = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.colorSwitchThumbNormal;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.commitIcon = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.commitIcon;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.contentDescription = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.contentDescription;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.contentInsetEnd = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.contentInsetEnd;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.contentInsetEndWithActions = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.contentInsetEndWithActions;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.contentInsetLeft = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.contentInsetLeft;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.contentInsetRight = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.contentInsetRight;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.contentInsetStart = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.contentInsetStart;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.contentInsetStartWithNavigation = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.contentInsetStartWithNavigation;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.contentPadding = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.contentPadding;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.contentPaddingBottom = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.contentPaddingBottom;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.contentPaddingLeft = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.contentPaddingLeft;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.contentPaddingRight = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.contentPaddingRight;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.contentPaddingTop = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.contentPaddingTop;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.contentScrim = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.contentScrim;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.controlBackground = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.controlBackground;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.counterEnabled = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.counterEnabled;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.counterMaxLength = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.counterMaxLength;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.counterOverflowTextAppearance = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.counterOverflowTextAppearance;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.counterTextAppearance = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.counterTextAppearance;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.customNavigationLayout = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.customNavigationLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.defaultQueryHint = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.defaultQueryHint;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.dialogPreferredPadding = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.dialogPreferredPadding;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.dialogTheme = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.dialogTheme;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.displayOptions = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.displayOptions;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.divider = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.divider;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.dividerHorizontal = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.dividerHorizontal;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.dividerPadding = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.dividerPadding;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.dividerVertical = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.dividerVertical;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.drawableSize = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.drawableSize;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.drawerArrowStyle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.drawerArrowStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.dropDownListViewStyle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.dropDownListViewStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.dropdownListPreferredItemHeight = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.dropdownListPreferredItemHeight;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.editTextBackground = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.editTextBackground;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.editTextColor = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.editTextColor;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.editTextStyle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.editTextStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.elevation = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.elevation;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.errorEnabled = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.errorEnabled;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.errorTextAppearance = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.errorTextAppearance;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.expandActivityOverflowButtonDrawable = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.expandActivityOverflowButtonDrawable;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.expanded = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.expanded;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.expandedTitleGravity = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.expandedTitleGravity;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.expandedTitleMargin = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.expandedTitleMargin;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.expandedTitleMarginBottom = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.expandedTitleMarginBottom;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.expandedTitleMarginEnd = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.expandedTitleMarginEnd;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.expandedTitleMarginStart = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.expandedTitleMarginStart;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.expandedTitleMarginTop = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.expandedTitleMarginTop;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.expandedTitleTextAppearance = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.expandedTitleTextAppearance;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.fabSize = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.fabSize;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.fastScrollEnabled = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.fastScrollEnabled;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.fastScrollHorizontalThumbDrawable = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.fastScrollHorizontalThumbDrawable;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.fastScrollHorizontalTrackDrawable = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.fastScrollHorizontalTrackDrawable;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.fastScrollVerticalThumbDrawable = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.fastScrollVerticalThumbDrawable;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.fastScrollVerticalTrackDrawable = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.fastScrollVerticalTrackDrawable;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.font = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.font;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.fontFamily = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.fontFamily;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.fontProviderAuthority = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.fontProviderAuthority;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.fontProviderCerts = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.fontProviderCerts;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.fontProviderFetchStrategy = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.fontProviderFetchStrategy;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.fontProviderFetchTimeout = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.fontProviderFetchTimeout;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.fontProviderPackage = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.fontProviderPackage;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.fontProviderQuery = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.fontProviderQuery;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.fontStyle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.fontStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.fontWeight = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.fontWeight;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.foregroundInsidePadding = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.foregroundInsidePadding;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.gapBetweenBars = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.gapBetweenBars;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.goIcon = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.goIcon;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.headerLayout = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.headerLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.height = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.height;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.hideOnContentScroll = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.hideOnContentScroll;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.hintAnimationEnabled = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.hintAnimationEnabled;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.hintEnabled = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.hintEnabled;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.hintTextAppearance = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.hintTextAppearance;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.homeAsUpIndicator = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.homeAsUpIndicator;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.homeLayout = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.homeLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.icon = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.icon;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.iconTint = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.iconTint;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.iconTintMode = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.iconTintMode;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.iconifiedByDefault = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.iconifiedByDefault;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.imageButtonStyle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.imageButtonStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.indeterminateProgressStyle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.indeterminateProgressStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.initialActivityCount = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.initialActivityCount;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.insetForeground = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.insetForeground;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.isLightTheme = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.isLightTheme;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.itemBackground = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.itemBackground;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.itemIconTint = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.itemIconTint;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.itemPadding = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.itemPadding;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.itemTextAppearance = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.itemTextAppearance;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.itemTextColor = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.itemTextColor;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.keylines = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.keylines;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.layout = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.layout;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.layoutManager = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.layoutManager;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.layout_anchor = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.layout_anchor;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.layout_anchorGravity = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.layout_anchorGravity;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.layout_behavior = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.layout_behavior;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.layout_collapseMode = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.layout_collapseMode;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.layout_collapseParallaxMultiplier = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.layout_collapseParallaxMultiplier;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.layout_dodgeInsetEdges = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.layout_dodgeInsetEdges;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.layout_insetEdge = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.layout_insetEdge;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.layout_keyline = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.layout_keyline;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.layout_scrollFlags = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.layout_scrollFlags;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.layout_scrollInterpolator = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.layout_scrollInterpolator;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.listChoiceBackgroundIndicator = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.listChoiceBackgroundIndicator;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.listDividerAlertDialog = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.listDividerAlertDialog;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.listItemLayout = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.listItemLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.listLayout = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.listLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.listMenuViewStyle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.listMenuViewStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.listPopupWindowStyle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.listPopupWindowStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.listPreferredItemHeight = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.listPreferredItemHeight;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.listPreferredItemHeightLarge = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.listPreferredItemHeightLarge;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.listPreferredItemHeightSmall = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.listPreferredItemHeightSmall;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.listPreferredItemPaddingLeft = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.listPreferredItemPaddingLeft;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.listPreferredItemPaddingRight = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.listPreferredItemPaddingRight;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.logo = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.logo;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.logoDescription = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.logoDescription;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.maxActionInlineWidth = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.maxActionInlineWidth;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.maxButtonHeight = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.maxButtonHeight;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.measureWithLargestChild = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.measureWithLargestChild;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.menu = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.menu;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.multiChoiceItemLayout = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.multiChoiceItemLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.navigationContentDescription = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.navigationContentDescription;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.navigationIcon = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.navigationIcon;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.navigationMode = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.navigationMode;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.numericModifiers = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.numericModifiers;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.overlapAnchor = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.overlapAnchor;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.paddingBottomNoButtons = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.paddingBottomNoButtons;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.paddingEnd = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.paddingEnd;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.paddingStart = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.paddingStart;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.paddingTopNoTitle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.paddingTopNoTitle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.panelBackground = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.panelBackground;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.panelMenuListTheme = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.panelMenuListTheme;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.panelMenuListWidth = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.panelMenuListWidth;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.passwordToggleContentDescription = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.passwordToggleContentDescription;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.passwordToggleDrawable = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.passwordToggleDrawable;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.passwordToggleEnabled = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.passwordToggleEnabled;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.passwordToggleTint = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.passwordToggleTint;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.passwordToggleTintMode = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.passwordToggleTintMode;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.popupMenuStyle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.popupMenuStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.popupTheme = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.popupTheme;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.popupWindowStyle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.popupWindowStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.preserveIconSpacing = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.preserveIconSpacing;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.pressedTranslationZ = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.pressedTranslationZ;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.progressBarPadding = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.progressBarPadding;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.progressBarStyle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.progressBarStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.queryBackground = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.queryBackground;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.queryHint = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.queryHint;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.radioButtonStyle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.radioButtonStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.ratingBarStyle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.ratingBarStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.ratingBarStyleIndicator = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.ratingBarStyleIndicator;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.ratingBarStyleSmall = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.ratingBarStyleSmall;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.reverseLayout = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.reverseLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.rippleColor = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.rippleColor;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.scrimAnimationDuration = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.scrimAnimationDuration;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.scrimVisibleHeightTrigger = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.scrimVisibleHeightTrigger;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.searchHintIcon = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.searchHintIcon;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.searchIcon = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.searchIcon;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.searchViewStyle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.searchViewStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.seekBarStyle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.seekBarStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.selectableItemBackground = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.selectableItemBackground;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.selectableItemBackgroundBorderless = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.selectableItemBackgroundBorderless;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.showAsAction = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.showAsAction;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.showDividers = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.showDividers;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.showText = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.showText;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.showTitle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.showTitle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.singleChoiceItemLayout = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.singleChoiceItemLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.spanCount = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.spanCount;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.spinBars = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.spinBars;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.spinnerDropDownItemStyle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.spinnerDropDownItemStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.spinnerStyle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.spinnerStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.splitTrack = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.splitTrack;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.srcCompat = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.srcCompat;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.stackFromEnd = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.stackFromEnd;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.state_above_anchor = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.state_above_anchor;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.state_collapsed = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.state_collapsed;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.state_collapsible = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.state_collapsible;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.statusBarBackground = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.statusBarBackground;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.statusBarScrim = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.statusBarScrim;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.subMenuArrow = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.subMenuArrow;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.submitBackground = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.submitBackground;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.subtitle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.subtitle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.subtitleTextAppearance = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.subtitleTextAppearance;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.subtitleTextColor = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.subtitleTextColor;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.subtitleTextStyle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.subtitleTextStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.suggestionRowLayout = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.suggestionRowLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.switchMinWidth = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.switchMinWidth;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.switchPadding = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.switchPadding;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.switchStyle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.switchStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.switchTextAppearance = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.switchTextAppearance;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.tabBackground = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.tabBackground;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.tabContentStart = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.tabContentStart;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.tabGravity = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.tabGravity;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.tabIndicatorColor = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.tabIndicatorColor;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.tabIndicatorHeight = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.tabIndicatorHeight;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.tabMaxWidth = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.tabMaxWidth;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.tabMinWidth = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.tabMinWidth;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.tabMode = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.tabMode;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.tabPadding = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.tabPadding;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.tabPaddingBottom = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.tabPaddingBottom;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.tabPaddingEnd = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.tabPaddingEnd;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.tabPaddingStart = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.tabPaddingStart;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.tabPaddingTop = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.tabPaddingTop;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.tabSelectedTextColor = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.tabSelectedTextColor;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.tabTextAppearance = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.tabTextAppearance;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.tabTextColor = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.tabTextColor;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.textAllCaps = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.textAllCaps;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.textAppearanceLargePopupMenu = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.textAppearanceLargePopupMenu;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.textAppearanceListItem = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.textAppearanceListItem;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.textAppearanceListItemSecondary = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.textAppearanceListItemSecondary;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.textAppearanceListItemSmall = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.textAppearanceListItemSmall;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.textAppearancePopupMenuHeader = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.textAppearancePopupMenuHeader;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.textAppearanceSearchResultSubtitle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.textAppearanceSearchResultSubtitle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.textAppearanceSearchResultTitle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.textAppearanceSearchResultTitle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.textAppearanceSmallPopupMenu = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.textAppearanceSmallPopupMenu;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.textColorAlertDialogListItem = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.textColorAlertDialogListItem;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.textColorError = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.textColorError;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.textColorSearchUrl = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.textColorSearchUrl;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.theme = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.theme;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.thickness = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.thickness;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.thumbTextPadding = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.thumbTextPadding;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.thumbTint = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.thumbTint;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.thumbTintMode = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.thumbTintMode;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.tickMark = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.tickMark;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.tickMarkTint = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.tickMarkTint;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.tickMarkTintMode = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.tickMarkTintMode;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.tint = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.tint;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.tintMode = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.tintMode;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.title = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.title;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.titleEnabled = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.titleEnabled;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.titleMargin = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.titleMargin;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.titleMarginBottom = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.titleMarginBottom;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.titleMarginEnd = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.titleMarginEnd;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.titleMarginStart = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.titleMarginStart;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.titleMarginTop = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.titleMarginTop;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.titleMargins = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.titleMargins;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.titleTextAppearance = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.titleTextAppearance;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.titleTextColor = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.titleTextColor;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.titleTextStyle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.titleTextStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.toolbarId = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.toolbarId;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.toolbarNavigationButtonStyle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.toolbarNavigationButtonStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.toolbarStyle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.toolbarStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.tooltipForegroundColor = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.tooltipForegroundColor;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.tooltipFrameBackground = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.tooltipFrameBackground;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.tooltipText = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.tooltipText;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.track = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.track;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.trackTint = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.trackTint;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.trackTintMode = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.trackTintMode;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.useCompatPadding = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.useCompatPadding;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.voiceIcon = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.voiceIcon;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.windowActionBar = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.windowActionBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.windowActionBarOverlay = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.windowActionBarOverlay;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.windowActionModeOverlay = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.windowActionModeOverlay;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.windowFixedHeightMajor = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.windowFixedHeightMajor;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.windowFixedHeightMinor = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.windowFixedHeightMinor;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.windowFixedWidthMajor = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.windowFixedWidthMajor;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.windowFixedWidthMinor = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.windowFixedWidthMinor;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.windowMinWidthMajor = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.windowMinWidthMajor;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.windowMinWidthMinor = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.windowMinWidthMinor;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.windowNoTitle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Attribute.windowNoTitle;
+			global::Xamarin.Forms.Platform.Android.Resource.Boolean.abc_action_bar_embed_tabs = global::scanbotsdkexamplexamarinforms.Droid.Resource.Boolean.abc_action_bar_embed_tabs;
+			global::Xamarin.Forms.Platform.Android.Resource.Boolean.abc_allow_stacked_button_bar = global::scanbotsdkexamplexamarinforms.Droid.Resource.Boolean.abc_allow_stacked_button_bar;
+			global::Xamarin.Forms.Platform.Android.Resource.Boolean.abc_config_actionMenuItemAllCaps = global::scanbotsdkexamplexamarinforms.Droid.Resource.Boolean.abc_config_actionMenuItemAllCaps;
+			global::Xamarin.Forms.Platform.Android.Resource.Boolean.abc_config_closeDialogWhenTouchOutside = global::scanbotsdkexamplexamarinforms.Droid.Resource.Boolean.abc_config_closeDialogWhenTouchOutside;
+			global::Xamarin.Forms.Platform.Android.Resource.Boolean.abc_config_showMenuShortcutsWhenKeyboardPresent = global::scanbotsdkexamplexamarinforms.Droid.Resource.Boolean.abc_config_showMenuShortcutsWhenKeyboardPresent;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.abc_background_cache_hint_selector_material_dark = global::scanbotsdkexamplexamarinforms.Droid.Resource.Color.abc_background_cache_hint_selector_material_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.abc_background_cache_hint_selector_material_light = global::scanbotsdkexamplexamarinforms.Droid.Resource.Color.abc_background_cache_hint_selector_material_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.abc_btn_colored_borderless_text_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.Color.abc_btn_colored_borderless_text_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.abc_btn_colored_text_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.Color.abc_btn_colored_text_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.abc_color_highlight_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.Color.abc_color_highlight_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.abc_hint_foreground_material_dark = global::scanbotsdkexamplexamarinforms.Droid.Resource.Color.abc_hint_foreground_material_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.abc_hint_foreground_material_light = global::scanbotsdkexamplexamarinforms.Droid.Resource.Color.abc_hint_foreground_material_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.abc_input_method_navigation_guard = global::scanbotsdkexamplexamarinforms.Droid.Resource.Color.abc_input_method_navigation_guard;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.abc_primary_text_disable_only_material_dark = global::scanbotsdkexamplexamarinforms.Droid.Resource.Color.abc_primary_text_disable_only_material_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.abc_primary_text_disable_only_material_light = global::scanbotsdkexamplexamarinforms.Droid.Resource.Color.abc_primary_text_disable_only_material_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.abc_primary_text_material_dark = global::scanbotsdkexamplexamarinforms.Droid.Resource.Color.abc_primary_text_material_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.abc_primary_text_material_light = global::scanbotsdkexamplexamarinforms.Droid.Resource.Color.abc_primary_text_material_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.abc_search_url_text = global::scanbotsdkexamplexamarinforms.Droid.Resource.Color.abc_search_url_text;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.abc_search_url_text_normal = global::scanbotsdkexamplexamarinforms.Droid.Resource.Color.abc_search_url_text_normal;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.abc_search_url_text_pressed = global::scanbotsdkexamplexamarinforms.Droid.Resource.Color.abc_search_url_text_pressed;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.abc_search_url_text_selected = global::scanbotsdkexamplexamarinforms.Droid.Resource.Color.abc_search_url_text_selected;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.abc_secondary_text_material_dark = global::scanbotsdkexamplexamarinforms.Droid.Resource.Color.abc_secondary_text_material_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.abc_secondary_text_material_light = global::scanbotsdkexamplexamarinforms.Droid.Resource.Color.abc_secondary_text_material_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.abc_tint_btn_checkable = global::scanbotsdkexamplexamarinforms.Droid.Resource.Color.abc_tint_btn_checkable;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.abc_tint_default = global::scanbotsdkexamplexamarinforms.Droid.Resource.Color.abc_tint_default;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.abc_tint_edittext = global::scanbotsdkexamplexamarinforms.Droid.Resource.Color.abc_tint_edittext;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.abc_tint_seek_thumb = global::scanbotsdkexamplexamarinforms.Droid.Resource.Color.abc_tint_seek_thumb;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.abc_tint_spinner = global::scanbotsdkexamplexamarinforms.Droid.Resource.Color.abc_tint_spinner;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.abc_tint_switch_track = global::scanbotsdkexamplexamarinforms.Droid.Resource.Color.abc_tint_switch_track;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.accent_material_dark = global::scanbotsdkexamplexamarinforms.Droid.Resource.Color.accent_material_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.accent_material_light = global::scanbotsdkexamplexamarinforms.Droid.Resource.Color.accent_material_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.background_floating_material_dark = global::scanbotsdkexamplexamarinforms.Droid.Resource.Color.background_floating_material_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.background_floating_material_light = global::scanbotsdkexamplexamarinforms.Droid.Resource.Color.background_floating_material_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.background_material_dark = global::scanbotsdkexamplexamarinforms.Droid.Resource.Color.background_material_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.background_material_light = global::scanbotsdkexamplexamarinforms.Droid.Resource.Color.background_material_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.bright_foreground_disabled_material_dark = global::scanbotsdkexamplexamarinforms.Droid.Resource.Color.bright_foreground_disabled_material_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.bright_foreground_disabled_material_light = global::scanbotsdkexamplexamarinforms.Droid.Resource.Color.bright_foreground_disabled_material_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.bright_foreground_inverse_material_dark = global::scanbotsdkexamplexamarinforms.Droid.Resource.Color.bright_foreground_inverse_material_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.bright_foreground_inverse_material_light = global::scanbotsdkexamplexamarinforms.Droid.Resource.Color.bright_foreground_inverse_material_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.bright_foreground_material_dark = global::scanbotsdkexamplexamarinforms.Droid.Resource.Color.bright_foreground_material_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.bright_foreground_material_light = global::scanbotsdkexamplexamarinforms.Droid.Resource.Color.bright_foreground_material_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.button_material_dark = global::scanbotsdkexamplexamarinforms.Droid.Resource.Color.button_material_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.button_material_light = global::scanbotsdkexamplexamarinforms.Droid.Resource.Color.button_material_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.cardview_dark_background = global::scanbotsdkexamplexamarinforms.Droid.Resource.Color.cardview_dark_background;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.cardview_light_background = global::scanbotsdkexamplexamarinforms.Droid.Resource.Color.cardview_light_background;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.cardview_shadow_end_color = global::scanbotsdkexamplexamarinforms.Droid.Resource.Color.cardview_shadow_end_color;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.cardview_shadow_start_color = global::scanbotsdkexamplexamarinforms.Droid.Resource.Color.cardview_shadow_start_color;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.design_bottom_navigation_shadow_color = global::scanbotsdkexamplexamarinforms.Droid.Resource.Color.design_bottom_navigation_shadow_color;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.design_error = global::scanbotsdkexamplexamarinforms.Droid.Resource.Color.design_error;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.design_fab_shadow_end_color = global::scanbotsdkexamplexamarinforms.Droid.Resource.Color.design_fab_shadow_end_color;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.design_fab_shadow_mid_color = global::scanbotsdkexamplexamarinforms.Droid.Resource.Color.design_fab_shadow_mid_color;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.design_fab_shadow_start_color = global::scanbotsdkexamplexamarinforms.Droid.Resource.Color.design_fab_shadow_start_color;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.design_fab_stroke_end_inner_color = global::scanbotsdkexamplexamarinforms.Droid.Resource.Color.design_fab_stroke_end_inner_color;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.design_fab_stroke_end_outer_color = global::scanbotsdkexamplexamarinforms.Droid.Resource.Color.design_fab_stroke_end_outer_color;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.design_fab_stroke_top_inner_color = global::scanbotsdkexamplexamarinforms.Droid.Resource.Color.design_fab_stroke_top_inner_color;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.design_fab_stroke_top_outer_color = global::scanbotsdkexamplexamarinforms.Droid.Resource.Color.design_fab_stroke_top_outer_color;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.design_snackbar_background_color = global::scanbotsdkexamplexamarinforms.Droid.Resource.Color.design_snackbar_background_color;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.design_tint_password_toggle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Color.design_tint_password_toggle;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.dim_foreground_disabled_material_dark = global::scanbotsdkexamplexamarinforms.Droid.Resource.Color.dim_foreground_disabled_material_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.dim_foreground_disabled_material_light = global::scanbotsdkexamplexamarinforms.Droid.Resource.Color.dim_foreground_disabled_material_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.dim_foreground_material_dark = global::scanbotsdkexamplexamarinforms.Droid.Resource.Color.dim_foreground_material_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.dim_foreground_material_light = global::scanbotsdkexamplexamarinforms.Droid.Resource.Color.dim_foreground_material_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.error_color_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.Color.error_color_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.foreground_material_dark = global::scanbotsdkexamplexamarinforms.Droid.Resource.Color.foreground_material_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.foreground_material_light = global::scanbotsdkexamplexamarinforms.Droid.Resource.Color.foreground_material_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.highlighted_text_material_dark = global::scanbotsdkexamplexamarinforms.Droid.Resource.Color.highlighted_text_material_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.highlighted_text_material_light = global::scanbotsdkexamplexamarinforms.Droid.Resource.Color.highlighted_text_material_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.material_blue_grey_800 = global::scanbotsdkexamplexamarinforms.Droid.Resource.Color.material_blue_grey_800;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.material_blue_grey_900 = global::scanbotsdkexamplexamarinforms.Droid.Resource.Color.material_blue_grey_900;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.material_blue_grey_950 = global::scanbotsdkexamplexamarinforms.Droid.Resource.Color.material_blue_grey_950;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.material_deep_teal_200 = global::scanbotsdkexamplexamarinforms.Droid.Resource.Color.material_deep_teal_200;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.material_deep_teal_500 = global::scanbotsdkexamplexamarinforms.Droid.Resource.Color.material_deep_teal_500;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.material_grey_100 = global::scanbotsdkexamplexamarinforms.Droid.Resource.Color.material_grey_100;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.material_grey_300 = global::scanbotsdkexamplexamarinforms.Droid.Resource.Color.material_grey_300;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.material_grey_50 = global::scanbotsdkexamplexamarinforms.Droid.Resource.Color.material_grey_50;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.material_grey_600 = global::scanbotsdkexamplexamarinforms.Droid.Resource.Color.material_grey_600;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.material_grey_800 = global::scanbotsdkexamplexamarinforms.Droid.Resource.Color.material_grey_800;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.material_grey_850 = global::scanbotsdkexamplexamarinforms.Droid.Resource.Color.material_grey_850;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.material_grey_900 = global::scanbotsdkexamplexamarinforms.Droid.Resource.Color.material_grey_900;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.notification_action_color_filter = global::scanbotsdkexamplexamarinforms.Droid.Resource.Color.notification_action_color_filter;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.notification_icon_bg_color = global::scanbotsdkexamplexamarinforms.Droid.Resource.Color.notification_icon_bg_color;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.notification_material_background_media_default_color = global::scanbotsdkexamplexamarinforms.Droid.Resource.Color.notification_material_background_media_default_color;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.primary_dark_material_dark = global::scanbotsdkexamplexamarinforms.Droid.Resource.Color.primary_dark_material_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.primary_dark_material_light = global::scanbotsdkexamplexamarinforms.Droid.Resource.Color.primary_dark_material_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.primary_material_dark = global::scanbotsdkexamplexamarinforms.Droid.Resource.Color.primary_material_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.primary_material_light = global::scanbotsdkexamplexamarinforms.Droid.Resource.Color.primary_material_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.primary_text_default_material_dark = global::scanbotsdkexamplexamarinforms.Droid.Resource.Color.primary_text_default_material_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.primary_text_default_material_light = global::scanbotsdkexamplexamarinforms.Droid.Resource.Color.primary_text_default_material_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.primary_text_disabled_material_dark = global::scanbotsdkexamplexamarinforms.Droid.Resource.Color.primary_text_disabled_material_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.primary_text_disabled_material_light = global::scanbotsdkexamplexamarinforms.Droid.Resource.Color.primary_text_disabled_material_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.ripple_material_dark = global::scanbotsdkexamplexamarinforms.Droid.Resource.Color.ripple_material_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.ripple_material_light = global::scanbotsdkexamplexamarinforms.Droid.Resource.Color.ripple_material_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.secondary_text_default_material_dark = global::scanbotsdkexamplexamarinforms.Droid.Resource.Color.secondary_text_default_material_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.secondary_text_default_material_light = global::scanbotsdkexamplexamarinforms.Droid.Resource.Color.secondary_text_default_material_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.secondary_text_disabled_material_dark = global::scanbotsdkexamplexamarinforms.Droid.Resource.Color.secondary_text_disabled_material_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.secondary_text_disabled_material_light = global::scanbotsdkexamplexamarinforms.Droid.Resource.Color.secondary_text_disabled_material_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.switch_thumb_disabled_material_dark = global::scanbotsdkexamplexamarinforms.Droid.Resource.Color.switch_thumb_disabled_material_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.switch_thumb_disabled_material_light = global::scanbotsdkexamplexamarinforms.Droid.Resource.Color.switch_thumb_disabled_material_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.switch_thumb_material_dark = global::scanbotsdkexamplexamarinforms.Droid.Resource.Color.switch_thumb_material_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.switch_thumb_material_light = global::scanbotsdkexamplexamarinforms.Droid.Resource.Color.switch_thumb_material_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.switch_thumb_normal_material_dark = global::scanbotsdkexamplexamarinforms.Droid.Resource.Color.switch_thumb_normal_material_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.switch_thumb_normal_material_light = global::scanbotsdkexamplexamarinforms.Droid.Resource.Color.switch_thumb_normal_material_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.tooltip_background_dark = global::scanbotsdkexamplexamarinforms.Droid.Resource.Color.tooltip_background_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.tooltip_background_light = global::scanbotsdkexamplexamarinforms.Droid.Resource.Color.tooltip_background_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_action_bar_content_inset_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.abc_action_bar_content_inset_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_action_bar_content_inset_with_nav = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.abc_action_bar_content_inset_with_nav;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_action_bar_default_height_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.abc_action_bar_default_height_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_action_bar_default_padding_end_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.abc_action_bar_default_padding_end_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_action_bar_default_padding_start_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.abc_action_bar_default_padding_start_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_action_bar_elevation_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.abc_action_bar_elevation_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_action_bar_icon_vertical_padding_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.abc_action_bar_icon_vertical_padding_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_action_bar_overflow_padding_end_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.abc_action_bar_overflow_padding_end_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_action_bar_overflow_padding_start_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.abc_action_bar_overflow_padding_start_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_action_bar_progress_bar_size = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.abc_action_bar_progress_bar_size;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_action_bar_stacked_max_height = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.abc_action_bar_stacked_max_height;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_action_bar_stacked_tab_max_width = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.abc_action_bar_stacked_tab_max_width;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_action_bar_subtitle_bottom_margin_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.abc_action_bar_subtitle_bottom_margin_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_action_bar_subtitle_top_margin_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.abc_action_bar_subtitle_top_margin_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_action_button_min_height_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.abc_action_button_min_height_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_action_button_min_width_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.abc_action_button_min_width_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_action_button_min_width_overflow_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.abc_action_button_min_width_overflow_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_alert_dialog_button_bar_height = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.abc_alert_dialog_button_bar_height;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_button_inset_horizontal_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.abc_button_inset_horizontal_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_button_inset_vertical_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.abc_button_inset_vertical_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_button_padding_horizontal_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.abc_button_padding_horizontal_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_button_padding_vertical_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.abc_button_padding_vertical_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_cascading_menus_min_smallest_width = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.abc_cascading_menus_min_smallest_width;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_config_prefDialogWidth = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.abc_config_prefDialogWidth;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_control_corner_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.abc_control_corner_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_control_inset_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.abc_control_inset_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_control_padding_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.abc_control_padding_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_dialog_fixed_height_major = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.abc_dialog_fixed_height_major;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_dialog_fixed_height_minor = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.abc_dialog_fixed_height_minor;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_dialog_fixed_width_major = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.abc_dialog_fixed_width_major;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_dialog_fixed_width_minor = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.abc_dialog_fixed_width_minor;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_dialog_list_padding_bottom_no_buttons = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.abc_dialog_list_padding_bottom_no_buttons;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_dialog_list_padding_top_no_title = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.abc_dialog_list_padding_top_no_title;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_dialog_min_width_major = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.abc_dialog_min_width_major;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_dialog_min_width_minor = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.abc_dialog_min_width_minor;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_dialog_padding_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.abc_dialog_padding_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_dialog_padding_top_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.abc_dialog_padding_top_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_dialog_title_divider_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.abc_dialog_title_divider_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_disabled_alpha_material_dark = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.abc_disabled_alpha_material_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_disabled_alpha_material_light = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.abc_disabled_alpha_material_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_dropdownitem_icon_width = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.abc_dropdownitem_icon_width;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_dropdownitem_text_padding_left = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.abc_dropdownitem_text_padding_left;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_dropdownitem_text_padding_right = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.abc_dropdownitem_text_padding_right;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_edit_text_inset_bottom_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.abc_edit_text_inset_bottom_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_edit_text_inset_horizontal_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.abc_edit_text_inset_horizontal_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_edit_text_inset_top_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.abc_edit_text_inset_top_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_floating_window_z = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.abc_floating_window_z;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_list_item_padding_horizontal_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.abc_list_item_padding_horizontal_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_panel_menu_list_width = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.abc_panel_menu_list_width;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_progress_bar_height_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.abc_progress_bar_height_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_search_view_preferred_height = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.abc_search_view_preferred_height;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_search_view_preferred_width = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.abc_search_view_preferred_width;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_seekbar_track_background_height_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.abc_seekbar_track_background_height_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_seekbar_track_progress_height_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.abc_seekbar_track_progress_height_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_select_dialog_padding_start_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.abc_select_dialog_padding_start_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_switch_padding = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.abc_switch_padding;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_text_size_body_1_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.abc_text_size_body_1_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_text_size_body_2_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.abc_text_size_body_2_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_text_size_button_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.abc_text_size_button_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_text_size_caption_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.abc_text_size_caption_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_text_size_display_1_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.abc_text_size_display_1_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_text_size_display_2_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.abc_text_size_display_2_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_text_size_display_3_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.abc_text_size_display_3_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_text_size_display_4_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.abc_text_size_display_4_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_text_size_headline_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.abc_text_size_headline_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_text_size_large_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.abc_text_size_large_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_text_size_medium_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.abc_text_size_medium_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_text_size_menu_header_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.abc_text_size_menu_header_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_text_size_menu_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.abc_text_size_menu_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_text_size_small_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.abc_text_size_small_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_text_size_subhead_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.abc_text_size_subhead_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_text_size_subtitle_material_toolbar = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.abc_text_size_subtitle_material_toolbar;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_text_size_title_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.abc_text_size_title_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_text_size_title_material_toolbar = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.abc_text_size_title_material_toolbar;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.cardview_compat_inset_shadow = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.cardview_compat_inset_shadow;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.cardview_default_elevation = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.cardview_default_elevation;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.cardview_default_radius = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.cardview_default_radius;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.compat_button_inset_horizontal_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.compat_button_inset_horizontal_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.compat_button_inset_vertical_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.compat_button_inset_vertical_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.compat_button_padding_horizontal_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.compat_button_padding_horizontal_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.compat_button_padding_vertical_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.compat_button_padding_vertical_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.compat_control_corner_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.compat_control_corner_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_appbar_elevation = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.design_appbar_elevation;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_bottom_navigation_active_item_max_width = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.design_bottom_navigation_active_item_max_width;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_bottom_navigation_active_text_size = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.design_bottom_navigation_active_text_size;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_bottom_navigation_elevation = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.design_bottom_navigation_elevation;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_bottom_navigation_height = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.design_bottom_navigation_height;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_bottom_navigation_item_max_width = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.design_bottom_navigation_item_max_width;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_bottom_navigation_item_min_width = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.design_bottom_navigation_item_min_width;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_bottom_navigation_margin = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.design_bottom_navigation_margin;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_bottom_navigation_shadow_height = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.design_bottom_navigation_shadow_height;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_bottom_navigation_text_size = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.design_bottom_navigation_text_size;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_bottom_sheet_modal_elevation = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.design_bottom_sheet_modal_elevation;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_bottom_sheet_peek_height_min = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.design_bottom_sheet_peek_height_min;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_fab_border_width = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.design_fab_border_width;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_fab_elevation = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.design_fab_elevation;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_fab_image_size = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.design_fab_image_size;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_fab_size_mini = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.design_fab_size_mini;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_fab_size_normal = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.design_fab_size_normal;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_fab_translation_z_pressed = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.design_fab_translation_z_pressed;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_navigation_elevation = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.design_navigation_elevation;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_navigation_icon_padding = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.design_navigation_icon_padding;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_navigation_icon_size = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.design_navigation_icon_size;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_navigation_max_width = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.design_navigation_max_width;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_navigation_padding_bottom = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.design_navigation_padding_bottom;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_navigation_separator_vertical_padding = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.design_navigation_separator_vertical_padding;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_snackbar_action_inline_max_width = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.design_snackbar_action_inline_max_width;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_snackbar_background_corner_radius = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.design_snackbar_background_corner_radius;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_snackbar_elevation = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.design_snackbar_elevation;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_snackbar_extra_spacing_horizontal = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.design_snackbar_extra_spacing_horizontal;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_snackbar_max_width = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.design_snackbar_max_width;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_snackbar_min_width = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.design_snackbar_min_width;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_snackbar_padding_horizontal = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.design_snackbar_padding_horizontal;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_snackbar_padding_vertical = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.design_snackbar_padding_vertical;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_snackbar_padding_vertical_2lines = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.design_snackbar_padding_vertical_2lines;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_snackbar_text_size = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.design_snackbar_text_size;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_tab_max_width = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.design_tab_max_width;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_tab_scrollable_min_width = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.design_tab_scrollable_min_width;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_tab_text_size = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.design_tab_text_size;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_tab_text_size_2line = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.design_tab_text_size_2line;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.disabled_alpha_material_dark = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.disabled_alpha_material_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.disabled_alpha_material_light = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.disabled_alpha_material_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.fastscroll_default_thickness = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.fastscroll_default_thickness;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.fastscroll_margin = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.fastscroll_margin;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.fastscroll_minimum_range = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.fastscroll_minimum_range;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.highlight_alpha_material_colored = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.highlight_alpha_material_colored;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.highlight_alpha_material_dark = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.highlight_alpha_material_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.highlight_alpha_material_light = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.highlight_alpha_material_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.hint_alpha_material_dark = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.hint_alpha_material_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.hint_alpha_material_light = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.hint_alpha_material_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.hint_pressed_alpha_material_dark = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.hint_pressed_alpha_material_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.hint_pressed_alpha_material_light = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.hint_pressed_alpha_material_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.item_touch_helper_max_drag_scroll_per_frame = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.item_touch_helper_max_drag_scroll_per_frame;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.item_touch_helper_swipe_escape_max_velocity = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.item_touch_helper_swipe_escape_max_velocity;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.item_touch_helper_swipe_escape_velocity = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.item_touch_helper_swipe_escape_velocity;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.notification_action_icon_size = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.notification_action_icon_size;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.notification_action_text_size = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.notification_action_text_size;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.notification_big_circle_margin = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.notification_big_circle_margin;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.notification_content_margin_start = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.notification_content_margin_start;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.notification_large_icon_height = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.notification_large_icon_height;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.notification_large_icon_width = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.notification_large_icon_width;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.notification_main_column_padding_top = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.notification_main_column_padding_top;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.notification_media_narrow_margin = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.notification_media_narrow_margin;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.notification_right_icon_size = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.notification_right_icon_size;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.notification_right_side_padding_top = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.notification_right_side_padding_top;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.notification_small_icon_background_padding = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.notification_small_icon_background_padding;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.notification_small_icon_size_as_large = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.notification_small_icon_size_as_large;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.notification_subtext_size = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.notification_subtext_size;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.notification_top_pad = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.notification_top_pad;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.notification_top_pad_large_text = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.notification_top_pad_large_text;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.tooltip_corner_radius = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.tooltip_corner_radius;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.tooltip_horizontal_padding = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.tooltip_horizontal_padding;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.tooltip_margin = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.tooltip_margin;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.tooltip_precise_anchor_extra_offset = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.tooltip_precise_anchor_extra_offset;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.tooltip_precise_anchor_threshold = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.tooltip_precise_anchor_threshold;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.tooltip_vertical_padding = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.tooltip_vertical_padding;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.tooltip_y_offset_non_touch = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.tooltip_y_offset_non_touch;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.tooltip_y_offset_touch = global::scanbotsdkexamplexamarinforms.Droid.Resource.Dimension.tooltip_y_offset_touch;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_ab_share_pack_mtrl_alpha = global::scanbotsdkexamplexamarinforms.Droid.Resource.Drawable.abc_ab_share_pack_mtrl_alpha;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_action_bar_item_background_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.Drawable.abc_action_bar_item_background_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_btn_borderless_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.Drawable.abc_btn_borderless_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_btn_check_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.Drawable.abc_btn_check_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_btn_check_to_on_mtrl_000 = global::scanbotsdkexamplexamarinforms.Droid.Resource.Drawable.abc_btn_check_to_on_mtrl_000;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_btn_check_to_on_mtrl_015 = global::scanbotsdkexamplexamarinforms.Droid.Resource.Drawable.abc_btn_check_to_on_mtrl_015;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_btn_colored_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.Drawable.abc_btn_colored_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_btn_default_mtrl_shape = global::scanbotsdkexamplexamarinforms.Droid.Resource.Drawable.abc_btn_default_mtrl_shape;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_btn_radio_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.Drawable.abc_btn_radio_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_btn_radio_to_on_mtrl_000 = global::scanbotsdkexamplexamarinforms.Droid.Resource.Drawable.abc_btn_radio_to_on_mtrl_000;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_btn_radio_to_on_mtrl_015 = global::scanbotsdkexamplexamarinforms.Droid.Resource.Drawable.abc_btn_radio_to_on_mtrl_015;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_btn_switch_to_on_mtrl_00001 = global::scanbotsdkexamplexamarinforms.Droid.Resource.Drawable.abc_btn_switch_to_on_mtrl_00001;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_btn_switch_to_on_mtrl_00012 = global::scanbotsdkexamplexamarinforms.Droid.Resource.Drawable.abc_btn_switch_to_on_mtrl_00012;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_cab_background_internal_bg = global::scanbotsdkexamplexamarinforms.Droid.Resource.Drawable.abc_cab_background_internal_bg;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_cab_background_top_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.Drawable.abc_cab_background_top_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_cab_background_top_mtrl_alpha = global::scanbotsdkexamplexamarinforms.Droid.Resource.Drawable.abc_cab_background_top_mtrl_alpha;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_control_background_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.Drawable.abc_control_background_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_dialog_material_background = global::scanbotsdkexamplexamarinforms.Droid.Resource.Drawable.abc_dialog_material_background;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_edit_text_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.Drawable.abc_edit_text_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_ic_ab_back_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.Drawable.abc_ic_ab_back_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_ic_arrow_drop_right_black_24dp = global::scanbotsdkexamplexamarinforms.Droid.Resource.Drawable.abc_ic_arrow_drop_right_black_24dp;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_ic_clear_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.Drawable.abc_ic_clear_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_ic_commit_search_api_mtrl_alpha = global::scanbotsdkexamplexamarinforms.Droid.Resource.Drawable.abc_ic_commit_search_api_mtrl_alpha;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_ic_go_search_api_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.Drawable.abc_ic_go_search_api_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_ic_menu_copy_mtrl_am_alpha = global::scanbotsdkexamplexamarinforms.Droid.Resource.Drawable.abc_ic_menu_copy_mtrl_am_alpha;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_ic_menu_cut_mtrl_alpha = global::scanbotsdkexamplexamarinforms.Droid.Resource.Drawable.abc_ic_menu_cut_mtrl_alpha;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_ic_menu_overflow_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.Drawable.abc_ic_menu_overflow_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_ic_menu_paste_mtrl_am_alpha = global::scanbotsdkexamplexamarinforms.Droid.Resource.Drawable.abc_ic_menu_paste_mtrl_am_alpha;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_ic_menu_selectall_mtrl_alpha = global::scanbotsdkexamplexamarinforms.Droid.Resource.Drawable.abc_ic_menu_selectall_mtrl_alpha;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_ic_menu_share_mtrl_alpha = global::scanbotsdkexamplexamarinforms.Droid.Resource.Drawable.abc_ic_menu_share_mtrl_alpha;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_ic_search_api_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.Drawable.abc_ic_search_api_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_ic_star_black_16dp = global::scanbotsdkexamplexamarinforms.Droid.Resource.Drawable.abc_ic_star_black_16dp;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_ic_star_black_36dp = global::scanbotsdkexamplexamarinforms.Droid.Resource.Drawable.abc_ic_star_black_36dp;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_ic_star_black_48dp = global::scanbotsdkexamplexamarinforms.Droid.Resource.Drawable.abc_ic_star_black_48dp;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_ic_star_half_black_16dp = global::scanbotsdkexamplexamarinforms.Droid.Resource.Drawable.abc_ic_star_half_black_16dp;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_ic_star_half_black_36dp = global::scanbotsdkexamplexamarinforms.Droid.Resource.Drawable.abc_ic_star_half_black_36dp;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_ic_star_half_black_48dp = global::scanbotsdkexamplexamarinforms.Droid.Resource.Drawable.abc_ic_star_half_black_48dp;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_ic_voice_search_api_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.Drawable.abc_ic_voice_search_api_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_item_background_holo_dark = global::scanbotsdkexamplexamarinforms.Droid.Resource.Drawable.abc_item_background_holo_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_item_background_holo_light = global::scanbotsdkexamplexamarinforms.Droid.Resource.Drawable.abc_item_background_holo_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_list_divider_mtrl_alpha = global::scanbotsdkexamplexamarinforms.Droid.Resource.Drawable.abc_list_divider_mtrl_alpha;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_list_focused_holo = global::scanbotsdkexamplexamarinforms.Droid.Resource.Drawable.abc_list_focused_holo;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_list_longpressed_holo = global::scanbotsdkexamplexamarinforms.Droid.Resource.Drawable.abc_list_longpressed_holo;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_list_pressed_holo_dark = global::scanbotsdkexamplexamarinforms.Droid.Resource.Drawable.abc_list_pressed_holo_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_list_pressed_holo_light = global::scanbotsdkexamplexamarinforms.Droid.Resource.Drawable.abc_list_pressed_holo_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_list_selector_background_transition_holo_dark = global::scanbotsdkexamplexamarinforms.Droid.Resource.Drawable.abc_list_selector_background_transition_holo_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_list_selector_background_transition_holo_light = global::scanbotsdkexamplexamarinforms.Droid.Resource.Drawable.abc_list_selector_background_transition_holo_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_list_selector_disabled_holo_dark = global::scanbotsdkexamplexamarinforms.Droid.Resource.Drawable.abc_list_selector_disabled_holo_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_list_selector_disabled_holo_light = global::scanbotsdkexamplexamarinforms.Droid.Resource.Drawable.abc_list_selector_disabled_holo_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_list_selector_holo_dark = global::scanbotsdkexamplexamarinforms.Droid.Resource.Drawable.abc_list_selector_holo_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_list_selector_holo_light = global::scanbotsdkexamplexamarinforms.Droid.Resource.Drawable.abc_list_selector_holo_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_menu_hardkey_panel_mtrl_mult = global::scanbotsdkexamplexamarinforms.Droid.Resource.Drawable.abc_menu_hardkey_panel_mtrl_mult;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_popup_background_mtrl_mult = global::scanbotsdkexamplexamarinforms.Droid.Resource.Drawable.abc_popup_background_mtrl_mult;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_ratingbar_indicator_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.Drawable.abc_ratingbar_indicator_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_ratingbar_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.Drawable.abc_ratingbar_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_ratingbar_small_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.Drawable.abc_ratingbar_small_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_scrubber_control_off_mtrl_alpha = global::scanbotsdkexamplexamarinforms.Droid.Resource.Drawable.abc_scrubber_control_off_mtrl_alpha;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_000 = global::scanbotsdkexamplexamarinforms.Droid.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_000;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_005 = global::scanbotsdkexamplexamarinforms.Droid.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_005;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_scrubber_primary_mtrl_alpha = global::scanbotsdkexamplexamarinforms.Droid.Resource.Drawable.abc_scrubber_primary_mtrl_alpha;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_scrubber_track_mtrl_alpha = global::scanbotsdkexamplexamarinforms.Droid.Resource.Drawable.abc_scrubber_track_mtrl_alpha;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_seekbar_thumb_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.Drawable.abc_seekbar_thumb_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_seekbar_tick_mark_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.Drawable.abc_seekbar_tick_mark_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_seekbar_track_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.Drawable.abc_seekbar_track_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_spinner_mtrl_am_alpha = global::scanbotsdkexamplexamarinforms.Droid.Resource.Drawable.abc_spinner_mtrl_am_alpha;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_spinner_textfield_background_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.Drawable.abc_spinner_textfield_background_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_switch_thumb_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.Drawable.abc_switch_thumb_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_switch_track_mtrl_alpha = global::scanbotsdkexamplexamarinforms.Droid.Resource.Drawable.abc_switch_track_mtrl_alpha;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_tab_indicator_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.Drawable.abc_tab_indicator_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_tab_indicator_mtrl_alpha = global::scanbotsdkexamplexamarinforms.Droid.Resource.Drawable.abc_tab_indicator_mtrl_alpha;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_text_cursor_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.Drawable.abc_text_cursor_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_text_select_handle_left_mtrl_dark = global::scanbotsdkexamplexamarinforms.Droid.Resource.Drawable.abc_text_select_handle_left_mtrl_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_text_select_handle_left_mtrl_light = global::scanbotsdkexamplexamarinforms.Droid.Resource.Drawable.abc_text_select_handle_left_mtrl_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_text_select_handle_middle_mtrl_dark = global::scanbotsdkexamplexamarinforms.Droid.Resource.Drawable.abc_text_select_handle_middle_mtrl_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_text_select_handle_middle_mtrl_light = global::scanbotsdkexamplexamarinforms.Droid.Resource.Drawable.abc_text_select_handle_middle_mtrl_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_text_select_handle_right_mtrl_dark = global::scanbotsdkexamplexamarinforms.Droid.Resource.Drawable.abc_text_select_handle_right_mtrl_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_text_select_handle_right_mtrl_light = global::scanbotsdkexamplexamarinforms.Droid.Resource.Drawable.abc_text_select_handle_right_mtrl_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_textfield_activated_mtrl_alpha = global::scanbotsdkexamplexamarinforms.Droid.Resource.Drawable.abc_textfield_activated_mtrl_alpha;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_textfield_default_mtrl_alpha = global::scanbotsdkexamplexamarinforms.Droid.Resource.Drawable.abc_textfield_default_mtrl_alpha;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_textfield_search_activated_mtrl_alpha = global::scanbotsdkexamplexamarinforms.Droid.Resource.Drawable.abc_textfield_search_activated_mtrl_alpha;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_textfield_search_default_mtrl_alpha = global::scanbotsdkexamplexamarinforms.Droid.Resource.Drawable.abc_textfield_search_default_mtrl_alpha;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_textfield_search_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.Drawable.abc_textfield_search_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_vector_test = global::scanbotsdkexamplexamarinforms.Droid.Resource.Drawable.abc_vector_test;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.avd_hide_password = global::scanbotsdkexamplexamarinforms.Droid.Resource.Drawable.avd_hide_password;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.avd_hide_password_1 = global::scanbotsdkexamplexamarinforms.Droid.Resource.Drawable.avd_hide_password_1;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.avd_hide_password_2 = global::scanbotsdkexamplexamarinforms.Droid.Resource.Drawable.avd_hide_password_2;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.avd_hide_password_3 = global::scanbotsdkexamplexamarinforms.Droid.Resource.Drawable.avd_hide_password_3;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.avd_show_password = global::scanbotsdkexamplexamarinforms.Droid.Resource.Drawable.avd_show_password;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.avd_show_password_1 = global::scanbotsdkexamplexamarinforms.Droid.Resource.Drawable.avd_show_password_1;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.avd_show_password_2 = global::scanbotsdkexamplexamarinforms.Droid.Resource.Drawable.avd_show_password_2;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.avd_show_password_3 = global::scanbotsdkexamplexamarinforms.Droid.Resource.Drawable.avd_show_password_3;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.design_bottom_navigation_item_background = global::scanbotsdkexamplexamarinforms.Droid.Resource.Drawable.design_bottom_navigation_item_background;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.design_fab_background = global::scanbotsdkexamplexamarinforms.Droid.Resource.Drawable.design_fab_background;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.design_ic_visibility = global::scanbotsdkexamplexamarinforms.Droid.Resource.Drawable.design_ic_visibility;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.design_ic_visibility_off = global::scanbotsdkexamplexamarinforms.Droid.Resource.Drawable.design_ic_visibility_off;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.design_password_eye = global::scanbotsdkexamplexamarinforms.Droid.Resource.Drawable.design_password_eye;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.design_snackbar_background = global::scanbotsdkexamplexamarinforms.Droid.Resource.Drawable.design_snackbar_background;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.navigation_empty_icon = global::scanbotsdkexamplexamarinforms.Droid.Resource.Drawable.navigation_empty_icon;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.notification_action_background = global::scanbotsdkexamplexamarinforms.Droid.Resource.Drawable.notification_action_background;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.notification_bg = global::scanbotsdkexamplexamarinforms.Droid.Resource.Drawable.notification_bg;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.notification_bg_low = global::scanbotsdkexamplexamarinforms.Droid.Resource.Drawable.notification_bg_low;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.notification_bg_low_normal = global::scanbotsdkexamplexamarinforms.Droid.Resource.Drawable.notification_bg_low_normal;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.notification_bg_low_pressed = global::scanbotsdkexamplexamarinforms.Droid.Resource.Drawable.notification_bg_low_pressed;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.notification_bg_normal = global::scanbotsdkexamplexamarinforms.Droid.Resource.Drawable.notification_bg_normal;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.notification_bg_normal_pressed = global::scanbotsdkexamplexamarinforms.Droid.Resource.Drawable.notification_bg_normal_pressed;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.notification_icon_background = global::scanbotsdkexamplexamarinforms.Droid.Resource.Drawable.notification_icon_background;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.notification_template_icon_bg = global::scanbotsdkexamplexamarinforms.Droid.Resource.Drawable.notification_template_icon_bg;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.notification_template_icon_low_bg = global::scanbotsdkexamplexamarinforms.Droid.Resource.Drawable.notification_template_icon_low_bg;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.notification_tile_bg = global::scanbotsdkexamplexamarinforms.Droid.Resource.Drawable.notification_tile_bg;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.notify_panel_notification_icon_bg = global::scanbotsdkexamplexamarinforms.Droid.Resource.Drawable.notify_panel_notification_icon_bg;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.tooltip_frame_dark = global::scanbotsdkexamplexamarinforms.Droid.Resource.Drawable.tooltip_frame_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.tooltip_frame_light = global::scanbotsdkexamplexamarinforms.Droid.Resource.Drawable.tooltip_frame_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.ALT = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.ALT;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.CTRL = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.CTRL;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.FUNCTION = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.FUNCTION;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.META = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.META;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.SHIFT = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.SHIFT;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.SYM = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.SYM;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.action0 = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.action0;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.action_bar = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.action_bar;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.action_bar_activity_content = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.action_bar_activity_content;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.action_bar_container = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.action_bar_container;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.action_bar_root = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.action_bar_root;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.action_bar_spinner = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.action_bar_spinner;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.action_bar_subtitle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.action_bar_subtitle;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.action_bar_title = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.action_bar_title;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.action_container = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.action_container;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.action_context_bar = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.action_context_bar;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.action_divider = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.action_divider;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.action_image = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.action_image;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.action_menu_divider = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.action_menu_divider;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.action_menu_presenter = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.action_menu_presenter;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.action_mode_bar = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.action_mode_bar;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.action_mode_bar_stub = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.action_mode_bar_stub;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.action_mode_close_button = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.action_mode_close_button;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.action_text = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.action_text;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.actions = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.actions;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.activity_chooser_view_content = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.activity_chooser_view_content;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.add = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.add;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.alertTitle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.alertTitle;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.all = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.all;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.always = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.always;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.async = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.async;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.auto = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.auto;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.beginning = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.beginning;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.blocking = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.blocking;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.bottom = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.bottom;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.bottomtab_navarea = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.bottomtab_navarea;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.bottomtab_tabbar = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.bottomtab_tabbar;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.buttonPanel = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.buttonPanel;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.cancel_action = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.cancel_action;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.center = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.center;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.center_horizontal = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.center_horizontal;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.center_vertical = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.center_vertical;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.checkbox = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.checkbox;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.chronometer = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.chronometer;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.clip_horizontal = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.clip_horizontal;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.clip_vertical = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.clip_vertical;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.collapseActionView = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.collapseActionView;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.container = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.container;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.contentPanel = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.contentPanel;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.coordinator = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.coordinator;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.custom = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.custom;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.customPanel = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.customPanel;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.decor_content_parent = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.decor_content_parent;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.default_activity_button = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.default_activity_button;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.design_bottom_sheet = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.design_bottom_sheet;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.design_menu_item_action_area = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.design_menu_item_action_area;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.design_menu_item_action_area_stub = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.design_menu_item_action_area_stub;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.design_menu_item_text = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.design_menu_item_text;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.design_navigation_view = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.design_navigation_view;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.disableHome = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.disableHome;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.edit_query = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.edit_query;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.end = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.end;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.end_padder = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.end_padder;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.enterAlways = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.enterAlways;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.enterAlwaysCollapsed = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.enterAlwaysCollapsed;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.exitUntilCollapsed = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.exitUntilCollapsed;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.expand_activities_button = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.expand_activities_button;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.expanded_menu = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.expanded_menu;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.fill = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.fill;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.fill_horizontal = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.fill_horizontal;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.fill_vertical = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.fill_vertical;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.@fixed = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.@fixed;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.flyoutcontent_appbar = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.flyoutcontent_appbar;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.flyoutcontent_recycler = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.flyoutcontent_recycler;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.forever = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.forever;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.ghost_view = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.ghost_view;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.home = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.home;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.homeAsUp = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.homeAsUp;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.icon = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.icon;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.icon_group = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.icon_group;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.ifRoom = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.ifRoom;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.image = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.image;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.info = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.info;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.italic = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.italic;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.item_touch_helper_previous_elevation = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.item_touch_helper_previous_elevation;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.largeLabel = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.largeLabel;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.left = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.left;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.line1 = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.line1;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.line3 = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.line3;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.listMode = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.listMode;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.list_item = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.list_item;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.main_appbar = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.main_appbar;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.main_scrollview = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.main_scrollview;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.main_tablayout = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.main_tablayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.main_toolbar = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.main_toolbar;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.masked = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.masked;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.media_actions = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.media_actions;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.message = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.message;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.middle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.middle;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.mini = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.mini;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.multiply = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.multiply;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.navigation_header_container = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.navigation_header_container;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.never = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.never;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.none = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.none;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.normal = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.normal;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.notification_background = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.notification_background;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.notification_main_column = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.notification_main_column;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.notification_main_column_container = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.notification_main_column_container;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.parallax = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.parallax;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.parentPanel = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.parentPanel;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.parent_matrix = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.parent_matrix;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.pin = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.pin;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.progress_circular = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.progress_circular;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.progress_horizontal = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.progress_horizontal;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.radio = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.radio;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.right = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.right;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.right_icon = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.right_icon;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.right_side = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.right_side;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.save_image_matrix = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.save_image_matrix;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.save_non_transition_alpha = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.save_non_transition_alpha;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.save_scale_type = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.save_scale_type;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.screen = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.screen;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.scroll = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.scroll;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.scrollIndicatorDown = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.scrollIndicatorDown;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.scrollIndicatorUp = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.scrollIndicatorUp;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.scrollView = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.scrollView;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.scrollable = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.scrollable;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.search_badge = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.search_badge;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.search_bar = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.search_bar;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.search_button = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.search_button;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.search_close_btn = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.search_close_btn;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.search_edit_frame = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.search_edit_frame;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.search_go_btn = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.search_go_btn;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.search_mag_icon = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.search_mag_icon;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.search_plate = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.search_plate;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.search_src_text = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.search_src_text;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.search_voice_btn = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.search_voice_btn;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.select_dialog_listview = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.select_dialog_listview;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.shellcontent_appbar = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.shellcontent_appbar;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.shellcontent_scrollview = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.shellcontent_scrollview;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.shellcontent_toolbar = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.shellcontent_toolbar;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.shortcut = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.shortcut;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.showCustom = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.showCustom;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.showHome = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.showHome;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.showTitle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.showTitle;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.smallLabel = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.smallLabel;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.snackbar_action = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.snackbar_action;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.snackbar_text = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.snackbar_text;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.snap = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.snap;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.spacer = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.spacer;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.split_action_bar = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.split_action_bar;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.src_atop = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.src_atop;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.src_in = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.src_in;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.src_over = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.src_over;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.start = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.start;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.status_bar_latest_event_content = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.status_bar_latest_event_content;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.submenuarrow = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.submenuarrow;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.submit_area = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.submit_area;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.tabMode = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.tabMode;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.tag_transition_group = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.tag_transition_group;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.text = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.text;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.text2 = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.text2;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.textSpacerNoButtons = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.textSpacerNoButtons;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.textSpacerNoTitle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.textSpacerNoTitle;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.text_input_password_toggle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.text_input_password_toggle;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.textinput_counter = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.textinput_counter;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.textinput_error = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.textinput_error;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.time = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.time;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.title = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.title;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.titleDividerNoCustom = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.titleDividerNoCustom;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.title_template = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.title_template;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.top = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.top;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.topPanel = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.topPanel;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.touch_outside = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.touch_outside;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.transition_current_scene = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.transition_current_scene;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.transition_layout_save = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.transition_layout_save;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.transition_position = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.transition_position;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.transition_scene_layoutid_cache = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.transition_scene_layoutid_cache;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.transition_transform = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.transition_transform;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.uniform = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.uniform;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.up = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.up;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.useLogo = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.useLogo;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.view_offset_helper = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.view_offset_helper;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.visible = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.visible;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.withText = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.withText;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.wrap_content = global::scanbotsdkexamplexamarinforms.Droid.Resource.Id.wrap_content;
+			global::Xamarin.Forms.Platform.Android.Resource.Integer.abc_config_activityDefaultDur = global::scanbotsdkexamplexamarinforms.Droid.Resource.Integer.abc_config_activityDefaultDur;
+			global::Xamarin.Forms.Platform.Android.Resource.Integer.abc_config_activityShortDur = global::scanbotsdkexamplexamarinforms.Droid.Resource.Integer.abc_config_activityShortDur;
+			global::Xamarin.Forms.Platform.Android.Resource.Integer.app_bar_elevation_anim_duration = global::scanbotsdkexamplexamarinforms.Droid.Resource.Integer.app_bar_elevation_anim_duration;
+			global::Xamarin.Forms.Platform.Android.Resource.Integer.bottom_sheet_slide_duration = global::scanbotsdkexamplexamarinforms.Droid.Resource.Integer.bottom_sheet_slide_duration;
+			global::Xamarin.Forms.Platform.Android.Resource.Integer.cancel_button_image_alpha = global::scanbotsdkexamplexamarinforms.Droid.Resource.Integer.cancel_button_image_alpha;
+			global::Xamarin.Forms.Platform.Android.Resource.Integer.config_tooltipAnimTime = global::scanbotsdkexamplexamarinforms.Droid.Resource.Integer.config_tooltipAnimTime;
+			global::Xamarin.Forms.Platform.Android.Resource.Integer.design_snackbar_text_max_lines = global::scanbotsdkexamplexamarinforms.Droid.Resource.Integer.design_snackbar_text_max_lines;
+			global::Xamarin.Forms.Platform.Android.Resource.Integer.hide_password_duration = global::scanbotsdkexamplexamarinforms.Droid.Resource.Integer.hide_password_duration;
+			global::Xamarin.Forms.Platform.Android.Resource.Integer.show_password_duration = global::scanbotsdkexamplexamarinforms.Droid.Resource.Integer.show_password_duration;
+			global::Xamarin.Forms.Platform.Android.Resource.Integer.status_bar_notification_info_maxnum = global::scanbotsdkexamplexamarinforms.Droid.Resource.Integer.status_bar_notification_info_maxnum;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.abc_action_bar_title_item = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.abc_action_bar_title_item;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.abc_action_bar_up_container = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.abc_action_bar_up_container;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.abc_action_menu_item_layout = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.abc_action_menu_item_layout;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.abc_action_menu_layout = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.abc_action_menu_layout;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.abc_action_mode_bar = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.abc_action_mode_bar;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.abc_action_mode_close_item_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.abc_action_mode_close_item_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.abc_activity_chooser_view = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.abc_activity_chooser_view;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.abc_activity_chooser_view_list_item = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.abc_activity_chooser_view_list_item;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.abc_alert_dialog_button_bar_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.abc_alert_dialog_button_bar_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.abc_alert_dialog_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.abc_alert_dialog_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.abc_alert_dialog_title_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.abc_alert_dialog_title_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.abc_dialog_title_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.abc_dialog_title_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.abc_expanded_menu_layout = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.abc_expanded_menu_layout;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.abc_list_menu_item_checkbox = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.abc_list_menu_item_checkbox;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.abc_list_menu_item_icon = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.abc_list_menu_item_icon;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.abc_list_menu_item_layout = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.abc_list_menu_item_layout;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.abc_list_menu_item_radio = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.abc_list_menu_item_radio;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.abc_popup_menu_header_item_layout = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.abc_popup_menu_header_item_layout;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.abc_popup_menu_item_layout = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.abc_popup_menu_item_layout;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.abc_screen_content_include = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.abc_screen_content_include;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.abc_screen_simple = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.abc_screen_simple;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.abc_screen_simple_overlay_action_mode = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.abc_screen_simple_overlay_action_mode;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.abc_screen_toolbar = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.abc_screen_toolbar;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.abc_search_dropdown_item_icons_2line = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.abc_search_dropdown_item_icons_2line;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.abc_search_view = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.abc_search_view;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.abc_select_dialog_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.abc_select_dialog_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.BottomTabLayout = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.BottomTabLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.design_bottom_navigation_item = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.design_bottom_navigation_item;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.design_bottom_sheet_dialog = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.design_bottom_sheet_dialog;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.design_layout_snackbar = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.design_layout_snackbar;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.design_layout_snackbar_include = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.design_layout_snackbar_include;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.design_layout_tab_icon = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.design_layout_tab_icon;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.design_layout_tab_text = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.design_layout_tab_text;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.design_menu_item_action_area = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.design_menu_item_action_area;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.design_navigation_item = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.design_navigation_item;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.design_navigation_item_header = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.design_navigation_item_header;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.design_navigation_item_separator = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.design_navigation_item_separator;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.design_navigation_item_subheader = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.design_navigation_item_subheader;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.design_navigation_menu = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.design_navigation_menu;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.design_navigation_menu_item = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.design_navigation_menu_item;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.design_text_input_password_icon = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.design_text_input_password_icon;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.FlyoutContent = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.FlyoutContent;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.notification_action = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.notification_action;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.notification_action_tombstone = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.notification_action_tombstone;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.notification_media_action = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.notification_media_action;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.notification_media_cancel_action = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.notification_media_cancel_action;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.notification_template_big_media = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.notification_template_big_media;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.notification_template_big_media_custom = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.notification_template_big_media_custom;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.notification_template_big_media_narrow = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.notification_template_big_media_narrow;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.notification_template_big_media_narrow_custom = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.notification_template_big_media_narrow_custom;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.notification_template_custom_big = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.notification_template_custom_big;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.notification_template_icon_group = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.notification_template_icon_group;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.notification_template_lines_media = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.notification_template_lines_media;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.notification_template_media = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.notification_template_media;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.notification_template_media_custom = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.notification_template_media_custom;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.notification_template_part_chronometer = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.notification_template_part_chronometer;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.notification_template_part_time = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.notification_template_part_time;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.RootLayout = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.RootLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.select_dialog_item_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.select_dialog_item_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.select_dialog_multichoice_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.select_dialog_multichoice_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.select_dialog_singlechoice_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.select_dialog_singlechoice_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.ShellContent = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.ShellContent;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.support_simple_spinner_dropdown_item = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.support_simple_spinner_dropdown_item;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.tooltip = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.tooltip;
+			global::Xamarin.Forms.Platform.Android.Resource.String.abc_action_bar_home_description = global::scanbotsdkexamplexamarinforms.Droid.Resource.String.abc_action_bar_home_description;
+			global::Xamarin.Forms.Platform.Android.Resource.String.abc_action_bar_up_description = global::scanbotsdkexamplexamarinforms.Droid.Resource.String.abc_action_bar_up_description;
+			global::Xamarin.Forms.Platform.Android.Resource.String.abc_action_menu_overflow_description = global::scanbotsdkexamplexamarinforms.Droid.Resource.String.abc_action_menu_overflow_description;
+			global::Xamarin.Forms.Platform.Android.Resource.String.abc_action_mode_done = global::scanbotsdkexamplexamarinforms.Droid.Resource.String.abc_action_mode_done;
+			global::Xamarin.Forms.Platform.Android.Resource.String.abc_activity_chooser_view_see_all = global::scanbotsdkexamplexamarinforms.Droid.Resource.String.abc_activity_chooser_view_see_all;
+			global::Xamarin.Forms.Platform.Android.Resource.String.abc_activitychooserview_choose_application = global::scanbotsdkexamplexamarinforms.Droid.Resource.String.abc_activitychooserview_choose_application;
+			global::Xamarin.Forms.Platform.Android.Resource.String.abc_capital_off = global::scanbotsdkexamplexamarinforms.Droid.Resource.String.abc_capital_off;
+			global::Xamarin.Forms.Platform.Android.Resource.String.abc_capital_on = global::scanbotsdkexamplexamarinforms.Droid.Resource.String.abc_capital_on;
+			global::Xamarin.Forms.Platform.Android.Resource.String.abc_font_family_body_1_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.String.abc_font_family_body_1_material;
+			global::Xamarin.Forms.Platform.Android.Resource.String.abc_font_family_body_2_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.String.abc_font_family_body_2_material;
+			global::Xamarin.Forms.Platform.Android.Resource.String.abc_font_family_button_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.String.abc_font_family_button_material;
+			global::Xamarin.Forms.Platform.Android.Resource.String.abc_font_family_caption_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.String.abc_font_family_caption_material;
+			global::Xamarin.Forms.Platform.Android.Resource.String.abc_font_family_display_1_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.String.abc_font_family_display_1_material;
+			global::Xamarin.Forms.Platform.Android.Resource.String.abc_font_family_display_2_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.String.abc_font_family_display_2_material;
+			global::Xamarin.Forms.Platform.Android.Resource.String.abc_font_family_display_3_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.String.abc_font_family_display_3_material;
+			global::Xamarin.Forms.Platform.Android.Resource.String.abc_font_family_display_4_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.String.abc_font_family_display_4_material;
+			global::Xamarin.Forms.Platform.Android.Resource.String.abc_font_family_headline_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.String.abc_font_family_headline_material;
+			global::Xamarin.Forms.Platform.Android.Resource.String.abc_font_family_menu_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.String.abc_font_family_menu_material;
+			global::Xamarin.Forms.Platform.Android.Resource.String.abc_font_family_subhead_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.String.abc_font_family_subhead_material;
+			global::Xamarin.Forms.Platform.Android.Resource.String.abc_font_family_title_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.String.abc_font_family_title_material;
+			global::Xamarin.Forms.Platform.Android.Resource.String.abc_search_hint = global::scanbotsdkexamplexamarinforms.Droid.Resource.String.abc_search_hint;
+			global::Xamarin.Forms.Platform.Android.Resource.String.abc_searchview_description_clear = global::scanbotsdkexamplexamarinforms.Droid.Resource.String.abc_searchview_description_clear;
+			global::Xamarin.Forms.Platform.Android.Resource.String.abc_searchview_description_query = global::scanbotsdkexamplexamarinforms.Droid.Resource.String.abc_searchview_description_query;
+			global::Xamarin.Forms.Platform.Android.Resource.String.abc_searchview_description_search = global::scanbotsdkexamplexamarinforms.Droid.Resource.String.abc_searchview_description_search;
+			global::Xamarin.Forms.Platform.Android.Resource.String.abc_searchview_description_submit = global::scanbotsdkexamplexamarinforms.Droid.Resource.String.abc_searchview_description_submit;
+			global::Xamarin.Forms.Platform.Android.Resource.String.abc_searchview_description_voice = global::scanbotsdkexamplexamarinforms.Droid.Resource.String.abc_searchview_description_voice;
+			global::Xamarin.Forms.Platform.Android.Resource.String.abc_shareactionprovider_share_with = global::scanbotsdkexamplexamarinforms.Droid.Resource.String.abc_shareactionprovider_share_with;
+			global::Xamarin.Forms.Platform.Android.Resource.String.abc_shareactionprovider_share_with_application = global::scanbotsdkexamplexamarinforms.Droid.Resource.String.abc_shareactionprovider_share_with_application;
+			global::Xamarin.Forms.Platform.Android.Resource.String.abc_toolbar_collapse_description = global::scanbotsdkexamplexamarinforms.Droid.Resource.String.abc_toolbar_collapse_description;
+			global::Xamarin.Forms.Platform.Android.Resource.String.appbar_scrolling_view_behavior = global::scanbotsdkexamplexamarinforms.Droid.Resource.String.appbar_scrolling_view_behavior;
+			global::Xamarin.Forms.Platform.Android.Resource.String.bottom_sheet_behavior = global::scanbotsdkexamplexamarinforms.Droid.Resource.String.bottom_sheet_behavior;
+			global::Xamarin.Forms.Platform.Android.Resource.String.character_counter_pattern = global::scanbotsdkexamplexamarinforms.Droid.Resource.String.character_counter_pattern;
+			global::Xamarin.Forms.Platform.Android.Resource.String.password_toggle_content_description = global::scanbotsdkexamplexamarinforms.Droid.Resource.String.password_toggle_content_description;
+			global::Xamarin.Forms.Platform.Android.Resource.String.path_password_eye = global::scanbotsdkexamplexamarinforms.Droid.Resource.String.path_password_eye;
+			global::Xamarin.Forms.Platform.Android.Resource.String.path_password_eye_mask_strike_through = global::scanbotsdkexamplexamarinforms.Droid.Resource.String.path_password_eye_mask_strike_through;
+			global::Xamarin.Forms.Platform.Android.Resource.String.path_password_eye_mask_visible = global::scanbotsdkexamplexamarinforms.Droid.Resource.String.path_password_eye_mask_visible;
+			global::Xamarin.Forms.Platform.Android.Resource.String.path_password_strike_through = global::scanbotsdkexamplexamarinforms.Droid.Resource.String.path_password_strike_through;
+			global::Xamarin.Forms.Platform.Android.Resource.String.search_menu_title = global::scanbotsdkexamplexamarinforms.Droid.Resource.String.search_menu_title;
+			global::Xamarin.Forms.Platform.Android.Resource.String.status_bar_notification_info_overflow = global::scanbotsdkexamplexamarinforms.Droid.Resource.String.status_bar_notification_info_overflow;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.AlertDialog_AppCompat = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.AlertDialog_AppCompat;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.AlertDialog_AppCompat_Light = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.AlertDialog_AppCompat_Light;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Animation_AppCompat_Dialog = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Animation_AppCompat_Dialog;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Animation_AppCompat_DropDownUp = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Animation_AppCompat_DropDownUp;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Animation_AppCompat_Tooltip = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Animation_AppCompat_Tooltip;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Animation_Design_BottomSheetDialog = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Animation_Design_BottomSheetDialog;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_AlertDialog_AppCompat = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_AlertDialog_AppCompat;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_AlertDialog_AppCompat_Light = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_AlertDialog_AppCompat_Light;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Animation_AppCompat_Dialog = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_Animation_AppCompat_Dialog;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Animation_AppCompat_DropDownUp = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_Animation_AppCompat_DropDownUp;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Animation_AppCompat_Tooltip = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_Animation_AppCompat_Tooltip;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_CardView = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_CardView;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_DialogWindowTitle_AppCompat = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_DialogWindowTitle_AppCompat;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_DialogWindowTitleBackground_AppCompat = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_DialogWindowTitleBackground_AppCompat;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_TextAppearance_AppCompat;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Body1 = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_TextAppearance_AppCompat_Body1;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Body2 = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_TextAppearance_AppCompat_Body2;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Button = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_TextAppearance_AppCompat_Button;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Caption = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_TextAppearance_AppCompat_Caption;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Display1 = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display1;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Display2 = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display2;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Display3 = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display3;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Display4 = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display4;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Headline = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_TextAppearance_AppCompat_Headline;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Inverse = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_TextAppearance_AppCompat_Inverse;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Large = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_TextAppearance_AppCompat_Large;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Large_Inverse = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_TextAppearance_AppCompat_Large_Inverse;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Medium = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_TextAppearance_AppCompat_Medium;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Medium_Inverse = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_TextAppearance_AppCompat_Medium_Inverse;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Menu = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_TextAppearance_AppCompat_Menu;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_SearchResult = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Subtitle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Subtitle;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Title = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Title;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Small = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_TextAppearance_AppCompat_Small;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Small_Inverse = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_TextAppearance_AppCompat_Small_Inverse;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Subhead = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_TextAppearance_AppCompat_Subhead;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Subhead_Inverse = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_TextAppearance_AppCompat_Subhead_Inverse;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Title = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_TextAppearance_AppCompat_Title;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Title_Inverse = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_TextAppearance_AppCompat_Title_Inverse;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Tooltip = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_TextAppearance_AppCompat_Tooltip;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Menu = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Menu;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Title = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Title;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Borderless_Colored = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Borderless_Colored;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Colored = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Colored;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Inverse = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Inverse;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_DropDownItem = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_DropDownItem;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Header = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Header;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Large = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Large;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Small = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Small;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_Switch = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Switch;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Title = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Title;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Theme_AppCompat = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_Theme_AppCompat;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Theme_AppCompat_CompactMenu = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_Theme_AppCompat_CompactMenu;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Theme_AppCompat_Dialog = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_Theme_AppCompat_Dialog;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Theme_AppCompat_Dialog_Alert = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_Alert;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Theme_AppCompat_Dialog_FixedSize = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_FixedSize;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Theme_AppCompat_Dialog_MinWidth = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_MinWidth;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Theme_AppCompat_DialogWhenLarge = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_Theme_AppCompat_DialogWhenLarge;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Theme_AppCompat_Light = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_Theme_AppCompat_Light;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Theme_AppCompat_Light_DarkActionBar = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_Theme_AppCompat_Light_DarkActionBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Theme_AppCompat_Light_Dialog = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Theme_AppCompat_Light_Dialog_Alert = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_Alert;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Theme_AppCompat_Light_Dialog_FixedSize = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_FixedSize;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Theme_AppCompat_Light_Dialog_MinWidth = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_MinWidth;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Theme_AppCompat_Light_DialogWhenLarge = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_Theme_AppCompat_Light_DialogWhenLarge;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_ThemeOverlay_AppCompat = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_ThemeOverlay_AppCompat;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_ThemeOverlay_AppCompat_ActionBar = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_ActionBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Dark = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Dark_ActionBar = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dark_ActionBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog_Alert = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog_Alert;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Light = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Light;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V11_Theme_AppCompat_Dialog = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_V11_Theme_AppCompat_Dialog;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V11_Theme_AppCompat_Light_Dialog = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_V11_Theme_AppCompat_Light_Dialog;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V11_ThemeOverlay_AppCompat_Dialog = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_V11_ThemeOverlay_AppCompat_Dialog;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V12_Widget_AppCompat_AutoCompleteTextView = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_V12_Widget_AppCompat_AutoCompleteTextView;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V12_Widget_AppCompat_EditText = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_V12_Widget_AppCompat_EditText;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V14_Widget_Design_AppBarLayout = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_V14_Widget_Design_AppBarLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V21_Theme_AppCompat = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_V21_Theme_AppCompat;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V21_Theme_AppCompat_Dialog = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_V21_Theme_AppCompat_Dialog;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V21_Theme_AppCompat_Light = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_V21_Theme_AppCompat_Light;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V21_ThemeOverlay_AppCompat_Dialog = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_V21_ThemeOverlay_AppCompat_Dialog;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V21_Widget_Design_AppBarLayout = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_V21_Widget_Design_AppBarLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V22_Theme_AppCompat = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_V22_Theme_AppCompat;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V22_Theme_AppCompat_Light = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_V22_Theme_AppCompat_Light;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V23_Theme_AppCompat = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_V23_Theme_AppCompat;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V23_Theme_AppCompat_Light = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_V23_Theme_AppCompat_Light;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V26_Theme_AppCompat = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_V26_Theme_AppCompat;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V26_Theme_AppCompat_Light = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_V26_Theme_AppCompat_Light;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V26_Widget_AppCompat_Toolbar = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_V26_Widget_AppCompat_Toolbar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V26_Widget_Design_AppBarLayout = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_V26_Widget_Design_AppBarLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V7_Theme_AppCompat = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_V7_Theme_AppCompat;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V7_Theme_AppCompat_Dialog = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_V7_Theme_AppCompat_Dialog;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V7_Theme_AppCompat_Light = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_V7_Theme_AppCompat_Light;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V7_Theme_AppCompat_Light_Dialog = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_V7_Theme_AppCompat_Light_Dialog;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V7_ThemeOverlay_AppCompat_Dialog = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_V7_ThemeOverlay_AppCompat_Dialog;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V7_Widget_AppCompat_AutoCompleteTextView = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_V7_Widget_AppCompat_AutoCompleteTextView;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V7_Widget_AppCompat_EditText = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_V7_Widget_AppCompat_EditText;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V7_Widget_AppCompat_Toolbar = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_V7_Widget_AppCompat_Toolbar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_ActionBar = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_ActionBar_Solid = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_Solid;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_ActionBar_TabBar = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_ActionBar_TabText = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabText;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_ActionBar_TabView = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabView;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_ActionButton = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_ActionButton_CloseMode = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton_CloseMode;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_ActionButton_Overflow = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton_Overflow;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_ActionMode = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_Widget_AppCompat_ActionMode;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_ActivityChooserView = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_Widget_AppCompat_ActivityChooserView;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_AutoCompleteTextView = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_Widget_AppCompat_AutoCompleteTextView;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_Button = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_Widget_AppCompat_Button;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_Button_Borderless = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_Widget_AppCompat_Button_Borderless;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_Button_Borderless_Colored = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_Widget_AppCompat_Button_Borderless_Colored;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_Button_ButtonBar_AlertDialog = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_Widget_AppCompat_Button_ButtonBar_AlertDialog;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_Button_Colored = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_Widget_AppCompat_Button_Colored;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_Button_Small = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_Widget_AppCompat_Button_Small;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_ButtonBar = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_Widget_AppCompat_ButtonBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_ButtonBar_AlertDialog = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_Widget_AppCompat_ButtonBar_AlertDialog;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_CompoundButton_CheckBox = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_CheckBox;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_CompoundButton_RadioButton = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_RadioButton;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_CompoundButton_Switch = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_Switch;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle_Common = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle_Common;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_DropDownItem_Spinner = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_Widget_AppCompat_DropDownItem_Spinner;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_EditText = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_Widget_AppCompat_EditText;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_ImageButton = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_Widget_AppCompat_ImageButton;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_Solid = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_Solid;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabBar = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabView = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabView;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu_Overflow = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu_Overflow;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_ListMenuView = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_Widget_AppCompat_ListMenuView;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_ListPopupWindow = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_Widget_AppCompat_ListPopupWindow;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_ListView = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_Widget_AppCompat_ListView;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_ListView_DropDown = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_Widget_AppCompat_ListView_DropDown;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_ListView_Menu = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_Widget_AppCompat_ListView_Menu;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_PopupMenu = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_Widget_AppCompat_PopupMenu;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_PopupMenu_Overflow = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_Widget_AppCompat_PopupMenu_Overflow;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_PopupWindow = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_Widget_AppCompat_PopupWindow;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_ProgressBar = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_Widget_AppCompat_ProgressBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_ProgressBar_Horizontal = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_Widget_AppCompat_ProgressBar_Horizontal;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_RatingBar = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_RatingBar_Indicator = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar_Indicator;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_RatingBar_Small = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar_Small;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_SearchView = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_Widget_AppCompat_SearchView;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_SearchView_ActionBar = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_Widget_AppCompat_SearchView_ActionBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_SeekBar = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_Widget_AppCompat_SeekBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_SeekBar_Discrete = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_Widget_AppCompat_SeekBar_Discrete;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_Spinner = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_Widget_AppCompat_Spinner;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_Toolbar = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_Widget_AppCompat_Toolbar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_Design_AppBarLayout = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_Widget_Design_AppBarLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_Design_TabLayout = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Base_Widget_Design_TabLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.CardView = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.CardView;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.CardView_Dark = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.CardView_Dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.CardView_Light = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.CardView_Light;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Platform_AppCompat = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Platform_AppCompat;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Platform_AppCompat_Light = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Platform_AppCompat_Light;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Platform_ThemeOverlay_AppCompat = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Platform_ThemeOverlay_AppCompat_Dark = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat_Dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Platform_ThemeOverlay_AppCompat_Light = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat_Light;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Platform_V11_AppCompat = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Platform_V11_AppCompat;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Platform_V11_AppCompat_Light = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Platform_V11_AppCompat_Light;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Platform_V14_AppCompat = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Platform_V14_AppCompat;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Platform_V14_AppCompat_Light = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Platform_V14_AppCompat_Light;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Platform_V21_AppCompat = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Platform_V21_AppCompat;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Platform_V21_AppCompat_Light = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Platform_V21_AppCompat_Light;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Platform_V25_AppCompat = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Platform_V25_AppCompat;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Platform_V25_AppCompat_Light = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Platform_V25_AppCompat_Light;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Platform_Widget_AppCompat_Spinner = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Platform_Widget_AppCompat_Spinner;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.RtlOverlay_DialogWindowTitle_AppCompat = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.RtlOverlay_DialogWindowTitle_AppCompat;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.RtlOverlay_Widget_AppCompat_ActionBar_TitleItem = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_ActionBar_TitleItem;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.RtlOverlay_Widget_AppCompat_DialogTitle_Icon = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_DialogTitle_Icon;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Text = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Text;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1 = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2 = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Query = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Query;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Text = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Text;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.RtlOverlay_Widget_AppCompat_SearchView_MagIcon = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_SearchView_MagIcon;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton_Overflow = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton_Overflow;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.TextAppearance_AppCompat;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Body1 = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.TextAppearance_AppCompat_Body1;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Body2 = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.TextAppearance_AppCompat_Body2;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Button = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.TextAppearance_AppCompat_Button;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Caption = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.TextAppearance_AppCompat_Caption;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Display1 = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.TextAppearance_AppCompat_Display1;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Display2 = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.TextAppearance_AppCompat_Display2;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Display3 = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.TextAppearance_AppCompat_Display3;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Display4 = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.TextAppearance_AppCompat_Display4;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Headline = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.TextAppearance_AppCompat_Headline;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Inverse = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.TextAppearance_AppCompat_Inverse;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Large = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.TextAppearance_AppCompat_Large;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Large_Inverse = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.TextAppearance_AppCompat_Large_Inverse;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Subtitle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Subtitle;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Title = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Title;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Large = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Large;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Small = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Small;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Medium = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.TextAppearance_AppCompat_Medium;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Medium_Inverse = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.TextAppearance_AppCompat_Medium_Inverse;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Menu = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.TextAppearance_AppCompat_Menu;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_SearchResult_Subtitle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.TextAppearance_AppCompat_SearchResult_Subtitle;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_SearchResult_Title = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.TextAppearance_AppCompat_SearchResult_Title;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Small = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.TextAppearance_AppCompat_Small;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Small_Inverse = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.TextAppearance_AppCompat_Small_Inverse;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Subhead = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.TextAppearance_AppCompat_Subhead;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Subhead_Inverse = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.TextAppearance_AppCompat_Subhead_Inverse;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Title = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.TextAppearance_AppCompat_Title;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Title_Inverse = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.TextAppearance_AppCompat_Title_Inverse;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Tooltip = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.TextAppearance_AppCompat_Tooltip;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Menu = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Menu;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Widget_Button = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Widget_Button_Borderless_Colored = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button_Borderless_Colored;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Widget_Button_Colored = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button_Colored;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Widget_Button_Inverse = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button_Inverse;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Widget_DropDownItem = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.TextAppearance_AppCompat_Widget_DropDownItem;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Header = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Header;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Large = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Large;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Small = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Small;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Widget_Switch = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Switch;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Widget_TextView_SpinnerItem = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.TextAppearance_AppCompat_Widget_TextView_SpinnerItem;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_Compat_Notification = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.TextAppearance_Compat_Notification;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_Compat_Notification_Info = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.TextAppearance_Compat_Notification_Info;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_Compat_Notification_Info_Media = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.TextAppearance_Compat_Notification_Info_Media;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_Compat_Notification_Line2 = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.TextAppearance_Compat_Notification_Line2;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_Compat_Notification_Line2_Media = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.TextAppearance_Compat_Notification_Line2_Media;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_Compat_Notification_Media = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.TextAppearance_Compat_Notification_Media;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_Compat_Notification_Time = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.TextAppearance_Compat_Notification_Time;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_Compat_Notification_Time_Media = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.TextAppearance_Compat_Notification_Time_Media;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_Compat_Notification_Title = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.TextAppearance_Compat_Notification_Title;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_Compat_Notification_Title_Media = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.TextAppearance_Compat_Notification_Title_Media;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_Design_CollapsingToolbar_Expanded = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.TextAppearance_Design_CollapsingToolbar_Expanded;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_Design_Counter = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.TextAppearance_Design_Counter;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_Design_Counter_Overflow = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.TextAppearance_Design_Counter_Overflow;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_Design_Error = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.TextAppearance_Design_Error;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_Design_Hint = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.TextAppearance_Design_Hint;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_Design_Snackbar_Message = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.TextAppearance_Design_Snackbar_Message;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_Design_Tab = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.TextAppearance_Design_Tab;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_Widget_AppCompat_ExpandedMenu_Item = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.TextAppearance_Widget_AppCompat_ExpandedMenu_Item;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Subtitle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Subtitle;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Title = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Title;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_AppCompat = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Theme_AppCompat;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_AppCompat_CompactMenu = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Theme_AppCompat_CompactMenu;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_AppCompat_DayNight = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Theme_AppCompat_DayNight;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_AppCompat_DayNight_DarkActionBar = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Theme_AppCompat_DayNight_DarkActionBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_AppCompat_DayNight_Dialog = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_AppCompat_DayNight_Dialog_Alert = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog_Alert;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_AppCompat_DayNight_Dialog_MinWidth = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog_MinWidth;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_AppCompat_DayNight_DialogWhenLarge = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Theme_AppCompat_DayNight_DialogWhenLarge;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_AppCompat_DayNight_NoActionBar = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Theme_AppCompat_DayNight_NoActionBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_AppCompat_Dialog = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Theme_AppCompat_Dialog;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_AppCompat_Dialog_Alert = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Theme_AppCompat_Dialog_Alert;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_AppCompat_Dialog_MinWidth = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Theme_AppCompat_Dialog_MinWidth;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_AppCompat_DialogWhenLarge = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Theme_AppCompat_DialogWhenLarge;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_AppCompat_Light = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Theme_AppCompat_Light;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_AppCompat_Light_DarkActionBar = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Theme_AppCompat_Light_DarkActionBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_AppCompat_Light_Dialog = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Theme_AppCompat_Light_Dialog;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_AppCompat_Light_Dialog_Alert = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Theme_AppCompat_Light_Dialog_Alert;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_AppCompat_Light_Dialog_MinWidth = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Theme_AppCompat_Light_Dialog_MinWidth;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_AppCompat_Light_DialogWhenLarge = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Theme_AppCompat_Light_DialogWhenLarge;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_AppCompat_Light_NoActionBar = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Theme_AppCompat_Light_NoActionBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_AppCompat_NoActionBar = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Theme_AppCompat_NoActionBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_Design = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Theme_Design;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_Design_BottomSheetDialog = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Theme_Design_BottomSheetDialog;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_Design_Light = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Theme_Design_Light;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_Design_Light_BottomSheetDialog = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Theme_Design_Light_BottomSheetDialog;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_Design_Light_NoActionBar = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Theme_Design_Light_NoActionBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_Design_NoActionBar = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Theme_Design_NoActionBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.ThemeOverlay_AppCompat = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.ThemeOverlay_AppCompat;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.ThemeOverlay_AppCompat_ActionBar = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.ThemeOverlay_AppCompat_ActionBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.ThemeOverlay_AppCompat_Dark = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.ThemeOverlay_AppCompat_Dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.ThemeOverlay_AppCompat_Dialog = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.ThemeOverlay_AppCompat_Dialog;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.ThemeOverlay_AppCompat_Dialog_Alert = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.ThemeOverlay_AppCompat_Dialog_Alert;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.ThemeOverlay_AppCompat_Light = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.ThemeOverlay_AppCompat_Light;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_ActionBar = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Widget_AppCompat_ActionBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_ActionBar_Solid = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Widget_AppCompat_ActionBar_Solid;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_ActionBar_TabBar = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_ActionBar_TabText = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabText;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_ActionBar_TabView = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabView;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_ActionButton = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Widget_AppCompat_ActionButton;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_ActionButton_CloseMode = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Widget_AppCompat_ActionButton_CloseMode;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_ActionButton_Overflow = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Widget_AppCompat_ActionButton_Overflow;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_ActionMode = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Widget_AppCompat_ActionMode;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_ActivityChooserView = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Widget_AppCompat_ActivityChooserView;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_AutoCompleteTextView = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Widget_AppCompat_AutoCompleteTextView;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Button = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Widget_AppCompat_Button;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Button_Borderless = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Widget_AppCompat_Button_Borderless;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Button_Borderless_Colored = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Widget_AppCompat_Button_Borderless_Colored;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Button_ButtonBar_AlertDialog = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Widget_AppCompat_Button_ButtonBar_AlertDialog;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Button_Colored = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Widget_AppCompat_Button_Colored;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Button_Small = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Widget_AppCompat_Button_Small;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_ButtonBar = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Widget_AppCompat_ButtonBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_ButtonBar_AlertDialog = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Widget_AppCompat_ButtonBar_AlertDialog;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_CompoundButton_CheckBox = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Widget_AppCompat_CompoundButton_CheckBox;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_CompoundButton_RadioButton = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Widget_AppCompat_CompoundButton_RadioButton;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_CompoundButton_Switch = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Widget_AppCompat_CompoundButton_Switch;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_DrawerArrowToggle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Widget_AppCompat_DrawerArrowToggle;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_DropDownItem_Spinner = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Widget_AppCompat_DropDownItem_Spinner;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_EditText = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Widget_AppCompat_EditText;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_ImageButton = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Widget_AppCompat_ImageButton;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Light_ActionBar = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid_Inverse = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid_Inverse;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar_Inverse = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar_Inverse;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText_Inverse = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText_Inverse;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView_Inverse = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView_Inverse;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Light_ActionButton = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Light_ActionButton_CloseMode = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton_CloseMode;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Light_ActionButton_Overflow = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton_Overflow;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Light_ActionMode_Inverse = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Widget_AppCompat_Light_ActionMode_Inverse;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Light_ActivityChooserView = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Widget_AppCompat_Light_ActivityChooserView;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Light_AutoCompleteTextView = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Widget_AppCompat_Light_AutoCompleteTextView;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Light_DropDownItem_Spinner = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Widget_AppCompat_Light_DropDownItem_Spinner;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Light_ListPopupWindow = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Widget_AppCompat_Light_ListPopupWindow;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Light_ListView_DropDown = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Widget_AppCompat_Light_ListView_DropDown;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Light_PopupMenu = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Widget_AppCompat_Light_PopupMenu;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Light_PopupMenu_Overflow = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Widget_AppCompat_Light_PopupMenu_Overflow;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Light_SearchView = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Widget_AppCompat_Light_SearchView;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Light_Spinner_DropDown_ActionBar = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Widget_AppCompat_Light_Spinner_DropDown_ActionBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_ListMenuView = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Widget_AppCompat_ListMenuView;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_ListPopupWindow = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Widget_AppCompat_ListPopupWindow;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_ListView = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Widget_AppCompat_ListView;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_ListView_DropDown = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Widget_AppCompat_ListView_DropDown;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_ListView_Menu = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Widget_AppCompat_ListView_Menu;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_PopupMenu = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Widget_AppCompat_PopupMenu;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_PopupMenu_Overflow = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Widget_AppCompat_PopupMenu_Overflow;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_PopupWindow = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Widget_AppCompat_PopupWindow;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_ProgressBar = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Widget_AppCompat_ProgressBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_ProgressBar_Horizontal = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Widget_AppCompat_ProgressBar_Horizontal;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_RatingBar = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Widget_AppCompat_RatingBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_RatingBar_Indicator = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Widget_AppCompat_RatingBar_Indicator;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_RatingBar_Small = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Widget_AppCompat_RatingBar_Small;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_SearchView = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Widget_AppCompat_SearchView;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_SearchView_ActionBar = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Widget_AppCompat_SearchView_ActionBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_SeekBar = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Widget_AppCompat_SeekBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_SeekBar_Discrete = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Widget_AppCompat_SeekBar_Discrete;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Spinner = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Widget_AppCompat_Spinner;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Spinner_DropDown = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Widget_AppCompat_Spinner_DropDown;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Spinner_Underlined = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Widget_AppCompat_Spinner_Underlined;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_TextView_SpinnerItem = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Widget_AppCompat_TextView_SpinnerItem;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Toolbar = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Widget_AppCompat_Toolbar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_Compat_NotificationActionContainer = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Widget_Compat_NotificationActionContainer;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_Compat_NotificationActionText = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Widget_Compat_NotificationActionText;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_Design_AppBarLayout = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Widget_Design_AppBarLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_Design_BottomNavigationView = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Widget_Design_BottomNavigationView;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_Design_BottomSheet_Modal = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Widget_Design_BottomSheet_Modal;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_Design_CollapsingToolbar = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Widget_Design_CollapsingToolbar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_Design_CoordinatorLayout = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Widget_Design_CoordinatorLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_Design_FloatingActionButton = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Widget_Design_FloatingActionButton;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_Design_NavigationView = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Widget_Design_NavigationView;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_Design_ScrimInsetsFrameLayout = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Widget_Design_ScrimInsetsFrameLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_Design_Snackbar = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Widget_Design_Snackbar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_Design_TabLayout = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Widget_Design_TabLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_Design_TextInputLayout = global::scanbotsdkexamplexamarinforms.Droid.Resource.Style.Widget_Design_TextInputLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBar = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ActionBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBar_background = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ActionBar_background;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBar_backgroundSplit = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ActionBar_backgroundSplit;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBar_backgroundStacked = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ActionBar_backgroundStacked;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBar_contentInsetEnd = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ActionBar_contentInsetEnd;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBar_contentInsetEndWithActions = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ActionBar_contentInsetEndWithActions;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBar_contentInsetLeft = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ActionBar_contentInsetLeft;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBar_contentInsetRight = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ActionBar_contentInsetRight;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBar_contentInsetStart = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ActionBar_contentInsetStart;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBar_contentInsetStartWithNavigation = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ActionBar_contentInsetStartWithNavigation;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBar_customNavigationLayout = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ActionBar_customNavigationLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBar_displayOptions = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ActionBar_displayOptions;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBar_divider = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ActionBar_divider;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBar_elevation = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ActionBar_elevation;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBar_height = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ActionBar_height;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBar_hideOnContentScroll = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ActionBar_hideOnContentScroll;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBar_homeAsUpIndicator = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ActionBar_homeAsUpIndicator;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBar_homeLayout = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ActionBar_homeLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBar_icon = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ActionBar_icon;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBar_indeterminateProgressStyle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ActionBar_indeterminateProgressStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBar_itemPadding = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ActionBar_itemPadding;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBar_logo = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ActionBar_logo;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBar_navigationMode = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ActionBar_navigationMode;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBar_popupTheme = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ActionBar_popupTheme;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBar_progressBarPadding = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ActionBar_progressBarPadding;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBar_progressBarStyle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ActionBar_progressBarStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBar_subtitle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ActionBar_subtitle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBar_subtitleTextStyle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ActionBar_subtitleTextStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBar_title = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ActionBar_title;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBar_titleTextStyle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ActionBar_titleTextStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBarLayout = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ActionBarLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBarLayout_android_layout_gravity = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ActionBarLayout_android_layout_gravity;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionMenuItemView = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ActionMenuItemView;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionMenuItemView_android_minWidth = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ActionMenuItemView_android_minWidth;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionMenuView = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ActionMenuView;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionMode = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ActionMode;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionMode_background = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ActionMode_background;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionMode_backgroundSplit = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ActionMode_backgroundSplit;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionMode_closeItemLayout = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ActionMode_closeItemLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionMode_height = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ActionMode_height;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionMode_subtitleTextStyle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ActionMode_subtitleTextStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionMode_titleTextStyle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ActionMode_titleTextStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActivityChooserView = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ActivityChooserView;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActivityChooserView_expandActivityOverflowButtonDrawable = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ActivityChooserView_expandActivityOverflowButtonDrawable;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActivityChooserView_initialActivityCount = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ActivityChooserView_initialActivityCount;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AlertDialog = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AlertDialog;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AlertDialog_android_layout = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AlertDialog_android_layout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AlertDialog_buttonPanelSideLayout = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AlertDialog_buttonPanelSideLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AlertDialog_listItemLayout = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AlertDialog_listItemLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AlertDialog_listLayout = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AlertDialog_listLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AlertDialog_multiChoiceItemLayout = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AlertDialog_multiChoiceItemLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AlertDialog_showTitle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AlertDialog_showTitle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AlertDialog_singleChoiceItemLayout = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AlertDialog_singleChoiceItemLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppBarLayout = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppBarLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppBarLayout_android_background = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppBarLayout_android_background;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppBarLayout_android_keyboardNavigationCluster = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppBarLayout_android_keyboardNavigationCluster;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppBarLayout_android_touchscreenBlocksFocus = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppBarLayout_android_touchscreenBlocksFocus;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppBarLayout_elevation = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppBarLayout_elevation;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppBarLayout_expanded = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppBarLayout_expanded;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppBarLayoutStates = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppBarLayoutStates;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppBarLayoutStates_state_collapsed = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppBarLayoutStates_state_collapsed;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppBarLayoutStates_state_collapsible = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppBarLayoutStates_state_collapsible;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppBarLayout_Layout = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppBarLayout_Layout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppBarLayout_Layout_layout_scrollFlags = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppBarLayout_Layout_layout_scrollFlags;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppBarLayout_Layout_layout_scrollInterpolator = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppBarLayout_Layout_layout_scrollInterpolator;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatImageView = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatImageView;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatImageView_android_src = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatImageView_android_src;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatImageView_srcCompat = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatImageView_srcCompat;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatImageView_tint = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatImageView_tint;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatImageView_tintMode = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatImageView_tintMode;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatSeekBar = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatSeekBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatSeekBar_android_thumb = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatSeekBar_android_thumb;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatSeekBar_tickMark = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatSeekBar_tickMark;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatSeekBar_tickMarkTint = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatSeekBar_tickMarkTint;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatSeekBar_tickMarkTintMode = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatSeekBar_tickMarkTintMode;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTextHelper = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTextHelper;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTextHelper_android_drawableBottom = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableBottom;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTextHelper_android_drawableEnd = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableEnd;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTextHelper_android_drawableLeft = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableLeft;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTextHelper_android_drawableRight = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableRight;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTextHelper_android_drawableStart = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableStart;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTextHelper_android_drawableTop = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableTop;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTextHelper_android_textAppearance = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTextHelper_android_textAppearance;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTextView = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTextView;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTextView_android_textAppearance = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTextView_android_textAppearance;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTextView_autoSizeMaxTextSize = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTextView_autoSizeMaxTextSize;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTextView_autoSizeMinTextSize = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTextView_autoSizeMinTextSize;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTextView_autoSizePresetSizes = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTextView_autoSizePresetSizes;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTextView_autoSizeStepGranularity = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTextView_autoSizeStepGranularity;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTextView_autoSizeTextType = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTextView_autoSizeTextType;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTextView_fontFamily = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTextView_fontFamily;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTextView_textAllCaps = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTextView_textAllCaps;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTheme;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_actionBarDivider = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTheme_actionBarDivider;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_actionBarItemBackground = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTheme_actionBarItemBackground;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_actionBarPopupTheme = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTheme_actionBarPopupTheme;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_actionBarSize = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTheme_actionBarSize;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_actionBarSplitStyle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTheme_actionBarSplitStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_actionBarStyle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTheme_actionBarStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_actionBarTabBarStyle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTheme_actionBarTabBarStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_actionBarTabStyle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTheme_actionBarTabStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_actionBarTabTextStyle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTheme_actionBarTabTextStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_actionBarTheme = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTheme_actionBarTheme;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_actionBarWidgetTheme = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTheme_actionBarWidgetTheme;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_actionButtonStyle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTheme_actionButtonStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_actionDropDownStyle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTheme_actionDropDownStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_actionMenuTextAppearance = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTheme_actionMenuTextAppearance;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_actionMenuTextColor = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTheme_actionMenuTextColor;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_actionModeBackground = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTheme_actionModeBackground;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_actionModeCloseButtonStyle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTheme_actionModeCloseButtonStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_actionModeCloseDrawable = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTheme_actionModeCloseDrawable;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_actionModeCopyDrawable = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTheme_actionModeCopyDrawable;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_actionModeCutDrawable = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTheme_actionModeCutDrawable;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_actionModeFindDrawable = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTheme_actionModeFindDrawable;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_actionModePasteDrawable = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTheme_actionModePasteDrawable;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_actionModePopupWindowStyle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTheme_actionModePopupWindowStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_actionModeSelectAllDrawable = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTheme_actionModeSelectAllDrawable;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_actionModeShareDrawable = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTheme_actionModeShareDrawable;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_actionModeSplitBackground = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTheme_actionModeSplitBackground;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_actionModeStyle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTheme_actionModeStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_actionModeWebSearchDrawable = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTheme_actionModeWebSearchDrawable;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_actionOverflowButtonStyle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTheme_actionOverflowButtonStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_actionOverflowMenuStyle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTheme_actionOverflowMenuStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_activityChooserViewStyle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTheme_activityChooserViewStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_alertDialogButtonGroupStyle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTheme_alertDialogButtonGroupStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_alertDialogCenterButtons = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTheme_alertDialogCenterButtons;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_alertDialogStyle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTheme_alertDialogStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_alertDialogTheme = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTheme_alertDialogTheme;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_android_windowAnimationStyle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTheme_android_windowAnimationStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_android_windowIsFloating = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTheme_android_windowIsFloating;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_autoCompleteTextViewStyle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTheme_autoCompleteTextViewStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_borderlessButtonStyle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTheme_borderlessButtonStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_buttonBarButtonStyle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTheme_buttonBarButtonStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_buttonBarNegativeButtonStyle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTheme_buttonBarNegativeButtonStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_buttonBarNeutralButtonStyle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTheme_buttonBarNeutralButtonStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_buttonBarPositiveButtonStyle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTheme_buttonBarPositiveButtonStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_buttonBarStyle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTheme_buttonBarStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_buttonStyle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTheme_buttonStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_buttonStyleSmall = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTheme_buttonStyleSmall;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_checkboxStyle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTheme_checkboxStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_checkedTextViewStyle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTheme_checkedTextViewStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_colorAccent = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTheme_colorAccent;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_colorBackgroundFloating = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTheme_colorBackgroundFloating;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_colorButtonNormal = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTheme_colorButtonNormal;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_colorControlActivated = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTheme_colorControlActivated;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_colorControlHighlight = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTheme_colorControlHighlight;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_colorControlNormal = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTheme_colorControlNormal;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_colorError = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTheme_colorError;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_colorPrimary = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTheme_colorPrimary;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_colorPrimaryDark = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTheme_colorPrimaryDark;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_colorSwitchThumbNormal = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTheme_colorSwitchThumbNormal;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_controlBackground = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTheme_controlBackground;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_dialogPreferredPadding = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTheme_dialogPreferredPadding;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_dialogTheme = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTheme_dialogTheme;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_dividerHorizontal = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTheme_dividerHorizontal;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_dividerVertical = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTheme_dividerVertical;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_dropDownListViewStyle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTheme_dropDownListViewStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_dropdownListPreferredItemHeight = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTheme_dropdownListPreferredItemHeight;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_editTextBackground = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTheme_editTextBackground;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_editTextColor = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTheme_editTextColor;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_editTextStyle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTheme_editTextStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_homeAsUpIndicator = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTheme_homeAsUpIndicator;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_imageButtonStyle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTheme_imageButtonStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_listChoiceBackgroundIndicator = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTheme_listChoiceBackgroundIndicator;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_listDividerAlertDialog = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTheme_listDividerAlertDialog;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_listMenuViewStyle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTheme_listMenuViewStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_listPopupWindowStyle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTheme_listPopupWindowStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_listPreferredItemHeight = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeight;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_listPreferredItemHeightLarge = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeightLarge;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_listPreferredItemHeightSmall = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeightSmall;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingLeft = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingLeft;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingRight = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingRight;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_panelBackground = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTheme_panelBackground;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_panelMenuListTheme = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTheme_panelMenuListTheme;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_panelMenuListWidth = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTheme_panelMenuListWidth;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_popupMenuStyle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTheme_popupMenuStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_popupWindowStyle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTheme_popupWindowStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_radioButtonStyle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTheme_radioButtonStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_ratingBarStyle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_ratingBarStyleIndicator = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyleIndicator;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_ratingBarStyleSmall = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyleSmall;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_searchViewStyle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTheme_searchViewStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_seekBarStyle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTheme_seekBarStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_selectableItemBackground = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTheme_selectableItemBackground;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_selectableItemBackgroundBorderless = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTheme_selectableItemBackgroundBorderless;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_spinnerDropDownItemStyle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTheme_spinnerDropDownItemStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_spinnerStyle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTheme_spinnerStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_switchStyle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTheme_switchStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_textAppearanceLargePopupMenu = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTheme_textAppearanceLargePopupMenu;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_textAppearanceListItem = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTheme_textAppearanceListItem;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_textAppearanceListItemSecondary = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTheme_textAppearanceListItemSecondary;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_textAppearanceListItemSmall = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTheme_textAppearanceListItemSmall;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_textAppearancePopupMenuHeader = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTheme_textAppearancePopupMenuHeader;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultSubtitle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultSubtitle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultTitle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultTitle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_textAppearanceSmallPopupMenu = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSmallPopupMenu;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_textColorAlertDialogListItem = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTheme_textColorAlertDialogListItem;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_textColorSearchUrl = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTheme_textColorSearchUrl;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_toolbarNavigationButtonStyle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTheme_toolbarNavigationButtonStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_toolbarStyle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTheme_toolbarStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_tooltipForegroundColor = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTheme_tooltipForegroundColor;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_tooltipFrameBackground = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTheme_tooltipFrameBackground;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_windowActionBar = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTheme_windowActionBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_windowActionBarOverlay = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTheme_windowActionBarOverlay;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_windowActionModeOverlay = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTheme_windowActionModeOverlay;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_windowFixedHeightMajor = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTheme_windowFixedHeightMajor;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_windowFixedHeightMinor = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTheme_windowFixedHeightMinor;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_windowFixedWidthMajor = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTheme_windowFixedWidthMajor;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_windowFixedWidthMinor = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTheme_windowFixedWidthMinor;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_windowMinWidthMajor = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTheme_windowMinWidthMajor;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_windowMinWidthMinor = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTheme_windowMinWidthMinor;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_windowNoTitle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.AppCompatTheme_windowNoTitle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.BottomNavigationView = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.BottomNavigationView;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.BottomNavigationView_elevation = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.BottomNavigationView_elevation;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.BottomNavigationView_itemBackground = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.BottomNavigationView_itemBackground;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.BottomNavigationView_itemIconTint = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.BottomNavigationView_itemIconTint;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.BottomNavigationView_itemTextColor = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.BottomNavigationView_itemTextColor;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.BottomNavigationView_menu = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.BottomNavigationView_menu;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.BottomSheetBehavior_Layout = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.BottomSheetBehavior_Layout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.BottomSheetBehavior_Layout_behavior_hideable = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.BottomSheetBehavior_Layout_behavior_hideable;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.BottomSheetBehavior_Layout_behavior_peekHeight = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.BottomSheetBehavior_Layout_behavior_peekHeight;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.BottomSheetBehavior_Layout_behavior_skipCollapsed = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.BottomSheetBehavior_Layout_behavior_skipCollapsed;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ButtonBarLayout = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ButtonBarLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ButtonBarLayout_allowStacking = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ButtonBarLayout_allowStacking;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CardView = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.CardView;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CardView_android_minHeight = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.CardView_android_minHeight;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CardView_android_minWidth = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.CardView_android_minWidth;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CardView_cardBackgroundColor = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.CardView_cardBackgroundColor;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CardView_cardCornerRadius = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.CardView_cardCornerRadius;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CardView_cardElevation = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.CardView_cardElevation;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CardView_cardMaxElevation = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.CardView_cardMaxElevation;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CardView_cardPreventCornerOverlap = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.CardView_cardPreventCornerOverlap;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CardView_cardUseCompatPadding = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.CardView_cardUseCompatPadding;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CardView_contentPadding = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.CardView_contentPadding;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CardView_contentPaddingBottom = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.CardView_contentPaddingBottom;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CardView_contentPaddingLeft = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.CardView_contentPaddingLeft;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CardView_contentPaddingRight = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.CardView_contentPaddingRight;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CardView_contentPaddingTop = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.CardView_contentPaddingTop;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CollapsingToolbarLayout = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.CollapsingToolbarLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleGravity = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleGravity;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleTextAppearance = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleTextAppearance;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CollapsingToolbarLayout_contentScrim = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.CollapsingToolbarLayout_contentScrim;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleGravity = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleGravity;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMargin = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMargin;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginBottom = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginBottom;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginEnd = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginEnd;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginStart = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginStart;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginTop = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginTop;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleTextAppearance = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleTextAppearance;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CollapsingToolbarLayout_scrimAnimationDuration = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.CollapsingToolbarLayout_scrimAnimationDuration;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CollapsingToolbarLayout_scrimVisibleHeightTrigger = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.CollapsingToolbarLayout_scrimVisibleHeightTrigger;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CollapsingToolbarLayout_statusBarScrim = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.CollapsingToolbarLayout_statusBarScrim;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CollapsingToolbarLayout_title = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.CollapsingToolbarLayout_title;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CollapsingToolbarLayout_titleEnabled = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.CollapsingToolbarLayout_titleEnabled;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CollapsingToolbarLayout_toolbarId = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.CollapsingToolbarLayout_toolbarId;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CollapsingToolbarLayout_Layout = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseMode = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseMode;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ColorStateListItem = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ColorStateListItem;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ColorStateListItem_alpha = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ColorStateListItem_alpha;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ColorStateListItem_android_alpha = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ColorStateListItem_android_alpha;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ColorStateListItem_android_color = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ColorStateListItem_android_color;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CompoundButton = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.CompoundButton;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CompoundButton_android_button = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.CompoundButton_android_button;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CompoundButton_buttonTint = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.CompoundButton_buttonTint;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CompoundButton_buttonTintMode = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.CompoundButton_buttonTintMode;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CoordinatorLayout = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.CoordinatorLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CoordinatorLayout_keylines = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.CoordinatorLayout_keylines;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CoordinatorLayout_statusBarBackground = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.CoordinatorLayout_statusBarBackground;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CoordinatorLayout_Layout = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.CoordinatorLayout_Layout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CoordinatorLayout_Layout_android_layout_gravity = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.CoordinatorLayout_Layout_android_layout_gravity;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CoordinatorLayout_Layout_layout_anchor = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_anchor;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CoordinatorLayout_Layout_layout_anchorGravity = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_anchorGravity;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CoordinatorLayout_Layout_layout_behavior = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_behavior;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CoordinatorLayout_Layout_layout_dodgeInsetEdges = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_dodgeInsetEdges;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CoordinatorLayout_Layout_layout_insetEdge = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_insetEdge;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CoordinatorLayout_Layout_layout_keyline = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_keyline;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.DesignTheme = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.DesignTheme;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.DesignTheme_bottomSheetDialogTheme = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.DesignTheme_bottomSheetDialogTheme;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.DesignTheme_bottomSheetStyle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.DesignTheme_bottomSheetStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.DesignTheme_textColorError = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.DesignTheme_textColorError;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.DrawerArrowToggle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.DrawerArrowToggle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.DrawerArrowToggle_arrowHeadLength = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.DrawerArrowToggle_arrowHeadLength;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.DrawerArrowToggle_arrowShaftLength = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.DrawerArrowToggle_arrowShaftLength;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.DrawerArrowToggle_barLength = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.DrawerArrowToggle_barLength;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.DrawerArrowToggle_color = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.DrawerArrowToggle_color;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.DrawerArrowToggle_drawableSize = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.DrawerArrowToggle_drawableSize;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.DrawerArrowToggle_gapBetweenBars = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.DrawerArrowToggle_gapBetweenBars;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.DrawerArrowToggle_spinBars = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.DrawerArrowToggle_spinBars;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.DrawerArrowToggle_thickness = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.DrawerArrowToggle_thickness;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FloatingActionButton = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.FloatingActionButton;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FloatingActionButton_backgroundTint = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.FloatingActionButton_backgroundTint;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FloatingActionButton_backgroundTintMode = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.FloatingActionButton_backgroundTintMode;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FloatingActionButton_borderWidth = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.FloatingActionButton_borderWidth;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FloatingActionButton_elevation = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.FloatingActionButton_elevation;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FloatingActionButton_fabSize = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.FloatingActionButton_fabSize;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FloatingActionButton_pressedTranslationZ = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.FloatingActionButton_pressedTranslationZ;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FloatingActionButton_rippleColor = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.FloatingActionButton_rippleColor;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FloatingActionButton_useCompatPadding = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.FloatingActionButton_useCompatPadding;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FloatingActionButton_Behavior_Layout = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.FloatingActionButton_Behavior_Layout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FloatingActionButton_Behavior_Layout_behavior_autoHide = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.FloatingActionButton_Behavior_Layout_behavior_autoHide;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FontFamily = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.FontFamily;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FontFamily_fontProviderAuthority = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.FontFamily_fontProviderAuthority;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FontFamily_fontProviderCerts = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.FontFamily_fontProviderCerts;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FontFamily_fontProviderFetchStrategy = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.FontFamily_fontProviderFetchStrategy;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FontFamily_fontProviderFetchTimeout = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.FontFamily_fontProviderFetchTimeout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FontFamily_fontProviderPackage = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.FontFamily_fontProviderPackage;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FontFamily_fontProviderQuery = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.FontFamily_fontProviderQuery;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FontFamilyFont = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.FontFamilyFont;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FontFamilyFont_android_font = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.FontFamilyFont_android_font;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FontFamilyFont_android_fontStyle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.FontFamilyFont_android_fontStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FontFamilyFont_android_fontWeight = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.FontFamilyFont_android_fontWeight;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FontFamilyFont_font = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.FontFamilyFont_font;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FontFamilyFont_fontStyle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.FontFamilyFont_fontStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FontFamilyFont_fontWeight = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.FontFamilyFont_fontWeight;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ForegroundLinearLayout = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ForegroundLinearLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ForegroundLinearLayout_android_foreground = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ForegroundLinearLayout_android_foreground;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ForegroundLinearLayout_android_foregroundGravity = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ForegroundLinearLayout_android_foregroundGravity;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ForegroundLinearLayout_foregroundInsidePadding = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ForegroundLinearLayout_foregroundInsidePadding;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.LinearLayoutCompat = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.LinearLayoutCompat;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.LinearLayoutCompat_android_baselineAligned = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.LinearLayoutCompat_android_baselineAligned;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.LinearLayoutCompat_android_baselineAlignedChildIndex = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.LinearLayoutCompat_android_baselineAlignedChildIndex;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.LinearLayoutCompat_android_gravity = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.LinearLayoutCompat_android_gravity;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.LinearLayoutCompat_android_orientation = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.LinearLayoutCompat_android_orientation;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.LinearLayoutCompat_android_weightSum = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.LinearLayoutCompat_android_weightSum;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.LinearLayoutCompat_divider = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.LinearLayoutCompat_divider;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.LinearLayoutCompat_dividerPadding = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.LinearLayoutCompat_dividerPadding;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.LinearLayoutCompat_measureWithLargestChild = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.LinearLayoutCompat_measureWithLargestChild;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.LinearLayoutCompat_showDividers = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.LinearLayoutCompat_showDividers;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.LinearLayoutCompat_Layout = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.LinearLayoutCompat_Layout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_gravity = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_gravity;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_height = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_height;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_weight = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_weight;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_width = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_width;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ListPopupWindow = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ListPopupWindow;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ListPopupWindow_android_dropDownHorizontalOffset = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ListPopupWindow_android_dropDownHorizontalOffset;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ListPopupWindow_android_dropDownVerticalOffset = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ListPopupWindow_android_dropDownVerticalOffset;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuGroup = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.MenuGroup;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuGroup_android_checkableBehavior = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.MenuGroup_android_checkableBehavior;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuGroup_android_enabled = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.MenuGroup_android_enabled;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuGroup_android_id = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.MenuGroup_android_id;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuGroup_android_menuCategory = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.MenuGroup_android_menuCategory;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuGroup_android_orderInCategory = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.MenuGroup_android_orderInCategory;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuGroup_android_visible = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.MenuGroup_android_visible;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuItem = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.MenuItem;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuItem_actionLayout = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.MenuItem_actionLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuItem_actionProviderClass = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.MenuItem_actionProviderClass;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuItem_actionViewClass = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.MenuItem_actionViewClass;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuItem_alphabeticModifiers = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.MenuItem_alphabeticModifiers;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuItem_android_alphabeticShortcut = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.MenuItem_android_alphabeticShortcut;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuItem_android_checkable = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.MenuItem_android_checkable;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuItem_android_checked = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.MenuItem_android_checked;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuItem_android_enabled = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.MenuItem_android_enabled;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuItem_android_icon = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.MenuItem_android_icon;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuItem_android_id = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.MenuItem_android_id;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuItem_android_menuCategory = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.MenuItem_android_menuCategory;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuItem_android_numericShortcut = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.MenuItem_android_numericShortcut;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuItem_android_onClick = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.MenuItem_android_onClick;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuItem_android_orderInCategory = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.MenuItem_android_orderInCategory;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuItem_android_title = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.MenuItem_android_title;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuItem_android_titleCondensed = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.MenuItem_android_titleCondensed;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuItem_android_visible = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.MenuItem_android_visible;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuItem_contentDescription = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.MenuItem_contentDescription;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuItem_iconTint = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.MenuItem_iconTint;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuItem_iconTintMode = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.MenuItem_iconTintMode;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuItem_numericModifiers = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.MenuItem_numericModifiers;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuItem_showAsAction = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.MenuItem_showAsAction;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuItem_tooltipText = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.MenuItem_tooltipText;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuView = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.MenuView;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuView_android_headerBackground = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.MenuView_android_headerBackground;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuView_android_horizontalDivider = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.MenuView_android_horizontalDivider;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuView_android_itemBackground = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.MenuView_android_itemBackground;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuView_android_itemIconDisabledAlpha = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.MenuView_android_itemIconDisabledAlpha;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuView_android_itemTextAppearance = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.MenuView_android_itemTextAppearance;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuView_android_verticalDivider = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.MenuView_android_verticalDivider;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuView_android_windowAnimationStyle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.MenuView_android_windowAnimationStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuView_preserveIconSpacing = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.MenuView_preserveIconSpacing;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuView_subMenuArrow = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.MenuView_subMenuArrow;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.NavigationView = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.NavigationView;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.NavigationView_android_background = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.NavigationView_android_background;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.NavigationView_android_fitsSystemWindows = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.NavigationView_android_fitsSystemWindows;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.NavigationView_android_maxWidth = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.NavigationView_android_maxWidth;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.NavigationView_elevation = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.NavigationView_elevation;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.NavigationView_headerLayout = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.NavigationView_headerLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.NavigationView_itemBackground = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.NavigationView_itemBackground;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.NavigationView_itemIconTint = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.NavigationView_itemIconTint;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.NavigationView_itemTextAppearance = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.NavigationView_itemTextAppearance;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.NavigationView_itemTextColor = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.NavigationView_itemTextColor;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.NavigationView_menu = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.NavigationView_menu;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.PopupWindow = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.PopupWindow;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.PopupWindow_android_popupAnimationStyle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.PopupWindow_android_popupAnimationStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.PopupWindow_android_popupBackground = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.PopupWindow_android_popupBackground;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.PopupWindow_overlapAnchor = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.PopupWindow_overlapAnchor;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.PopupWindowBackgroundState = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.PopupWindowBackgroundState;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.PopupWindowBackgroundState_state_above_anchor = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.PopupWindowBackgroundState_state_above_anchor;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.RecycleListView = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.RecycleListView;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.RecycleListView_paddingBottomNoButtons = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.RecycleListView_paddingBottomNoButtons;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.RecycleListView_paddingTopNoTitle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.RecycleListView_paddingTopNoTitle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.RecyclerView = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.RecyclerView;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.RecyclerView_android_descendantFocusability = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.RecyclerView_android_descendantFocusability;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.RecyclerView_android_orientation = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.RecyclerView_android_orientation;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.RecyclerView_fastScrollEnabled = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.RecyclerView_fastScrollEnabled;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.RecyclerView_fastScrollHorizontalThumbDrawable = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.RecyclerView_fastScrollHorizontalThumbDrawable;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.RecyclerView_fastScrollHorizontalTrackDrawable = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.RecyclerView_fastScrollHorizontalTrackDrawable;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.RecyclerView_fastScrollVerticalThumbDrawable = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.RecyclerView_fastScrollVerticalThumbDrawable;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.RecyclerView_fastScrollVerticalTrackDrawable = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.RecyclerView_fastScrollVerticalTrackDrawable;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.RecyclerView_layoutManager = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.RecyclerView_layoutManager;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.RecyclerView_reverseLayout = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.RecyclerView_reverseLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.RecyclerView_spanCount = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.RecyclerView_spanCount;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.RecyclerView_stackFromEnd = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.RecyclerView_stackFromEnd;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ScrimInsetsFrameLayout = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ScrimInsetsFrameLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ScrimInsetsFrameLayout_insetForeground = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ScrimInsetsFrameLayout_insetForeground;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ScrollingViewBehavior_Layout = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ScrollingViewBehavior_Layout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ScrollingViewBehavior_Layout_behavior_overlapTop = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ScrollingViewBehavior_Layout_behavior_overlapTop;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SearchView = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.SearchView;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SearchView_android_focusable = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.SearchView_android_focusable;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SearchView_android_imeOptions = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.SearchView_android_imeOptions;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SearchView_android_inputType = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.SearchView_android_inputType;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SearchView_android_maxWidth = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.SearchView_android_maxWidth;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SearchView_closeIcon = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.SearchView_closeIcon;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SearchView_commitIcon = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.SearchView_commitIcon;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SearchView_defaultQueryHint = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.SearchView_defaultQueryHint;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SearchView_goIcon = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.SearchView_goIcon;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SearchView_iconifiedByDefault = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.SearchView_iconifiedByDefault;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SearchView_layout = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.SearchView_layout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SearchView_queryBackground = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.SearchView_queryBackground;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SearchView_queryHint = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.SearchView_queryHint;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SearchView_searchHintIcon = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.SearchView_searchHintIcon;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SearchView_searchIcon = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.SearchView_searchIcon;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SearchView_submitBackground = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.SearchView_submitBackground;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SearchView_suggestionRowLayout = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.SearchView_suggestionRowLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SearchView_voiceIcon = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.SearchView_voiceIcon;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SnackbarLayout = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.SnackbarLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SnackbarLayout_android_maxWidth = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.SnackbarLayout_android_maxWidth;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SnackbarLayout_elevation = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.SnackbarLayout_elevation;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SnackbarLayout_maxActionInlineWidth = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.SnackbarLayout_maxActionInlineWidth;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Spinner = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.Spinner;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Spinner_android_dropDownWidth = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.Spinner_android_dropDownWidth;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Spinner_android_entries = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.Spinner_android_entries;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Spinner_android_popupBackground = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.Spinner_android_popupBackground;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Spinner_android_prompt = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.Spinner_android_prompt;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Spinner_popupTheme = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.Spinner_popupTheme;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SwitchCompat = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.SwitchCompat;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SwitchCompat_android_textOff = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.SwitchCompat_android_textOff;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SwitchCompat_android_textOn = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.SwitchCompat_android_textOn;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SwitchCompat_android_thumb = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.SwitchCompat_android_thumb;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SwitchCompat_showText = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.SwitchCompat_showText;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SwitchCompat_splitTrack = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.SwitchCompat_splitTrack;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SwitchCompat_switchMinWidth = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.SwitchCompat_switchMinWidth;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SwitchCompat_switchPadding = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.SwitchCompat_switchPadding;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SwitchCompat_switchTextAppearance = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.SwitchCompat_switchTextAppearance;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SwitchCompat_thumbTextPadding = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.SwitchCompat_thumbTextPadding;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SwitchCompat_thumbTint = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.SwitchCompat_thumbTint;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SwitchCompat_thumbTintMode = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.SwitchCompat_thumbTintMode;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SwitchCompat_track = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.SwitchCompat_track;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SwitchCompat_trackTint = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.SwitchCompat_trackTint;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SwitchCompat_trackTintMode = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.SwitchCompat_trackTintMode;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TabItem = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.TabItem;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TabItem_android_icon = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.TabItem_android_icon;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TabItem_android_layout = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.TabItem_android_layout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TabItem_android_text = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.TabItem_android_text;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TabLayout = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.TabLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TabLayout_tabBackground = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.TabLayout_tabBackground;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TabLayout_tabContentStart = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.TabLayout_tabContentStart;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TabLayout_tabGravity = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.TabLayout_tabGravity;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TabLayout_tabIndicatorColor = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.TabLayout_tabIndicatorColor;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TabLayout_tabIndicatorHeight = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.TabLayout_tabIndicatorHeight;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TabLayout_tabMaxWidth = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.TabLayout_tabMaxWidth;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TabLayout_tabMinWidth = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.TabLayout_tabMinWidth;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TabLayout_tabMode = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.TabLayout_tabMode;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TabLayout_tabPadding = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.TabLayout_tabPadding;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TabLayout_tabPaddingBottom = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.TabLayout_tabPaddingBottom;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TabLayout_tabPaddingEnd = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.TabLayout_tabPaddingEnd;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TabLayout_tabPaddingStart = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.TabLayout_tabPaddingStart;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TabLayout_tabPaddingTop = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.TabLayout_tabPaddingTop;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TabLayout_tabSelectedTextColor = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.TabLayout_tabSelectedTextColor;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TabLayout_tabTextAppearance = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.TabLayout_tabTextAppearance;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TabLayout_tabTextColor = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.TabLayout_tabTextColor;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextAppearance = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.TextAppearance;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextAppearance_android_fontFamily = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.TextAppearance_android_fontFamily;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextAppearance_android_shadowColor = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.TextAppearance_android_shadowColor;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextAppearance_android_shadowDx = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.TextAppearance_android_shadowDx;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextAppearance_android_shadowDy = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.TextAppearance_android_shadowDy;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextAppearance_android_shadowRadius = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.TextAppearance_android_shadowRadius;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextAppearance_android_textColor = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.TextAppearance_android_textColor;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextAppearance_android_textColorHint = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.TextAppearance_android_textColorHint;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextAppearance_android_textColorLink = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.TextAppearance_android_textColorLink;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextAppearance_android_textSize = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.TextAppearance_android_textSize;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextAppearance_android_textStyle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.TextAppearance_android_textStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextAppearance_android_typeface = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.TextAppearance_android_typeface;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextAppearance_fontFamily = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.TextAppearance_fontFamily;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextAppearance_textAllCaps = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.TextAppearance_textAllCaps;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextInputLayout = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.TextInputLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextInputLayout_android_hint = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.TextInputLayout_android_hint;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextInputLayout_android_textColorHint = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.TextInputLayout_android_textColorHint;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextInputLayout_counterEnabled = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.TextInputLayout_counterEnabled;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextInputLayout_counterMaxLength = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.TextInputLayout_counterMaxLength;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextInputLayout_counterOverflowTextAppearance = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.TextInputLayout_counterOverflowTextAppearance;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextInputLayout_counterTextAppearance = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.TextInputLayout_counterTextAppearance;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextInputLayout_errorEnabled = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.TextInputLayout_errorEnabled;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextInputLayout_errorTextAppearance = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.TextInputLayout_errorTextAppearance;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextInputLayout_hintAnimationEnabled = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.TextInputLayout_hintAnimationEnabled;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextInputLayout_hintEnabled = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.TextInputLayout_hintEnabled;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextInputLayout_hintTextAppearance = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.TextInputLayout_hintTextAppearance;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextInputLayout_passwordToggleContentDescription = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.TextInputLayout_passwordToggleContentDescription;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextInputLayout_passwordToggleDrawable = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.TextInputLayout_passwordToggleDrawable;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextInputLayout_passwordToggleEnabled = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.TextInputLayout_passwordToggleEnabled;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextInputLayout_passwordToggleTint = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.TextInputLayout_passwordToggleTint;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextInputLayout_passwordToggleTintMode = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.TextInputLayout_passwordToggleTintMode;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.Toolbar;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_android_gravity = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.Toolbar_android_gravity;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_android_minHeight = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.Toolbar_android_minHeight;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_buttonGravity = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.Toolbar_buttonGravity;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_collapseContentDescription = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.Toolbar_collapseContentDescription;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_collapseIcon = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.Toolbar_collapseIcon;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_contentInsetEnd = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.Toolbar_contentInsetEnd;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_contentInsetEndWithActions = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.Toolbar_contentInsetEndWithActions;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_contentInsetLeft = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.Toolbar_contentInsetLeft;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_contentInsetRight = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.Toolbar_contentInsetRight;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_contentInsetStart = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.Toolbar_contentInsetStart;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_contentInsetStartWithNavigation = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.Toolbar_contentInsetStartWithNavigation;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_logo = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.Toolbar_logo;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_logoDescription = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.Toolbar_logoDescription;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_maxButtonHeight = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.Toolbar_maxButtonHeight;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_navigationContentDescription = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.Toolbar_navigationContentDescription;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_navigationIcon = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.Toolbar_navigationIcon;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_popupTheme = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.Toolbar_popupTheme;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_subtitle = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.Toolbar_subtitle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_subtitleTextAppearance = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.Toolbar_subtitleTextAppearance;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_subtitleTextColor = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.Toolbar_subtitleTextColor;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_title = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.Toolbar_title;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_titleMargin = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.Toolbar_titleMargin;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_titleMarginBottom = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.Toolbar_titleMarginBottom;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_titleMarginEnd = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.Toolbar_titleMarginEnd;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_titleMarginStart = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.Toolbar_titleMarginStart;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_titleMarginTop = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.Toolbar_titleMarginTop;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_titleMargins = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.Toolbar_titleMargins;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_titleTextAppearance = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.Toolbar_titleTextAppearance;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_titleTextColor = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.Toolbar_titleTextColor;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.View = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.View;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.View_android_focusable = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.View_android_focusable;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.View_android_theme = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.View_android_theme;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.View_paddingEnd = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.View_paddingEnd;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.View_paddingStart = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.View_paddingStart;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.View_theme = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.View_theme;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ViewBackgroundHelper = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ViewBackgroundHelper;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ViewBackgroundHelper_android_background = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ViewBackgroundHelper_android_background;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ViewBackgroundHelper_backgroundTint = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ViewBackgroundHelper_backgroundTint;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ViewBackgroundHelper_backgroundTintMode = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ViewBackgroundHelper_backgroundTintMode;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ViewStubCompat = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ViewStubCompat;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ViewStubCompat_android_id = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ViewStubCompat_android_id;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ViewStubCompat_android_inflatedId = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ViewStubCompat_android_inflatedId;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ViewStubCompat_android_layout = global::scanbotsdkexamplexamarinforms.Droid.Resource.Styleable.ViewStubCompat_android_layout;
 		}
 		
 		public partial class Animation
@@ -4437,10 +6887,22 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			public const int design_snackbar_out = 2130968589;
 			
 			// aapt resource value: 0x7f04000e
-			public const int tooltip_enter = 2130968590;
+			public const int EnterFromLeft = 2130968590;
 			
 			// aapt resource value: 0x7f04000f
-			public const int tooltip_exit = 2130968591;
+			public const int EnterFromRight = 2130968591;
+			
+			// aapt resource value: 0x7f040010
+			public const int ExitToLeft = 2130968592;
+			
+			// aapt resource value: 0x7f040011
+			public const int ExitToRight = 2130968593;
+			
+			// aapt resource value: 0x7f040012
+			public const int tooltip_enter = 2130968594;
+			
+			// aapt resource value: 0x7f040013
+			public const int tooltip_exit = 2130968595;
 			
 			static Animation()
 			{
@@ -4910,11 +7372,11 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			// aapt resource value: 0x7f0100b6
 			public const int controlBackground = 2130772150;
 			
-			// aapt resource value: 0x7f0101ec
-			public const int cornerImageSrc = 2130772460;
+			// aapt resource value: 0x7f0101ed
+			public const int cornerImageSrc = 2130772461;
 			
-			// aapt resource value: 0x7f0101f1
-			public const int corner_radius = 2130772465;
+			// aapt resource value: 0x7f0101f2
+			public const int corner_radius = 2130772466;
 			
 			// aapt resource value: 0x7f010166
 			public const int counterEnabled = 2130772326;
@@ -4970,20 +7432,20 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			// aapt resource value: 0x7f010089
 			public const int dropdownListPreferredItemHeight = 2130772105;
 			
-			// aapt resource value: 0x7f0101ea
-			public const int edgeColor = 2130772458;
-			
 			// aapt resource value: 0x7f0101eb
-			public const int edgeColorOnLine = 2130772459;
+			public const int edgeColor = 2130772459;
 			
-			// aapt resource value: 0x7f0101ed
-			public const int edgeImageSrc = 2130772461;
+			// aapt resource value: 0x7f0101ec
+			public const int edgeColorOnLine = 2130772460;
 			
-			// aapt resource value: 0x7f0101e9
-			public const int editPolygonHandleSize = 2130772457;
+			// aapt resource value: 0x7f0101ee
+			public const int edgeImageSrc = 2130772462;
 			
-			// aapt resource value: 0x7f0101e7
-			public const int editPolygonStrokeWidth = 2130772455;
+			// aapt resource value: 0x7f0101ea
+			public const int editPolygonHandleSize = 2130772458;
+			
+			// aapt resource value: 0x7f0101e8
+			public const int editPolygonStrokeWidth = 2130772456;
 			
 			// aapt resource value: 0x7f01009a
 			public const int editTextBackground = 2130772122;
@@ -5102,11 +7564,11 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			// aapt resource value: 0x7f01000c
 			public const int fastScrollVerticalTrackDrawable = 2130771980;
 			
-			// aapt resource value: 0x7f0101f4
-			public const int fixed_height = 2130772468;
+			// aapt resource value: 0x7f0101f5
+			public const int fixed_height = 2130772469;
 			
-			// aapt resource value: 0x7f0101f3
-			public const int fixed_width = 2130772467;
+			// aapt resource value: 0x7f0101f4
+			public const int fixed_width = 2130772468;
 			
 			// aapt resource value: 0x7f0101d4
 			public const int flash_icon = 2130772436;
@@ -5453,20 +7915,20 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			// aapt resource value: 0x7f010116
 			public const int logoDescription = 2130772246;
 			
-			// aapt resource value: 0x7f0101e8
-			public const int magneticLineTreshold = 2130772456;
+			// aapt resource value: 0x7f0101e9
+			public const int magneticLineTreshold = 2130772457;
 			
-			// aapt resource value: 0x7f0101f8
-			public const int magnifierEnableBounding = 2130772472;
-			
-			// aapt resource value: 0x7f0101f5
-			public const int magnifierImageSrc = 2130772469;
-			
-			// aapt resource value: 0x7f0101f7
-			public const int magnifierMargin = 2130772471;
+			// aapt resource value: 0x7f0101f9
+			public const int magnifierEnableBounding = 2130772473;
 			
 			// aapt resource value: 0x7f0101f6
-			public const int magnifierRadius = 2130772470;
+			public const int magnifierImageSrc = 2130772470;
+			
+			// aapt resource value: 0x7f0101f8
+			public const int magnifierMargin = 2130772472;
+			
+			// aapt resource value: 0x7f0101f7
+			public const int magnifierRadius = 2130772471;
 			
 			// aapt resource value: 0x7f010151
 			public const int maxActionInlineWidth = 2130772305;
@@ -5519,8 +7981,8 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			// aapt resource value: 0x7f010149
 			public const int menu = 2130772297;
 			
-			// aapt resource value: 0x7f0101f2
-			public const int min_padding = 2130772466;
+			// aapt resource value: 0x7f0101f3
+			public const int min_padding = 2130772467;
 			
 			// aapt resource value: 0x7f0101d6
 			public const int mrz_camera_overlay_color = 2130772438;
@@ -5552,14 +8014,17 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			// aapt resource value: 0x7f0100e1
 			public const int numericModifiers = 2130772193;
 			
+			// aapt resource value: 0x7f0101db
+			public const int off_center_hint = 2130772443;
+			
 			// aapt resource value: 0x7f0100ec
 			public const int overlapAnchor = 2130772204;
 			
-			// aapt resource value: 0x7f0101ee
-			public const int overlay_color = 2130772462;
-			
 			// aapt resource value: 0x7f0101ef
-			public const int overlay_stroke_color = 2130772463;
+			public const int overlay_color = 2130772463;
+			
+			// aapt resource value: 0x7f0101f0
+			public const int overlay_stroke_color = 2130772464;
 			
 			// aapt resource value: 0x7f0100ee
 			public const int paddingBottomNoButtons = 2130772206;
@@ -5597,20 +8062,20 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			// aapt resource value: 0x7f01016f
 			public const int passwordToggleTintMode = 2130772335;
 			
+			// aapt resource value: 0x7f0101fc
+			public const int polygonFillColor = 2130772476;
+			
+			// aapt resource value: 0x7f0101fe
+			public const int polygonFillColorOK = 2130772478;
+			
 			// aapt resource value: 0x7f0101fb
-			public const int polygonFillColor = 2130772475;
+			public const int polygonStrokeColor = 2130772475;
 			
 			// aapt resource value: 0x7f0101fd
-			public const int polygonFillColorOK = 2130772477;
+			public const int polygonStrokeColorOK = 2130772477;
 			
 			// aapt resource value: 0x7f0101fa
-			public const int polygonStrokeColor = 2130772474;
-			
-			// aapt resource value: 0x7f0101fc
-			public const int polygonStrokeColorOK = 2130772476;
-			
-			// aapt resource value: 0x7f0101f9
-			public const int polygonStrokeWidth = 2130772473;
+			public const int polygonStrokeWidth = 2130772474;
 			
 			// aapt resource value: 0x7f010097
 			public const int popupMenuStyle = 2130772119;
@@ -5696,20 +8161,20 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			// aapt resource value: 0x7f01004e
 			public const int showTitle = 2130772046;
 			
+			// aapt resource value: 0x7f010202
+			public const int shutterButtonAutoInnerColor = 2130772482;
+			
 			// aapt resource value: 0x7f010201
-			public const int shutterButtonAutoInnerColor = 2130772481;
+			public const int shutterButtonAutoOuterColor = 2130772481;
+			
+			// aapt resource value: 0x7f010203
+			public const int shutterButtonManualImage = 2130772483;
 			
 			// aapt resource value: 0x7f010200
-			public const int shutterButtonAutoOuterColor = 2130772480;
-			
-			// aapt resource value: 0x7f010202
-			public const int shutterButtonManualImage = 2130772482;
+			public const int shutterButtonManualInnerColor = 2130772480;
 			
 			// aapt resource value: 0x7f0101ff
-			public const int shutterButtonManualInnerColor = 2130772479;
-			
-			// aapt resource value: 0x7f0101fe
-			public const int shutterButtonManualOuterColor = 2130772478;
+			public const int shutterButtonManualOuterColor = 2130772479;
 			
 			// aapt resource value: 0x7f01004c
 			public const int singleChoiceItemLayout = 2130772044;
@@ -5732,8 +8197,8 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			// aapt resource value: 0x7f01004f
 			public const int srcCompat = 2130772047;
 			
-			// aapt resource value: 0x7f0101e6
-			public const int src_tint = 2130772454;
+			// aapt resource value: 0x7f0101e7
+			public const int src_tint = 2130772455;
 			
 			// aapt resource value: 0x7f010009
 			public const int stackFromEnd = 2130771977;
@@ -5753,8 +8218,8 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			// aapt resource value: 0x7f01012e
 			public const int statusBarScrim = 2130772270;
 			
-			// aapt resource value: 0x7f0101f0
-			public const int stroke_width = 2130772464;
+			// aapt resource value: 0x7f0101f1
+			public const int stroke_width = 2130772465;
 			
 			// aapt resource value: 0x7f0100eb
 			public const int subMenuArrow = 2130772203;
@@ -5936,14 +8401,14 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			// aapt resource value: 0x7f01002f
 			public const int titleTextStyle = 2130772015;
 			
-			// aapt resource value: 0x7f0101db
-			public const int too_dark_hint = 2130772443;
-			
 			// aapt resource value: 0x7f0101dc
-			public const int too_noisy_hint = 2130772444;
+			public const int too_dark_hint = 2130772444;
 			
 			// aapt resource value: 0x7f0101dd
-			public const int too_small_hint = 2130772445;
+			public const int too_noisy_hint = 2130772445;
+			
+			// aapt resource value: 0x7f0101de
+			public const int too_small_hint = 2130772446;
 			
 			// aapt resource value: 0x7f01012f
 			public const int toolbarId = 2130772271;
@@ -5972,29 +8437,29 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			// aapt resource value: 0x7f010101
 			public const int trackTintMode = 2130772225;
 			
-			// aapt resource value: 0x7f0101de
-			public const int ui_FABColor = 2130772446;
-			
 			// aapt resource value: 0x7f0101df
-			public const int ui_colorAccent = 2130772447;
+			public const int ui_FABColor = 2130772447;
 			
 			// aapt resource value: 0x7f0101e0
-			public const int ui_colorPrimary = 2130772448;
+			public const int ui_colorAccent = 2130772448;
 			
 			// aapt resource value: 0x7f0101e1
-			public const int ui_polygonFillColor = 2130772449;
+			public const int ui_colorPrimary = 2130772449;
 			
 			// aapt resource value: 0x7f0101e2
-			public const int ui_polygonStrokeColor = 2130772450;
+			public const int ui_polygonFillColor = 2130772450;
 			
 			// aapt resource value: 0x7f0101e3
-			public const int ui_polygonStrokeWidth = 2130772451;
+			public const int ui_polygonStrokeColor = 2130772451;
 			
 			// aapt resource value: 0x7f0101e4
-			public const int ui_scan_ico_arrow = 2130772452;
+			public const int ui_polygonStrokeWidth = 2130772452;
 			
 			// aapt resource value: 0x7f0101e5
-			public const int ui_scanning_no_permission = 2130772453;
+			public const int ui_scan_ico_arrow = 2130772453;
+			
+			// aapt resource value: 0x7f0101e6
+			public const int ui_scanning_no_permission = 2130772454;
 			
 			// aapt resource value: 0x7f010146
 			public const int useCompatPadding = 2130772294;
@@ -6073,44 +8538,44 @@ namespace scanbotsdkexamplexamarinforms.Droid
 		public partial class Color
 		{
 			
-			// aapt resource value: 0x7f0b0066
-			public const int abc_background_cache_hint_selector_material_dark = 2131427430;
-			
 			// aapt resource value: 0x7f0b0067
-			public const int abc_background_cache_hint_selector_material_light = 2131427431;
+			public const int abc_background_cache_hint_selector_material_dark = 2131427431;
 			
 			// aapt resource value: 0x7f0b0068
-			public const int abc_btn_colored_borderless_text_material = 2131427432;
+			public const int abc_background_cache_hint_selector_material_light = 2131427432;
 			
 			// aapt resource value: 0x7f0b0069
-			public const int abc_btn_colored_text_material = 2131427433;
+			public const int abc_btn_colored_borderless_text_material = 2131427433;
 			
 			// aapt resource value: 0x7f0b006a
-			public const int abc_color_highlight_material = 2131427434;
+			public const int abc_btn_colored_text_material = 2131427434;
 			
 			// aapt resource value: 0x7f0b006b
-			public const int abc_hint_foreground_material_dark = 2131427435;
+			public const int abc_color_highlight_material = 2131427435;
 			
 			// aapt resource value: 0x7f0b006c
-			public const int abc_hint_foreground_material_light = 2131427436;
+			public const int abc_hint_foreground_material_dark = 2131427436;
+			
+			// aapt resource value: 0x7f0b006d
+			public const int abc_hint_foreground_material_light = 2131427437;
 			
 			// aapt resource value: 0x7f0b000c
 			public const int abc_input_method_navigation_guard = 2131427340;
 			
-			// aapt resource value: 0x7f0b006d
-			public const int abc_primary_text_disable_only_material_dark = 2131427437;
-			
 			// aapt resource value: 0x7f0b006e
-			public const int abc_primary_text_disable_only_material_light = 2131427438;
+			public const int abc_primary_text_disable_only_material_dark = 2131427438;
 			
 			// aapt resource value: 0x7f0b006f
-			public const int abc_primary_text_material_dark = 2131427439;
+			public const int abc_primary_text_disable_only_material_light = 2131427439;
 			
 			// aapt resource value: 0x7f0b0070
-			public const int abc_primary_text_material_light = 2131427440;
+			public const int abc_primary_text_material_dark = 2131427440;
 			
 			// aapt resource value: 0x7f0b0071
-			public const int abc_search_url_text = 2131427441;
+			public const int abc_primary_text_material_light = 2131427441;
+			
+			// aapt resource value: 0x7f0b0072
+			public const int abc_search_url_text = 2131427442;
 			
 			// aapt resource value: 0x7f0b000d
 			public const int abc_search_url_text_normal = 2131427341;
@@ -6121,29 +8586,29 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			// aapt resource value: 0x7f0b000f
 			public const int abc_search_url_text_selected = 2131427343;
 			
-			// aapt resource value: 0x7f0b0072
-			public const int abc_secondary_text_material_dark = 2131427442;
-			
 			// aapt resource value: 0x7f0b0073
-			public const int abc_secondary_text_material_light = 2131427443;
+			public const int abc_secondary_text_material_dark = 2131427443;
 			
 			// aapt resource value: 0x7f0b0074
-			public const int abc_tint_btn_checkable = 2131427444;
+			public const int abc_secondary_text_material_light = 2131427444;
 			
 			// aapt resource value: 0x7f0b0075
-			public const int abc_tint_default = 2131427445;
+			public const int abc_tint_btn_checkable = 2131427445;
 			
 			// aapt resource value: 0x7f0b0076
-			public const int abc_tint_edittext = 2131427446;
+			public const int abc_tint_default = 2131427446;
 			
 			// aapt resource value: 0x7f0b0077
-			public const int abc_tint_seek_thumb = 2131427447;
+			public const int abc_tint_edittext = 2131427447;
 			
 			// aapt resource value: 0x7f0b0078
-			public const int abc_tint_spinner = 2131427448;
+			public const int abc_tint_seek_thumb = 2131427448;
 			
 			// aapt resource value: 0x7f0b0079
-			public const int abc_tint_switch_track = 2131427449;
+			public const int abc_tint_spinner = 2131427449;
+			
+			// aapt resource value: 0x7f0b007a
+			public const int abc_tint_switch_track = 2131427450;
 			
 			// aapt resource value: 0x7f0b0010
 			public const int accent_material_dark = 2131427344;
@@ -6229,8 +8694,8 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			// aapt resource value: 0x7f0b005c
 			public const int colorPrimary = 2131427420;
 			
-			// aapt resource value: 0x7f0b007a
-			public const int common_google_signin_btn_text_dark = 2131427450;
+			// aapt resource value: 0x7f0b007b
+			public const int common_google_signin_btn_text_dark = 2131427451;
 			
 			// aapt resource value: 0x7f0b0000
 			public const int common_google_signin_btn_text_dark_default = 2131427328;
@@ -6244,8 +8709,8 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			// aapt resource value: 0x7f0b0003
 			public const int common_google_signin_btn_text_dark_pressed = 2131427331;
 			
-			// aapt resource value: 0x7f0b007b
-			public const int common_google_signin_btn_text_light = 2131427451;
+			// aapt resource value: 0x7f0b007c
+			public const int common_google_signin_btn_text_light = 2131427452;
 			
 			// aapt resource value: 0x7f0b0004
 			public const int common_google_signin_btn_text_light_default = 2131427332;
@@ -6259,23 +8724,23 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			// aapt resource value: 0x7f0b0007
 			public const int common_google_signin_btn_text_light_pressed = 2131427335;
 			
-			// aapt resource value: 0x7f0b007c
-			public const int common_google_signin_btn_tint = 2131427452;
+			// aapt resource value: 0x7f0b007d
+			public const int common_google_signin_btn_tint = 2131427453;
 			
 			// aapt resource value: 0x7f0b005d
 			public const int default_camera_overlay_color = 2131427421;
 			
-			// aapt resource value: 0x7f0b0062
-			public const int default_finder_overlay_color = 2131427426;
-			
 			// aapt resource value: 0x7f0b0063
-			public const int default_finder_overlay_stroke_color = 2131427427;
+			public const int default_finder_overlay_color = 2131427427;
+			
+			// aapt resource value: 0x7f0b0064
+			public const int default_finder_overlay_stroke_color = 2131427428;
 			
 			// aapt resource value: 0x7f0b0048
 			public const int design_bottom_navigation_shadow_color = 2131427400;
 			
-			// aapt resource value: 0x7f0b007d
-			public const int design_error = 2131427453;
+			// aapt resource value: 0x7f0b007e
+			public const int design_error = 2131427454;
 			
 			// aapt resource value: 0x7f0b0049
 			public const int design_fab_shadow_end_color = 2131427401;
@@ -6301,8 +8766,8 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			// aapt resource value: 0x7f0b0050
 			public const int design_snackbar_background_color = 2131427408;
 			
-			// aapt resource value: 0x7f0b007e
-			public const int design_tint_password_toggle = 2131427454;
+			// aapt resource value: 0x7f0b007f
+			public const int design_tint_password_toggle = 2131427455;
 			
 			// aapt resource value: 0x7f0b001e
 			public const int dim_foreground_disabled_material_dark = 2131427358;
@@ -6427,11 +8892,11 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			// aapt resource value: 0x7f0b0042
 			public const int switch_thumb_disabled_material_light = 2131427394;
 			
-			// aapt resource value: 0x7f0b007f
-			public const int switch_thumb_material_dark = 2131427455;
-			
 			// aapt resource value: 0x7f0b0080
-			public const int switch_thumb_material_light = 2131427456;
+			public const int switch_thumb_material_dark = 2131427456;
+			
+			// aapt resource value: 0x7f0b0081
+			public const int switch_thumb_material_light = 2131427457;
 			
 			// aapt resource value: 0x7f0b0043
 			public const int switch_thumb_normal_material_dark = 2131427395;
@@ -6454,11 +8919,14 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			// aapt resource value: 0x7f0b0061
 			public const int ui_polygonStrokeColor = 2131427425;
 			
-			// aapt resource value: 0x7f0b0064
-			public const int ui_scanning_manual_tint = 2131427428;
-			
 			// aapt resource value: 0x7f0b0065
-			public const int ui_shutterButtonColor = 2131427429;
+			public const int ui_scanning_manual_tint = 2131427429;
+			
+			// aapt resource value: 0x7f0b0066
+			public const int ui_shutterButtonColor = 2131427430;
+			
+			// aapt resource value: 0x7f0b0062
+			public const int workflow_camera_hint_bg = 2131427426;
 			
 			static Color()
 			{
@@ -6722,14 +9190,23 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			// aapt resource value: 0x7f0c0098
 			public const int compat_control_corner_material = 2131493016;
 			
-			// aapt resource value: 0x7f0c00a8
-			public const int default_finder_corner_radius = 2131493032;
+			// aapt resource value: 0x7f0c00ab
+			public const int default_finder_corner_radius = 2131493035;
 			
-			// aapt resource value: 0x7f0c00a9
-			public const int default_finder_stroke_width = 2131493033;
+			// aapt resource value: 0x7f0c00a5
+			public const int default_finder_inner_threshold = 2131493029;
 			
-			// aapt resource value: 0x7f0c00aa
-			public const int default_min_finder_padding = 2131493034;
+			// aapt resource value: 0x7f0c00a6
+			public const int default_finder_outer_threshold = 2131493030;
+			
+			// aapt resource value: 0x7f0c00ac
+			public const int default_finder_stroke_width = 2131493036;
+			
+			// aapt resource value: 0x7f0c00a7
+			public const int default_hint_corner_radius = 2131493031;
+			
+			// aapt resource value: 0x7f0c00ad
+			public const int default_min_finder_padding = 2131493037;
 			
 			// aapt resource value: 0x7f0c0072
 			public const int design_appbar_elevation = 2131492978;
@@ -6851,11 +9328,11 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			// aapt resource value: 0x7f0c005a
 			public const int disabled_alpha_material_light = 2131492954;
 			
-			// aapt resource value: 0x7f0c00ab
-			public const int document_thumbnail_size = 2131493035;
+			// aapt resource value: 0x7f0c00ae
+			public const int document_thumbnail_size = 2131493038;
 			
-			// aapt resource value: 0x7f0c00ac
-			public const int edit_polygon_handle_size = 2131493036;
+			// aapt resource value: 0x7f0c00af
+			public const int edit_polygon_handle_size = 2131493039;
 			
 			// aapt resource value: 0x7f0c0000
 			public const int fastscroll_default_thickness = 2131492864;
@@ -6866,8 +9343,8 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			// aapt resource value: 0x7f0c0002
 			public const int fastscroll_minimum_range = 2131492866;
 			
-			// aapt resource value: 0x7f0c00ad
-			public const int finder_view_margin = 2131493037;
+			// aapt resource value: 0x7f0c00b0
+			public const int finder_view_margin = 2131493040;
 			
 			// aapt resource value: 0x7f0c005b
 			public const int highlight_alpha_material_colored = 2131492955;
@@ -6899,23 +9376,23 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			// aapt resource value: 0x7f0c0005
 			public const int item_touch_helper_swipe_escape_velocity = 2131492869;
 			
-			// aapt resource value: 0x7f0c00ae
-			public const int magnetic_line_treshold = 2131493038;
-			
-			// aapt resource value: 0x7f0c00af
-			public const int magnifier_cross_size = 2131493039;
-			
-			// aapt resource value: 0x7f0c00b0
-			public const int magnifier_cross_stroke_width = 2131493040;
-			
 			// aapt resource value: 0x7f0c00b1
-			public const int magnifier_margin = 2131493041;
+			public const int magnetic_line_treshold = 2131493041;
 			
 			// aapt resource value: 0x7f0c00b2
-			public const int magnifier_raduis = 2131493042;
+			public const int magnifier_cross_size = 2131493042;
 			
 			// aapt resource value: 0x7f0c00b3
-			public const int magnifier_stroke_width = 2131493043;
+			public const int magnifier_cross_stroke_width = 2131493043;
+			
+			// aapt resource value: 0x7f0c00b4
+			public const int magnifier_margin = 2131493044;
+			
+			// aapt resource value: 0x7f0c00b5
+			public const int magnifier_raduis = 2131493045;
+			
+			// aapt resource value: 0x7f0c00b6
+			public const int magnifier_stroke_width = 2131493046;
 			
 			// aapt resource value: 0x7f0c0006
 			public const int mr_controller_volume_group_list_item_height = 2131492870;
@@ -6980,14 +9457,14 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			// aapt resource value: 0x7f0c00a3
 			public const int notification_top_pad_large_text = 2131493027;
 			
-			// aapt resource value: 0x7f0c00b4
-			public const int polygon_stroke_width = 2131493044;
+			// aapt resource value: 0x7f0c00b7
+			public const int polygon_stroke_width = 2131493047;
 			
-			// aapt resource value: 0x7f0c00a5
-			public const int snap_btn_bottom_margin = 2131493029;
+			// aapt resource value: 0x7f0c00a8
+			public const int snap_btn_bottom_margin = 2131493032;
 			
-			// aapt resource value: 0x7f0c00a6
-			public const int take_picture_size = 2131493030;
+			// aapt resource value: 0x7f0c00a9
+			public const int take_picture_size = 2131493033;
 			
 			// aapt resource value: 0x7f0c0062
 			public const int tooltip_corner_radius = 2131492962;
@@ -7013,11 +9490,11 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			// aapt resource value: 0x7f0c0069
 			public const int tooltip_y_offset_touch = 2131492969;
 			
-			// aapt resource value: 0x7f0c00b5
-			public const int touch_focus_polygon_width = 2131493045;
+			// aapt resource value: 0x7f0c00b8
+			public const int touch_focus_polygon_width = 2131493048;
 			
-			// aapt resource value: 0x7f0c00a7
-			public const int ui_polygonStrokeWidth = 2131493031;
+			// aapt resource value: 0x7f0c00aa
+			public const int ui_polygonStrokeWidth = 2131493034;
 			
 			static Dimension()
 			{
@@ -7284,26 +9761,26 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			// aapt resource value: 0x7f020053
 			public const int avd_hide_password = 2130837587;
 			
-			// aapt resource value: 0x7f02015b
-			public const int avd_hide_password_1 = 2130837851;
-			
 			// aapt resource value: 0x7f02015c
-			public const int avd_hide_password_2 = 2130837852;
+			public const int avd_hide_password_1 = 2130837852;
 			
 			// aapt resource value: 0x7f02015d
-			public const int avd_hide_password_3 = 2130837853;
+			public const int avd_hide_password_2 = 2130837853;
+			
+			// aapt resource value: 0x7f02015e
+			public const int avd_hide_password_3 = 2130837854;
 			
 			// aapt resource value: 0x7f020054
 			public const int avd_show_password = 2130837588;
 			
-			// aapt resource value: 0x7f02015e
-			public const int avd_show_password_1 = 2130837854;
-			
 			// aapt resource value: 0x7f02015f
-			public const int avd_show_password_2 = 2130837855;
+			public const int avd_show_password_1 = 2130837855;
 			
 			// aapt resource value: 0x7f020160
-			public const int avd_show_password_3 = 2130837856;
+			public const int avd_show_password_2 = 2130837856;
+			
+			// aapt resource value: 0x7f020161
+			public const int avd_show_password_3 = 2130837857;
 			
 			// aapt resource value: 0x7f020055
 			public const int camera_automatic = 2130837589;
@@ -8022,11 +10499,11 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			// aapt resource value: 0x7f020143
 			public const int notification_icon_background = 2130837827;
 			
-			// aapt resource value: 0x7f020159
-			public const int notification_template_icon_bg = 2130837849;
-			
 			// aapt resource value: 0x7f02015a
-			public const int notification_template_icon_low_bg = 2130837850;
+			public const int notification_template_icon_bg = 2130837850;
+			
+			// aapt resource value: 0x7f02015b
+			public const int notification_template_icon_low_bg = 2130837851;
 			
 			// aapt resource value: 0x7f020144
 			public const int notification_tile_bg = 2130837828;
@@ -8091,6 +10568,9 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			// aapt resource value: 0x7f020158
 			public const int ui_scanning_no_permission = 2130837848;
 			
+			// aapt resource value: 0x7f020159
+			public const int workflow_camera_hint_bg = 2130837849;
+			
 			static Drawable()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
@@ -8122,8 +10602,8 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			// aapt resource value: 0x7f0d0041
 			public const int SYM = 2131558465;
 			
-			// aapt resource value: 0x7f0d00e8
-			public const int action0 = 2131558632;
+			// aapt resource value: 0x7f0d00ed
+			public const int action0 = 2131558637;
 			
 			// aapt resource value: 0x7f0d0091
 			public const int action_bar = 2131558545;
@@ -8146,17 +10626,17 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			// aapt resource value: 0x7f0d006f
 			public const int action_bar_title = 2131558511;
 			
-			// aapt resource value: 0x7f0d00e5
-			public const int action_container = 2131558629;
+			// aapt resource value: 0x7f0d00ea
+			public const int action_container = 2131558634;
 			
 			// aapt resource value: 0x7f0d0092
 			public const int action_context_bar = 2131558546;
 			
-			// aapt resource value: 0x7f0d00ec
-			public const int action_divider = 2131558636;
+			// aapt resource value: 0x7f0d00f1
+			public const int action_divider = 2131558641;
 			
-			// aapt resource value: 0x7f0d00e6
-			public const int action_image = 2131558630;
+			// aapt resource value: 0x7f0d00eb
+			public const int action_image = 2131558635;
 			
 			// aapt resource value: 0x7f0d0003
 			public const int action_menu_divider = 2131558403;
@@ -8173,11 +10653,11 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			// aapt resource value: 0x7f0d0071
 			public const int action_mode_close_button = 2131558513;
 			
-			// aapt resource value: 0x7f0d00e7
-			public const int action_text = 2131558631;
+			// aapt resource value: 0x7f0d00ec
+			public const int action_text = 2131558636;
 			
-			// aapt resource value: 0x7f0d00f5
-			public const int actions = 2131558645;
+			// aapt resource value: 0x7f0d00fa
+			public const int actions = 2131558650;
 			
 			// aapt resource value: 0x7f0d0072
 			public const int activity_chooser_view_content = 2131558514;
@@ -8206,20 +10686,20 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			// aapt resource value: 0x7f0d0025
 			public const int auto = 2131558437;
 			
-			// aapt resource value: 0x7f0d00b0
-			public const int autoSnapBtn = 2131558576;
+			// aapt resource value: 0x7f0d00b3
+			public const int autoSnapBtn = 2131558579;
 			
-			// aapt resource value: 0x7f0d00b1
-			public const int automatic_icon = 2131558577;
+			// aapt resource value: 0x7f0d00b4
+			public const int automatic_icon = 2131558580;
 			
-			// aapt resource value: 0x7f0d00b2
-			public const int automatic_text = 2131558578;
+			// aapt resource value: 0x7f0d00b5
+			public const int automatic_text = 2131558581;
 			
-			// aapt resource value: 0x7f0d00c9
-			public const int backgroundView = 2131558601;
+			// aapt resource value: 0x7f0d00cd
+			public const int backgroundView = 2131558605;
 			
-			// aapt resource value: 0x7f0d00c7
-			public const int barcodeCameraView = 2131558599;
+			// aapt resource value: 0x7f0d00cb
+			public const int barcodeCameraView = 2131558603;
 			
 			// aapt resource value: 0x7f0d0067
 			public const int barrier = 2131558503;
@@ -8233,41 +10713,47 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			// aapt resource value: 0x7f0d0047
 			public const int bottom = 2131558471;
 			
-			// aapt resource value: 0x7f0d00fb
-			public const int bottomBar = 2131558651;
+			// aapt resource value: 0x7f0d0100
+			public const int bottomBar = 2131558656;
+			
+			// aapt resource value: 0x7f0d00a6
+			public const int bottomtab_navarea = 2131558566;
+			
+			// aapt resource value: 0x7f0d00a7
+			public const int bottomtab_tabbar = 2131558567;
 			
 			// aapt resource value: 0x7f0d0078
 			public const int buttonPanel = 2131558520;
 			
-			// aapt resource value: 0x7f0d00aa
-			public const int cameraHolder = 2131558570;
+			// aapt resource value: 0x7f0d00ac
+			public const int cameraHolder = 2131558572;
 			
-			// aapt resource value: 0x7f0d00a6
-			public const int cameraPermissionView = 2131558566;
+			// aapt resource value: 0x7f0d00a8
+			public const int cameraPermissionView = 2131558568;
 			
 			// aapt resource value: 0x7f0d00a2
 			public const int cameraTopToolbar = 2131558562;
 			
-			// aapt resource value: 0x7f0d00c8
-			public const int cameraView = 2131558600;
+			// aapt resource value: 0x7f0d00cc
+			public const int cameraView = 2131558604;
 			
-			// aapt resource value: 0x7f0d00ab
-			public const int camera_bottom_toolbar = 2131558571;
+			// aapt resource value: 0x7f0d00ad
+			public const int camera_bottom_toolbar = 2131558573;
 			
-			// aapt resource value: 0x7f0d00a8
-			public const int camera_permission_description = 2131558568;
+			// aapt resource value: 0x7f0d00aa
+			public const int camera_permission_description = 2131558570;
 			
-			// aapt resource value: 0x7f0d00a7
-			public const int camera_permission_icon = 2131558567;
+			// aapt resource value: 0x7f0d00a9
+			public const int camera_permission_icon = 2131558569;
 			
-			// aapt resource value: 0x7f0d00fa
-			public const int cancel = 2131558650;
+			// aapt resource value: 0x7f0d00ff
+			public const int cancel = 2131558655;
 			
 			// aapt resource value: 0x7f0d00a3
 			public const int cancelBtn = 2131558563;
 			
-			// aapt resource value: 0x7f0d00e9
-			public const int cancel_action = 2131558633;
+			// aapt resource value: 0x7f0d00ee
+			public const int cancel_action = 2131558638;
 			
 			// aapt resource value: 0x7f0d004e
 			public const int center = 2131558478;
@@ -8284,8 +10770,8 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			// aapt resource value: 0x7f0d0088
 			public const int checkbox = 2131558536;
 			
-			// aapt resource value: 0x7f0d00f1
-			public const int chronometer = 2131558641;
+			// aapt resource value: 0x7f0d00f6
+			public const int chronometer = 2131558646;
 			
 			// aapt resource value: 0x7f0d0057
 			public const int clip_horizontal = 2131558487;
@@ -8296,14 +10782,14 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			// aapt resource value: 0x7f0d0043
 			public const int collapseActionView = 2131558467;
 			
-			// aapt resource value: 0x7f0d00bb
-			public const int container = 2131558587;
+			// aapt resource value: 0x7f0d00bd
+			public const int container = 2131558589;
 			
 			// aapt resource value: 0x7f0d007b
 			public const int contentPanel = 2131558523;
 			
-			// aapt resource value: 0x7f0d00bc
-			public const int coordinator = 2131558588;
+			// aapt resource value: 0x7f0d00be
+			public const int coordinator = 2131558590;
 			
 			// aapt resource value: 0x7f0d0082
 			public const int custom = 2131558530;
@@ -8320,23 +10806,23 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			// aapt resource value: 0x7f0d0075
 			public const int default_activity_button = 2131558517;
 			
-			// aapt resource value: 0x7f0d00be
-			public const int design_bottom_sheet = 2131558590;
+			// aapt resource value: 0x7f0d00c0
+			public const int design_bottom_sheet = 2131558592;
+			
+			// aapt resource value: 0x7f0d00c7
+			public const int design_menu_item_action_area = 2131558599;
+			
+			// aapt resource value: 0x7f0d00c6
+			public const int design_menu_item_action_area_stub = 2131558598;
 			
 			// aapt resource value: 0x7f0d00c5
-			public const int design_menu_item_action_area = 2131558597;
+			public const int design_menu_item_text = 2131558597;
 			
 			// aapt resource value: 0x7f0d00c4
-			public const int design_menu_item_action_area_stub = 2131558596;
+			public const int design_navigation_view = 2131558596;
 			
-			// aapt resource value: 0x7f0d00c3
-			public const int design_menu_item_text = 2131558595;
-			
-			// aapt resource value: 0x7f0d00c2
-			public const int design_navigation_view = 2131558594;
-			
-			// aapt resource value: 0x7f0d00ff
-			public const int detect = 2131558655;
+			// aapt resource value: 0x7f0d0104
+			public const int detect = 2131558660;
 			
 			// aapt resource value: 0x7f0d0069
 			public const int dimensions = 2131558505;
@@ -8347,20 +10833,20 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			// aapt resource value: 0x7f0d002b
 			public const int disableHome = 2131558443;
 			
-			// aapt resource value: 0x7f0d00f9
-			public const int done = 2131558649;
+			// aapt resource value: 0x7f0d00fe
+			public const int done = 2131558654;
 			
 			// aapt resource value: 0x7f0d0093
 			public const int edit_query = 2131558547;
 			
-			// aapt resource value: 0x7f0d00a9
-			public const int enableCameraBtn = 2131558569;
+			// aapt resource value: 0x7f0d00ab
+			public const int enableCameraBtn = 2131558571;
 			
 			// aapt resource value: 0x7f0d003a
 			public const int end = 2131558458;
 			
-			// aapt resource value: 0x7f0d00f7
-			public const int end_padder = 2131558647;
+			// aapt resource value: 0x7f0d00fc
+			public const int end_padder = 2131558652;
 			
 			// aapt resource value: 0x7f0d0049
 			public const int enterAlways = 2131558473;
@@ -8389,8 +10875,14 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			// aapt resource value: 0x7f0d001d
 			public const int finder_description = 2131558429;
 			
+			// aapt resource value: 0x7f0d0117
+			public const int finder_message = 2131558679;
+			
 			// aapt resource value: 0x7f0d001e
 			public const int finder_overlay = 2131558430;
+			
+			// aapt resource value: 0x7f0d0116
+			public const int finder_title = 2131558678;
 			
 			// aapt resource value: 0x7f0d005d
 			public const int @fixed = 2131558493;
@@ -8401,8 +10893,14 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			// aapt resource value: 0x7f0d00a5
 			public const int flash_icon = 2131558565;
 			
-			// aapt resource value: 0x7f0d00b3
-			public const int flash_text_view = 2131558579;
+			// aapt resource value: 0x7f0d00b6
+			public const int flash_text_view = 2131558582;
+			
+			// aapt resource value: 0x7f0d00c9
+			public const int flyoutcontent_appbar = 2131558601;
+			
+			// aapt resource value: 0x7f0d00ca
+			public const int flyoutcontent_recycler = 2131558602;
 			
 			// aapt resource value: 0x7f0d006d
 			public const int forever = 2131558509;
@@ -8416,8 +10914,8 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			// aapt resource value: 0x7f0d005f
 			public const int gone = 2131558495;
 			
-			// aapt resource value: 0x7f0d00b5
-			public const int hint = 2131558581;
+			// aapt resource value: 0x7f0d00ba
+			public const int hint = 2131558586;
 			
 			// aapt resource value: 0x7f0d0005
 			public const int home = 2131558405;
@@ -8428,8 +10926,8 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			// aapt resource value: 0x7f0d0077
 			public const int icon = 2131558519;
 			
-			// aapt resource value: 0x7f0d00f6
-			public const int icon_group = 2131558646;
+			// aapt resource value: 0x7f0d00fb
+			public const int icon_group = 2131558651;
 			
 			// aapt resource value: 0x7f0d0022
 			public const int icon_only = 2131558434;
@@ -8440,8 +10938,11 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			// aapt resource value: 0x7f0d0074
 			public const int image = 2131558516;
 			
-			// aapt resource value: 0x7f0d00f2
-			public const int info = 2131558642;
+			// aapt resource value: 0x7f0d00f7
+			public const int info = 2131558647;
+			
+			// aapt resource value: 0x7f0d0115
+			public const int info_bottom_bar = 2131558677;
 			
 			// aapt resource value: 0x7f0d0060
 			public const int invisible = 2131558496;
@@ -8452,8 +10953,8 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			// aapt resource value: 0x7f0d0000
 			public const int item_touch_helper_previous_elevation = 2131558400;
 			
-			// aapt resource value: 0x7f0d00ba
-			public const int largeLabel = 2131558586;
+			// aapt resource value: 0x7f0d00bc
+			public const int largeLabel = 2131558588;
 			
 			// aapt resource value: 0x7f0d0052
 			public const int left = 2131558482;
@@ -8473,17 +10974,29 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			// aapt resource value: 0x7f0d0076
 			public const int list_item = 2131558518;
 			
-			// aapt resource value: 0x7f0d00fc
-			public const int magnifier = 2131558652;
+			// aapt resource value: 0x7f0d0101
+			public const int magnifier = 2131558657;
 			
-			// aapt resource value: 0x7f0d010a
-			public const int masked = 2131558666;
+			// aapt resource value: 0x7f0d0106
+			public const int main_appbar = 2131558662;
 			
-			// aapt resource value: 0x7f0d00eb
-			public const int media_actions = 2131558635;
+			// aapt resource value: 0x7f0d0109
+			public const int main_scrollview = 2131558665;
 			
 			// aapt resource value: 0x7f0d0108
-			public const int message = 2131558664;
+			public const int main_tablayout = 2131558664;
+			
+			// aapt resource value: 0x7f0d0107
+			public const int main_toolbar = 2131558663;
+			
+			// aapt resource value: 0x7f0d0119
+			public const int masked = 2131558681;
+			
+			// aapt resource value: 0x7f0d00f0
+			public const int media_actions = 2131558640;
+			
+			// aapt resource value: 0x7f0d0114
+			public const int message = 2131558676;
 			
 			// aapt resource value: 0x7f0d003b
 			public const int middle = 2131558459;
@@ -8491,98 +11004,98 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			// aapt resource value: 0x7f0d005c
 			public const int mini = 2131558492;
 			
-			// aapt resource value: 0x7f0d00d7
-			public const int mr_art = 2131558615;
-			
-			// aapt resource value: 0x7f0d00cc
-			public const int mr_chooser_list = 2131558604;
-			
-			// aapt resource value: 0x7f0d00cf
-			public const int mr_chooser_route_desc = 2131558607;
-			
-			// aapt resource value: 0x7f0d00cd
-			public const int mr_chooser_route_icon = 2131558605;
-			
-			// aapt resource value: 0x7f0d00ce
-			public const int mr_chooser_route_name = 2131558606;
-			
-			// aapt resource value: 0x7f0d00cb
-			public const int mr_chooser_title = 2131558603;
-			
-			// aapt resource value: 0x7f0d00d4
-			public const int mr_close = 2131558612;
-			
-			// aapt resource value: 0x7f0d00da
-			public const int mr_control_divider = 2131558618;
-			
-			// aapt resource value: 0x7f0d00e0
-			public const int mr_control_playback_ctrl = 2131558624;
-			
-			// aapt resource value: 0x7f0d00e3
-			public const int mr_control_subtitle = 2131558627;
-			
-			// aapt resource value: 0x7f0d00e2
-			public const int mr_control_title = 2131558626;
-			
-			// aapt resource value: 0x7f0d00e1
-			public const int mr_control_title_container = 2131558625;
-			
-			// aapt resource value: 0x7f0d00d5
-			public const int mr_custom_control = 2131558613;
-			
-			// aapt resource value: 0x7f0d00d6
-			public const int mr_default_control = 2131558614;
+			// aapt resource value: 0x7f0d00dc
+			public const int mr_art = 2131558620;
 			
 			// aapt resource value: 0x7f0d00d1
-			public const int mr_dialog_area = 2131558609;
+			public const int mr_chooser_list = 2131558609;
 			
-			// aapt resource value: 0x7f0d00d0
-			public const int mr_expandable_area = 2131558608;
-			
-			// aapt resource value: 0x7f0d00e4
-			public const int mr_group_expand_collapse = 2131558628;
-			
-			// aapt resource value: 0x7f0d00d8
-			public const int mr_media_main_control = 2131558616;
-			
-			// aapt resource value: 0x7f0d00d3
-			public const int mr_name = 2131558611;
-			
-			// aapt resource value: 0x7f0d00d9
-			public const int mr_playback_control = 2131558617;
+			// aapt resource value: 0x7f0d00d4
+			public const int mr_chooser_route_desc = 2131558612;
 			
 			// aapt resource value: 0x7f0d00d2
-			public const int mr_title_bar = 2131558610;
+			public const int mr_chooser_route_icon = 2131558610;
 			
-			// aapt resource value: 0x7f0d00db
-			public const int mr_volume_control = 2131558619;
+			// aapt resource value: 0x7f0d00d3
+			public const int mr_chooser_route_name = 2131558611;
 			
-			// aapt resource value: 0x7f0d00dc
-			public const int mr_volume_group_list = 2131558620;
+			// aapt resource value: 0x7f0d00d0
+			public const int mr_chooser_title = 2131558608;
 			
-			// aapt resource value: 0x7f0d00de
-			public const int mr_volume_item_icon = 2131558622;
+			// aapt resource value: 0x7f0d00d9
+			public const int mr_close = 2131558617;
 			
 			// aapt resource value: 0x7f0d00df
-			public const int mr_volume_slider = 2131558623;
+			public const int mr_control_divider = 2131558623;
 			
-			// aapt resource value: 0x7f0d00ca
-			public const int mrzCameraView = 2131558602;
+			// aapt resource value: 0x7f0d00e5
+			public const int mr_control_playback_ctrl = 2131558629;
 			
-			// aapt resource value: 0x7f0d00ad
-			public const int multiPageBtn = 2131558573;
+			// aapt resource value: 0x7f0d00e8
+			public const int mr_control_subtitle = 2131558632;
 			
-			// aapt resource value: 0x7f0d00ae
-			public const int multi_page_icon = 2131558574;
+			// aapt resource value: 0x7f0d00e7
+			public const int mr_control_title = 2131558631;
 			
-			// aapt resource value: 0x7f0d00af
-			public const int multi_page_text = 2131558575;
+			// aapt resource value: 0x7f0d00e6
+			public const int mr_control_title_container = 2131558630;
+			
+			// aapt resource value: 0x7f0d00da
+			public const int mr_custom_control = 2131558618;
+			
+			// aapt resource value: 0x7f0d00db
+			public const int mr_default_control = 2131558619;
+			
+			// aapt resource value: 0x7f0d00d6
+			public const int mr_dialog_area = 2131558614;
+			
+			// aapt resource value: 0x7f0d00d5
+			public const int mr_expandable_area = 2131558613;
+			
+			// aapt resource value: 0x7f0d00e9
+			public const int mr_group_expand_collapse = 2131558633;
+			
+			// aapt resource value: 0x7f0d00dd
+			public const int mr_media_main_control = 2131558621;
+			
+			// aapt resource value: 0x7f0d00d8
+			public const int mr_name = 2131558616;
+			
+			// aapt resource value: 0x7f0d00de
+			public const int mr_playback_control = 2131558622;
+			
+			// aapt resource value: 0x7f0d00d7
+			public const int mr_title_bar = 2131558615;
+			
+			// aapt resource value: 0x7f0d00e0
+			public const int mr_volume_control = 2131558624;
+			
+			// aapt resource value: 0x7f0d00e1
+			public const int mr_volume_group_list = 2131558625;
+			
+			// aapt resource value: 0x7f0d00e3
+			public const int mr_volume_item_icon = 2131558627;
+			
+			// aapt resource value: 0x7f0d00e4
+			public const int mr_volume_slider = 2131558628;
+			
+			// aapt resource value: 0x7f0d00ce
+			public const int mrzCameraView = 2131558606;
+			
+			// aapt resource value: 0x7f0d00b0
+			public const int multiPageBtn = 2131558576;
+			
+			// aapt resource value: 0x7f0d00b1
+			public const int multi_page_icon = 2131558577;
+			
+			// aapt resource value: 0x7f0d00b2
+			public const int multi_page_text = 2131558578;
 			
 			// aapt resource value: 0x7f0d0032
 			public const int multiply = 2131558450;
 			
-			// aapt resource value: 0x7f0d00c1
-			public const int navigation_header_container = 2131558593;
+			// aapt resource value: 0x7f0d00c3
+			public const int navigation_header_container = 2131558595;
 			
 			// aapt resource value: 0x7f0d0045
 			public const int never = 2131558469;
@@ -8593,14 +11106,14 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			// aapt resource value: 0x7f0d0029
 			public const int normal = 2131558441;
 			
-			// aapt resource value: 0x7f0d00f4
-			public const int notification_background = 2131558644;
+			// aapt resource value: 0x7f0d00f9
+			public const int notification_background = 2131558649;
 			
-			// aapt resource value: 0x7f0d00ee
-			public const int notification_main_column = 2131558638;
+			// aapt resource value: 0x7f0d00f3
+			public const int notification_main_column = 2131558643;
 			
-			// aapt resource value: 0x7f0d00ed
-			public const int notification_main_column_container = 2131558637;
+			// aapt resource value: 0x7f0d00f2
+			public const int notification_main_column_container = 2131558642;
 			
 			// aapt resource value: 0x7f0d0065
 			public const int packed = 2131558501;
@@ -8623,14 +11136,14 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			// aapt resource value: 0x7f0d0056
 			public const int pin = 2131558486;
 			
-			// aapt resource value: 0x7f0d00ac
-			public const int polygonView = 2131558572;
+			// aapt resource value: 0x7f0d00af
+			public const int polygonView = 2131558575;
 			
-			// aapt resource value: 0x7f0d00fd
-			public const int progress = 2131558653;
+			// aapt resource value: 0x7f0d0102
+			public const int progress = 2131558658;
 			
-			// aapt resource value: 0x7f0d00b8
-			public const int progressView = 2131558584;
+			// aapt resource value: 0x7f0d00b9
+			public const int progressView = 2131558585;
 			
 			// aapt resource value: 0x7f0d0006
 			public const int progress_circular = 2131558406;
@@ -8641,23 +11154,23 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			// aapt resource value: 0x7f0d008a
 			public const int radio = 2131558538;
 			
-			// aapt resource value: 0x7f0d00fe
-			public const int reset = 2131558654;
+			// aapt resource value: 0x7f0d0103
+			public const int reset = 2131558659;
 			
 			// aapt resource value: 0x7f0d0053
 			public const int right = 2131558483;
 			
-			// aapt resource value: 0x7f0d00f3
-			public const int right_icon = 2131558643;
+			// aapt resource value: 0x7f0d00f8
+			public const int right_icon = 2131558648;
 			
-			// aapt resource value: 0x7f0d00ef
-			public const int right_side = 2131558639;
+			// aapt resource value: 0x7f0d00f4
+			public const int right_side = 2131558644;
 			
-			// aapt resource value: 0x7f0d0100
-			public const int rotate = 2131558656;
+			// aapt resource value: 0x7f0d0105
+			public const int rotate = 2131558661;
 			
-			// aapt resource value: 0x7f0d00b6
-			public const int saveBtn = 2131558582;
+			// aapt resource value: 0x7f0d00ae
+			public const int saveBtn = 2131558574;
 			
 			// aapt resource value: 0x7f0d000c
 			public const int save_image_matrix = 2131558412;
@@ -8722,6 +11235,15 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			// aapt resource value: 0x7f0d009f
 			public const int select_dialog_listview = 2131558559;
 			
+			// aapt resource value: 0x7f0d010a
+			public const int shellcontent_appbar = 2131558666;
+			
+			// aapt resource value: 0x7f0d010c
+			public const int shellcontent_scrollview = 2131558668;
+			
+			// aapt resource value: 0x7f0d010b
+			public const int shellcontent_toolbar = 2131558667;
+			
 			// aapt resource value: 0x7f0d0089
 			public const int shortcut = 2131558537;
 			
@@ -8734,20 +11256,20 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			// aapt resource value: 0x7f0d002f
 			public const int showTitle = 2131558447;
 			
-			// aapt resource value: 0x7f0d00b7
-			public const int shutterBtn = 2131558583;
+			// aapt resource value: 0x7f0d00b8
+			public const int shutterBtn = 2131558584;
 			
-			// aapt resource value: 0x7f0d0106
-			public const int sliding_tabs = 2131558662;
+			// aapt resource value: 0x7f0d0112
+			public const int sliding_tabs = 2131558674;
 			
-			// aapt resource value: 0x7f0d00b9
-			public const int smallLabel = 2131558585;
+			// aapt resource value: 0x7f0d00bb
+			public const int smallLabel = 2131558587;
 			
-			// aapt resource value: 0x7f0d00c0
-			public const int snackbar_action = 2131558592;
+			// aapt resource value: 0x7f0d00c2
+			public const int snackbar_action = 2131558594;
 			
-			// aapt resource value: 0x7f0d00bf
-			public const int snackbar_text = 2131558591;
+			// aapt resource value: 0x7f0d00c1
+			public const int snackbar_text = 2131558593;
 			
 			// aapt resource value: 0x7f0d004d
 			public const int snap = 2131558477;
@@ -8779,11 +11301,11 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			// aapt resource value: 0x7f0d0054
 			public const int start = 2131558484;
 			
-			// aapt resource value: 0x7f0d00b4
-			public const int startup_massage = 2131558580;
+			// aapt resource value: 0x7f0d00b7
+			public const int startup_massage = 2131558583;
 			
-			// aapt resource value: 0x7f0d00ea
-			public const int status_bar_latest_event_content = 2131558634;
+			// aapt resource value: 0x7f0d00ef
+			public const int status_bar_latest_event_content = 2131558639;
 			
 			// aapt resource value: 0x7f0d008b
 			public const int submenuarrow = 2131558539;
@@ -8797,20 +11319,20 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			// aapt resource value: 0x7f0d0019
 			public const int tag_transition_group = 2131558425;
 			
-			// aapt resource value: 0x7f0d0101
-			public const int takePictureAutoBtn = 2131558657;
+			// aapt resource value: 0x7f0d010d
+			public const int takePictureAutoBtn = 2131558669;
 			
-			// aapt resource value: 0x7f0d0104
-			public const int takePictureManualBtn = 2131558660;
+			// aapt resource value: 0x7f0d0110
+			public const int takePictureManualBtn = 2131558672;
 			
-			// aapt resource value: 0x7f0d0103
-			public const int take_picture_auto_inner = 2131558659;
+			// aapt resource value: 0x7f0d010f
+			public const int take_picture_auto_inner = 2131558671;
 			
-			// aapt resource value: 0x7f0d0102
-			public const int take_picture_auto_outer = 2131558658;
+			// aapt resource value: 0x7f0d010e
+			public const int take_picture_auto_outer = 2131558670;
 			
-			// aapt resource value: 0x7f0d0105
-			public const int take_picture_manual = 2131558661;
+			// aapt resource value: 0x7f0d0111
+			public const int take_picture_manual = 2131558673;
 			
 			// aapt resource value: 0x7f0d001a
 			public const int text = 2131558426;
@@ -8824,8 +11346,8 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			// aapt resource value: 0x7f0d007e
 			public const int textSpacerNoTitle = 2131558526;
 			
-			// aapt resource value: 0x7f0d00c6
-			public const int text_input_password_toggle = 2131558598;
+			// aapt resource value: 0x7f0d00c8
+			public const int text_input_password_toggle = 2131558600;
 			
 			// aapt resource value: 0x7f0d0014
 			public const int textinput_counter = 2131558420;
@@ -8833,8 +11355,8 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			// aapt resource value: 0x7f0d0015
 			public const int textinput_error = 2131558421;
 			
-			// aapt resource value: 0x7f0d00f0
-			public const int time = 2131558640;
+			// aapt resource value: 0x7f0d00f5
+			public const int time = 2131558645;
 			
 			// aapt resource value: 0x7f0d001c
 			public const int title = 2131558428;
@@ -8845,8 +11367,8 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			// aapt resource value: 0x7f0d0084
 			public const int title_template = 2131558532;
 			
-			// aapt resource value: 0x7f0d0107
-			public const int toolbar = 2131558663;
+			// aapt resource value: 0x7f0d0113
+			public const int toolbar = 2131558675;
 			
 			// aapt resource value: 0x7f0d0048
 			public const int top = 2131558472;
@@ -8854,11 +11376,11 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			// aapt resource value: 0x7f0d0083
 			public const int topPanel = 2131558531;
 			
-			// aapt resource value: 0x7f0d00f8
-			public const int top_bar = 2131558648;
+			// aapt resource value: 0x7f0d00fd
+			public const int top_bar = 2131558653;
 			
-			// aapt resource value: 0x7f0d00bd
-			public const int touch_outside = 2131558589;
+			// aapt resource value: 0x7f0d00bf
+			public const int touch_outside = 2131558591;
 			
 			// aapt resource value: 0x7f0d000f
 			public const int transition_current_scene = 2131558415;
@@ -8887,17 +11409,20 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			// aapt resource value: 0x7f0d0016
 			public const int view_offset_helper = 2131558422;
 			
-			// aapt resource value: 0x7f0d0109
-			public const int visible = 2131558665;
+			// aapt resource value: 0x7f0d0118
+			public const int visible = 2131558680;
 			
-			// aapt resource value: 0x7f0d00dd
-			public const int volume_item_container = 2131558621;
+			// aapt resource value: 0x7f0d00e2
+			public const int volume_item_container = 2131558626;
 			
 			// aapt resource value: 0x7f0d0024
 			public const int wide = 2131558436;
 			
 			// aapt resource value: 0x7f0d0046
 			public const int withText = 2131558470;
+			
+			// aapt resource value: 0x7f0d00cf
+			public const int workflowCameraView = 2131558607;
 			
 			// aapt resource value: 0x7f0d0064
 			public const int wrap = 2131558500;
@@ -9083,160 +11608,181 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			public const int activity_mrz_camera = 2130903069;
 			
 			// aapt resource value: 0x7f03001e
-			public const int barcode_camera_view = 2130903070;
+			public const int activity_workflow_camera = 2130903070;
 			
 			// aapt resource value: 0x7f03001f
-			public const int camera_permission_placeholder = 2130903071;
+			public const int barcode_camera_view = 2130903071;
 			
 			// aapt resource value: 0x7f030020
-			public const int camera_view = 2130903072;
+			public const int BottomTabLayout = 2130903072;
 			
 			// aapt resource value: 0x7f030021
-			public const int design_bottom_navigation_item = 2130903073;
+			public const int camera_permission_placeholder = 2130903073;
 			
 			// aapt resource value: 0x7f030022
-			public const int design_bottom_sheet_dialog = 2130903074;
+			public const int camera_view = 2130903074;
 			
 			// aapt resource value: 0x7f030023
-			public const int design_layout_snackbar = 2130903075;
+			public const int design_bottom_navigation_item = 2130903075;
 			
 			// aapt resource value: 0x7f030024
-			public const int design_layout_snackbar_include = 2130903076;
+			public const int design_bottom_sheet_dialog = 2130903076;
 			
 			// aapt resource value: 0x7f030025
-			public const int design_layout_tab_icon = 2130903077;
+			public const int design_layout_snackbar = 2130903077;
 			
 			// aapt resource value: 0x7f030026
-			public const int design_layout_tab_text = 2130903078;
+			public const int design_layout_snackbar_include = 2130903078;
 			
 			// aapt resource value: 0x7f030027
-			public const int design_menu_item_action_area = 2130903079;
+			public const int design_layout_tab_icon = 2130903079;
 			
 			// aapt resource value: 0x7f030028
-			public const int design_navigation_item = 2130903080;
+			public const int design_layout_tab_text = 2130903080;
 			
 			// aapt resource value: 0x7f030029
-			public const int design_navigation_item_header = 2130903081;
+			public const int design_menu_item_action_area = 2130903081;
 			
 			// aapt resource value: 0x7f03002a
-			public const int design_navigation_item_separator = 2130903082;
+			public const int design_navigation_item = 2130903082;
 			
 			// aapt resource value: 0x7f03002b
-			public const int design_navigation_item_subheader = 2130903083;
+			public const int design_navigation_item_header = 2130903083;
 			
 			// aapt resource value: 0x7f03002c
-			public const int design_navigation_menu = 2130903084;
+			public const int design_navigation_item_separator = 2130903084;
 			
 			// aapt resource value: 0x7f03002d
-			public const int design_navigation_menu_item = 2130903085;
+			public const int design_navigation_item_subheader = 2130903085;
 			
 			// aapt resource value: 0x7f03002e
-			public const int design_text_input_password_icon = 2130903086;
+			public const int design_navigation_menu = 2130903086;
 			
 			// aapt resource value: 0x7f03002f
-			public const int fragment_barcode_camera = 2130903087;
+			public const int design_navigation_menu_item = 2130903087;
 			
 			// aapt resource value: 0x7f030030
-			public const int fragment_camera = 2130903088;
+			public const int design_text_input_password_icon = 2130903088;
 			
 			// aapt resource value: 0x7f030031
-			public const int fragment_edit_polygon = 2130903089;
+			public const int FlyoutContent = 2130903089;
 			
 			// aapt resource value: 0x7f030032
-			public const int fragment_mrz_camera = 2130903090;
+			public const int fragment_barcode_camera = 2130903090;
 			
 			// aapt resource value: 0x7f030033
-			public const int mr_chooser_dialog = 2130903091;
+			public const int fragment_camera = 2130903091;
 			
 			// aapt resource value: 0x7f030034
-			public const int mr_chooser_list_item = 2130903092;
+			public const int fragment_edit_polygon = 2130903092;
 			
 			// aapt resource value: 0x7f030035
-			public const int mr_controller_material_dialog_b = 2130903093;
+			public const int fragment_mrz_camera = 2130903093;
 			
 			// aapt resource value: 0x7f030036
-			public const int mr_controller_volume_item = 2130903094;
+			public const int fragment_workflow_camera = 2130903094;
 			
 			// aapt resource value: 0x7f030037
-			public const int mr_playback_control = 2130903095;
+			public const int mr_chooser_dialog = 2130903095;
 			
 			// aapt resource value: 0x7f030038
-			public const int mr_volume_control = 2130903096;
+			public const int mr_chooser_list_item = 2130903096;
 			
 			// aapt resource value: 0x7f030039
-			public const int mrz_camera_view = 2130903097;
+			public const int mr_controller_material_dialog_b = 2130903097;
 			
 			// aapt resource value: 0x7f03003a
-			public const int notification_action = 2130903098;
+			public const int mr_controller_volume_item = 2130903098;
 			
 			// aapt resource value: 0x7f03003b
-			public const int notification_action_tombstone = 2130903099;
+			public const int mr_playback_control = 2130903099;
 			
 			// aapt resource value: 0x7f03003c
-			public const int notification_media_action = 2130903100;
+			public const int mr_volume_control = 2130903100;
 			
 			// aapt resource value: 0x7f03003d
-			public const int notification_media_cancel_action = 2130903101;
+			public const int mrz_camera_view = 2130903101;
 			
 			// aapt resource value: 0x7f03003e
-			public const int notification_template_big_media = 2130903102;
+			public const int notification_action = 2130903102;
 			
 			// aapt resource value: 0x7f03003f
-			public const int notification_template_big_media_custom = 2130903103;
+			public const int notification_action_tombstone = 2130903103;
 			
 			// aapt resource value: 0x7f030040
-			public const int notification_template_big_media_narrow = 2130903104;
+			public const int notification_media_action = 2130903104;
 			
 			// aapt resource value: 0x7f030041
-			public const int notification_template_big_media_narrow_custom = 2130903105;
+			public const int notification_media_cancel_action = 2130903105;
 			
 			// aapt resource value: 0x7f030042
-			public const int notification_template_custom_big = 2130903106;
+			public const int notification_template_big_media = 2130903106;
 			
 			// aapt resource value: 0x7f030043
-			public const int notification_template_icon_group = 2130903107;
+			public const int notification_template_big_media_custom = 2130903107;
 			
 			// aapt resource value: 0x7f030044
-			public const int notification_template_lines_media = 2130903108;
+			public const int notification_template_big_media_narrow = 2130903108;
 			
 			// aapt resource value: 0x7f030045
-			public const int notification_template_media = 2130903109;
+			public const int notification_template_big_media_narrow_custom = 2130903109;
 			
 			// aapt resource value: 0x7f030046
-			public const int notification_template_media_custom = 2130903110;
+			public const int notification_template_custom_big = 2130903110;
 			
 			// aapt resource value: 0x7f030047
-			public const int notification_template_part_chronometer = 2130903111;
+			public const int notification_template_icon_group = 2130903111;
 			
 			// aapt resource value: 0x7f030048
-			public const int notification_template_part_time = 2130903112;
+			public const int notification_template_lines_media = 2130903112;
 			
 			// aapt resource value: 0x7f030049
-			public const int polygon_view = 2130903113;
+			public const int notification_template_media = 2130903113;
 			
 			// aapt resource value: 0x7f03004a
-			public const int select_dialog_item_material = 2130903114;
+			public const int notification_template_media_custom = 2130903114;
 			
 			// aapt resource value: 0x7f03004b
-			public const int select_dialog_multichoice_material = 2130903115;
+			public const int notification_template_part_chronometer = 2130903115;
 			
 			// aapt resource value: 0x7f03004c
-			public const int select_dialog_singlechoice_material = 2130903116;
+			public const int notification_template_part_time = 2130903116;
 			
 			// aapt resource value: 0x7f03004d
-			public const int shutter_button = 2130903117;
+			public const int polygon_view = 2130903117;
 			
 			// aapt resource value: 0x7f03004e
-			public const int support_simple_spinner_dropdown_item = 2130903118;
+			public const int RootLayout = 2130903118;
 			
 			// aapt resource value: 0x7f03004f
-			public const int Tabbar = 2130903119;
+			public const int select_dialog_item_material = 2130903119;
 			
 			// aapt resource value: 0x7f030050
-			public const int Toolbar = 2130903120;
+			public const int select_dialog_multichoice_material = 2130903120;
 			
 			// aapt resource value: 0x7f030051
-			public const int tooltip = 2130903121;
+			public const int select_dialog_singlechoice_material = 2130903121;
+			
+			// aapt resource value: 0x7f030052
+			public const int ShellContent = 2130903122;
+			
+			// aapt resource value: 0x7f030053
+			public const int shutter_button = 2130903123;
+			
+			// aapt resource value: 0x7f030054
+			public const int support_simple_spinner_dropdown_item = 2130903124;
+			
+			// aapt resource value: 0x7f030055
+			public const int Tabbar = 2130903125;
+			
+			// aapt resource value: 0x7f030056
+			public const int Toolbar = 2130903126;
+			
+			// aapt resource value: 0x7f030057
+			public const int tooltip = 2130903127;
+			
+			// aapt resource value: 0x7f030058
+			public const int workflow_camera_view = 2130903128;
 			
 			static Layout()
 			{
@@ -9409,8 +11955,8 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			// aapt resource value: 0x7f0a0045
 			public const int bottom_sheet_behavior = 2131361861;
 			
-			// aapt resource value: 0x7f0a0064
-			public const int camera_configuration = 2131361892;
+			// aapt resource value: 0x7f0a0065
+			public const int camera_configuration = 2131361893;
 			
 			// aapt resource value: 0x7f0a0053
 			public const int camera_permission_placeholder_btn_text = 2131361875;
@@ -9481,8 +12027,8 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			// aapt resource value: 0x7f0a0057
 			public const int detect = 2131361879;
 			
-			// aapt resource value: 0x7f0a0065
-			public const int device_configuration = 2131361893;
+			// aapt resource value: 0x7f0a0066
+			public const int device_configuration = 2131361894;
 			
 			// aapt resource value: 0x7f0a0058
 			public const int dont_move_hint = 2131361880;
@@ -9568,6 +12114,9 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			// aapt resource value: 0x7f0a005d
 			public const int nothing_detected_hint = 2131361885;
 			
+			// aapt resource value: 0x7f0a005e
+			public const int off_center_hint = 2131361886;
+			
 			// aapt resource value: 0x7f0a0047
 			public const int password_toggle_content_description = 2131361863;
 			
@@ -9583,32 +12132,35 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			// aapt resource value: 0x7f0a004b
 			public const int path_password_strike_through = 2131361867;
 			
-			// aapt resource value: 0x7f0a005e
-			public const int reset = 2131361886;
-			
 			// aapt resource value: 0x7f0a005f
-			public const int reset_to_default = 2131361887;
+			public const int reset = 2131361887;
 			
 			// aapt resource value: 0x7f0a0060
-			public const int rotate = 2131361888;
+			public const int reset_to_default = 2131361888;
+			
+			// aapt resource value: 0x7f0a0061
+			public const int rotate = 2131361889;
 			
 			// aapt resource value: 0x7f0a0037
 			public const int search_menu_title = 2131361847;
 			
+			// aapt resource value: 0x7f0a0067
+			public const int select_picture_title = 2131361895;
+			
 			// aapt resource value: 0x7f0a004c
 			public const int status_bar_notification_info_overflow = 2131361868;
 			
-			// aapt resource value: 0x7f0a0066
-			public const int support_email_template = 2131361894;
-			
-			// aapt resource value: 0x7f0a0061
-			public const int too_dark_hint = 2131361889;
+			// aapt resource value: 0x7f0a0068
+			public const int support_email_template = 2131361896;
 			
 			// aapt resource value: 0x7f0a0062
-			public const int too_noisy_hint = 2131361890;
+			public const int too_dark_hint = 2131361890;
 			
 			// aapt resource value: 0x7f0a0063
-			public const int too_small_hint = 2131361891;
+			public const int too_noisy_hint = 2131361891;
+			
+			// aapt resource value: 0x7f0a0064
+			public const int too_small_hint = 2131361892;
 			
 			static String()
 			{
@@ -12564,13 +15116,13 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			public const int DrawerArrowToggle_thickness = 7;
 			
 			public static int[] EditPolygonImageView = new int[] {
-					2130772455,
 					2130772456,
 					2130772457,
 					2130772458,
 					2130772459,
 					2130772460,
-					2130772461};
+					2130772461,
+					2130772462};
 			
 			// aapt resource value: 5
 			public const int EditPolygonImageView_cornerImageSrc = 5;
@@ -12594,13 +15146,13 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			public const int EditPolygonImageView_magneticLineTreshold = 1;
 			
 			public static int[] FinderOverlayView = new int[] {
-					2130772462,
 					2130772463,
 					2130772464,
 					2130772465,
 					2130772466,
 					2130772467,
-					2130772468};
+					2130772468,
+					2130772469};
 			
 			// aapt resource value: 3
 			public const int FinderOverlayView_corner_radius = 3;
@@ -12816,10 +15368,10 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			public const int LoadingImageView_imageAspectRatioAdjust = 0;
 			
 			public static int[] MagnifierView = new int[] {
-					2130772469,
 					2130772470,
 					2130772471,
-					2130772472};
+					2130772472,
+					2130772473};
 			
 			// aapt resource value: 3
 			public const int MagnifierView_magnifierEnableBounding = 3;
@@ -13052,11 +15604,11 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			public const int NavigationView_menu = 4;
 			
 			public static int[] PolygonView = new int[] {
-					2130772473,
 					2130772474,
 					2130772475,
 					2130772476,
-					2130772477};
+					2130772477,
+					2130772478};
 			
 			// aapt resource value: 2
 			public const int PolygonView_polygonFillColor = 2;
@@ -13232,11 +15784,11 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			public const int SearchView_voiceIcon = 12;
 			
 			public static int[] ShutterButton = new int[] {
-					2130772478,
 					2130772479,
 					2130772480,
 					2130772481,
-					2130772482};
+					2130772482,
+					2130772483};
 			
 			// aapt resource value: 3
 			public const int ShutterButton_shutterButtonAutoInnerColor = 3;
@@ -13562,7 +16114,7 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			public const int TextInputLayout_passwordToggleTintMode = 15;
 			
 			public static int[] TintableImageButton = new int[] {
-					2130772454};
+					2130772455};
 			
 			// aapt resource value: 0
 			public const int TintableImageButton_src_tint = 0;

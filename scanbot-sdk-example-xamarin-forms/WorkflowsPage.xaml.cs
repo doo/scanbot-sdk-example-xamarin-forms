@@ -113,7 +113,11 @@ namespace scanbotsdkexamplexamarinforms
 
         private async Task RunWorkflow(IWorkflow workflow)
         {
-            var result = await SBSDK.UI.LaunchWorkflowScannerAsync(workflow);
+            var config = new WorkflowScannerConfiguration { 
+                IgnoreBadAspectRatio = true,
+                BottomBarBackgroundColor = Color.Blue
+            };
+            var result = await SBSDK.UI.LaunchWorkflowScannerAsync(workflow, config);
             if (result.Status == OperationResult.Ok)
             {
                 Results = result.Results?.Select(r => new ResultPresenter(r)).ToArray();
@@ -139,9 +143,34 @@ namespace scanbotsdkexamplexamarinforms
         async void HandleScanMrzClicked(object sender, EventArgs e)
         {
             var workflow = SBSDK.UI.CreateWorkflow();
-            var ratios = new[] { new PageAspectRatio(85.60, 53.98) };
-            workflow.AddScanMachineReadableZoneStep(message: "Scan MRZ", requiredAspectRatios: ratios,
-                resultValidationHandler: (o, args) => GC.KeepAlive((IWorkflowMachineReadableZoneResult)args.Result));
+            var ratios = new[] { 
+                new PageAspectRatio(85.0, 54.0), // ID card
+                new PageAspectRatio(125.0, 88.0) // Passport
+            };
+            workflow.AddScanMachineReadableZoneStep(
+                title: "Scan ID card or passport",
+                message: "Please align your ID card or passport in the frame.",
+                requiredAspectRatios: ratios,
+                resultValidationHandler: (o, args) => GC.KeepAlive((IWorkflowMachineReadableZoneResult)args.Result)
+            );
+            await RunWorkflow(workflow);
+        }
+
+        async void HandleScanMrzFrontBackClicked(object sender, EventArgs e)
+        {
+            var workflow = SBSDK.UI.CreateWorkflow();
+            var ratios = new[] { new PageAspectRatio(85.0, 54.0) }; // ID card
+            workflow.AddScanDocumentPageStep(
+                title: "Step 1/2",
+                message: "Please scan the front of your ID card.",
+                requiredAspectRatios: ratios
+            );
+            workflow.AddScanMachineReadableZoneStep(
+                title: "Step 2/2",
+                message: "Please scan the back of your ID card.", 
+                requiredAspectRatios: ratios,
+                resultValidationHandler: (o, args) => GC.KeepAlive((IWorkflowMachineReadableZoneResult)args.Result)
+            );
             await RunWorkflow(workflow);
         }
 

@@ -2,8 +2,9 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="scanbotsdkexamplexamarinforms.WorkflowsPage">
     <ScrollView>
         <StackLayout Orientation="Vertical">
+            <Button Text="Scan MRZ + Image" Clicked="HandleScanMrzClicked"/>
+            <Button Text="Scan MRZ + Front and Back Image" Clicked="HandleScanMrzFrontBackClicked"/>
             <Button Text="Scan QR and document" Clicked="HandleScanQrAndDocumentClicked"/>
-            <Button Text="Scan MRZ" Clicked="HandleScanMrzClicked"/>
             <Button Text="Scan Disability Certificate" Clicked="HandleScanDisabilityCertificateClicked"/>
             <Button Text="Scan Pay-form" Clicked="HandleScanPayFormClicked"/>
             <StackLayout Orientation="Vertical" BindableLayout.ItemsSource="{Binding Results}">

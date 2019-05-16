@@ -4,9 +4,9 @@
         <StackLayout Orientation="Vertical">
             <Button Text="Scan MRZ + Image" Clicked="HandleScanMrzClicked"/>
             <Button Text="Scan MRZ + Front and Back Image" Clicked="HandleScanMrzFrontBackClicked"/>
-            <Button Text="Scan QR and document" Clicked="HandleScanQrAndDocumentClicked"/>
+            <Button Text="Scan QR Code and Document Image" Clicked="HandleScanQrAndDocumentClicked"/>
             <Button Text="Scan Disability Certificate" Clicked="HandleScanDisabilityCertificateClicked"/>
-            <Button Text="Scan Pay-form" Clicked="HandleScanPayFormClicked"/>
+            <Button Text="Scan Payform" Clicked="HandleScanPayFormClicked"/>
             <StackLayout Orientation="Vertical" BindableLayout.ItemsSource="{Binding Results}">
                 <BindableLayout.ItemTemplate>
                     <DataTemplate>

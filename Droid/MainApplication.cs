@@ -20,26 +20,8 @@ namespace scanbotsdkexamplexamarinforms.Droid
         // However, if you do not specify the license key when initializing the SDK, 
         // it will work in trial mode (trial period of 1 minute). 
         // To get another trial period you have to restart your app.
-        //const string licenseKey = null;
+        const string licenseKey = null;
 
-        // limited trial key
-        const string licenseKey =
-              "ToNwgEItnq6POs/fCbMlXxJ+CiEG3y" +
-              "m/p4zxOnydigb3IJaJ1mcFc0M7Uytx" +
-              "wfCerGJFsmtFXaLJAX/dlkCg00/hMj" +
-              "859KG1WTvuI4fnxHKyolYcG6HUVn+G" +
-              "n/uw3DaAN5aw3ScLTAAXHWQpubrRgy" +
-              "wEHtW6LGNKlr6+Cr6g6s//3oO2ulqc" +
-              "3f8LxtVRoJOLi9GHH7gysFDgjGSSHG" +
-              "Nd7d99OaoRQeqJFoo5POOcKSPJnP9H" +
-              "M8NNGI0P0WtQp+d6ABh61triMT4q5P" +
-              "VR8rk9OSYP+El9MLEtDNxlKRpJcqfB" +
-              "Cy93R/JtlMz4sUQk9M1WLB2eDyAIcw" +
-              "zv9Ixj3LEs+A==\nU2NhbmJvdFNESw" +
-              "ppby5zY2FuYm90LmV4YW1wbGUuc2Nh" +
-              "bmJvdF9zZGtfZXhhbXBsZV94YW1hcm" +
-              "luX2Zvcm1zCjE1NjAxMjQ3OTkKMTMx" +
-              "MDcxCjI=\n";
 
         public MainApplication(IntPtr javaReference, JniHandleOwnership transfer) : base(javaReference, transfer)
         { }

@@ -65,8 +65,10 @@ namespace scanbotsdkexamplexamarinforms
                 var configuration = new DocumentScannerConfiguration
                 {
                     CameraPreviewMode = CameraPreviewMode.FitIn,
+                    IgnoreBadAspectRatio = true,
                     PolygonColor = Color.Red,
-                    PolygonColorOK = Color.Green
+                    PolygonColorOK = Color.Green,
+                    BottomBarBackgroundColor = Color.Blue,
                     // Customize colors, text resources, etc ...
                 };
                 var result = await SBSDK.UI.LaunchDocumentScannerAsync(configuration);
@@ -109,7 +111,7 @@ namespace scanbotsdkexamplexamarinforms
 
                 var languages = new[] { "en" }; // or specify more languages like { "en", "de", ... }
                 var result = await SBSDK.Operations.PerformOcrAsync(DocumentSources, languages);
-                MessagingCenter.Send(new AlertMessage { Message = result, Title = "OCR" }, AlertMessage.ID);
+                MessagingCenter.Send(new AlertMessage { Message = result.Text, Title = "OCR Result" }, AlertMessage.ID);
             });
 
             OpenBarcodeScannerCommand = new Command(async () =>
@@ -141,7 +143,7 @@ namespace scanbotsdkexamplexamarinforms
                     {
                         sb.AppendLine($"{field.Name}: {field.Value} ({field.Confidence:F2})");
                     }
-                    MessagingCenter.Send(new AlertMessage { Message = sb.ToString(), Title = "MRZ" }, AlertMessage.ID);
+                    MessagingCenter.Send(new AlertMessage { Message = sb.ToString(), Title = "MRZ Result" }, AlertMessage.ID);
                 }
             });
 

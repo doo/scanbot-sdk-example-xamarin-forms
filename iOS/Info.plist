@@ -47,6 +47,6 @@
 	<key>UIFileSharingEnabled</key>
 	<true/>
 	<key>CFBundleName</key>
-	<string>GG</string>
+	<string>Scanbot SDK Example Xamarin Forms</string>
 </dict>
 </plist>

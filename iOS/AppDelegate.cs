@@ -16,6 +16,7 @@ namespace scanbotsdkexamplexamarinforms.iOS
         // To get another trial period you have to restart your app.
         const string licenseKey = null;
 
+
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
             Console.WriteLine("Scanbot SDK Example: Initializing Scanbot SDK...");
@@ -42,7 +43,7 @@ namespace scanbotsdkexamplexamarinforms.iOS
             // - https://docs.microsoft.com/en-us/dotnet/api/system.environment.specialfolder
 
             var customDocumentsFolder = Path.Combine(
-                Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "scanbot-sdk-example-xamarin-forms_demo-storage");
+                Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "my-custom-storage");
             Directory.CreateDirectory(customDocumentsFolder);
             return customDocumentsFolder;
         }

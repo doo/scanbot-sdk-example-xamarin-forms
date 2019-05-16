@@ -22,6 +22,7 @@ namespace scanbotsdkexamplexamarinforms.Droid
         // To get another trial period you have to restart your app.
         const string licenseKey = null;
 
+
         public MainApplication(IntPtr javaReference, JniHandleOwnership transfer) : base(javaReference, transfer)
         { }
 
@@ -42,7 +43,7 @@ namespace scanbotsdkexamplexamarinforms.Droid
         {
             // !! Please note !!
             // In this demo app we overwrite the "StorageBaseDirectory" of the Scanbot SDK by a custom public(!) storage directory.
-            // "Android.OS.Environment.ExternalStorageDirectory" is an external, public(!) storage directoy.
+            // "GetExternalFilesDir" returns an external, public(!) storage directoy.
             // All image files as well export files (PDF, TIFF, etc) created by the Scanbot SDK in this demo app will be stored 
             // in a sub-folder of this storage directory and will be accessible for every(!) app having external storage permissions!
             // We use the "ExternalStorageDirectory" here only for demo purposes, to be able to share generated PDF and TIFF files. 
@@ -55,8 +56,7 @@ namespace scanbotsdkexamplexamarinforms.Droid
             // - https://developer.android.com/guide/topics/data/data-storage
             // - https://docs.microsoft.com/en-us/xamarin/android/platform/files/
 
-            var externalPublicPath = Path.Combine(
-                Android.OS.Environment.ExternalStorageDirectory.Path, "scanbot-sdk-example-xamarin-forms_demo-storage");
+            var externalPublicPath = Path.Combine(GetExternalFilesDir(null).AbsolutePath, "my-custom-storage");
             Directory.CreateDirectory(externalPublicPath);
             return externalPublicPath;
         }

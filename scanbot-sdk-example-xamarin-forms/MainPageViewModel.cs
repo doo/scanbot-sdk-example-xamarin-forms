@@ -69,6 +69,7 @@ namespace scanbotsdkexamplexamarinforms
                     PolygonColor = Color.Red,
                     PolygonColorOK = Color.Green,
                     BottomBarBackgroundColor = Color.Blue,
+                    //DocumentImageSizeLimit = new Size(2000, 3000),
                     // Customize colors, text resources, etc ...
                 };
                 var result = await SBSDK.UI.LaunchDocumentScannerAsync(configuration);
@@ -118,7 +119,13 @@ namespace scanbotsdkexamplexamarinforms
             {
                 if (!CheckScanbotSDKLicense()) { return; }
 
-                var result = await SBSDK.UI.LaunchBarcodeScannerAsync();
+                var config = new BarcodeScannerConfiguration();
+                config.BarcodeFormats = new List<BarcodeFormat>
+                {
+                    BarcodeFormat.AllFormats,
+                };
+
+                var result = await SBSDK.UI.LaunchBarcodeScannerAsync(config);
                 if (result.Status == OperationResult.Ok)
                 {
                     MessagingCenter.Send(new AlertMessage { Message = result.Text, Title = result.Format.ToString() }, AlertMessage.ID);
@@ -139,6 +146,7 @@ namespace scanbotsdkexamplexamarinforms
                 if (result.Status == OperationResult.Ok)
                 {
                     var sb = new StringBuilder();
+                    sb.AppendLine($"DocumentType: {result.DocumentType}");
                     foreach (var field in result.Fields)
                     {
                         sb.AppendLine($"{field.Name}: {field.Value} ({field.Confidence:F2})");

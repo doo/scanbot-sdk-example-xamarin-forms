@@ -70,10 +70,10 @@
       <HintPath>..\packages\Xamarin.Forms.3.6.0.344457\lib\netstandard1.0\Xamarin.Forms.Xaml.dll</HintPath>
     </Reference>
     <Reference Include="ScanbotSDK.Xamarin">
-      <HintPath>..\packages\ScanbotSDK.Xamarin.1.4.0\lib\netstandard1.0\ScanbotSDK.Xamarin.dll</HintPath>
+      <HintPath>..\packages\ScanbotSDK.Xamarin.1.4.1\lib\netstandard1.0\ScanbotSDK.Xamarin.dll</HintPath>
     </Reference>
     <Reference Include="ScanbotSDK.Xamarin.Forms">
-      <HintPath>..\packages\ScanbotSDK.Xamarin.Forms.1.4.0\lib\netstandard1.0\ScanbotSDK.Xamarin.Forms.dll</HintPath>
+      <HintPath>..\packages\ScanbotSDK.Xamarin.Forms.1.4.1\lib\netstandard1.0\ScanbotSDK.Xamarin.Forms.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

@@ -9,12 +9,13 @@ namespace scanbotsdkexamplexamarinforms.iOS
     [Register("AppDelegate")]
     public partial class AppDelegate : global::Xamarin.Forms.Platform.iOS.FormsApplicationDelegate
     {
-        // TODO Add your Scanbot SDK license key here.
-        // You can test all Scanbot SDK features and develop your app without a license. 
-        // However, if you do not specify the license key when initializing the SDK, 
-        // it will work in trial mode (trial period of 1 minute). 
-        // To get another trial period you have to restart your app.
-        const string licenseKey = null;
+        // TODO Add the Scanbot SDK license key here.
+        // Please note: The Scanbot SDK will run without a license key for one minute per session!
+        // After the trial period is over all Scanbot SDK functions as well as the UI components will stop working
+        // or may be terminated. You can get an unrestricted "no-strings-attached" 30 day trial license key for free.
+        // Please submit the trial license form (https://scanbot.io/sdk/trial.html) on our website by using
+        // the app identifier "io.scanbot.example.sdk.xamarin.forms" of this example app.
+        const string LICENSE_KEY = null;
 
 
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
@@ -22,10 +23,10 @@ namespace scanbotsdkexamplexamarinforms.iOS
             Console.WriteLine("Scanbot SDK Example: Initializing Scanbot SDK...");
 
             // Initialization with a custom "StorageBaseDirectory" for demo purposes - see comments below.
-            SBSDKInitializer.Initialize(app, licenseKey, new SBSDKConfiguration { EnableLogging = true, StorageBaseDirectory = GetDemoStorageBaseDirectory() });
+            SBSDKInitializer.Initialize(app, LICENSE_KEY, new SBSDKConfiguration { EnableLogging = true, StorageBaseDirectory = GetDemoStorageBaseDirectory() });
 
             // Alternative initialization with the default "StorageBaseDirectory".
-            //SBSDKInitializer.Initialize(app, licenseKey, new SBSDKConfiguration { EnableLogging = true });
+            //SBSDKInitializer.Initialize(app, LICENSE_KEY, new SBSDKConfiguration { EnableLogging = true });
 
             global::Xamarin.Forms.Forms.Init();
 

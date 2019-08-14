@@ -15,12 +15,13 @@ namespace scanbotsdkexamplexamarinforms.Droid
     {
         static string LOG_TAG = typeof(MainApplication).Name;
 
-        // TODO Add your Scanbot SDK license key here.
-        // You can test all Scanbot SDK features and develop your app without a license. 
-        // However, if you do not specify the license key when initializing the SDK, 
-        // it will work in trial mode (trial period of 1 minute). 
-        // To get another trial period you have to restart your app.
-        const string licenseKey = null;
+        // TODO Add the Scanbot SDK license key here.
+        // Please note: The Scanbot SDK will run without a license key for one minute per session!
+        // After the trial period is over all Scanbot SDK functions as well as the UI components will stop working
+        // or may be terminated. You can get an unrestricted "no-strings-attached" 30 day trial license key for free.
+        // Please submit the trial license form (https://scanbot.io/sdk/trial.html) on our website by using
+        // the app identifier "io.scanbot.example.sdk.xamarin.forms" of this example app.
+        const string LICENSE_KEY = null;
 
 
         public MainApplication(IntPtr javaReference, JniHandleOwnership transfer) : base(javaReference, transfer)
@@ -33,10 +34,10 @@ namespace scanbotsdkexamplexamarinforms.Droid
             Log.Debug(LOG_TAG, "Initializing Scanbot SDK...");
 
             // Initialization with a custom, public(!) "StorageBaseDirectory" for demo purposes - see comments below!
-            SBSDKInitializer.Initialize(this, licenseKey, new SBSDKConfiguration { EnableLogging = true, StorageBaseDirectory = GetDemoStorageBaseDirectory() });
+            SBSDKInitializer.Initialize(this, LICENSE_KEY, new SBSDKConfiguration { EnableLogging = true, StorageBaseDirectory = GetDemoStorageBaseDirectory() });
 
             // Alternative initialization with the default "StorageBaseDirectory" which will be internal and secure (recommended).
-            //SBSDKInitializer.Initialize(this, licenseKey, new SBSDKConfiguration { EnableLogging = true });
+            //SBSDKInitializer.Initialize(this, LICENSE_KEY, new SBSDKConfiguration { EnableLogging = true });
         }
 
         string GetDemoStorageBaseDirectory()

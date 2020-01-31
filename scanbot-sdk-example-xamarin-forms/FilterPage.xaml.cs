@@ -90,7 +90,9 @@ namespace scanbotsdkexamplexamarinforms
                 ImageFilter filter;
                 Enum.TryParse(action, out filter);
                 CurrentFilter = filter;
-                PreviewImage = await CurrentPage.GetFilteredDocumentPreviewAsync(filter);
+                //PreviewImage = await CurrentPage.GetFilteredDocumentPreviewAsync(filter);
+                System.Diagnostics.Debug.WriteLine("Filter: " + filter);
+                PreviewImage = await SBSDK.Operations.ApplyImageFilterAsync(PreviewImage, filter);
             }
         }
 

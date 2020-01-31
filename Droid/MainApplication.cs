@@ -30,11 +30,11 @@ namespace scanbotsdkexamplexamarinforms.Droid
         public override void OnCreate()
         {
             base.OnCreate();
-
+            
             Log.Debug(LOG_TAG, "Initializing Scanbot SDK...");
 
             // Initialization with a custom, public(!) "StorageBaseDirectory" for demo purposes - see comments below!
-            SBSDKInitializer.Initialize(this, LICENSE_KEY, new SBSDKConfiguration { EnableLogging = true, StorageBaseDirectory = GetDemoStorageBaseDirectory() });
+            SBSDKInitializer.Initialize(this, LICENSE_KEY, new SBSDKConfiguration { EnableLogging = true, StorageBaseDirectory = GetDemoStorageBaseDirectory(), StorageImageFormat = CameraImageFormat.Png });
 
             // Alternative initialization with the default "StorageBaseDirectory" which will be internal and secure (recommended).
             //SBSDKInitializer.Initialize(this, LICENSE_KEY, new SBSDKConfiguration { EnableLogging = true });

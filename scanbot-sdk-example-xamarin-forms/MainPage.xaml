@@ -39,30 +39,44 @@
                     </DataTemplate>
                 </local:HorizontalScrollList.ItemTemplate>
             </local:HorizontalScrollList>
-            
-            <Button Margin="0,10,0,0" Text="Workflows ..." Command="{Binding OpenWorkflowsCommand}" BackgroundColor="Blue" TextColor="White" />
 
-            <Button Margin="0,10,0,0" Text="Document Scanner UI" Command="{Binding OpenScanningUiCommand}" BackgroundColor="Blue" TextColor="White" />
+            <Button Margin="0,10,0,0" Text="Document Scanner UI" Command="{Binding OpenScanningUiCommand}"
+                    BackgroundColor="Blue" TextColor="White" />
 
-            <Button Margin="0,10,0,0" Text="Import Image" Command="{Binding ImportImageCommand}" BackgroundColor="Blue" TextColor="White" />
+            <Button Margin="0,10,0,0" Text="Import Image" Command="{Binding ImportImageCommand}"
+                    BackgroundColor="Blue" TextColor="White" />
 
             <Image Margin="0,10,0,0" BindingContext="{Binding SelectedPage}" Source="{Binding AvailablePreview}" />
 
-            <Button Margin="0,10,0,0" Text="Cropping UI" Command="{Binding OpenCroppingScreenCommand}" BackgroundColor="Blue" TextColor="White" />
+            <Button Margin="0,10,0,0" Text="Cropping UI" Command="{Binding OpenCroppingScreenCommand}"
+                    BackgroundColor="Blue" TextColor="White" />
 
-            <Button Margin="0,10,0,0" Text="Perform OCR" Command="{Binding PerformOcrCommand}" BackgroundColor="Blue" TextColor="White" />
+            <Button Margin="0,10,0,0" Text="Perform OCR" Command="{Binding PerformOcrCommand}"
+                    BackgroundColor="Blue" TextColor="White" />
 
-            <Button Margin="0,10,0,0" Text="Apply Image Filter" Command="{Binding ApplyFilterCommand}" BackgroundColor="Blue" TextColor="White" />
+            <Button Margin="0,10,0,0" Text="Apply Image Filter" Command="{Binding ApplyFilterCommand}"
+                    BackgroundColor="Blue" TextColor="White" />
 
-            <Button Margin="0,10,0,0" Text="Create PDF " Command="{Binding CreatePdfCommand}" BackgroundColor="Blue" TextColor="White" />
+            <Button Margin="0,10,0,0" Text="Create PDF " Command="{Binding CreatePdfCommand}"
+                    BackgroundColor="Blue" TextColor="White" />
 
-            <Button Margin="0,10,0,0" Text="Create TIFF (1-bit b&amp;w)" Command="{Binding WriteBinarizedTiffCommand}" BackgroundColor="Blue" TextColor="White" />
+            <Button Margin="0,10,0,0" Text="Create TIFF (1-bit b&amp;w)" Command="{Binding WriteBinarizedTiffCommand}"
+                    BackgroundColor="Blue" TextColor="White" />
             
-            <Button Margin="0,10,0,0" Text="Cleanup Files" Command="{Binding CleanupCommand}" BackgroundColor="Blue" TextColor="White" />
+            <Button Margin="0,10,0,0" Text="Cleanup Files" Command="{Binding CleanupCommand}"
+                    BackgroundColor="Blue" TextColor="White" />
 
-            <Button Margin="0,10,0,0" Text="Barcode Scanner UI" Command="{Binding OpenBarcodeScannerCommand}" BackgroundColor="Blue" TextColor="White" />
+            <Button Margin="0,10,0,0" Text="Barcode Scanner UI" Command="{Binding OpenBarcodeScannerCommand}"
+                    BackgroundColor="Blue" TextColor="White" />
 
-            <Button Margin="0,10,0,0" Text="MRZ Scanner UI" Command="{Binding OpenMrzScannerCommand}" BackgroundColor="Blue" TextColor="White" />
+            <Button Margin="0,10,0,0" Text="MRZ Scanner UI" Command="{Binding OpenMrzScannerCommand}"
+                    BackgroundColor="Blue" TextColor="White" />
+
+            <Button Margin="0,10,0,0" Text="EHIC Scanner UI" Command="{Binding OpenEHICScannerCommand}"
+                    BackgroundColor="Blue" TextColor="White" />
+            
+            <Button Margin="0,10,0,0" Text="Workflows ..." Command="{Binding OpenWorkflowsCommand}"
+                    BackgroundColor="Blue" TextColor="White" />
 
         </StackLayout>
     </ScrollView>

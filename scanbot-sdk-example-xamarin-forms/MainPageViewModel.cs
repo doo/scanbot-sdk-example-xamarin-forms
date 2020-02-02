@@ -23,6 +23,7 @@ namespace scanbotsdkexamplexamarinforms
         public ICommand PerformOcrCommand { get; }
         public ICommand OpenBarcodeScannerCommand { get; }
         public ICommand OpenMrzScannerCommand { get; }
+        public ICommand OpenEHICScannerCommand { get; }
         public ICommand ApplyFilterCommand { get; }
         public ICommand HandlePreviewTapped { get; }
         public ICommand CreatePdfCommand { get; }
@@ -66,11 +67,13 @@ namespace scanbotsdkexamplexamarinforms
                 {
                     CameraPreviewMode = CameraPreviewMode.FitIn,
                     IgnoreBadAspectRatio = true,
+                    MultiPageEnabled = true,
                     PolygonColor = Color.Red,
                     PolygonColorOK = Color.Green,
                     BottomBarBackgroundColor = Color.Blue,
+                    PageCounterButtonTitle = "%d Page(s)",
                     //DocumentImageSizeLimit = new Size(2000, 3000),
-                    // Customize colors, text resources, etc ...
+                    // see further customization configs...
                 };
                 var result = await SBSDK.UI.LaunchDocumentScannerAsync(configuration);
                 if (result.Status == OperationResult.Ok)
@@ -152,6 +155,23 @@ namespace scanbotsdkexamplexamarinforms
                         sb.AppendLine($"{field.Name}: {field.Value} ({field.Confidence:F2})");
                     }
                     MessagingCenter.Send(new AlertMessage { Message = sb.ToString(), Title = "MRZ Result" }, AlertMessage.ID);
+                }
+            });
+
+            OpenEHICScannerCommand = new Command(async () =>
+            {
+                var configuration = new HealthInsuranceCardConfiguration { };
+                var result = await SBSDK.UI.LaunchHealthInsuranceCardScannerAsync(configuration);
+                if (result.Status == OperationResult.Ok)
+                {
+                    var sb = new StringBuilder();
+                    sb.AppendLine($"DocumentType: European Health insurance card");
+                    foreach (var field in result.Fields)
+                    {
+                        sb.AppendLine($"{field.Type}: {field.Value} ({field.Confidence:F2})");
+                    }
+                    MessagingCenter.Send(new AlertMessage
+                    { Message = sb.ToString(), Title = "EHIC Result" }, AlertMessage.ID);
                 }
             });
 

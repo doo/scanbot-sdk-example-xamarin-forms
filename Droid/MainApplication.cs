@@ -30,7 +30,7 @@ namespace scanbotsdkexamplexamarinforms.Droid
         public override void OnCreate()
         {
             base.OnCreate();
-
+            
             Log.Debug(LOG_TAG, "Initializing Scanbot SDK...");
 
             // Initialization with a custom, public(!) "StorageBaseDirectory" for demo purposes - see comments below!

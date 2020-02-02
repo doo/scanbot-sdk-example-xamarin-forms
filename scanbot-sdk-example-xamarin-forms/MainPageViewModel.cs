@@ -67,11 +67,13 @@ namespace scanbotsdkexamplexamarinforms
                 {
                     CameraPreviewMode = CameraPreviewMode.FitIn,
                     IgnoreBadAspectRatio = true,
+                    MultiPageEnabled = true,
                     PolygonColor = Color.Red,
                     PolygonColorOK = Color.Green,
                     BottomBarBackgroundColor = Color.Blue,
+                    PageCounterButtonTitle = "%d Page(s)",
                     //DocumentImageSizeLimit = new Size(2000, 3000),
-                    // Customize colors, text resources, etc ...
+                    // see further customization configs...
                 };
                 var result = await SBSDK.UI.LaunchDocumentScannerAsync(configuration);
                 if (result.Status == OperationResult.Ok)

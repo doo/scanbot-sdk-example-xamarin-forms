@@ -39,9 +39,6 @@
                     </DataTemplate>
                 </local:HorizontalScrollList.ItemTemplate>
             </local:HorizontalScrollList>
-            
-            <Button Margin="0,10,0,0" Text="Workflows ..." Command="{Binding OpenWorkflowsCommand}"
-                    BackgroundColor="Blue" TextColor="White" />
 
             <Button Margin="0,10,0,0" Text="Document Scanner UI" Command="{Binding OpenScanningUiCommand}"
                     BackgroundColor="Blue" TextColor="White" />
@@ -76,6 +73,9 @@
                     BackgroundColor="Blue" TextColor="White" />
 
             <Button Margin="0,10,0,0" Text="EHIC Scanner UI" Command="{Binding OpenEHICScannerCommand}"
+                    BackgroundColor="Blue" TextColor="White" />
+            
+            <Button Margin="0,10,0,0" Text="Workflows ..." Command="{Binding OpenWorkflowsCommand}"
                     BackgroundColor="Blue" TextColor="White" />
 
         </StackLayout>

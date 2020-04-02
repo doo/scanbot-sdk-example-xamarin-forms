@@ -123,11 +123,6 @@ namespace scanbotsdkexamplexamarinforms
                 if (!CheckScanbotSDKLicense()) { return; }
 
                 var config = new BarcodeScannerConfiguration();
-                config.BarcodeFormats = new List<BarcodeFormat>
-                {
-                    BarcodeFormat.AllFormats,
-                };
-
                 var result = await SBSDK.UI.LaunchBarcodeScannerAsync(config);
                 if (result.Status == OperationResult.Ok)
                 {

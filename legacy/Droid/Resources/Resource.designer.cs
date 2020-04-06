@@ -2142,10 +2142,6 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Animation.design_bottom_sheet_slide_out = global::scanbotsdkexamplexamarinforms.Droid.Resource.Animation.design_bottom_sheet_slide_out;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Animation.design_snackbar_in = global::scanbotsdkexamplexamarinforms.Droid.Resource.Animation.design_snackbar_in;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Animation.design_snackbar_out = global::scanbotsdkexamplexamarinforms.Droid.Resource.Animation.design_snackbar_out;
-			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Animation.EnterFromLeft = global::scanbotsdkexamplexamarinforms.Droid.Resource.Animation.EnterFromLeft;
-			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Animation.EnterFromRight = global::scanbotsdkexamplexamarinforms.Droid.Resource.Animation.EnterFromRight;
-			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Animation.ExitToLeft = global::scanbotsdkexamplexamarinforms.Droid.Resource.Animation.ExitToLeft;
-			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Animation.ExitToRight = global::scanbotsdkexamplexamarinforms.Droid.Resource.Animation.ExitToRight;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Animator.design_appbar_state_list_animator = global::scanbotsdkexamplexamarinforms.Droid.Resource.Animator.design_appbar_state_list_animator;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Animator.design_fab_hide_motion_spec = global::scanbotsdkexamplexamarinforms.Droid.Resource.Animator.design_fab_hide_motion_spec;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Animator.design_fab_show_motion_spec = global::scanbotsdkexamplexamarinforms.Droid.Resource.Animator.design_fab_show_motion_spec;
@@ -3625,7 +3621,6 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Layout.abc_search_view = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.abc_search_view;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Layout.abc_select_dialog_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.abc_select_dialog_material;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Layout.abc_tooltip = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.abc_tooltip;
-			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Layout.BottomTabLayout = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.BottomTabLayout;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Layout.browser_actions_context_menu_page = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.browser_actions_context_menu_page;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Layout.browser_actions_context_menu_row = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.browser_actions_context_menu_row;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Layout.camera_permission_placeholder = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.camera_permission_placeholder;
@@ -3643,7 +3638,6 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Layout.design_navigation_menu = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.design_navigation_menu;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Layout.design_navigation_menu_item = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.design_navigation_menu_item;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Layout.design_text_input_password_icon = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.design_text_input_password_icon;
-			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Layout.FlyoutContent = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.FlyoutContent;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Layout.mtrl_layout_snackbar = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.mtrl_layout_snackbar;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Layout.mtrl_layout_snackbar_include = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.mtrl_layout_snackbar_include;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Layout.notification_action = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.notification_action;
@@ -3661,7 +3655,6 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Layout.notification_template_media_custom = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.notification_template_media_custom;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Layout.notification_template_part_chronometer = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.notification_template_part_chronometer;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Layout.notification_template_part_time = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.notification_template_part_time;
-			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Layout.RootLayout = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.RootLayout;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Layout.scanbot_sdk_activity_barcode_camera = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.scanbot_sdk_activity_barcode_camera;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Layout.scanbot_sdk_activity_camera = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.scanbot_sdk_activity_camera;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Layout.scanbot_sdk_activity_cropping = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.scanbot_sdk_activity_cropping;
@@ -3683,7 +3676,6 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Layout.select_dialog_item_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.select_dialog_item_material;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Layout.select_dialog_multichoice_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.select_dialog_multichoice_material;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Layout.select_dialog_singlechoice_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.select_dialog_singlechoice_material;
-			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Layout.ShellContent = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.ShellContent;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Layout.shutter_button = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.shutter_button;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Layout.support_simple_spinner_dropdown_item = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.support_simple_spinner_dropdown_item;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Raw.bing = global::scanbotsdkexamplexamarinforms.Droid.Resource.Raw.bing;
@@ -5243,10 +5235,6 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Animation.design_bottom_sheet_slide_out = global::scanbotsdkexamplexamarinforms.Droid.Resource.Animation.design_bottom_sheet_slide_out;
 			global::Xamarin.Forms.Platform.Android.Resource.Animation.design_snackbar_in = global::scanbotsdkexamplexamarinforms.Droid.Resource.Animation.design_snackbar_in;
 			global::Xamarin.Forms.Platform.Android.Resource.Animation.design_snackbar_out = global::scanbotsdkexamplexamarinforms.Droid.Resource.Animation.design_snackbar_out;
-			global::Xamarin.Forms.Platform.Android.Resource.Animation.EnterFromLeft = global::scanbotsdkexamplexamarinforms.Droid.Resource.Animation.EnterFromLeft;
-			global::Xamarin.Forms.Platform.Android.Resource.Animation.EnterFromRight = global::scanbotsdkexamplexamarinforms.Droid.Resource.Animation.EnterFromRight;
-			global::Xamarin.Forms.Platform.Android.Resource.Animation.ExitToLeft = global::scanbotsdkexamplexamarinforms.Droid.Resource.Animation.ExitToLeft;
-			global::Xamarin.Forms.Platform.Android.Resource.Animation.ExitToRight = global::scanbotsdkexamplexamarinforms.Droid.Resource.Animation.ExitToRight;
 			global::Xamarin.Forms.Platform.Android.Resource.Animator.design_appbar_state_list_animator = global::scanbotsdkexamplexamarinforms.Droid.Resource.Animator.design_appbar_state_list_animator;
 			global::Xamarin.Forms.Platform.Android.Resource.Animator.design_fab_hide_motion_spec = global::scanbotsdkexamplexamarinforms.Droid.Resource.Animator.design_fab_hide_motion_spec;
 			global::Xamarin.Forms.Platform.Android.Resource.Animator.design_fab_show_motion_spec = global::scanbotsdkexamplexamarinforms.Droid.Resource.Animator.design_fab_show_motion_spec;
@@ -6444,7 +6432,6 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Layout.abc_search_view = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.abc_search_view;
 			global::Xamarin.Forms.Platform.Android.Resource.Layout.abc_select_dialog_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.abc_select_dialog_material;
 			global::Xamarin.Forms.Platform.Android.Resource.Layout.abc_tooltip = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.abc_tooltip;
-			global::Xamarin.Forms.Platform.Android.Resource.Layout.BottomTabLayout = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.BottomTabLayout;
 			global::Xamarin.Forms.Platform.Android.Resource.Layout.design_bottom_navigation_item = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.design_bottom_navigation_item;
 			global::Xamarin.Forms.Platform.Android.Resource.Layout.design_bottom_sheet_dialog = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.design_bottom_sheet_dialog;
 			global::Xamarin.Forms.Platform.Android.Resource.Layout.design_layout_snackbar = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.design_layout_snackbar;
@@ -6459,7 +6446,6 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Layout.design_navigation_menu = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.design_navigation_menu;
 			global::Xamarin.Forms.Platform.Android.Resource.Layout.design_navigation_menu_item = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.design_navigation_menu_item;
 			global::Xamarin.Forms.Platform.Android.Resource.Layout.design_text_input_password_icon = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.design_text_input_password_icon;
-			global::Xamarin.Forms.Platform.Android.Resource.Layout.FlyoutContent = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.FlyoutContent;
 			global::Xamarin.Forms.Platform.Android.Resource.Layout.mtrl_layout_snackbar = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.mtrl_layout_snackbar;
 			global::Xamarin.Forms.Platform.Android.Resource.Layout.mtrl_layout_snackbar_include = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.mtrl_layout_snackbar_include;
 			global::Xamarin.Forms.Platform.Android.Resource.Layout.notification_action = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.notification_action;
@@ -6477,11 +6463,9 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Layout.notification_template_media_custom = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.notification_template_media_custom;
 			global::Xamarin.Forms.Platform.Android.Resource.Layout.notification_template_part_chronometer = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.notification_template_part_chronometer;
 			global::Xamarin.Forms.Platform.Android.Resource.Layout.notification_template_part_time = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.notification_template_part_time;
-			global::Xamarin.Forms.Platform.Android.Resource.Layout.RootLayout = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.RootLayout;
 			global::Xamarin.Forms.Platform.Android.Resource.Layout.select_dialog_item_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.select_dialog_item_material;
 			global::Xamarin.Forms.Platform.Android.Resource.Layout.select_dialog_multichoice_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.select_dialog_multichoice_material;
 			global::Xamarin.Forms.Platform.Android.Resource.Layout.select_dialog_singlechoice_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.select_dialog_singlechoice_material;
-			global::Xamarin.Forms.Platform.Android.Resource.Layout.ShellContent = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.ShellContent;
 			global::Xamarin.Forms.Platform.Android.Resource.Layout.support_simple_spinner_dropdown_item = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.support_simple_spinner_dropdown_item;
 			global::Xamarin.Forms.Platform.Android.Resource.String.abc_action_bar_home_description = global::scanbotsdkexamplexamarinforms.Droid.Resource.String.abc_action_bar_home_description;
 			global::Xamarin.Forms.Platform.Android.Resource.String.abc_action_bar_up_description = global::scanbotsdkexamplexamarinforms.Droid.Resource.String.abc_action_bar_up_description;
@@ -7806,10 +7790,6 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			global::Xamarin.Forms.Platform.Resource.Animation.design_bottom_sheet_slide_out = global::scanbotsdkexamplexamarinforms.Droid.Resource.Animation.design_bottom_sheet_slide_out;
 			global::Xamarin.Forms.Platform.Resource.Animation.design_snackbar_in = global::scanbotsdkexamplexamarinforms.Droid.Resource.Animation.design_snackbar_in;
 			global::Xamarin.Forms.Platform.Resource.Animation.design_snackbar_out = global::scanbotsdkexamplexamarinforms.Droid.Resource.Animation.design_snackbar_out;
-			global::Xamarin.Forms.Platform.Resource.Animation.EnterFromLeft = global::scanbotsdkexamplexamarinforms.Droid.Resource.Animation.EnterFromLeft;
-			global::Xamarin.Forms.Platform.Resource.Animation.EnterFromRight = global::scanbotsdkexamplexamarinforms.Droid.Resource.Animation.EnterFromRight;
-			global::Xamarin.Forms.Platform.Resource.Animation.ExitToLeft = global::scanbotsdkexamplexamarinforms.Droid.Resource.Animation.ExitToLeft;
-			global::Xamarin.Forms.Platform.Resource.Animation.ExitToRight = global::scanbotsdkexamplexamarinforms.Droid.Resource.Animation.ExitToRight;
 			global::Xamarin.Forms.Platform.Resource.Animator.design_appbar_state_list_animator = global::scanbotsdkexamplexamarinforms.Droid.Resource.Animator.design_appbar_state_list_animator;
 			global::Xamarin.Forms.Platform.Resource.Animator.design_fab_hide_motion_spec = global::scanbotsdkexamplexamarinforms.Droid.Resource.Animator.design_fab_hide_motion_spec;
 			global::Xamarin.Forms.Platform.Resource.Animator.design_fab_show_motion_spec = global::scanbotsdkexamplexamarinforms.Droid.Resource.Animator.design_fab_show_motion_spec;
@@ -9007,7 +8987,6 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			global::Xamarin.Forms.Platform.Resource.Layout.abc_search_view = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.abc_search_view;
 			global::Xamarin.Forms.Platform.Resource.Layout.abc_select_dialog_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.abc_select_dialog_material;
 			global::Xamarin.Forms.Platform.Resource.Layout.abc_tooltip = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.abc_tooltip;
-			global::Xamarin.Forms.Platform.Resource.Layout.BottomTabLayout = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.BottomTabLayout;
 			global::Xamarin.Forms.Platform.Resource.Layout.design_bottom_navigation_item = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.design_bottom_navigation_item;
 			global::Xamarin.Forms.Platform.Resource.Layout.design_bottom_sheet_dialog = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.design_bottom_sheet_dialog;
 			global::Xamarin.Forms.Platform.Resource.Layout.design_layout_snackbar = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.design_layout_snackbar;
@@ -9022,7 +9001,6 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			global::Xamarin.Forms.Platform.Resource.Layout.design_navigation_menu = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.design_navigation_menu;
 			global::Xamarin.Forms.Platform.Resource.Layout.design_navigation_menu_item = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.design_navigation_menu_item;
 			global::Xamarin.Forms.Platform.Resource.Layout.design_text_input_password_icon = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.design_text_input_password_icon;
-			global::Xamarin.Forms.Platform.Resource.Layout.FlyoutContent = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.FlyoutContent;
 			global::Xamarin.Forms.Platform.Resource.Layout.mtrl_layout_snackbar = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.mtrl_layout_snackbar;
 			global::Xamarin.Forms.Platform.Resource.Layout.mtrl_layout_snackbar_include = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.mtrl_layout_snackbar_include;
 			global::Xamarin.Forms.Platform.Resource.Layout.notification_action = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.notification_action;
@@ -9040,11 +9018,9 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			global::Xamarin.Forms.Platform.Resource.Layout.notification_template_media_custom = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.notification_template_media_custom;
 			global::Xamarin.Forms.Platform.Resource.Layout.notification_template_part_chronometer = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.notification_template_part_chronometer;
 			global::Xamarin.Forms.Platform.Resource.Layout.notification_template_part_time = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.notification_template_part_time;
-			global::Xamarin.Forms.Platform.Resource.Layout.RootLayout = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.RootLayout;
 			global::Xamarin.Forms.Platform.Resource.Layout.select_dialog_item_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.select_dialog_item_material;
 			global::Xamarin.Forms.Platform.Resource.Layout.select_dialog_multichoice_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.select_dialog_multichoice_material;
 			global::Xamarin.Forms.Platform.Resource.Layout.select_dialog_singlechoice_material = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.select_dialog_singlechoice_material;
-			global::Xamarin.Forms.Platform.Resource.Layout.ShellContent = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.ShellContent;
 			global::Xamarin.Forms.Platform.Resource.Layout.support_simple_spinner_dropdown_item = global::scanbotsdkexamplexamarinforms.Droid.Resource.Layout.support_simple_spinner_dropdown_item;
 			global::Xamarin.Forms.Platform.Resource.String.abc_action_bar_home_description = global::scanbotsdkexamplexamarinforms.Droid.Resource.String.abc_action_bar_home_description;
 			global::Xamarin.Forms.Platform.Resource.String.abc_action_bar_up_description = global::scanbotsdkexamplexamarinforms.Droid.Resource.String.abc_action_bar_up_description;
@@ -10407,16 +10383,16 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			public const int design_snackbar_out = 2130771983;
 			
 			// aapt resource value: 0x7F010010
-			public const int EnterFromLeft = 2130771984;
+			public const int enterfromleft = 2130771984;
 			
 			// aapt resource value: 0x7F010011
-			public const int EnterFromRight = 2130771985;
+			public const int enterfromright = 2130771985;
 			
 			// aapt resource value: 0x7F010012
-			public const int ExitToLeft = 2130771986;
+			public const int exittoleft = 2130771986;
 			
 			// aapt resource value: 0x7F010013
-			public const int ExitToRight = 2130771987;
+			public const int exittoright = 2130771987;
 			
 			static Animation()
 			{
@@ -15818,7 +15794,7 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			public const int abc_tooltip = 2131492891;
 			
 			// aapt resource value: 0x7F0C001C
-			public const int BottomTabLayout = 2131492892;
+			public const int bottomtablayout = 2131492892;
 			
 			// aapt resource value: 0x7F0C001D
 			public const int browser_actions_context_menu_page = 2131492893;
@@ -15872,7 +15848,7 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			public const int design_text_input_password_icon = 2131492909;
 			
 			// aapt resource value: 0x7F0C002E
-			public const int FlyoutContent = 2131492910;
+			public const int flyoutcontent = 2131492910;
 			
 			// aapt resource value: 0x7F0C002F
 			public const int mr_cast_dialog = 2131492911;
@@ -15968,7 +15944,7 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			public const int notification_template_part_time = 2131492941;
 			
 			// aapt resource value: 0x7F0C004E
-			public const int RootLayout = 2131492942;
+			public const int rootlayout = 2131492942;
 			
 			// aapt resource value: 0x7F0C004F
 			public const int scanbot_sdk_activity_barcode_camera = 2131492943;
@@ -16034,7 +16010,7 @@ namespace scanbotsdkexamplexamarinforms.Droid
 			public const int select_dialog_singlechoice_material = 2131492963;
 			
 			// aapt resource value: 0x7F0C0064
-			public const int ShellContent = 2131492964;
+			public const int shellcontent = 2131492964;
 			
 			// aapt resource value: 0x7F0C0065
 			public const int shutter_button = 2131492965;

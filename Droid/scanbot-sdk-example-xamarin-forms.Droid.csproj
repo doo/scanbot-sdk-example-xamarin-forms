@@ -65,16 +65,16 @@
       <HintPath>..\packages\Scanbot.Xamarin.Kotlin.StdLib.Jdk7.1.3.11\lib\MonoAndroid81\Scanbot.Xamarin.Kotlin.StdLib.Jdk7.dll</HintPath>
     </Reference>
     <Reference Include="ScanbotSDK.Xamarin.Android">
-      <HintPath>..\packages\ScanbotSDK.Xamarin.1.5.1-beta1\lib\MonoAndroid81\ScanbotSDK.Xamarin.Android.dll</HintPath>
+      <HintPath>..\packages\ScanbotSDK.Xamarin.1.6.0-rc1\lib\MonoAndroid81\ScanbotSDK.Xamarin.Android.dll</HintPath>
     </Reference>
     <Reference Include="ScanbotSDK.Xamarin">
-      <HintPath>..\packages\ScanbotSDK.Xamarin.1.5.1-beta1\lib\MonoAndroid81\ScanbotSDK.Xamarin.dll</HintPath>
+      <HintPath>..\packages\ScanbotSDK.Xamarin.1.6.0-rc1\lib\MonoAndroid81\ScanbotSDK.Xamarin.dll</HintPath>
     </Reference>
     <Reference Include="ScanbotSDK.Xamarin.Forms.Android">
-      <HintPath>..\packages\ScanbotSDK.Xamarin.Forms.1.5.1-beta1\lib\MonoAndroid81\ScanbotSDK.Xamarin.Forms.Android.dll</HintPath>
+      <HintPath>..\packages\ScanbotSDK.Xamarin.Forms.1.6.0-rc1\lib\MonoAndroid81\ScanbotSDK.Xamarin.Forms.Android.dll</HintPath>
     </Reference>
     <Reference Include="ScanbotSDK.Xamarin.Forms">
-      <HintPath>..\packages\ScanbotSDK.Xamarin.Forms.1.5.1-beta1\lib\MonoAndroid81\ScanbotSDK.Xamarin.Forms.dll</HintPath>
+      <HintPath>..\packages\ScanbotSDK.Xamarin.Forms.1.6.0-rc1\lib\MonoAndroid81\ScanbotSDK.Xamarin.Forms.dll</HintPath>
     </Reference>
     <Reference Include="Xamarin.Android.Arch.Core.Common">
       <HintPath>..\packages\Xamarin.Android.Arch.Core.Common.1.1.1.3\lib\monoandroid90\Xamarin.Android.Arch.Core.Common.dll</HintPath>
@@ -228,46 +228,46 @@
       <HintPath>..\packages\Xamarin.Android.ReactiveX.RxAndroid.2.1.1\lib\monoandroid50\Xamarin.Android.ReactiveX.RxAndroid.dll</HintPath>
     </Reference>
     <Reference Include="Scanbot.SDK.Barcode">
-      <HintPath>..\packages\ScanbotSDK.Xamarin.1.5.1-beta1\lib\MonoAndroid81\Scanbot.SDK.Barcode.dll</HintPath>
+      <HintPath>..\packages\ScanbotSDK.Xamarin.1.6.0-rc1\lib\MonoAndroid81\Scanbot.SDK.Barcode.dll</HintPath>
     </Reference>
     <Reference Include="Scanbot.SDK.Base">
-      <HintPath>..\packages\ScanbotSDK.Xamarin.1.5.1-beta1\lib\MonoAndroid81\Scanbot.SDK.Base.dll</HintPath>
+      <HintPath>..\packages\ScanbotSDK.Xamarin.1.6.0-rc1\lib\MonoAndroid81\Scanbot.SDK.Base.dll</HintPath>
     </Reference>
     <Reference Include="Scanbot.SDK.Bundle">
-      <HintPath>..\packages\ScanbotSDK.Xamarin.1.5.1-beta1\lib\MonoAndroid81\Scanbot.SDK.Bundle.dll</HintPath>
+      <HintPath>..\packages\ScanbotSDK.Xamarin.1.6.0-rc1\lib\MonoAndroid81\Scanbot.SDK.Bundle.dll</HintPath>
     </Reference>
     <Reference Include="Scanbot.SDK.Camera">
-      <HintPath>..\packages\ScanbotSDK.Xamarin.1.5.1-beta1\lib\MonoAndroid81\Scanbot.SDK.Camera.dll</HintPath>
+      <HintPath>..\packages\ScanbotSDK.Xamarin.1.6.0-rc1\lib\MonoAndroid81\Scanbot.SDK.Camera.dll</HintPath>
     </Reference>
     <Reference Include="Scanbot.SDK.Core.Barcode">
-      <HintPath>..\packages\ScanbotSDK.Xamarin.1.5.1-beta1\lib\MonoAndroid81\Scanbot.SDK.Core.Barcode.dll</HintPath>
+      <HintPath>..\packages\ScanbotSDK.Xamarin.1.6.0-rc1\lib\MonoAndroid81\Scanbot.SDK.Core.Barcode.dll</HintPath>
     </Reference>
     <Reference Include="Scanbot.SDK.Core">
-      <HintPath>..\packages\ScanbotSDK.Xamarin.1.5.1-beta1\lib\MonoAndroid81\Scanbot.SDK.Core.dll</HintPath>
+      <HintPath>..\packages\ScanbotSDK.Xamarin.1.6.0-rc1\lib\MonoAndroid81\Scanbot.SDK.Core.dll</HintPath>
     </Reference>
     <Reference Include="Scanbot.SDK.Core.Sap">
-      <HintPath>..\packages\ScanbotSDK.Xamarin.1.5.1-beta1\lib\MonoAndroid81\Scanbot.SDK.Core.Sap.dll</HintPath>
+      <HintPath>..\packages\ScanbotSDK.Xamarin.1.6.0-rc1\lib\MonoAndroid81\Scanbot.SDK.Core.Sap.dll</HintPath>
     </Reference>
     <Reference Include="Scanbot.SDK.UI.Barcode">
-      <HintPath>..\packages\ScanbotSDK.Xamarin.1.5.1-beta1\lib\MonoAndroid81\Scanbot.SDK.UI.Barcode.dll</HintPath>
+      <HintPath>..\packages\ScanbotSDK.Xamarin.1.6.0-rc1\lib\MonoAndroid81\Scanbot.SDK.UI.Barcode.dll</HintPath>
     </Reference>
     <Reference Include="Scanbot.SDK.UI.Base">
-      <HintPath>..\packages\ScanbotSDK.Xamarin.1.5.1-beta1\lib\MonoAndroid81\Scanbot.SDK.UI.Base.dll</HintPath>
+      <HintPath>..\packages\ScanbotSDK.Xamarin.1.6.0-rc1\lib\MonoAndroid81\Scanbot.SDK.UI.Base.dll</HintPath>
     </Reference>
     <Reference Include="ScanbotSDK.P1">
-      <HintPath>..\packages\ScanbotSDK.Xamarin.1.5.1-beta1\lib\MonoAndroid81\ScanbotSDK.P1.dll</HintPath>
+      <HintPath>..\packages\ScanbotSDK.Xamarin.1.6.0-rc1\lib\MonoAndroid81\ScanbotSDK.P1.dll</HintPath>
     </Reference>
     <Reference Include="ScanbotSDK.P2">
-      <HintPath>..\packages\ScanbotSDK.Xamarin.1.5.1-beta1\lib\MonoAndroid81\ScanbotSDK.P2.dll</HintPath>
+      <HintPath>..\packages\ScanbotSDK.Xamarin.1.6.0-rc1\lib\MonoAndroid81\ScanbotSDK.P2.dll</HintPath>
     </Reference>
     <Reference Include="ScanbotSDK.P3">
-      <HintPath>..\packages\ScanbotSDK.Xamarin.1.5.1-beta1\lib\MonoAndroid81\ScanbotSDK.P3.dll</HintPath>
+      <HintPath>..\packages\ScanbotSDK.Xamarin.1.6.0-rc1\lib\MonoAndroid81\ScanbotSDK.P3.dll</HintPath>
     </Reference>
     <Reference Include="ScanbotSDK.P4">
-      <HintPath>..\packages\ScanbotSDK.Xamarin.1.5.1-beta1\lib\MonoAndroid81\ScanbotSDK.P4.dll</HintPath>
+      <HintPath>..\packages\ScanbotSDK.Xamarin.1.6.0-rc1\lib\MonoAndroid81\ScanbotSDK.P4.dll</HintPath>
     </Reference>
     <Reference Include="ScanbotSDK.UI">
-      <HintPath>..\packages\ScanbotSDK.Xamarin.1.5.1-beta1\lib\MonoAndroid81\ScanbotSDK.UI.dll</HintPath>
+      <HintPath>..\packages\ScanbotSDK.Xamarin.1.6.0-rc1\lib\MonoAndroid81\ScanbotSDK.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

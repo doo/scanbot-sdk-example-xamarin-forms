@@ -126,7 +126,22 @@ namespace scanbotsdkexamplexamarinforms
                 var result = await SBSDK.UI.LaunchBarcodeScannerAsync(config);
                 if (result.Status == OperationResult.Ok)
                 {
-                    MessagingCenter.Send(new AlertMessage { Message = result.Text, Title = result.Format.ToString() }, AlertMessage.ID);
+                    if (result.Barcodes.Count == 0)
+                    {
+                        MessagingCenter.Send(new AlertMessage
+                        {
+                            Title = "Oops!",
+                            Message = "No barcodes found, please try again",
+                        }, AlertMessage.ID);
+                        return;
+                    }
+
+                    var barcode = result.Barcodes[0];
+                    MessagingCenter.Send(new AlertMessage
+                    {
+                        Title = barcode.Format.ToString(),
+                        Message = barcode.Text + "(total: " + result.Barcodes.Count + ")"
+                    }, AlertMessage.ID);
                 }
             });
 

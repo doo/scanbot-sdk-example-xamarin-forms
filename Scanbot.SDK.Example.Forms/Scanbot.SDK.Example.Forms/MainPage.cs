@@ -47,7 +47,15 @@ namespace Scanbot.SDK.Example.Forms
             });
             table.Root.Add(new TableSection("DETECT DATA")
             {
-                ViewUtils.CreateCell("BASIC DATA DETECTOR", ScanningUIClicked())
+                ViewUtils.CreateCell("Cropping UI", CropClicked()),
+                ViewUtils.CreateCell("Perform OCR", PerformOCRClicked()),
+                ViewUtils.CreateCell("Apply Image Filter", ApplyImageFilterClicked()),
+                ViewUtils.CreateCell("Create PDF", CreatePDFClicked()),
+                ViewUtils.CreateCell("Create TIFF (1-bit black&white)", CreateTIFFClicked()),
+                ViewUtils.CreateCell("Cleanup", CleanupClick()),
+                ViewUtils.CreateCell("Barcode Scanner", BarcodeScannerClicked()),
+                ViewUtils.CreateCell("MRZ Scanner", MRZScannerClicked()),
+                ViewUtils.CreateCell("EHIC Scanner", EHICScannerClicked()),
             });
             table.Root.Add(new TableSection("WORKFLOWS")
             {
@@ -60,6 +68,83 @@ namespace Scanbot.SDK.Example.Forms
             Content = Container;
         }
 
+        private EventHandler CropClicked()
+        {
+            return async (sender, e) =>
+            {
+                if (!SDKUtils.CheckLicense(this)) { return; }
+
+                await SBSDK.UI.LaunchCroppingScreenAsync(SelectedPage);
+                UpdateImage();
+            };
+        }
+
+        private EventHandler PerformOCRClicked()
+        {
+            return async (sender, e) =>
+            {
+                // or specify more languages like { "en", "de", ... }
+                var languages = new[] { "en" };
+                var result = await SBSDK.Operations.PerformOcrAsync(DocumentSources, languages);
+                ViewUtils.Alert(this, "OCR Results", result.Text);
+            };
+        }
+
+        private EventHandler ApplyImageFilterClicked()
+        {
+            return async (sender, e) =>
+            {
+            };
+        }
+
+        private EventHandler CreatePDFClicked()
+        {
+            return async (sender, e) =>
+            {
+            };
+        }
+
+        private EventHandler CreateTIFFClicked()
+        {
+            return async (sender, e) =>
+            {
+            };
+        }
+
+        private EventHandler CleanupClick()
+        {
+            return async (sender, e) =>
+            {
+            };
+        }
+
+        private EventHandler BarcodeScannerClicked()
+        {
+            return async (sender, e) =>
+            {
+            };
+        }
+
+        private EventHandler MRZScannerClicked()
+        {
+            return async (sender, e) =>
+            {
+            };
+        }
+
+        private EventHandler EHICScannerClicked()
+        {
+            return async (sender, e) =>
+            {
+            };
+        }
+
+        IEnumerable<ImageSource> DocumentSources
+        {
+            get => Pages.Select(p => p.Document).Where(image => image != null);
+        }
+            
+
         IScannedPage _selectedPage;
         public IScannedPage SelectedPage
         {
@@ -67,8 +152,13 @@ namespace Scanbot.SDK.Example.Forms
             set
             {
                 _selectedPage = value;
-                Image.Source = _selectedPage.Original;
+                Image.Source = _selectedPage.Document;
             }
+        }
+
+        void UpdateImage()
+        {
+            Image.Source = SelectedPage.Document;
         }
 
         public List<IScannedPage> Pages { get; set; } = new List<IScannedPage>();
@@ -121,7 +211,7 @@ namespace Scanbot.SDK.Example.Forms
             };
         }
 
-        private EventHandler WorkflowMRZClicked()
+        EventHandler WorkflowMRZClicked()
         {
             return async (sender, e) =>
             {
@@ -155,16 +245,14 @@ namespace Scanbot.SDK.Example.Forms
             };
         }
 
-        private EventHandler WorkflowQRClicked()
+        EventHandler WorkflowQRClicked()
         {
             return async (sender, e) =>
             {
                 var workflow = SBSDK.UI.CreateWorkflow();
                 workflow.AddScanBarcodeStep(
-                    "Scan Step 1/2",
-                    "Please scan a QR code.",
-                    new[] { BarcodeFormat.QrCode },
-                    new Size(1.0, 1.0)
+                    "Scan Step 1/2", "Please scan a QR code.",
+                    new[] { BarcodeFormat.QrCode }, new Size(1.0, 1.0)
                 );
 
                 workflow.AddScanDocumentPageStep(
@@ -175,7 +263,7 @@ namespace Scanbot.SDK.Example.Forms
             };
         }
 
-        private EventHandler WorkflowDCClicked()
+        EventHandler WorkflowDCClicked()
         {
             return async (sender, e) =>
             {
@@ -209,7 +297,7 @@ namespace Scanbot.SDK.Example.Forms
             };
         }
 
-        private EventHandler WorkflowPayformClicked()
+        EventHandler WorkflowPayformClicked()
         {
             return async (sender, e) =>
             {
@@ -234,7 +322,7 @@ namespace Scanbot.SDK.Example.Forms
             };
         }
 
-        private async Task RunWorkflow(IWorkflow workflow)
+        async Task RunWorkflow(IWorkflow workflow)
         {
             var config = new WorkflowScannerConfiguration
             {

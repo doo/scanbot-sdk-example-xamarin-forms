@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 using ScanbotSDK.Xamarin.Forms;
 using Xamarin.Forms;
 
@@ -46,6 +48,14 @@ namespace Scanbot.SDK.Example.Forms
             table.Root.Add(new TableSection("DETECT DATA")
             {
                 ViewUtils.CreateCell("BASIC DATA DETECTOR", ScanningUIClicked())
+            });
+            table.Root.Add(new TableSection("WORKFLOWS")
+            {
+                ViewUtils.CreateCell("Scan MRZ + Image", WorkflowMRZClicked()),
+                ViewUtils.CreateCell("Scan MRZ + Front and Back Image", WorkFlowMRZFrontBackClicked()),
+                ViewUtils.CreateCell("Scan QR Code and Document Image", WorkflowQRClicked()),
+                ViewUtils.CreateCell("Scan Disability Certificate", WorkflowDCClicked()),
+                ViewUtils.CreateCell("Scan Payform", WorkflowPayformClicked())
             });
 
             Content = Container;
@@ -110,6 +120,74 @@ namespace Scanbot.SDK.Example.Forms
                     Pages.Add(SelectedPage);
                 }
             };
+        }
+
+        private EventHandler WorkflowMRZClicked()
+        {
+            return async (sender, e) =>
+            {
+            };
+        }
+
+        private EventHandler WorkFlowMRZFrontBackClicked()
+        {
+            return async (sender, e) =>
+            {
+            };
+        }
+
+        private EventHandler WorkflowQRClicked()
+        {
+            return async (sender, e) =>
+            {
+            };
+        }
+
+        private EventHandler WorkflowDCClicked()
+        {
+            return async (sender, e) =>
+            {
+            };
+        }
+
+        private EventHandler WorkflowPayformClicked()
+        {
+            return async (sender, e) =>
+            {
+                var workflow = SBSDK.UI.CreateWorkflow();
+                workflow.AddScanPayFormStep(
+                    title: "PayForm Scanner",
+                    message: "Please scan a SEPA PayForm",
+                    resultValidationHandler: (o, args) =>
+                    {
+                        var result = args.Result as IWorkflowPayFormResult;
+                        if (result.PayForm.RecognizedFields.Count == 0)
+                        {
+                            args.SetError("Recognition was not successful. " +
+                                "Please try again.", ValidationErrorShowMode.Alert);
+                            return;
+                        }
+                    // run some additional validations here
+                    //result.PayForm.RecognizedFields...
+                    }
+                );
+                await RunWorkflow(workflow);
+            };
+        }
+
+        private async Task RunWorkflow(IWorkflow workflow)
+        {
+            var config = new WorkflowScannerConfiguration
+            {
+                IgnoreBadAspectRatio = true,
+                BottomBarBackgroundColor = Color.Blue,
+            };
+            var result = await SBSDK.UI.LaunchWorkflowScannerAsync(workflow, config);
+            if (result.Status == OperationResult.Ok)
+            {
+                var results = result.Results;
+                Console.WriteLine(results);
+            }
         }
 
     }

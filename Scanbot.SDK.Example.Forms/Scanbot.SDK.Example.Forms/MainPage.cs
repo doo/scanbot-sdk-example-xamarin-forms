@@ -52,7 +52,6 @@ namespace Scanbot.SDK.Example.Forms
             table.Root.Add(new TableSection("WORKFLOWS")
             {
                 ViewUtils.CreateCell("Scan MRZ + Image", WorkflowMRZClicked()),
-                ViewUtils.CreateCell("Scan MRZ + Front and Back Image", WorkFlowMRZFrontBackClicked()),
                 ViewUtils.CreateCell("Scan QR Code and Document Image", WorkflowQRClicked()),
                 ViewUtils.CreateCell("Scan Disability Certificate", WorkflowDCClicked()),
                 ViewUtils.CreateCell("Scan Payform", WorkflowPayformClicked())
@@ -126,13 +125,33 @@ namespace Scanbot.SDK.Example.Forms
         {
             return async (sender, e) =>
             {
+                var workflow = SBSDK.UI.CreateWorkflow();
+                var ratios = new[] {
+                new PageAspectRatio(85.0, 54.0), // ID card
+                new PageAspectRatio(125.0, 88.0) // Passport
             };
-        }
 
-        private EventHandler WorkFlowMRZFrontBackClicked()
-        {
-            return async (sender, e) =>
-            {
+                workflow.AddScanMachineReadableZoneStep(
+                    title: "Scan ID card or passport",
+                    message: "Please align your ID card or passport in the frame.",
+                    requiredAspectRatios: ratios,
+                    resultValidationHandler: (o, args) =>
+                    {
+                        var result = args.Result as IWorkflowMachineReadableZoneResult;
+                        if (result.MachineReadableZone == null
+                        || result.MachineReadableZone.CheckDigitsCount == 0)
+                        {
+                            var message = "Recognition was not successful. " +
+                            "Please try again and scan the side with MRZ area.";
+                            args.SetError(message, ValidationErrorShowMode.Alert);
+                            return;
+                        }
+                    // run some additional validations here
+                    //result.MachineReadableZone.Fields...
+                }
+                );
+
+                await RunWorkflow(workflow);
             };
         }
 
@@ -140,6 +159,19 @@ namespace Scanbot.SDK.Example.Forms
         {
             return async (sender, e) =>
             {
+                var workflow = SBSDK.UI.CreateWorkflow();
+                workflow.AddScanBarcodeStep(
+                    "Scan Step 1/2",
+                    "Please scan a QR code.",
+                    new[] { BarcodeFormat.QrCode },
+                    new Size(1.0, 1.0)
+                );
+
+                workflow.AddScanDocumentPageStep(
+                    "Scan Step 2/2",
+                    "Please scan a document.");
+
+                await RunWorkflow(workflow);
             };
         }
 
@@ -147,6 +179,33 @@ namespace Scanbot.SDK.Example.Forms
         {
             return async (sender, e) =>
             {
+                var workflow = SBSDK.UI.CreateWorkflow();
+                var ratios = new[] {
+                    // DC form A5 portrait (e.g. white sheet, AUB Muster 1b/E (1/2018))
+                    new PageAspectRatio(148.0, 210.0),
+                    // DC form A6 landscape (e.g. yellow sheet, AUB Muster 1b (1.2018))
+                    new PageAspectRatio(148.0, 105.0)
+                };
+
+                workflow.AddScanDisabilityCertificateStep(
+                    title: "Scan Disability Certificate",
+                    message: "Please align the DC form in the frame.",
+                    requiredAspectRatios: ratios,
+                    resultValidationHandler: (o, args) =>
+                    {
+                        var result = args.Result as IWorkflowDisabilityCertificateResult;
+                        if (!result.DisabilityCertificate.RecognitionSuccessful)
+                        {
+                            string message = "Could not extract data. Please try again.";
+                            args.SetError(message, ValidationErrorShowMode.Alert);
+                            return;
+                        }
+                    // run some additional validations here
+                    //result.DisabilityCertificate.Dates....
+                    //result.DisabilityCertificate.Checkboxes...
+                }
+                );
+                await RunWorkflow(workflow);
             };
         }
 
@@ -180,13 +239,13 @@ namespace Scanbot.SDK.Example.Forms
             var config = new WorkflowScannerConfiguration
             {
                 IgnoreBadAspectRatio = true,
-                BottomBarBackgroundColor = Color.Blue,
             };
             var result = await SBSDK.UI.LaunchWorkflowScannerAsync(workflow, config);
             if (result.Status == OperationResult.Ok)
             {
                 var results = result.Results;
                 Console.WriteLine(results);
+                ViewUtils.Alert(this, "Result:", SDKUtils.ParseWorkflowResults(results));
             }
         }
 

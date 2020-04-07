@@ -101,7 +101,7 @@ namespace Scanbot.SDK.Example.Forms
             {
                 if (!SDKUtils.CheckLicense(this)) { return; }
 
-                var page = new FilterPage { CurrentPage = SelectedPage };
+                var page = new FilterPage(SelectedPage);
                 await Application.Current.MainPage.Navigation.PushAsync(page);
             };
         }

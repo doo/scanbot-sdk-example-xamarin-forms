@@ -19,6 +19,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)MainPage.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Utils\ViewUtils.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Utils\SDKUtils.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)FilterPage.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)Utils\" />

@@ -161,7 +161,7 @@ namespace Scanbot.SDK.Example.Forms
                     resultValidationHandler: (o, args) =>
                     {
                         var result = args.Result as IWorkflowPayFormResult;
-                        if (result.PayForm.RecognizedFields.Count == 0)
+                        if (result.PayForm == null || result.PayForm.RecognizedFields.Count == 0)
                         {
                             args.SetError("Recognition was not successful. " +
                                 "Please try again.", ValidationErrorShowMode.Alert);

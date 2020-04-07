@@ -135,6 +135,15 @@
       <Version>0.0.1-rc5</Version>
     </PackageReference>
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\ScanbotSDKOCRData.bundle\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ScanbotSDKOCRData.bundle\deu.traineddata" />
+    <BundleResource Include="Resources\ScanbotSDKOCRData.bundle\osd.traineddata" />
+    <BundleResource Include="Resources\ScanbotSDKOCRData.bundle\Info.plist" />
+    <BundleResource Include="Resources\ScanbotSDKOCRData.bundle\eng.traineddata" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\Scanbot.SDK.Example.Forms\Scanbot.SDK.Example.Forms.projitems" Label="Shared" />
 </Project>

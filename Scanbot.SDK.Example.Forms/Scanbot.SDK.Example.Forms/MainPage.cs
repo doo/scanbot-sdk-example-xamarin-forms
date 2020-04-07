@@ -1,7 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
+using Plugin.ShareFile;
+using ScanbotSDK.Xamarin;
 using ScanbotSDK.Xamarin.Forms;
 using Xamarin.Forms;
 
@@ -83,6 +86,8 @@ namespace Scanbot.SDK.Example.Forms
         {
             return async (sender, e) =>
             {
+                if (!SDKUtils.CheckLicense(this)) { return; }
+
                 // or specify more languages like { "en", "de", ... }
                 var languages = new[] { "en" };
                 var result = await SBSDK.Operations.PerformOcrAsync(DocumentSources, languages);
@@ -94,6 +99,10 @@ namespace Scanbot.SDK.Example.Forms
         {
             return async (sender, e) =>
             {
+                if (!SDKUtils.CheckLicense(this)) { return; }
+
+                var page = new FilterPage { CurrentPage = SelectedPage };
+                await Application.Current.MainPage.Navigation.PushAsync(page);
             };
         }
 
@@ -101,6 +110,13 @@ namespace Scanbot.SDK.Example.Forms
         {
             return async (sender, e) =>
             {
+                var fileUri = await SBSDK.Operations
+                .CreatePdfAsync(DocumentSources, PDFPageSize.FixedA4);
+
+                // Please note that on Android sharing works only with public accessible files.
+                // Files from internal, secure storage folders cannot be shared.
+                // (also see the SDK initialization with external (public) storage)
+                CrossShareFile.Current.ShareLocalFile(fileUri.AbsolutePath);
             };
         }
 
@@ -108,6 +124,13 @@ namespace Scanbot.SDK.Example.Forms
         {
             return async (sender, e) =>
             {
+                var fileUri = await SBSDK.Operations
+                .WriteTiffAsync(DocumentSources, new TiffOptions { OneBitEncoded = true });
+
+                // Please note that on Android sharing works only with public accessible files.
+                // Files from internal, secure storage folders cannot be shared.
+                // (also see the SDK initialization with external (public) storage)
+                CrossShareFile.Current.ShareLocalFile(fileUri.AbsolutePath);
             };
         }
 
@@ -115,6 +138,13 @@ namespace Scanbot.SDK.Example.Forms
         {
             return async (sender, e) =>
             {
+                await SBSDK.Operations.CleanUp();
+                Pages.Clear();
+                SelectedPage = null;
+
+                var message = "Cleanup done. All scanned images " +
+                "and generated files (PDF, TIFF, etc) have been removed.";
+                ViewUtils.Alert(this, "Cleanup complete!", message);
             };
         }
 
@@ -122,6 +152,23 @@ namespace Scanbot.SDK.Example.Forms
         {
             return async (sender, e) =>
             {
+                if (!SDKUtils.CheckLicense(this)) { return; }
+
+                var config = new BarcodeScannerConfiguration();
+                var result = await SBSDK.UI.LaunchBarcodeScannerAsync(config);
+                if (result.Status == OperationResult.Ok)
+                {
+                    if (result.Barcodes.Count == 0)
+                    {
+                        ViewUtils.Alert(this, "Oops!", "No barcodes found, please try again");
+                        return;
+                    }
+
+                    var barcode = result.Barcodes[0];
+
+                    var message = SDKUtils.ParseBarcodes(result.Barcodes);
+                    ViewUtils.Alert(this, "Barcode Scanner result", message);
+                }
             };
         }
 
@@ -129,6 +176,20 @@ namespace Scanbot.SDK.Example.Forms
         {
             return async (sender, e) =>
             {
+                if (!SDKUtils.CheckLicense(this)) { return; }
+
+                MrzScannerConfiguration configuration = new MrzScannerConfiguration
+                {
+                    FinderWidthRelativeToDeviceWidth = 0.95,
+                    FinderHeightRelativeToDeviceWidth = 0.2,
+                };
+
+                var result = await SBSDK.UI.LaunchMrzScannerAsync(configuration);
+                if (result.Status == OperationResult.Ok)
+                {
+                    var message = SDKUtils.ParseMRZResult(result);
+                    ViewUtils.Alert(this, "MRZ Scanner result", message);
+                }
             };
         }
 
@@ -136,6 +197,14 @@ namespace Scanbot.SDK.Example.Forms
         {
             return async (sender, e) =>
             {
+                if (!SDKUtils.CheckLicense(this)) { return; }
+                var configuration = new HealthInsuranceCardConfiguration { };
+                var result = await SBSDK.UI.LaunchHealthInsuranceCardScannerAsync(configuration);
+                if (result.Status == OperationResult.Ok)
+                {
+                    var message = SDKUtils.ParseEHICResult(result);
+                    ViewUtils.Alert(this, "MRZ Scanner result", message);
+                }
             };
         }
 

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Text;
 using ScanbotSDK.Xamarin.Forms;
 using Xamarin.Forms;
@@ -86,6 +87,40 @@ namespace Scanbot.SDK.Example.Forms
             foreach(var result in results)
             {
                 builder.Append(ParseWorkflowResult(result));
+            }
+            return builder.ToString();
+        }
+
+        public static string ParseBarcodes(List<Barcode> barcodes)
+        {
+            var builder = new StringBuilder();
+
+            foreach (var code in barcodes)
+            {
+                builder.AppendLine($"{code.Format}: {code.Text}");
+            }
+
+            return builder.ToString();
+        }
+
+        public static string ParseMRZResult(MrzScannerResult result)
+        {
+            var builder = new StringBuilder();
+            builder.AppendLine($"DocumentType: {result.DocumentType}");
+            foreach (var field in result.Fields)
+            {
+                builder.AppendLine($"{field.Name}: {field.Value} ({field.Confidence:F2})");
+            }
+            return builder.ToString();
+        }
+
+        public static string ParseEHICResult(HealthInsuranceCardScannerResult result)
+        {
+            var builder = new StringBuilder();
+            builder.AppendLine($"DocumentType: European Health insurance card");
+            foreach (var field in result.Fields)
+            {
+                builder.AppendLine($"{field.Type}: {field.Value} ({field.Confidence:F2})");
             }
             return builder.ToString();
         }

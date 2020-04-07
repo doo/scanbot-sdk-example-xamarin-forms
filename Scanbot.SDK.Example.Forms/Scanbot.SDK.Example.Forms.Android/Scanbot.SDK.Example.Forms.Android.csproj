@@ -61,6 +61,9 @@
     <PackageReference Include="Scanbot.Xamarin.Forms.ImagePicker">
       <Version>0.0.1-rc5</Version>
     </PackageReference>
+    <PackageReference Include="Plugin.ShareFile">
+      <Version>1.0.0</Version>
+    </PackageReference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MainActivity.cs" />

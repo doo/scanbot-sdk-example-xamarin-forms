@@ -401,9 +401,30 @@ namespace Scanbot.SDK.Example.Forms
             if (result.Status == OperationResult.Ok)
             {
                 var results = result.Results;
-                Console.WriteLine(results);
+
                 ViewUtils.Alert(this, "Result:", SDKUtils.ParseWorkflowResults(results));
+
+                // Find the first captured page available and set it as the SelectedPage
+                var page = FindPage(results);
+                if (page != null)
+                {
+                    SelectedPage = page;
+                }
             }
+        }
+
+        IScannedPage FindPage(IWorkflowStepResult[] results)
+        {
+            
+            foreach (var result in results)
+            {
+                // Not all StepResults contain a captured page, try to find the one that has it
+                if (result.CapturedPage != null)
+                {
+                    return result.CapturedPage;
+                }
+            }
+            return null;
         }
 
     }

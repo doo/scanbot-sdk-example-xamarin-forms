@@ -77,6 +77,8 @@ namespace Scanbot.SDK.Example.Forms
             {
                 if (!SDKUtils.CheckLicense(this)) { return; }
 
+                if (!SDKUtils.CheckPage(this, SelectedPage)) { return; }
+
                 await SBSDK.UI.LaunchCroppingScreenAsync(SelectedPage);
                 UpdateImage();
             };

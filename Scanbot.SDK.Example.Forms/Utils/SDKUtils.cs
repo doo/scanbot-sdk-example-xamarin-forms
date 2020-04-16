@@ -17,6 +17,16 @@ namespace Scanbot.SDK.Example.Forms
             return SBSDK.Operations.IsLicenseValid;
         }
 
+        public static bool CheckPage(ContentPage context, IScannedPage page)
+        {
+            var result = page != null;
+            if (!result)
+            {
+                ViewUtils.Alert(context, "Oops!", "Please select a page");
+            }
+            return result;
+        }
+
         public static string ParseWorkflowResult(IWorkflowStepResult result)
         {
             var sb = new StringBuilder();

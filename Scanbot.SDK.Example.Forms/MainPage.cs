@@ -76,7 +76,6 @@ namespace Scanbot.SDK.Example.Forms
             return async (sender, e) =>
             {
                 if (!SDKUtils.CheckLicense(this)) { return; }
-
                 if (!SDKUtils.CheckPage(this, SelectedPage)) { return; }
 
                 await SBSDK.UI.LaunchCroppingScreenAsync(SelectedPage);
@@ -89,6 +88,7 @@ namespace Scanbot.SDK.Example.Forms
             return async (sender, e) =>
             {
                 if (!SDKUtils.CheckLicense(this)) { return; }
+                if (!SDKUtils.CheckPage(this, SelectedPage)) { return; }
 
                 // or specify more languages like { "en", "de", ... }
                 var languages = new[] { "en" };
@@ -102,6 +102,7 @@ namespace Scanbot.SDK.Example.Forms
             return async (sender, e) =>
             {
                 if (!SDKUtils.CheckLicense(this)) { return; }
+                if (!SDKUtils.CheckPage(this, SelectedPage)) { return; }
 
                 var page = new FilterPage(SelectedPage);
                 await Application.Current.MainPage.Navigation.PushAsync(page);
@@ -112,6 +113,8 @@ namespace Scanbot.SDK.Example.Forms
         {
             return async (sender, e) =>
             {
+                if (!SDKUtils.CheckLicense(this)) { return; }
+
                 var fileUri = await SBSDK.Operations
                 .CreatePdfAsync(DocumentSources, PDFPageSize.FixedA4);
 
@@ -126,6 +129,8 @@ namespace Scanbot.SDK.Example.Forms
         {
             return async (sender, e) =>
             {
+                if (!SDKUtils.CheckLicense(this)) { return; }
+
                 var fileUri = await SBSDK.Operations
                 .WriteTiffAsync(DocumentSources, new TiffOptions { OneBitEncoded = true });
 
@@ -140,6 +145,8 @@ namespace Scanbot.SDK.Example.Forms
         {
             return async (sender, e) =>
             {
+                if (!SDKUtils.CheckLicense(this)) { return; }
+
                 await SBSDK.Operations.CleanUp();
                 Pages.Clear();
                 SelectedPage = null;
@@ -200,6 +207,7 @@ namespace Scanbot.SDK.Example.Forms
             return async (sender, e) =>
             {
                 if (!SDKUtils.CheckLicense(this)) { return; }
+
                 var configuration = new HealthInsuranceCardConfiguration { };
                 var result = await SBSDK.UI.LaunchHealthInsuranceCardScannerAsync(configuration);
                 if (result.Status == OperationResult.Ok)
@@ -286,11 +294,13 @@ namespace Scanbot.SDK.Example.Forms
         {
             return async (sender, e) =>
             {
+                if (!SDKUtils.CheckLicense(this)) { return; }
+
                 var workflow = SBSDK.UI.CreateWorkflow();
                 var ratios = new[] {
-                new PageAspectRatio(85.0, 54.0), // ID card
-                new PageAspectRatio(125.0, 88.0) // Passport
-            };
+                    new PageAspectRatio(85.0, 54.0), // ID card
+                    new PageAspectRatio(125.0, 88.0) // Passport
+                };
 
                 workflow.AddScanMachineReadableZoneStep(
                     title: "Scan ID card or passport",
@@ -307,9 +317,9 @@ namespace Scanbot.SDK.Example.Forms
                             args.SetError(message, ValidationErrorShowMode.Alert);
                             return;
                         }
-                    // run some additional validations here
-                    //result.MachineReadableZone.Fields...
-                }
+                        // run some additional validations here
+                        //result.MachineReadableZone.Fields...
+                    }
                 );
 
                 await RunWorkflow(workflow);
@@ -320,6 +330,8 @@ namespace Scanbot.SDK.Example.Forms
         {
             return async (sender, e) =>
             {
+                if (!SDKUtils.CheckLicense(this)) { return; }
+
                 var workflow = SBSDK.UI.CreateWorkflow();
                 workflow.AddScanBarcodeStep(
                     "Scan Step 1/2", "Please scan a QR code.",
@@ -338,6 +350,8 @@ namespace Scanbot.SDK.Example.Forms
         {
             return async (sender, e) =>
             {
+                if (!SDKUtils.CheckLicense(this)) { return; }
+
                 var workflow = SBSDK.UI.CreateWorkflow();
                 var ratios = new[] {
                     // DC form A5 portrait (e.g. white sheet, AUB Muster 1b/E (1/2018))
@@ -372,6 +386,8 @@ namespace Scanbot.SDK.Example.Forms
         {
             return async (sender, e) =>
             {
+                if (!SDKUtils.CheckLicense(this)) { return; }
+
                 var workflow = SBSDK.UI.CreateWorkflow();
                 workflow.AddScanPayFormStep(
                     title: "PayForm Scanner",
@@ -417,7 +433,6 @@ namespace Scanbot.SDK.Example.Forms
 
         IScannedPage FindPage(IWorkflowStepResult[] results)
         {
-            
             foreach (var result in results)
             {
                 // Not all StepResults contain a captured page, try to find the one that has it

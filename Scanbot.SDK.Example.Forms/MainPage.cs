@@ -115,6 +115,12 @@ namespace Scanbot.SDK.Example.Forms
             {
                 if (!SDKUtils.CheckLicense(this)) { return; }
 
+                if (DocumentSources == null || DocumentSources.Count() == 0)
+                {
+                    ViewUtils.Alert(this, "Oops!", "Please import or scan a document first");
+                    return;
+                }
+
                 var fileUri = await SBSDK.Operations
                 .CreatePdfAsync(DocumentSources, PDFPageSize.FixedA4);
 

@@ -89,7 +89,7 @@ namespace Scanbot.SDK.Example.Forms
             {
                 if (!SDKUtils.CheckLicense(this)) { return; }
                 if (!SDKUtils.CheckPage(this, SelectedPage)) { return; }
-
+                
                 // or specify more languages like { "en", "de", ... }
                 var languages = new[] { "en" };
                 var result = await SBSDK.Operations.PerformOcrAsync(DocumentSources, languages);
@@ -114,20 +114,12 @@ namespace Scanbot.SDK.Example.Forms
             return async (sender, e) =>
             {
                 if (!SDKUtils.CheckLicense(this)) { return; }
-
-                if (DocumentSources == null || DocumentSources.Count() == 0)
-                {
-                    ViewUtils.Alert(this, "Oops!", "Please import or scan a document first");
-                    return;
-                }
+                if (!SDKUtils.CheckDocuments(this, DocumentSources)) { return; }
 
                 var fileUri = await SBSDK.Operations
                 .CreatePdfAsync(DocumentSources, PDFPageSize.FixedA4);
 
-                // Please note that on Android sharing works only with public accessible files.
-                // Files from internal, secure storage folders cannot be shared.
-                // (also see the SDK initialization with external (public) storage)
-                CrossShareFile.Current.ShareLocalFile(fileUri.AbsolutePath);
+                ViewUtils.Alert(this, "Success: ", "Wrote file to: " + fileUri.AbsolutePath);
             };
         }
 
@@ -136,14 +128,12 @@ namespace Scanbot.SDK.Example.Forms
             return async (sender, e) =>
             {
                 if (!SDKUtils.CheckLicense(this)) { return; }
+                if (!SDKUtils.CheckDocuments(this, DocumentSources)) { return; }
 
                 var fileUri = await SBSDK.Operations
                 .WriteTiffAsync(DocumentSources, new TiffOptions { OneBitEncoded = true });
 
-                // Please note that on Android sharing works only with public accessible files.
-                // Files from internal, secure storage folders cannot be shared.
-                // (also see the SDK initialization with external (public) storage)
-                CrossShareFile.Current.ShareLocalFile(fileUri.AbsolutePath);
+                ViewUtils.Alert(this, "Success: ", "Wrote file to: " + fileUri.AbsolutePath);
             };
         }
 

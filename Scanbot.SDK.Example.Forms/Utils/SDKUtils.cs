@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using ScanbotSDK.Xamarin.Forms;
 using Xamarin.Forms;
@@ -23,6 +24,16 @@ namespace Scanbot.SDK.Example.Forms
             if (!result)
             {
                 ViewUtils.Alert(context, "Oops!", "Please select a page");
+            }
+            return result;
+        }
+
+        public static bool CheckDocuments(ContentPage context, IEnumerable<ImageSource> documents)
+        {
+            var result = documents != null && documents.Count() > 0;
+            if (!result)
+            {
+                ViewUtils.Alert(context, "Oops!", "Please import or scan a document first");
             }
             return result;
         }

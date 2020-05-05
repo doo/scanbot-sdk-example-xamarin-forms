@@ -294,8 +294,8 @@ namespace Scanbot.SDK.Example.Forms
 
                 var workflow = SBSDK.UI.CreateWorkflow();
                 var ratios = new[] {
-                    new PageAspectRatio(85.0, 54.0), // ID card
-                    new PageAspectRatio(125.0, 88.0) // Passport
+                    new AspectRatio(85.0, 54.0), // ID card
+                    new AspectRatio(125.0, 88.0) // Passport
                 };
 
                 workflow.AddScanMachineReadableZoneStep(
@@ -331,7 +331,7 @@ namespace Scanbot.SDK.Example.Forms
                 var workflow = SBSDK.UI.CreateWorkflow();
                 workflow.AddScanBarcodeStep(
                     "Scan Step 1/2", "Please scan a QR code.",
-                    new[] { BarcodeFormat.QrCode }, new Size(1.0, 1.0)
+                    new[] { BarcodeFormat.QrCode }, new AspectRatio(1.0, 1.0)
                 );
 
                 workflow.AddScanDocumentPageStep(
@@ -351,9 +351,9 @@ namespace Scanbot.SDK.Example.Forms
                 var workflow = SBSDK.UI.CreateWorkflow();
                 var ratios = new[] {
                     // DC form A5 portrait (e.g. white sheet, AUB Muster 1b/E (1/2018))
-                    new PageAspectRatio(148.0, 210.0),
+                    new AspectRatio(148.0, 210.0),
                     // DC form A6 landscape (e.g. yellow sheet, AUB Muster 1b (1.2018))
-                    new PageAspectRatio(148.0, 105.0)
+                    new AspectRatio(148.0, 105.0)
                 };
 
                 workflow.AddScanDisabilityCertificateStep(

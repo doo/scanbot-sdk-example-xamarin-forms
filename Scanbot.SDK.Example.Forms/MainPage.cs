@@ -46,29 +46,28 @@ namespace Scanbot.SDK.Example.Forms
             Container.Children.Add(table);
             
             table.Root = new TableRoot();
-            
-            table.Root.Add(new TableSection("SCAN DOCUMENTS")
+
+            table.Root.Add(new TableSection("DOCUMENT SCANNER")
             {
-                ViewUtils.CreateCell("SCANNING UI", ScanningUIClicked()),
-                ViewUtils.CreateCell("IMPORT IMAGE", ImportButtonClicked())
-            });
-            table.Root.Add(new TableSection("DETECT DATA")
-            {
+                ViewUtils.CreateCell("Scan Document", ScanningUIClicked()),
+                ViewUtils.CreateCell("Import image & Detect Documnt", ImportButtonClicked()),
+
                 ViewUtils.CreateCell("Cropping UI", CropClicked()),
                 ViewUtils.CreateCell("Perform OCR", PerformOCRClicked()),
                 ViewUtils.CreateCell("Apply Image Filter", ApplyImageFilterClicked()),
                 ViewUtils.CreateCell("Create PDF", CreatePDFClicked()),
                 ViewUtils.CreateCell("Create TIFF (1-bit black&white)", CreateTIFFClicked()),
-                ViewUtils.CreateCell("Cleanup", CleanupClick()),
-                
-                ViewUtils.CreateCell("MRZ Scanner", MRZScannerClicked()),
-                ViewUtils.CreateCell("EHIC Scanner", EHICScannerClicked()),
             });
             table.Root.Add(new TableSection("BARCODE DETECTOR")
             {
                 ViewUtils.CreateCell("Scan QR- & Barcodes", BarcodeScannerClicked()),
                 ViewUtils.CreateCell("Import Image & Detect Barcodes", ImportandDetectBarcodesClicked()),
                 ViewUtils.CreateCell("Set Barcode Formats Filter", SetBarcodeFormatsFilterClicked()),
+            });
+            table.Root.Add(new TableSection("DATA DETECTORS")
+            {
+                ViewUtils.CreateCell("MRZ Scanner", MRZScannerClicked()),
+                ViewUtils.CreateCell("EHIC Scanner", EHICScannerClicked()),
             });
             table.Root.Add(new TableSection("WORKFLOWS")
             {
@@ -79,8 +78,12 @@ namespace Scanbot.SDK.Example.Forms
             });
             table.Root.Add(new TableSection("MISCELLANEOUS")
             {
-                ViewUtils.CreateCell("Learn more about Scanbot SDK", LearnMoreClicked(), App.ScanbotRed)
+                ViewUtils.CreateCell("View License Info", ViewLicenseInfoClick()),
+                ViewUtils.CreateCell("Cleanup", CleanupClick()),
+                ViewUtils.CreateCell("Learn more about Scanbot SDK", LearnMoreClicked(), App.ScanbotRed),
+                ViewUtils.CreateCopyrightCell()
             });
+
             Content = Container;
         }
 
@@ -147,6 +150,20 @@ namespace Scanbot.SDK.Example.Forms
                 .WriteTiffAsync(DocumentSources, new TiffOptions { OneBitEncoded = true });
 
                 ViewUtils.Alert(this, "Success: ", "Wrote file to: " + fileUri.AbsolutePath);
+            };
+        }
+
+        private EventHandler ViewLicenseInfoClick()
+        {
+            return async (sender, e) =>
+            {
+                bool valid = SBSDK.Operations.IsLicenseValid;
+                var message = "Scanbot SDK License is valid";
+                if (!valid)
+                {
+                    message = "Scanbot SDK License is expired";
+                }
+                ViewUtils.Alert(this, "License info", message);
             };
         }
 

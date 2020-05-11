@@ -23,6 +23,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Pages\BarcodeSelectorPage.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\BarcodeTypes.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Pages\BarcodeResultsPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Utils\StringUtils.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)Utils\" />

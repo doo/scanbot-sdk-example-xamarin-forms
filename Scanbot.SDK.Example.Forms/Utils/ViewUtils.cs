@@ -24,12 +24,30 @@ namespace Scanbot.SDK.Example.Forms
                     Text = title,
                     VerticalTextAlignment = TextAlignment.Center,
                     Margin = new Thickness(20, 0, 0, 0),
-                    FontSize = 12,
+                    FontSize = 14,
                     TextColor = (Color)color
                 }
             };
 
             cell.Tapped += action;
+
+            return cell;
+        }
+
+        public static ViewCell CreateCopyrightCell()
+        {
+            var cell = new ViewCell
+            {
+                View = new Label
+                {
+                    Text = StringUtils.CopyrightLabel,
+                    HorizontalTextAlignment = TextAlignment.Center,
+                    VerticalTextAlignment = TextAlignment.Center,
+                    Padding = new Thickness(0, 25, 0, 25),
+                    TextColor = Color.Gray,
+                    FontSize = 12
+                }
+            };
 
             return cell;
         }

@@ -24,6 +24,10 @@
     <Compile Include="$(MSBuildThisFileDirectory)Model\BarcodeTypes.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Pages\BarcodeResultsPage.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Utils\StringUtils.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\ImageResultsPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Pages.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Subviews\BarcodeFormatCell.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Subviews\ImageResultCell.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)Utils\" />

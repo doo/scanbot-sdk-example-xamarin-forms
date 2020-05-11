@@ -14,8 +14,7 @@ namespace Scanbot.SDK.Example.Forms
     public class MainPage : ContentPage
     {
         StackLayout Container { get; set; }
-        Image Image { get; set; }
-
+        
         public MainPage()
         {
             BackgroundColor = Color.White;
@@ -26,20 +25,20 @@ namespace Scanbot.SDK.Example.Forms
             Container.Orientation = StackOrientation.Vertical;
             Container.BackgroundColor = Color.White;
 
-            Image = new Image
+            Pages.Instance.Image = new Image
             {
                 HorizontalOptions = LayoutOptions.FillAndExpand,
                 BackgroundColor = Color.LightGray,
                 Aspect = Aspect.AspectFit
             };
-            Image.SizeChanged += delegate
+            Pages.Instance.Image.SizeChanged += delegate
             {
-                if (SelectedPage != null) {
+                if (Pages.Instance.SelectedPage != null) {
                     // Don't allow images larger than a third of the screen
-                    Image.HeightRequest = Content.Height / 3;
+                    Pages.Instance.Image.HeightRequest = Content.Height / 3;
                 }
             };
-            Container.Children.Add(Image);
+            Container.Children.Add(Pages.Instance.Image);
 
             var table = new TableView();
             table.BackgroundColor = Color.White;
@@ -51,6 +50,7 @@ namespace Scanbot.SDK.Example.Forms
             {
                 ViewUtils.CreateCell("Scan Document", ScanningUIClicked()),
                 ViewUtils.CreateCell("Import image & Detect Documnt", ImportButtonClicked()),
+                ViewUtils.CreateCell("View Image Results", ViewImageResultsClicked()),
 
                 ViewUtils.CreateCell("Cropping UI", CropClicked()),
                 ViewUtils.CreateCell("Perform OCR", PerformOCRClicked()),
@@ -87,28 +87,28 @@ namespace Scanbot.SDK.Example.Forms
             Content = Container;
         }
 
-        private EventHandler CropClicked()
+        EventHandler CropClicked()
         {
             return async (sender, e) =>
             {
                 if (!SDKUtils.CheckLicense(this)) { return; }
-                if (!SDKUtils.CheckPage(this, SelectedPage)) { return; }
+                if (!SDKUtils.CheckPage(this, Pages.Instance.SelectedPage)) { return; }
 
-                await SBSDK.UI.LaunchCroppingScreenAsync(SelectedPage);
-                UpdateImage();
+                await SBSDK.UI.LaunchCroppingScreenAsync(Pages.Instance.SelectedPage);
+                Pages.Instance.UpdateImage();
             };
         }
 
-        private EventHandler PerformOCRClicked()
+        EventHandler PerformOCRClicked()
         {
             return async (sender, e) =>
             {
                 if (!SDKUtils.CheckLicense(this)) { return; }
-                if (!SDKUtils.CheckPage(this, SelectedPage)) { return; }
+                if (!SDKUtils.CheckPage(this, Pages.Instance.SelectedPage)) { return; }
                 
                 // or specify more languages like { "en", "de", ... }
                 var languages = new[] { "en" };
-                var result = await SBSDK.Operations.PerformOcrAsync(DocumentSources, languages);
+                var result = await SBSDK.Operations.PerformOcrAsync(Pages.Instance.DocumentSources, languages);
                 ViewUtils.Alert(this, "OCR Results", result.Text);
             };
         }
@@ -118,42 +118,42 @@ namespace Scanbot.SDK.Example.Forms
             return async (sender, e) =>
             {
                 if (!SDKUtils.CheckLicense(this)) { return; }
-                if (!SDKUtils.CheckPage(this, SelectedPage)) { return; }
+                if (!SDKUtils.CheckPage(this, Pages.Instance.SelectedPage)) { return; }
 
-                var page = new FilterPage(SelectedPage);
+                var page = new FilterPage(Pages.Instance.SelectedPage);
                 await Application.Current.MainPage.Navigation.PushAsync(page);
             };
         }
 
-        private EventHandler CreatePDFClicked()
+        EventHandler CreatePDFClicked()
         {
             return async (sender, e) =>
             {
                 if (!SDKUtils.CheckLicense(this)) { return; }
-                if (!SDKUtils.CheckDocuments(this, DocumentSources)) { return; }
+                if (!SDKUtils.CheckDocuments(this, Pages.Instance.DocumentSources)) { return; }
 
                 var fileUri = await SBSDK.Operations
-                .CreatePdfAsync(DocumentSources, PDFPageSize.FixedA4);
+                .CreatePdfAsync(Pages.Instance.DocumentSources, PDFPageSize.FixedA4);
 
                 ViewUtils.Alert(this, "Success: ", "Wrote file to: " + fileUri.AbsolutePath);
             };
         }
 
-        private EventHandler CreateTIFFClicked()
+        EventHandler CreateTIFFClicked()
         {
             return async (sender, e) =>
             {
                 if (!SDKUtils.CheckLicense(this)) { return; }
-                if (!SDKUtils.CheckDocuments(this, DocumentSources)) { return; }
+                if (!SDKUtils.CheckDocuments(this, Pages.Instance.DocumentSources)) { return; }
 
                 var fileUri = await SBSDK.Operations
-                .WriteTiffAsync(DocumentSources, new TiffOptions { OneBitEncoded = true });
+                .WriteTiffAsync(Pages.Instance.DocumentSources, new TiffOptions { OneBitEncoded = true });
 
                 ViewUtils.Alert(this, "Success: ", "Wrote file to: " + fileUri.AbsolutePath);
             };
         }
 
-        private EventHandler ViewLicenseInfoClick()
+        EventHandler ViewLicenseInfoClick()
         {
             return async (sender, e) =>
             {
@@ -167,15 +167,15 @@ namespace Scanbot.SDK.Example.Forms
             };
         }
 
-        private EventHandler CleanupClick()
+        EventHandler CleanupClick()
         {
             return async (sender, e) =>
             {
                 if (!SDKUtils.CheckLicense(this)) { return; }
 
                 await SBSDK.Operations.CleanUp();
-                Pages.Clear();
-                SelectedPage = null;
+                Pages.Instance.List.Clear();
+                Pages.Instance.SelectedPage = null;
 
                 var message = "Cleanup done. All scanned images " +
                 "and generated files (PDF, TIFF, etc) have been removed.";
@@ -183,7 +183,7 @@ namespace Scanbot.SDK.Example.Forms
             };
         }
 
-        private EventHandler BarcodeScannerClicked()
+        EventHandler BarcodeScannerClicked()
         {
             return async (sender, e) =>
             {
@@ -233,7 +233,7 @@ namespace Scanbot.SDK.Example.Forms
             };
         }
 
-        private EventHandler MRZScannerClicked()
+        EventHandler MRZScannerClicked()
         {
             return async (sender, e) =>
             {
@@ -254,7 +254,7 @@ namespace Scanbot.SDK.Example.Forms
             };
         }
 
-        private EventHandler EHICScannerClicked()
+        EventHandler EHICScannerClicked()
         {
             return async (sender, e) =>
             {
@@ -269,30 +269,6 @@ namespace Scanbot.SDK.Example.Forms
                 }
             };
         }
-
-        IEnumerable<ImageSource> DocumentSources
-        {
-            get => Pages.Select(p => p.Document).Where(image => image != null);
-        }
-            
-
-        IScannedPage _selectedPage;
-        public IScannedPage SelectedPage
-        {
-            get => _selectedPage;
-            set
-            {
-                _selectedPage = value;
-                Image.Source = _selectedPage.Document;
-            }
-        }
-
-        void UpdateImage()
-        {
-            Image.Source = SelectedPage.Document;
-        }
-
-        public List<IScannedPage> Pages { get; set; } = new List<IScannedPage>();
 
         EventHandler ScanningUIClicked()
         {
@@ -315,11 +291,21 @@ namespace Scanbot.SDK.Example.Forms
                 var result = await SBSDK.UI.LaunchDocumentScannerAsync(configuration);
                 if (result.Status == OperationResult.Ok)
                 {
-                    Pages.Clear();
+                    Pages.Instance.List.Clear();
                     foreach (var page in result.Pages)
-                        Pages.Add(page);
-                    SelectedPage = Pages[0];
+                        Pages.Instance.List.Add(page);
+                    Pages.Instance.SelectedPage = Pages.Instance.List[0];
                 }
+            };
+        }
+
+        EventHandler ViewImageResultsClicked()
+        {
+            return (sender, e) =>
+            {
+                if (!SDKUtils.CheckLicense(this)) { return; }
+
+                Navigation.PushAsync(new ImageResultsPage());
             };
         }
 
@@ -336,8 +322,8 @@ namespace Scanbot.SDK.Example.Forms
                     var importedPage = await SBSDK.Operations.CreateScannedPageAsync(source);
                     // Run document detection on it
                     await importedPage.DetectDocumentAsync();
-                    SelectedPage = importedPage;
-                    Pages.Add(SelectedPage);
+                    Pages.Instance.SelectedPage = importedPage;
+                    Pages.Instance.List.Add(Pages.Instance.SelectedPage);
                 }
             };
         }
@@ -487,7 +473,7 @@ namespace Scanbot.SDK.Example.Forms
                 var page = FindPage(results);
                 if (page != null)
                 {
-                    SelectedPage = page;
+                    Pages.Instance.SelectedPage = page;
                 }
             }
         }

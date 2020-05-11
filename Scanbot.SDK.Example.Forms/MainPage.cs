@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Plugin.ShareFile;
 using ScanbotSDK.Xamarin;
 using ScanbotSDK.Xamarin.Forms;
+using Xamarin.Essentials;
 using Xamarin.Forms;
 
 namespace Scanbot.SDK.Example.Forms
@@ -17,6 +18,8 @@ namespace Scanbot.SDK.Example.Forms
 
         public MainPage()
         {
+            BackgroundColor = Color.White;
+
             Title = "SCANBOT SDK EXAMPLE";
 
             Container = new StackLayout();
@@ -74,10 +77,12 @@ namespace Scanbot.SDK.Example.Forms
                 ViewUtils.CreateCell("Scan Disability Certificate", WorkflowDCClicked()),
                 ViewUtils.CreateCell("Scan Payform", WorkflowPayformClicked())
             });
-
+            table.Root.Add(new TableSection("MISCELLANEOUS")
+            {
+                ViewUtils.CreateCell("Learn more about Scanbot SDK", LearnMoreClicked(), App.ScanbotRed)
+            });
             Content = Container;
         }
-
 
         private EventHandler CropClicked()
         {
@@ -436,6 +441,15 @@ namespace Scanbot.SDK.Example.Forms
                     }
                 );
                 await RunWorkflow(workflow);
+            };
+        }
+
+        EventHandler LearnMoreClicked()
+        {
+            return async (sender, e) =>
+            {
+                var uri = new Uri("https://scanbot.io/sdk");
+                await Browser.OpenAsync(uri, BrowserLaunchMode.SystemPreferred);
             };
         }
 

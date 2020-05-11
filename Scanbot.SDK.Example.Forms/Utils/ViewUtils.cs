@@ -10,8 +10,13 @@ namespace Scanbot.SDK.Example.Forms
             await context.DisplayAlert(title, message, "Close");
         }
 
-        public static ViewCell CreateCell(string title, EventHandler action)
+        public static ViewCell CreateCell(string title, EventHandler action, Color? color = null)
         {
+            if (color == null)
+            {
+                color = Color.Black;
+            }
+
             var cell = new ViewCell
             {
                 View = new Label
@@ -19,7 +24,8 @@ namespace Scanbot.SDK.Example.Forms
                     Text = title,
                     VerticalTextAlignment = TextAlignment.Center,
                     Margin = new Thickness(20, 0, 0, 0),
-                    FontSize = 12
+                    FontSize = 12,
+                    TextColor = (Color)color
                 }
             };
 

@@ -6,6 +6,8 @@ namespace Scanbot.SDK.Example.Forms
 {
     public partial class App : Application
     {
+        public static Color ScanbotRed = Color.FromRgb(200, 25, 60);
+
         public App()
         {
             InitializeComponent();
@@ -13,7 +15,7 @@ namespace Scanbot.SDK.Example.Forms
             var content = new MainPage();
             MainPage = new NavigationPage(content)
             {
-                BarBackgroundColor = Color.FromRgb(200, 25, 60),
+                BarBackgroundColor = ScanbotRed,
                 BarTextColor = Color.White
             };
         }

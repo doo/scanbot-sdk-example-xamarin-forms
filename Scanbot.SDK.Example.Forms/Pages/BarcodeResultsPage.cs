@@ -30,10 +30,12 @@ namespace Scanbot.SDK.Example.Forms
         public BarcodeResultsPage(ImageSource source, List<Barcode> barcodes = null)
         {
             SetTitle();
+            BackgroundColor = Color.White;
 
             var Container = new StackLayout();
             Container.Orientation = StackOrientation.Vertical;
             Container.BackgroundColor = Color.White;
+            
             Content = Container;
 
             SnappedImage = new Image
@@ -44,6 +46,12 @@ namespace Scanbot.SDK.Example.Forms
             };
             SnappedImage.SizeChanged += delegate
             {
+                if (source == null)
+                {
+                    // If there is no snapped image, do not show empty container
+                    SnappedImage.HeightRequest = 0;
+                    return;
+                }
                 // Don't allow images larger than a third of the screen
                 SnappedImage.HeightRequest = Content.Height / 3;
             };
@@ -94,6 +102,7 @@ namespace Scanbot.SDK.Example.Forms
         void InitializeList()
         {
             List = new ListView();
+            List.BackgroundColor = Color.White;
             List.ItemTemplate = new DataTemplate(typeof(BarcodeCell));
             List.RowHeight = ROWHEIGHT;
             List.ItemsSource = Barcodes;
@@ -147,10 +156,11 @@ namespace Scanbot.SDK.Example.Forms
 
                 View = new StackLayout()
                 {
+                    BackgroundColor = Color.White,
                     HorizontalOptions = LayoutOptions.FillAndExpand,
                     VerticalOptions = LayoutOptions.FillAndExpand,
                     Orientation = StackOrientation.Horizontal,
-                    Margin = new Thickness(0, 0, 10, 0),
+                    Padding = new Thickness(0, 0, 10, 0),
                     Children = { ImageView, labelContainer }
                 };
             }

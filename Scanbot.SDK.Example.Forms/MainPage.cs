@@ -168,6 +168,8 @@ namespace Scanbot.SDK.Example.Forms
                 if (!SDKUtils.CheckLicense(this)) { return; }
 
                 var config = new BarcodeScannerConfiguration();
+                //config.BarcodeFormats = BarcodeTypes.Instance.AcceptedTypes;
+
                 var result = await SBSDK.UI.LaunchBarcodeScannerAsync(config);
                 if (result.Status == OperationResult.Ok)
                 {
@@ -177,10 +179,10 @@ namespace Scanbot.SDK.Example.Forms
                         return;
                     }
 
-                    var barcode = result.Barcodes[0];
+                    var source = result.Image;
+                    var barcodes = result.Barcodes;
 
-                    var message = SDKUtils.ParseBarcodes(result.Barcodes);
-                    ViewUtils.Alert(this, "Barcode Scanner result", message);
+                    await Navigation.PushAsync(new BarcodeResultsPage(source, barcodes));
                 }
             };
         }

@@ -20,8 +20,14 @@
     <Compile Include="$(MSBuildThisFileDirectory)Utils\ViewUtils.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Utils\SDKUtils.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)FilterPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\BarcodeSelectorPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\BarcodeTypes.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\BarcodeResultsPage.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)Utils\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Pages\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Model\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Subviews\" />
   </ItemGroup>
 </Project>

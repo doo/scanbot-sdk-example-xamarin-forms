@@ -41,8 +41,9 @@ namespace Scanbot.SDK.Example.Forms
             var table = new TableView();
             table.BackgroundColor = Color.White;
             Container.Children.Add(table);
-
+            
             table.Root = new TableRoot();
+            
             table.Root.Add(new TableSection("SCAN DOCUMENTS")
             {
                 ViewUtils.CreateCell("SCANNING UI", ScanningUIClicked()),
@@ -56,9 +57,15 @@ namespace Scanbot.SDK.Example.Forms
                 ViewUtils.CreateCell("Create PDF", CreatePDFClicked()),
                 ViewUtils.CreateCell("Create TIFF (1-bit black&white)", CreateTIFFClicked()),
                 ViewUtils.CreateCell("Cleanup", CleanupClick()),
-                ViewUtils.CreateCell("Barcode Scanner", BarcodeScannerClicked()),
+                
                 ViewUtils.CreateCell("MRZ Scanner", MRZScannerClicked()),
                 ViewUtils.CreateCell("EHIC Scanner", EHICScannerClicked()),
+            });
+            table.Root.Add(new TableSection("BARCODE DETECTOR")
+            {
+                ViewUtils.CreateCell("Scan QR- & Barcodes", BarcodeScannerClicked()),
+                ViewUtils.CreateCell("Import Image & Detect Barcodes", ImportandDetectBarcodesClicked()),
+                ViewUtils.CreateCell("Set Barcode Formats Filter", SetBarcodeFormatsFilterClicked()),
             });
             table.Root.Add(new TableSection("WORKFLOWS")
             {
@@ -70,6 +77,7 @@ namespace Scanbot.SDK.Example.Forms
 
             Content = Container;
         }
+
 
         private EventHandler CropClicked()
         {
@@ -174,6 +182,30 @@ namespace Scanbot.SDK.Example.Forms
                     var message = SDKUtils.ParseBarcodes(result.Barcodes);
                     ViewUtils.Alert(this, "Barcode Scanner result", message);
                 }
+            };
+        }
+
+        EventHandler ImportandDetectBarcodesClicked()
+        {
+            return async (sender, e) =>
+            {
+                if (!SDKUtils.CheckLicense(this)) { return; }
+                ImageSource source = await Scanbot.ImagePicker.Forms.ImagePicker.Instance.Pick();
+
+                if (source != null)
+                {
+                    var barcodes = await SBSDK.Operations.DetectBarcodesFrom(source);
+                    await Navigation.PushAsync(new BarcodeResultsPage(source, barcodes));
+                }
+            };
+        }
+
+        EventHandler SetBarcodeFormatsFilterClicked()
+        {
+            return (sender, e) =>
+            {
+                if (!SDKUtils.CheckLicense(this)) { return; }
+                Navigation.PushAsync(new BarcodeSelectorPage());
             };
         }
 

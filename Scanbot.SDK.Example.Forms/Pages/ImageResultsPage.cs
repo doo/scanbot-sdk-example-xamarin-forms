@@ -11,14 +11,9 @@ namespace Scanbot.SDK.Example.Forms
             var list = new ListView();
             list.ItemTemplate = new DataTemplate(typeof(ImageResultCell));
             list.ItemsSource = Pages.Instance.List;
-            list.RowHeight = 50;
+            list.RowHeight = 120;
             list.BackgroundColor = Color.White;
-
             Content = list;
-
-
-            //var grid = new Grid();
-            //grid.Children.Add()
         }
     }
 }

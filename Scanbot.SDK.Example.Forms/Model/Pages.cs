@@ -21,6 +21,5 @@ namespace Scanbot.SDK.Example.Forms
 
 
         private Pages() { }
-
     }
 }

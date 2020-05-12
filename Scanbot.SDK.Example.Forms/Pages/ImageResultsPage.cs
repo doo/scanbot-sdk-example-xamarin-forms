@@ -17,7 +17,7 @@ namespace Scanbot.SDK.Example.Forms
             Title = "Image Results";
             List = new ListView();
             List.ItemTemplate = new DataTemplate(typeof(ImageResultCell));
-            List.ItemsSource = Pages.Instance.List;
+            
             List.RowHeight = 120;
             List.BackgroundColor = Color.White;
 
@@ -33,6 +33,12 @@ namespace Scanbot.SDK.Example.Forms
             BottomBar.AddClickEvent(BottomBar.DeleteAllButton, OnDeleteButtonClick);
 
             List.ItemTapped += OnItemClick;
+        }
+
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+            ReloadData();
         }
 
         private void OnItemClick(object sender, ItemTappedEventArgs e)
@@ -102,8 +108,13 @@ namespace Scanbot.SDK.Example.Forms
         private void OnDeleteButtonClick(object sender, EventArgs e)
         {
             Pages.Instance.List.Clear();
-            List.ItemsSource = Pages.Instance.List;
+            ReloadData();
         }
 
+        void ReloadData()
+        {
+            List.ItemsSource = null;
+            List.ItemsSource = Pages.Instance.List;
+        }
     }
 }

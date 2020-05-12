@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using ScanbotSDK.Xamarin.Forms;
 using Xamarin.Forms;
 
@@ -27,6 +28,10 @@ namespace Scanbot.SDK.Example.Forms
 
         protected override void OnBindingContextChanged()
         {
+            if (BindingContext == null)
+            {
+                return;
+            }
             Source = (IScannedPage)BindingContext;
 
             Document.Label.Text = "Detected Document";

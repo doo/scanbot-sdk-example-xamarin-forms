@@ -21,21 +21,6 @@ namespace Scanbot.SDK.Example.Forms
             Container.Orientation = StackOrientation.Vertical;
             Container.BackgroundColor = Color.White;
 
-            Pages.Instance.Image = new Image
-            {
-                HorizontalOptions = LayoutOptions.FillAndExpand,
-                BackgroundColor = Color.LightGray,
-                Aspect = Aspect.AspectFit
-            };
-            Pages.Instance.Image.SizeChanged += delegate
-            {
-                if (Pages.Instance.SelectedPage != null) {
-                    // Don't allow images larger than a third of the screen
-                    Pages.Instance.Image.HeightRequest = Content.Height / 3;
-                }
-            };
-            Container.Children.Add(Pages.Instance.Image);
-
             var table = new TableView();
             table.BackgroundColor = Color.White;
             Container.Children.Add(table);
@@ -102,7 +87,6 @@ namespace Scanbot.SDK.Example.Forms
                 Pages.Instance.List.Clear();
                 foreach (var page in result.Pages)
                     Pages.Instance.List.Add(page);
-                Pages.Instance.SelectedPage = Pages.Instance.List[0];
             }
         }
 
@@ -117,8 +101,7 @@ namespace Scanbot.SDK.Example.Forms
                 var importedPage = await SBSDK.Operations.CreateScannedPageAsync(source);
                 // Run document detection on it
                 await importedPage.DetectDocumentAsync();
-                Pages.Instance.SelectedPage = importedPage;
-                Pages.Instance.List.Add(Pages.Instance.SelectedPage);
+                Pages.Instance.List.Add(importedPage);
             }
         }
 
@@ -322,8 +305,7 @@ namespace Scanbot.SDK.Example.Forms
 
             await SBSDK.Operations.CleanUp();
             Pages.Instance.List.Clear();
-            Pages.Instance.SelectedPage = null;
-
+            
             var message = "Cleanup done. All scanned images " +
             "and generated files (PDF, TIFF, etc) have been removed.";
             ViewUtils.Alert(this, "Cleanup complete!", message);
@@ -360,26 +342,15 @@ namespace Scanbot.SDK.Example.Forms
 
                 ViewUtils.Alert(this, "Result:", SDKUtils.ParseWorkflowResults(results));
 
-                // Find the first captured page available and set it as the SelectedPage
-                var page = FindPage(results);
-                if (page != null)
+                foreach (var item in results)
                 {
-                    Pages.Instance.SelectedPage = page;
+                    // Not all StepResults contain a captured page, try to find the one that has it
+                    if (item.CapturedPage != null)
+                    {
+                        Pages.Instance.List.Add(item.CapturedPage);
+                    }
                 }
             }
-        }
-
-        IScannedPage FindPage(IWorkflowStepResult[] results)
-        {
-            foreach (var result in results)
-            {
-                // Not all StepResults contain a captured page, try to find the one that has it
-                if (result.CapturedPage != null)
-                {
-                    return result.CapturedPage;
-                }
-            }
-            return null;
         }
 
     }

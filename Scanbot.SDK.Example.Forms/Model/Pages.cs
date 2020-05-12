@@ -12,28 +12,12 @@ namespace Scanbot.SDK.Example.Forms
 
         public List<IScannedPage> List { get; set; } = new List<IScannedPage>();
 
-        public Image Image { get; set; }
-
         public IEnumerable<ImageSource> DocumentSources
         {
             get => List.Select(p => p.Document).Where(image => image != null);
         }
 
-        IScannedPage _selectedPage;
-        public IScannedPage SelectedPage
-        {
-            get => _selectedPage;
-            set
-            {
-                _selectedPage = value;
-                Image.Source = _selectedPage.Document;
-            }
-        }
-
-        public void UpdateImage()
-        {
-            Image.Source = SelectedPage.Document;
-        }
+        public IScannedPage SelectedPage { get; set; }
 
 
         private Pages() { }

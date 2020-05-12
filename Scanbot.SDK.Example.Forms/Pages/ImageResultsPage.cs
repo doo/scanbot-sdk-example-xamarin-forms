@@ -1,4 +1,6 @@
 ﻿using System;
+using ScanbotSDK.Xamarin;
+using ScanbotSDK.Xamarin.Forms;
 using Xamarin.Forms;
 
 namespace Scanbot.SDK.Example.Forms
@@ -24,7 +26,88 @@ namespace Scanbot.SDK.Example.Forms
             {
                 Children = { List, BottomBar }
             };
+
+            AddClickEvent(BottomBar.AddButton, OnAddButtonClick);
+            AddClickEvent(BottomBar.SaveButton, OnSaveButtonClick);
+            AddClickEvent(BottomBar.DeleteButton, OnDeleteButtonClick);
         }
 
+        async void OnAddButtonClick(object sender, EventArgs e)
+        {
+            var configuration = new DocumentScannerConfiguration
+            {
+                CameraPreviewMode = CameraPreviewMode.FitIn,
+                IgnoreBadAspectRatio = true,
+                MultiPageEnabled = true,
+                PolygonColor = Color.Red,
+                PolygonColorOK = Color.Green,
+                BottomBarBackgroundColor = Color.Blue,
+                PageCounterButtonTitle = "%d Page(s)"
+            };
+            var result = await SBSDK.UI.LaunchDocumentScannerAsync(configuration);
+            if (result.Status == OperationResult.Ok)
+            {
+                foreach (var page in result.Pages)
+                {
+                    Pages.Instance.List.Add(page);
+                }
+            }
+        }
+
+        async void OnSaveButtonClick(object sender, EventArgs e)
+        {
+            var parameters = new string[] {"PDF", "PDF with OCR", "TIFF (1-bit, B&W" };
+            string action = await DisplayActionSheet("Save Image as", "Cancel", null, parameters);
+
+            if (action == null)
+            {
+                return;
+            }
+
+            if (action.Equals("Cancel"))
+            {
+                return;
+            }
+
+            if (action.Equals(parameters[0]))
+            {
+                if (!SDKUtils.CheckLicense(this)) { return; }
+                if (!SDKUtils.CheckDocuments(this, Pages.Instance.DocumentSources)) { return; }
+
+                var fileUri = await SBSDK.Operations
+                .CreatePdfAsync(Pages.Instance.DocumentSources, PDFPageSize.FixedA4);
+
+                ViewUtils.Alert(this, "Success: ", "Wrote documents to: " + fileUri.AbsolutePath);
+            }
+            else if (action.Equals(parameters[1]))
+            {
+                // TODO
+            }
+            else if (action.Equals(parameters[2]))
+            {
+                if (!SDKUtils.CheckLicense(this)) { return; }
+                if (!SDKUtils.CheckDocuments(this, Pages.Instance.DocumentSources)) { return; }
+
+                var fileUri = await SBSDK.Operations
+                .WriteTiffAsync(Pages.Instance.DocumentSources, new TiffOptions { OneBitEncoded = true });
+
+                ViewUtils.Alert(this, "Success: ", "Wrote documents to: " + fileUri.AbsolutePath);
+            }
+        }
+
+        private void OnDeleteButtonClick(object sender, EventArgs e)
+        {
+            Pages.Instance.List.Clear();
+            List.ItemsSource = Pages.Instance.List;
+        }
+
+
+        void AddClickEvent(BottomActionButton button, EventHandler action)
+        {
+            var recognizer = new TapGestureRecognizer();
+            recognizer.Tapped += action;
+
+            button.GestureRecognizers.Add(recognizer);
+        }
     }
 }

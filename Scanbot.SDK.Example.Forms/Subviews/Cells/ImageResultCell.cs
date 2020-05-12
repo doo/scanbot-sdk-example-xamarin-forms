@@ -58,6 +58,7 @@ namespace Scanbot.SDK.Example.Forms
             Image.Aspect = Aspect.AspectFit;
             Image.WidthRequest = 90;
             Image.HeightRequest = 90;
+            Image.BackgroundColor = Color.LightGray;
             Children.Add(Image);
         }
     }

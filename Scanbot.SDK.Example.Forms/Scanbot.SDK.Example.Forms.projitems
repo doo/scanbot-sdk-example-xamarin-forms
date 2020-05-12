@@ -10,9 +10,6 @@
   </PropertyGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)App.xaml" />
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Assets\add.png" />
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Assets\delete.png" />
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Assets\save.png" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">

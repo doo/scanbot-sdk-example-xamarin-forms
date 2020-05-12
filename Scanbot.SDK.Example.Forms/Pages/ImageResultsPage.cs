@@ -34,7 +34,7 @@ namespace Scanbot.SDK.Example.Forms
         {
             Orientation = StackOrientation.Horizontal;
 
-            Add = new BottomActionButton("Assets/add.png", "Add");
+            Add = new BottomActionButton("add.png", "Add");
             Add.WidthRequest = 100;
             Add.HeightRequest = 50;
             Children.Add(Add);
@@ -52,10 +52,8 @@ namespace Scanbot.SDK.Example.Forms
             BackgroundColor = App.ScanbotRed;
             Orientation = StackOrientation.Horizontal;
 
-            var test = ImageSource.FromResource("sgd");
-            var test2 = ImageSource.FromResource(resource);
             Image = new Image();
-            Image.Source = ImageSource.FromResource(resource);
+            Image.Source = resource;
             Image.WidthRequest = 50;
             Image.HeightRequest = 50;
             Image.VerticalOptions = LayoutOptions.Center;

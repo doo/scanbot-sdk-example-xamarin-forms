@@ -147,6 +147,9 @@
     <BundleResource Include="Resources\ScanbotSDKOCRData.bundle\osd.traineddata" />
     <BundleResource Include="Resources\ScanbotSDKOCRData.bundle\Info.plist" />
     <BundleResource Include="Resources\ScanbotSDKOCRData.bundle\eng.traineddata" />
+    <BundleResource Include="Resources\add.png" />
+    <BundleResource Include="Resources\delete.png" />
+    <BundleResource Include="Resources\save.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\Scanbot.SDK.Example.Forms\Scanbot.SDK.Example.Forms.projitems" Label="Shared" />

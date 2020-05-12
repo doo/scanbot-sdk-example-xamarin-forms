@@ -1,4 +1,5 @@
 ﻿using System;
+using ScanbotSDK.Xamarin;
 using ScanbotSDK.Xamarin.Forms;
 using Xamarin.Forms;
 
@@ -6,33 +7,67 @@ namespace Scanbot.SDK.Example.Forms
 {
     public class ImageDetailPage : ContentPage
     {
+        public Image Image { get; private set; }
+
+        public BottomActionBar BottomBar { get; private set; }
+
+        public ImageFilter CurrentFilter { get; set; }
+
         public ImageDetailPage()
         {
+            Image = new Image
+            {
+                HorizontalOptions = LayoutOptions.FillAndExpand,
+                BackgroundColor = Color.LightGray,
+                Aspect = Aspect.AspectFit,
+                Source = Pages.Instance.SelectedPage.Document
+            };
+            Image.SizeChanged += delegate
+            {
+                // Don't allow images larger than 2/3 of the screen
+                Image.HeightRequest = Content.Height / 3 * 2;
+            };
+            
+            BottomBar = new BottomActionBar(true);
+
+            Content = new StackLayout
+            {
+                Children = { Image, BottomBar }
+            };
+
+            BottomBar.AddClickEvent(BottomBar.CropButton, OnCropButtonClick);
+            BottomBar.AddClickEvent(BottomBar.FilterButton, OnFilterButtonClick);
+            BottomBar.AddClickEvent(BottomBar.DeleteButton, OnDeleteButtonClick);
         }
 
-
-        EventHandler CropClicked()
+        async void OnCropButtonClick(object sender, EventArgs e)
         {
-            return async (sender, e) =>
-            {
-                if (!SDKUtils.CheckLicense(this)) { return; }
-                if (!SDKUtils.CheckPage(this, Pages.Instance.SelectedPage)) { return; }
+            if (!SDKUtils.CheckLicense(this)) { return; }
+            if (!SDKUtils.CheckPage(this, Pages.Instance.SelectedPage)) { return; }
 
-                await SBSDK.UI.LaunchCroppingScreenAsync(Pages.Instance.SelectedPage);
-                Pages.Instance.UpdateImage();
-            };
+            await SBSDK.UI.LaunchCroppingScreenAsync(Pages.Instance.SelectedPage);
+            Pages.Instance.UpdateImage();
         }
 
-        private EventHandler ApplyImageFilterClicked()
+        async void OnFilterButtonClick(object sender, EventArgs e)
         {
-            return async (sender, e) =>
-            {
-                if (!SDKUtils.CheckLicense(this)) { return; }
-                if (!SDKUtils.CheckPage(this, Pages.Instance.SelectedPage)) { return; }
+            if (!SDKUtils.CheckLicense(this)) { return; }
+            if (!SDKUtils.CheckPage(this, Pages.Instance.SelectedPage)) { return; }
 
-                var page = new FilterPage(Pages.Instance.SelectedPage);
-                await Application.Current.MainPage.Navigation.PushAsync(page);
-            };
+            var buttons = Enum.GetNames(typeof(ImageFilter));
+            var action = await DisplayActionSheet("Filter", "Cancel", null, buttons);
+
+            ImageFilter filter;
+            Enum.TryParse(action, out filter);
+            CurrentFilter = filter;
+
+            Image.Source = await SBSDK.Operations.ApplyImageFilterAsync(Image.Source, filter);
+            await Pages.Instance.SelectedPage.SetFilterAsync(filter);
+        }
+
+        private void OnDeleteButtonClick(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
         }
 
     }

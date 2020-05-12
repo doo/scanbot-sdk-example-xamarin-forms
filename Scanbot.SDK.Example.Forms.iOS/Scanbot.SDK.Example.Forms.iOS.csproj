@@ -150,6 +150,8 @@
     <BundleResource Include="Resources\add.png" />
     <BundleResource Include="Resources\delete.png" />
     <BundleResource Include="Resources\save.png" />
+    <BundleResource Include="Resources\crop.png" />
+    <BundleResource Include="Resources\filter.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\Scanbot.SDK.Example.Forms\Scanbot.SDK.Example.Forms.projitems" Label="Shared" />

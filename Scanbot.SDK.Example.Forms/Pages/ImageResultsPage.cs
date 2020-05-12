@@ -21,16 +21,24 @@ namespace Scanbot.SDK.Example.Forms
             List.RowHeight = 120;
             List.BackgroundColor = Color.White;
 
-            BottomBar = new BottomActionBar();
+            BottomBar = new BottomActionBar(false);
             
             Content = new StackLayout
             {
                 Children = { List, BottomBar }
             };
 
-            AddClickEvent(BottomBar.AddButton, OnAddButtonClick);
-            AddClickEvent(BottomBar.SaveButton, OnSaveButtonClick);
-            AddClickEvent(BottomBar.DeleteButton, OnDeleteButtonClick);
+            BottomBar.AddClickEvent(BottomBar.AddButton, OnAddButtonClick);
+            BottomBar.AddClickEvent(BottomBar.SaveButton, OnSaveButtonClick);
+            BottomBar.AddClickEvent(BottomBar.DeleteAllButton, OnDeleteButtonClick);
+
+            List.ItemTapped += OnItemClick;
+        }
+
+        private void OnItemClick(object sender, ItemTappedEventArgs e)
+        {
+            Pages.Instance.SelectedPage = (IScannedPage)e.Item;
+            Navigation.PushAsync(new ImageDetailPage());
         }
 
         async void OnAddButtonClick(object sender, EventArgs e)
@@ -95,15 +103,6 @@ namespace Scanbot.SDK.Example.Forms
         {
             Pages.Instance.List.Clear();
             List.ItemsSource = Pages.Instance.List;
-        }
-
-
-        void AddClickEvent(BottomActionButton button, EventHandler action)
-        {
-            var recognizer = new TapGestureRecognizer();
-            recognizer.Tapped += action;
-
-            button.GestureRecognizers.Add(recognizer);
         }
 
     }

@@ -33,11 +33,23 @@ namespace Scanbot.SDK.Example.Forms
         public BottomActionBar()
         {
             Orientation = StackOrientation.Horizontal;
+            BackgroundColor = App.ScanbotRed;
+            HorizontalOptions = LayoutOptions.FillAndExpand;
 
-            Add = new BottomActionButton("add.png", "Add");
-            Add.WidthRequest = 100;
-            Add.HeightRequest = 50;
-            Children.Add(Add);
+            AddButton(new BottomActionButton("add.png", "ADD"));
+            AddButton(new BottomActionButton("save.png", "SAVE"));
+            AddButton(new BottomActionButton("delete.png", "DELETE ALL"), true);
+        }
+
+        void AddButton(BottomActionButton button, bool alignRight = false)
+        {
+            button.HeightRequest = 50;
+            if (alignRight)
+            {
+                button.HorizontalOptions = LayoutOptions.EndAndExpand;
+            }
+            
+            Children.Add(button);
         }
     }
 
@@ -49,13 +61,13 @@ namespace Scanbot.SDK.Example.Forms
 
         public BottomActionButton(string resource, string text)
         {
-            BackgroundColor = App.ScanbotRed;
             Orientation = StackOrientation.Horizontal;
 
             Image = new Image();
             Image.Source = resource;
-            Image.WidthRequest = 50;
-            Image.HeightRequest = 50;
+            Image.WidthRequest = 26;
+            Image.HeightRequest = 26;
+            Image.Margin = new Thickness(3, 12, 3, 12);
             Image.VerticalOptions = LayoutOptions.Center;
             Children.Add(Image);
 
@@ -63,6 +75,7 @@ namespace Scanbot.SDK.Example.Forms
             Label.Text = text;
             Label.TextColor = Color.White;
             Label.VerticalOptions = LayoutOptions.Center;
+            Label.Margin = new Thickness(0, 0, 5, 0);
             Children.Add(Label);
         }
     }

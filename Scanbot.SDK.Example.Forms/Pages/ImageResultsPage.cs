@@ -59,12 +59,7 @@ namespace Scanbot.SDK.Example.Forms
             var parameters = new string[] {"PDF", "PDF with OCR", "TIFF (1-bit, B&W" };
             string action = await DisplayActionSheet("Save Image as", "Cancel", null, parameters);
 
-            if (action == null)
-            {
-                return;
-            }
-
-            if (action.Equals("Cancel"))
+            if (action == null || action.Equals("Cancel"))
             {
                 return;
             }
@@ -109,5 +104,21 @@ namespace Scanbot.SDK.Example.Forms
 
             button.GestureRecognizers.Add(recognizer);
         }
+
+        // TODO NOT HERE
+        EventHandler PerformOCRClicked()
+        {
+            return async (sender, e) =>
+            {
+                if (!SDKUtils.CheckLicense(this)) { return; }
+                if (!SDKUtils.CheckPage(this, Pages.Instance.SelectedPage)) { return; }
+
+                // or specify more languages like { "en", "de", ... }
+                var languages = new[] { "en" };
+                var result = await SBSDK.Operations.PerformOcrAsync(Pages.Instance.DocumentSources, languages);
+                ViewUtils.Alert(this, "OCR Results", result.Text);
+            };
+        }
+
     }
 }

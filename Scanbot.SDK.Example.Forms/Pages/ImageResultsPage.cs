@@ -64,28 +64,27 @@ namespace Scanbot.SDK.Example.Forms
                 return;
             }
 
+            if (!SDKUtils.CheckLicense(this)) { return; }
+            if (!SDKUtils.CheckDocuments(this, Pages.Instance.DocumentSources)) { return; }
+
             if (action.Equals(parameters[0]))
             {
-                if (!SDKUtils.CheckLicense(this)) { return; }
-                if (!SDKUtils.CheckDocuments(this, Pages.Instance.DocumentSources)) { return; }
-
                 var fileUri = await SBSDK.Operations
                 .CreatePdfAsync(Pages.Instance.DocumentSources, PDFPageSize.FixedA4);
-
                 ViewUtils.Alert(this, "Success: ", "Wrote documents to: " + fileUri.AbsolutePath);
             }
             else if (action.Equals(parameters[1]))
             {
-                // TODO
+                // TODO figure out proper output path
+                string outputPath = null;
+                var languages = new[] { "en" };
+                var result = await SBSDK.Operations.PerformOcrAsync(Pages.Instance.DocumentSources, languages, outputPath);
+                ViewUtils.Alert(this, "Wrote OCR Documents to: ", outputPath);
             }
             else if (action.Equals(parameters[2]))
             {
-                if (!SDKUtils.CheckLicense(this)) { return; }
-                if (!SDKUtils.CheckDocuments(this, Pages.Instance.DocumentSources)) { return; }
-
                 var fileUri = await SBSDK.Operations
                 .WriteTiffAsync(Pages.Instance.DocumentSources, new TiffOptions { OneBitEncoded = true });
-
                 ViewUtils.Alert(this, "Success: ", "Wrote documents to: " + fileUri.AbsolutePath);
             }
         }
@@ -103,21 +102,6 @@ namespace Scanbot.SDK.Example.Forms
             recognizer.Tapped += action;
 
             button.GestureRecognizers.Add(recognizer);
-        }
-
-        // TODO NOT HERE
-        EventHandler PerformOCRClicked()
-        {
-            return async (sender, e) =>
-            {
-                if (!SDKUtils.CheckLicense(this)) { return; }
-                if (!SDKUtils.CheckPage(this, Pages.Instance.SelectedPage)) { return; }
-
-                // or specify more languages like { "en", "de", ... }
-                var languages = new[] { "en" };
-                var result = await SBSDK.Operations.PerformOcrAsync(Pages.Instance.DocumentSources, languages);
-                ViewUtils.Alert(this, "OCR Results", result.Text);
-            };
         }
 
     }

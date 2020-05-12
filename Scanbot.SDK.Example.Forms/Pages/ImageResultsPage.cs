@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using ScanbotSDK.Xamarin;
 using ScanbotSDK.Xamarin.Forms;
 using Xamarin.Forms;
@@ -75,11 +76,12 @@ namespace Scanbot.SDK.Example.Forms
             }
             else if (action.Equals(parameters[1]))
             {
-                // TODO figure out proper output path
-                string outputPath = null;
+                string path = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
+                string filename = Path.Combine(path, Guid.NewGuid() + ".txt");
                 var languages = new[] { "en" };
-                var result = await SBSDK.Operations.PerformOcrAsync(Pages.Instance.DocumentSources, languages, outputPath);
-                ViewUtils.Alert(this, "Wrote OCR Documents to: ", outputPath);
+                var result = await SBSDK.Operations.PerformOcrAsync(Pages.Instance.DocumentSources, languages, filename);
+                // Or do something else with the results
+                ViewUtils.Alert(this, "Wrote OCR Documents to: ", filename);
             }
             else if (action.Equals(parameters[2]))
             {

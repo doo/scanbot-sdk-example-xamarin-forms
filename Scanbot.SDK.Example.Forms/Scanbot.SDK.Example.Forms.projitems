@@ -26,8 +26,10 @@
     <Compile Include="$(MSBuildThisFileDirectory)Utils\StringUtils.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Pages\ImageResultsPage.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\Pages.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Subviews\BarcodeFormatCell.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Subviews\ImageResultCell.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Subviews\Cells\BarcodeFormatCell.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Subviews\Cells\ImageResultCell.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Subviews\ActionBar\BottomActionBar.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Subviews\ActionBar\BottomActionButton.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)Utils\" />
@@ -35,5 +37,7 @@
     <Folder Include="$(MSBuildThisFileDirectory)Model\" />
     <Folder Include="$(MSBuildThisFileDirectory)Subviews\" />
     <Folder Include="$(MSBuildThisFileDirectory)Assets\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Subviews\Cells\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Subviews\ActionBar\" />
   </ItemGroup>
 </Project>

@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Threading.Tasks;
-using ScanbotSDK.Xamarin;
 using ScanbotSDK.Xamarin.Forms;
 using Xamarin.Essentials;
 using Xamarin.Forms;
@@ -24,7 +23,7 @@ namespace Scanbot.SDK.Example.Forms
             var table = new TableView();
             table.BackgroundColor = Color.White;
             Container.Children.Add(table);
-
+            
             table.Root = new TableRoot();
 
             table.Root.Add(new TableSection("DOCUMENT SCANNER")

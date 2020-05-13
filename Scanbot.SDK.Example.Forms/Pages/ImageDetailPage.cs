@@ -65,9 +65,11 @@ namespace Scanbot.SDK.Example.Forms
             await Pages.Instance.SelectedPage.SetFilterAsync(filter);
         }
 
-        private void OnDeleteButtonClick(object sender, EventArgs e)
+        async void OnDeleteButtonClick(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            Pages.Instance.RemoveCurrent();
+            Image.Source = null;
+            await Navigation.PopAsync();
         }
 
     }

@@ -21,5 +21,11 @@ namespace Scanbot.SDK.Example.Forms
 
 
         private Pages() { }
+
+        internal void RemoveCurrent()
+        {
+            List.Remove(SelectedPage);
+            SelectedPage = null;
+        }
     }
 }

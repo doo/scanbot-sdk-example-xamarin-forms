@@ -10,19 +10,17 @@ namespace Scanbot.SDK.Example.Forms
     {
         public IScannedPage Source { get; private set; }
 
-        ImageWithLabel Document { get; set; }
-
-        ImageWithLabel Original { get; set; }
+        Image Document { get; set; }
 
         public ImageResultCell()
         {
-            Document = new ImageWithLabel();
-            Original = new ImageWithLabel();
+            Document = new Image();
+            Document.Margin = new Thickness(10, 10, 10, 10);
 
             View = new StackLayout
             {
                 Orientation = StackOrientation.Horizontal,
-                Children = { Document, Original }
+                Children = { Document  }
             };
         }
 
@@ -33,38 +31,10 @@ namespace Scanbot.SDK.Example.Forms
                 return;
             }
             Source = (IScannedPage)BindingContext;
-
-            Document.Label.Text = "Detected Document";
-            Document.Image.Source = Source.Document;
-
-            Original.Label.Text = "Original Image";
-            Original.Image.Source = Source.Original;
+            Document.Source = Source.Document;
 
             base.OnBindingContextChanged();
         }
-    }
 
-    public class ImageWithLabel : StackLayout
-    {
-        public Label Label { get; private set; }
-
-        public Image Image { get; private set; }
-
-        public ImageWithLabel()
-        {
-            Orientation = StackOrientation.Vertical;
-            Margin = new Thickness(20, 0, 20, 0);
-
-            Label = new Label();
-            Label.TextColor = Color.Gray;
-            Children.Add(Label);
-
-            Image = new Image();
-            Image.Aspect = Aspect.AspectFit;
-            Image.WidthRequest = 90;
-            Image.HeightRequest = 90;
-            Image.BackgroundColor = Color.LightGray;
-            Children.Add(Image);
-        }
     }
 }

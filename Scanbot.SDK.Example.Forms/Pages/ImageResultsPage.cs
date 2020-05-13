@@ -2,6 +2,7 @@
 using System.IO;
 using ScanbotSDK.Xamarin;
 using ScanbotSDK.Xamarin.Forms;
+using Xamarin.Essentials;
 using Xamarin.Forms;
 
 namespace Scanbot.SDK.Example.Forms
@@ -9,7 +10,7 @@ namespace Scanbot.SDK.Example.Forms
     public class ImageResultsPage : ContentPage
     {
         public ListView List { get; private set; }
-
+        
         public BottomActionBar BottomBar { get; private set; }
 
         public ImageResultsPage()

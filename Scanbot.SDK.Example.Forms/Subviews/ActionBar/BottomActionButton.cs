@@ -26,6 +26,7 @@ namespace Scanbot.SDK.Example.Forms
             Label.TextColor = Color.White;
             Label.VerticalOptions = LayoutOptions.Center;
             Label.Margin = new Thickness(0, 0, 5, 0);
+            Label.FontSize = 14;
             Children.Add(Label);
         }
     }

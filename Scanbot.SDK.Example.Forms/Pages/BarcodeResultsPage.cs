@@ -46,7 +46,7 @@ namespace Scanbot.SDK.Example.Forms
             };
             SnappedImage.SizeChanged += delegate
             {
-                if (source == null)
+                if (source == null || source.IsEmpty)
                 {
                     // If there is no snapped image, do not show empty container
                     SnappedImage.HeightRequest = 0;

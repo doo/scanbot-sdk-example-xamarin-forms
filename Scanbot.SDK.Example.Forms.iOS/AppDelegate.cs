@@ -17,9 +17,9 @@ namespace Scanbot.SDK.Example.Forms.iOS
         // After the trial period is over all Scanbot SDK functions as well as the UI components
         // will stop working or may be terminated. You can get an unrestricted
         // "no-strings-attached" 30 day trial license key for free.
-        // Please submit the trial license form (https://scanbot.io/sdk/trial.html)
+        // Please submit the trial license form (https://scanbot.io/en/sdk/demo/trial)
         // on our website by using the app identifier
-        // "io.scanbot.example.sdk.barcode.xamarin.forms" of this example app.
+        // "io.scanbot.example.sdk.xamarin.forms" of this example app.
         const string LICENSE_KEY = null;
 
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)

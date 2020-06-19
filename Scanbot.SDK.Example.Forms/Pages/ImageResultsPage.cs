@@ -135,8 +135,10 @@ namespace Scanbot.SDK.Example.Forms
             }
             else if (action.Equals(parameters[2]))
             {
-                var fileUri = await SBSDK.Operations
-                .WriteTiffAsync(Pages.Instance.DocumentSources, new TiffOptions { OneBitEncoded = true });
+                var fileUri = await SBSDK.Operations.WriteTiffAsync(
+                    Pages.Instance.DocumentSources,
+                    new TiffOptions { OneBitEncoded = true, Dpi = 300, Compression = TiffCompressionOptions.CompressionCcittT6 }
+                );
                 ViewUtils.Alert(this, "Success: ", "Wrote documents to: " + fileUri.AbsolutePath);
             }
 

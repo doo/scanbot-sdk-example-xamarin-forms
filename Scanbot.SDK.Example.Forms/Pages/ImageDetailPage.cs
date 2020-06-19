@@ -66,8 +66,14 @@ namespace Scanbot.SDK.Example.Forms
             var image = await SBSDK.Operations.ApplyImageFilterAsync(Image.Source, filter);
             await Pages.Instance.SelectedPage.SetFilterAsync(filter);
 
-            Image.Source = null;
-            Image.Source = image;
+            if (CurrentFilter == ImageFilter.None)
+            {
+                Image.Source = Pages.Instance.SelectedPage.Document;
+            }
+            else
+            {
+                Image.Source = image;
+            }
         }
 
         async void OnDeleteButtonClick(object sender, EventArgs e)

@@ -30,7 +30,8 @@ namespace Scanbot.SDK.Example.Forms.iOS
             SBSDKInitializer.Initialize(app, LICENSE_KEY, new SBSDKConfiguration
             {
                 EnableLogging = true,
-                StorageBaseDirectory = GetDemoStorageBaseDirectory()
+                StorageBaseDirectory = GetDemoStorageBaseDirectory(),
+                DetectorType = DocumentDetectorType.MLBased
             });
 
             global::Xamarin.Forms.Forms.Init();

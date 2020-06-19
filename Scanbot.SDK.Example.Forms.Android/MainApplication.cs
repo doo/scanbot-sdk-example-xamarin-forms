@@ -42,7 +42,8 @@ namespace Scanbot.SDK.Example.Forms.Droid
             {
                 EnableLogging = true,
                 // If no StorageBaseDirectory is specified, the default will be used
-                StorageBaseDirectory = GetDemoStorageBaseDirectory()
+                StorageBaseDirectory = GetDemoStorageBaseDirectory(),
+                DetectorType = DocumentDetectorType.MLBased
             };
             SBSDKInitializer.Initialize(this, LICENSE_KEY, configuration);
         }

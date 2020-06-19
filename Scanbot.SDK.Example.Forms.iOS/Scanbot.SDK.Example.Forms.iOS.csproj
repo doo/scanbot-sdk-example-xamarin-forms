@@ -152,6 +152,13 @@
     <BundleResource Include="Resources\save.png" />
     <BundleResource Include="Resources\crop.png" />
     <BundleResource Include="Resources\filter.png" />
+    <BundleResource Include="Resources\ScanbotSDKDocumentDetectorData.bundle\Info.plist" />
+    <BundleResource Include="Resources\ScanbotSDKDocumentDetectorData.bundle\DocumentDetectorModel.mlmodelc\model.espresso.shape" />
+    <BundleResource Include="Resources\ScanbotSDKDocumentDetectorData.bundle\DocumentDetectorModel.mlmodelc\model.espresso.net" />
+    <BundleResource Include="Resources\ScanbotSDKDocumentDetectorData.bundle\DocumentDetectorModel.mlmodelc\model.espresso.weights" />
+    <BundleResource Include="Resources\ScanbotSDKDocumentDetectorData.bundle\DocumentDetectorModel.mlmodelc\coremldata.bin" />
+    <BundleResource Include="Resources\ScanbotSDKDocumentDetectorData.bundle\DocumentDetectorModel.mlmodelc\model\coremldata.bin" />
+    <BundleResource Include="Resources\ScanbotSDKDocumentDetectorData.bundle\DocumentDetectorModel.mlmodelc\neural_network_optionals\coremldata.bin" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\Scanbot.SDK.Example.Forms\Scanbot.SDK.Example.Forms.projitems" Label="Shared" />

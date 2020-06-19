@@ -23,7 +23,7 @@ namespace Scanbot.SDK.Example.Forms
             var table = new TableView();
             table.BackgroundColor = Color.White;
             Container.Children.Add(table);
-            
+
             table.Root = new TableRoot();
 
             table.Root.Add(new TableSection("DOCUMENT SCANNER")
@@ -83,9 +83,11 @@ namespace Scanbot.SDK.Example.Forms
             var result = await SBSDK.UI.LaunchDocumentScannerAsync(configuration);
             if (result.Status == OperationResult.Ok)
             {
-                Pages.Instance.List.Clear();
                 foreach (var page in result.Pages)
+                {
                     Pages.Instance.List.Add(page);
+                }
+                await Navigation.PushAsync(new ImageResultsPage());
             }
         }
 

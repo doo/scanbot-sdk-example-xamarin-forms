@@ -20,7 +20,7 @@ namespace Scanbot.SDK.Example.Forms
                 HorizontalOptions = LayoutOptions.FillAndExpand,
                 BackgroundColor = Color.LightGray,
                 Aspect = Aspect.AspectFit,
-                Source = Pages.Instance.SelectedPage.Document
+                Source = Pages.Instance.SelectedPage.DocumentPreview
             };
             Image.SizeChanged += delegate
             {
@@ -63,17 +63,8 @@ namespace Scanbot.SDK.Example.Forms
             Enum.TryParse(action, out filter);
             CurrentFilter = filter;
 
-            var image = await SBSDK.Operations.ApplyImageFilterAsync(Image.Source, filter);
             await Pages.Instance.SelectedPage.SetFilterAsync(filter);
-
-            if (CurrentFilter == ImageFilter.None)
-            {
-                Image.Source = Pages.Instance.SelectedPage.Document;
-            }
-            else
-            {
-                Image.Source = image;
-            }
+            Image.Source = Pages.Instance.SelectedPage.DocumentPreview;
         }
 
         async void OnDeleteButtonClick(object sender, EventArgs e)

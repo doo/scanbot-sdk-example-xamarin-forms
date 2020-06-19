@@ -35,6 +35,8 @@ namespace Scanbot.SDK.Example.Forms
                 HeightRequest = Application.Current.MainPage.Height / 3 * 2,
                 WidthRequest = Application.Current.MainPage.Width,
                 Color = App.ScanbotRed,
+                IsRunning = true,
+                IsEnabled = true,
                 Scale = (DeviceInfo.Platform == DevicePlatform.iOS) ? 2 : 0.3
             };
 
@@ -44,12 +46,10 @@ namespace Scanbot.SDK.Example.Forms
                 Spacing = 0,
                 Children = { List, BottomBar }
             };
-            var asdf = BottomBar.Padding;
-            var asdf2 = BottomBar.Margin;
-
+            
             Content = new AbsoluteLayout
             {
-                Children = { Stack, Loader }
+                Children = { Loader, Stack }
             };
 
             BottomBar.AddClickEvent(BottomBar.AddButton, OnAddButtonClick);
@@ -114,7 +114,7 @@ namespace Scanbot.SDK.Example.Forms
                 return;
             }
 
-            Loader.IsRunning = true;
+            (Content as AbsoluteLayout).RaiseChild(Loader);
             if (!SDKUtils.CheckLicense(this)) { return; }
             if (!SDKUtils.CheckDocuments(this, Pages.Instance.DocumentSources)) { return; }
 
@@ -139,7 +139,9 @@ namespace Scanbot.SDK.Example.Forms
                 .WriteTiffAsync(Pages.Instance.DocumentSources, new TiffOptions { OneBitEncoded = true });
                 ViewUtils.Alert(this, "Success: ", "Wrote documents to: " + fileUri.AbsolutePath);
             }
-            Loader.IsRunning = false;
+
+            (Content as AbsoluteLayout).LowerChild(Loader);
+
         }
 
         private void OnDeleteButtonClick(object sender, EventArgs e)

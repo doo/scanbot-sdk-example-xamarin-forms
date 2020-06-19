@@ -5,6 +5,8 @@ namespace Scanbot.SDK.Example.Forms
 {
     public class BottomActionBar : StackLayout
     {
+        public const int HEIGHT = 50;
+
         // Pseudo-universal bottom action bar for multiple pages:
         // These are initialized in Image Results Page
         public BottomActionButton AddButton { get; private set; }
@@ -20,6 +22,7 @@ namespace Scanbot.SDK.Example.Forms
         {
             BackgroundColor = App.ScanbotRed;
             Orientation = StackOrientation.Horizontal;
+            HeightRequest = HEIGHT;
             HorizontalOptions = LayoutOptions.FillAndExpand;
             VerticalOptions = LayoutOptions.EndAndExpand;
 
@@ -45,7 +48,7 @@ namespace Scanbot.SDK.Example.Forms
 
         void CreateButton(BottomActionButton button, bool alignRight = false)
         {
-            button.HeightRequest = 50;
+            button.HeightRequest = HEIGHT;
             if (alignRight)
             {
                 button.HorizontalOptions = LayoutOptions.EndAndExpand;

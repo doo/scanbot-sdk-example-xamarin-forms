@@ -9,9 +9,13 @@ namespace Scanbot.SDK.Example.Forms
 {
     public class ImageResultsPage : ContentPage
     {
+        public StackLayout Stack { get; private set; }
+
         public ListView List { get; private set; }
         
         public BottomActionBar BottomBar { get; private set; }
+
+        public ActivityIndicator Loader { get; set; }
 
         public ImageResultsPage()
         {
@@ -23,10 +27,29 @@ namespace Scanbot.SDK.Example.Forms
             List.BackgroundColor = Color.White;
 
             BottomBar = new BottomActionBar(false);
-            
-            Content = new StackLayout
+
+            Loader = new ActivityIndicator
             {
+                VerticalOptions = LayoutOptions.CenterAndExpand,
+                HorizontalOptions = LayoutOptions.CenterAndExpand,
+                HeightRequest = Application.Current.MainPage.Height / 3 * 2,
+                WidthRequest = Application.Current.MainPage.Width,
+                Color = App.ScanbotRed,
+                Scale = (DeviceInfo.Platform == DevicePlatform.iOS) ? 2 : 0.3
+            };
+
+            Stack = new StackLayout
+            {
+                Orientation = StackOrientation.Vertical,
+                Spacing = 0,
                 Children = { List, BottomBar }
+            };
+            var asdf = BottomBar.Padding;
+            var asdf2 = BottomBar.Margin;
+
+            Content = new AbsoluteLayout
+            {
+                Children = { Stack, Loader }
             };
 
             BottomBar.AddClickEvent(BottomBar.AddButton, OnAddButtonClick);
@@ -34,6 +57,17 @@ namespace Scanbot.SDK.Example.Forms
             BottomBar.AddClickEvent(BottomBar.DeleteAllButton, OnDeleteButtonClick);
 
             List.ItemTapped += OnItemClick;
+
+            (Content as AbsoluteLayout).SizeChanged += Content_SizeChanged;
+        }
+
+        private void Content_SizeChanged(object sender, EventArgs e)
+        {
+            // Content (AbsoluteLayout) understands its actual size,
+            // but child (StackLayout) for some reason thinks its size equals Device DP
+            // Fix it after parent has figured out its actual size
+            var container = (AbsoluteLayout)sender;
+            Stack.HeightRequest = container.Height;
         }
 
         protected override void OnAppearing()
@@ -80,6 +114,7 @@ namespace Scanbot.SDK.Example.Forms
                 return;
             }
 
+            Loader.IsRunning = true;
             if (!SDKUtils.CheckLicense(this)) { return; }
             if (!SDKUtils.CheckDocuments(this, Pages.Instance.DocumentSources)) { return; }
 
@@ -104,6 +139,7 @@ namespace Scanbot.SDK.Example.Forms
                 .WriteTiffAsync(Pages.Instance.DocumentSources, new TiffOptions { OneBitEncoded = true });
                 ViewUtils.Alert(this, "Success: ", "Wrote documents to: " + fileUri.AbsolutePath);
             }
+            Loader.IsRunning = false;
         }
 
         private void OnDeleteButtonClick(object sender, EventArgs e)

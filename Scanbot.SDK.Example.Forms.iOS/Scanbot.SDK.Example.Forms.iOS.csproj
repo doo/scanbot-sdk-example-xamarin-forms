@@ -46,7 +46,7 @@
     <DefineConstants>DEBUG</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <MtouchArch>ARM64</MtouchArch>
     <CodesignKey>iPhone Developer</CodesignKey>
     <MtouchDebug>true</MtouchDebug>
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
@@ -55,6 +55,7 @@
     <MtouchFastDev></MtouchFastDev>
     <OnDemandResourcesPrefetchOrder></OnDemandResourcesPrefetchOrder>
     <NoWarn></NoWarn>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
     <DebugType>none</DebugType>
@@ -130,7 +131,7 @@
     <PackageReference Include="Xamarin.Forms" Version="4.5.0.530" />
     <PackageReference Include="Xamarin.Essentials" Version="1.3.1" />
     <PackageReference Include="ScanbotSDK.Xamarin.Forms">
-      <Version>3.0.0-beta3</Version>
+      <Version>3.0.0-rc5</Version>
     </PackageReference>
     <PackageReference Include="Scanbot.Xamarin.Forms.ImagePicker">
       <Version>0.0.1-rc5</Version>

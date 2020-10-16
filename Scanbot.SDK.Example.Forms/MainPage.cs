@@ -104,6 +104,7 @@ namespace Scanbot.SDK.Example.Forms
                 // Run document detection on it
                 await importedPage.DetectDocumentAsync();
                 Pages.Instance.List.Add(importedPage);
+                await Navigation.PushAsync(new ImageResultsPage());
             }
         }
 

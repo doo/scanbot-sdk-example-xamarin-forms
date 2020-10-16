@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 using ScanbotSDK.Xamarin.Forms;
 using Xamarin.Essentials;
@@ -120,8 +121,8 @@ namespace Scanbot.SDK.Example.Forms
             if (!SDKUtils.CheckLicense(this)) { return; }
 
             var config = new BarcodeScannerConfiguration();
-            //config.BarcodeFormats = BarcodeTypes.Instance.AcceptedTypes;
-
+            config.BarcodeFormats = BarcodeTypes.Instance.AcceptedTypes;
+            //config.BarcodeFormats = new List<BarcodeFormat> { BarcodeFormat.UpcA };
             var result = await SBSDK.UI.LaunchBarcodeScannerAsync(config);
             if (result.Status == OperationResult.Ok)
             {

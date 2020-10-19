@@ -106,7 +106,7 @@ namespace Scanbot.SDK.Example.Forms
 
         async void OnSaveButtonClick(object sender, EventArgs e)
         {
-            var parameters = new string[] {"PDF", "PDF with OCR", "TIFF (1-bit, B&W" };
+            var parameters = new string[] {"PDF", "PDF with OCR", "TIFF (1-bit, B&W)" };
             string action = await DisplayActionSheet("Save Image as", "Cancel", null, parameters);
 
             if (action == null || action.Equals("Cancel"))
@@ -127,11 +127,11 @@ namespace Scanbot.SDK.Example.Forms
             else if (action.Equals(parameters[1]))
             {
                 string path = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
-                string filename = Path.Combine(path, Guid.NewGuid() + ".txt");
+                string pdfFilePath = Path.Combine(path, Guid.NewGuid() + ".pdf");
                 var languages = new[] { "en" };
-                var result = await SBSDK.Operations.PerformOcrAsync(Pages.Instance.DocumentSources, languages, filename);
-                // Or do something else with the results
-                ViewUtils.Alert(this, "Wrote OCR Documents to: ", filename);
+                var result = await SBSDK.Operations.PerformOcrAsync(Pages.Instance.DocumentSources, languages, pdfFilePath);
+                // Or do something else with the results: result.Pages...
+                ViewUtils.Alert(this, "PDF with OCR layer stored: ", pdfFilePath);
             }
             else if (action.Equals(parameters[2]))
             {

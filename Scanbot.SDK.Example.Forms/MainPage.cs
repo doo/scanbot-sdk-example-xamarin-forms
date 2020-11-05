@@ -87,6 +87,10 @@ namespace Scanbot.SDK.Example.Forms
                 foreach (var page in result.Pages)
                 {
                     Pages.Instance.List.Add(page);
+
+                    var blur = await SBSDK.Operations.EstimateBlurriness(page.Document);
+                    Console.WriteLine("Estimated blurriness for detected document: " + blur);
+
                 }
                 await Navigation.PushAsync(new ImageResultsPage());
             }
@@ -101,6 +105,7 @@ namespace Scanbot.SDK.Example.Forms
             {
                 // Import the selected image as original image and create a Page object
                 var importedPage = await SBSDK.Operations.CreateScannedPageAsync(source);
+
                 // Run document detection on it
                 await importedPage.DetectDocumentAsync();
                 Pages.Instance.List.Add(importedPage);

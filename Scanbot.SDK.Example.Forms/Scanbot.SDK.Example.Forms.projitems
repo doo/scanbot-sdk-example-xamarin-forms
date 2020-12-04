@@ -31,6 +31,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Subviews\ActionBar\BottomActionBar.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Subviews\ActionBar\BottomActionButton.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Pages\ImageDetailPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\PageStorage.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)Utils\" />

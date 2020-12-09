@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using ScanbotSDK.Xamarin;
 using ScanbotSDK.Xamarin.Forms;
 using Xamarin.Forms;
 
@@ -29,10 +30,29 @@ namespace Scanbot.SDK.Example.Forms
             SelectedPage = null;
         }
 
-        internal async Task<bool> Add(IScannedPage page)
+        public async Task<bool> Add(IScannedPage page, bool save = true)
         {
             List.Add(page);
-            await PageStorage.Instance.Save(page);
+            if (save)
+            {
+                await PageStorage.Instance.Save(page);
+            }
+            return true;
+        }
+
+        public async Task<bool> LoadFromStorage()
+        {
+            var pages = await PageStorage.Instance.Load();
+            foreach (var page in pages)
+            {
+                var reconstructed = await SBSDK.Operations.ReconstructPage(
+                    page.PageId,
+                    page.CreatePolygon(),
+                    (ImageFilter)page.Filter,
+                    (DocumentDetectionStatus)page.DetectionStatus
+                );
+                await Add(reconstructed, false);
+            }
             return true;
         }
     }

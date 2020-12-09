@@ -94,19 +94,6 @@ namespace Scanbot.SDK.Example.Forms
 
                 }
 
-                var existing = await PageStorage.Instance.Load();
-                var reconstructedList = new List<IScannedPage>();
-                foreach (var page in existing)
-                {
-                    var reconstructed = await SBSDK.Operations.ReconstructPage(
-                        page.PageId,
-                        page.CreatePolygon(),
-                        (ImageFilter)page.Filter,
-                        (DocumentDetectionStatus)page.DetectionStatus
-                    );
-                    reconstructedList.Add(reconstructed);
-                }
-                
                 await Navigation.PushAsync(new ImageResultsPage());
             }
         }

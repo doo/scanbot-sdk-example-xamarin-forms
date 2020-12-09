@@ -25,6 +25,7 @@ namespace Scanbot.SDK.Example.Forms
         async Task<bool> InitializeAsync()
         {
             await PageStorage.Instance.InitializeAsync();
+            await Pages.Instance.LoadFromStorage();
             return true;
         }
     }

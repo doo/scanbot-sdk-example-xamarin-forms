@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using ScanbotSDK.Xamarin;
 using ScanbotSDK.Xamarin.Forms;
 using Xamarin.Essentials;
 using Xamarin.Forms;
@@ -86,12 +87,26 @@ namespace Scanbot.SDK.Example.Forms
             {
                 foreach (var page in result.Pages)
                 {
-                    Pages.Instance.List.Add(page);
+                    await Pages.Instance.Add(page);
 
                     var blur = await SBSDK.Operations.EstimateBlurriness(page.Document);
                     Console.WriteLine("Estimated blurriness for detected document: " + blur);
 
                 }
+
+                var existing = await PageStorage.Instance.Load();
+                var reconstructedList = new List<IScannedPage>();
+                foreach (var page in existing)
+                {
+                    var reconstructed = await SBSDK.Operations.ReconstructPage(
+                        page.PageId,
+                        page.CreatePolygon(),
+                        (ImageFilter)page.Filter,
+                        (DocumentDetectionStatus)page.DetectionStatus
+                    );
+                    reconstructedList.Add(reconstructed);
+                }
+                
                 await Navigation.PushAsync(new ImageResultsPage());
             }
         }

@@ -4,8 +4,10 @@ using System.ComponentModel;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
+using ScanbotSDK.Xamarin;
 using ScanbotSDK.Xamarin.Forms;
 using SQLite;
+using Xamarin.Forms;
 
 namespace Scanbot.SDK.Example.Forms
 {
@@ -27,40 +29,30 @@ namespace Scanbot.SDK.Example.Forms
             }
         }
 
-        static readonly Lazy<SQLiteAsyncConnection> lazyInitializer = new Lazy<SQLiteAsyncConnection>(() =>
-        {
-            return new SQLiteAsyncConnection(DatabasePath, Flags);
-        });
-
-        static SQLiteAsyncConnection Database => lazyInitializer.Value;
+        static SQLiteAsyncConnection Database = new SQLiteAsyncConnection(DatabasePath, Flags);
         static bool initialized = false;
 
         private PageStorage()
         {
-            InitializeAsync().SafeFireAndForget(false);
+
         }
 
-        async Task InitializeAsync()
+        public async Task InitializeAsync()
         {
-            if (!initialized)
-            {
-                if (!Database.TableMappings.Any(m => m.MappedType.Name == typeof(IScannedPage).Name))
-                {
-                    await Database.CreateTablesAsync(CreateFlags.None, typeof(IScannedPage)).ConfigureAwait(false);
-                }
-                initialized = true;
-            }
+            var result = await Database.CreateTablesAsync(CreateFlags.None, typeof(DBPage));//.ConfigureAwait(false);
+            Console.WriteLine("Storage initialize: " + result);
         }
 
         public async Task<int> Save(IScannedPage page)
         {
-            var dbPage = new DBPage { InternalPage = page };
+            var dbPage = DBPage.From(page);
             return await Database.InsertAsync(dbPage);
         }
 
-        public static async Task<List<DBPage>> Load()
+        public async Task<List<DBPage>> Load()
         {
-            return await Database.Table<DBPage>().ToListAsync();
+            var pages = await Database.Table<DBPage>().ToListAsync();
+            return pages;
         }
 
         public async Task<int> Delete(DBPage page)
@@ -70,11 +62,84 @@ namespace Scanbot.SDK.Example.Forms
     }
 
     /*
-     * SQLite storage requires a non-abstract class with a constructor
+     * SQLite storage requires a non-abstract class with a constructor and primitive types
      */
     public class DBPage
     {
-        public IScannedPage InternalPage { get; set; }
+        [PrimaryKey, AutoIncrement]
+        public int Id { get; set; }
+
+        public string PageId { get; set; }
+
+        public string Document { get; set; }
+        public string Original { get; set; }
+        public string DocumentPreview { get; set; }
+        public string OriginalPreview { get; set; }
+        public string AvailablePreview { get; set; }
+
+        public int Filter { get; set; }
+        public int DetectionStatus { get; set; }
+
+        public double X1 { get; set; }
+        public double Y1 { get; set; }
+        public double X2 { get; set; }
+        public double Y2 { get; set; }
+        public double X3 { get; set; }
+        public double Y3 { get; set; }
+        public double X4 { get; set; }
+        public double Y4 { get; set; }
+
+        public static DBPage From(IScannedPage page)
+        {
+
+            var result = new DBPage
+            {
+                PageId = page.Id,
+                Document = ImageToPath(page.Document),
+                Original = ImageToPath(page.Original),
+                DocumentPreview = ImageToPath(page.DocumentPreview),
+                OriginalPreview = ImageToPath(page.OriginalPreview),
+                AvailablePreview = ImageToPath(page.AvailablePreview),
+                Filter = (int)page.Filter,
+                DetectionStatus = (int)page.DetectionStatus
+            };
+
+            result.MapPolygon(page.Polygon);
+
+            return result;
+        }
+
+        public void MapPolygon(Point[] points)
+        {
+            if (points.Length < 4)
+            {
+                return;
+            }
+            X1 = points[0].X;
+            Y1 = points[0].Y;
+            X2 = points[1].X;
+            Y2 = points[1].Y;
+            X3 = points[2].X;
+            Y3 = points[2].Y;
+            X4 = points[3].X;
+            Y4 = points[3].Y;
+        }
+
+        public Point[] CreatePolygon()
+        {
+            var result = new List<Point>();
+            result.Add(new Point(X1, Y1));
+            result.Add(new Point(X2, Y2));
+            result.Add(new Point(X3, Y3));
+            result.Add(new Point(X4, Y4));
+            return result.ToArray();
+        }
+
+        public static string ImageToPath(ImageSource source)
+        {
+            return ((FileImageSource)source)?.File;
+        }
+
     }
 
     public static class TaskExtensions

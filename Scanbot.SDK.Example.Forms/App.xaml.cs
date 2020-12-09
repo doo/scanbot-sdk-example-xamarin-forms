@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -11,6 +12,7 @@ namespace Scanbot.SDK.Example.Forms
         public App()
         {
             InitializeComponent();
+            InitializeAsync();
 
             var content = new MainPage();
             MainPage = new NavigationPage(content)
@@ -18,6 +20,12 @@ namespace Scanbot.SDK.Example.Forms
                 BarBackgroundColor = ScanbotRed,
                 BarTextColor = Color.White
             };
+        }
+
+        async Task<bool> InitializeAsync()
+        {
+            await PageStorage.Instance.InitializeAsync();
+            return true;
         }
     }
 }

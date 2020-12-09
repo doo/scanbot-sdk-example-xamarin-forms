@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 using ScanbotSDK.Xamarin.Forms;
 using Xamarin.Forms;
 
@@ -26,6 +27,13 @@ namespace Scanbot.SDK.Example.Forms
         {
             List.Remove(SelectedPage);
             SelectedPage = null;
+        }
+
+        internal async Task<bool> Add(IScannedPage page)
+        {
+            List.Add(page);
+            await PageStorage.Instance.Save(page);
+            return true;
         }
     }
 }

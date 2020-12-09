@@ -24,10 +24,23 @@ namespace Scanbot.SDK.Example.Forms
 
         private Pages() { }
 
-        internal void RemoveCurrent()
+        public async Task<int> RemoveSelection()
         {
+            var result = await PageStorage.Instance.Delete(SelectedPage);
             List.Remove(SelectedPage);
             SelectedPage = null;
+            return result;
+        }
+
+        public async Task<int> UpdateFilterForSelection(ImageFilter filter)
+        {
+            await SelectedPage.SetFilterAsync(filter);
+            return await UpdateSelection();
+        }
+
+        public async Task<int> UpdateSelection()
+        {
+            return await PageStorage.Instance.Update(SelectedPage);
         }
 
         public async Task<bool> Add(IScannedPage page, bool save = true)
@@ -46,7 +59,7 @@ namespace Scanbot.SDK.Example.Forms
             foreach (var page in pages)
             {
                 var reconstructed = await SBSDK.Operations.ReconstructPage(
-                    page.PageId,
+                    page.Id,
                     page.CreatePolygon(),
                     (ImageFilter)page.Filter,
                     (DocumentDetectionStatus)page.DetectionStatus

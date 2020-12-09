@@ -30,8 +30,7 @@ namespace Scanbot.SDK.Example.Forms
         }
 
         static SQLiteAsyncConnection Database = new SQLiteAsyncConnection(DatabasePath, Flags);
-        static bool initialized = false;
-
+        
         private PageStorage()
         {
 
@@ -49,15 +48,20 @@ namespace Scanbot.SDK.Example.Forms
             return await Database.InsertAsync(dbPage);
         }
 
+        public async Task<int> Update(IScannedPage page)
+        {
+            return await Database.UpdateAsync(DBPage.From(page));
+        }
+
         public async Task<List<DBPage>> Load()
         {
             var pages = await Database.Table<DBPage>().ToListAsync();
             return pages;
         }
 
-        public async Task<int> Delete(DBPage page)
+        public async Task<int> Delete(IScannedPage page)
         {
-            return await Database.DeleteAsync(page);
+            return await Database.DeleteAsync(DBPage.From(page));
         }
     }
 
@@ -66,10 +70,8 @@ namespace Scanbot.SDK.Example.Forms
      */
     public class DBPage
     {
-        [PrimaryKey, AutoIncrement]
-        public int Id { get; set; }
-
-        public string PageId { get; set; }
+        [PrimaryKey]
+        public string Id { get; set; }
 
         public string Document { get; set; }
         public string Original { get; set; }
@@ -94,7 +96,7 @@ namespace Scanbot.SDK.Example.Forms
 
             var result = new DBPage
             {
-                PageId = page.Id,
+                Id = page.Id,
                 Document = ImageToPath(page.Document),
                 Original = ImageToPath(page.Original),
                 DocumentPreview = ImageToPath(page.DocumentPreview),
@@ -140,29 +142,5 @@ namespace Scanbot.SDK.Example.Forms
             return ((FileImageSource)source)?.File;
         }
 
-    }
-
-    public static class TaskExtensions
-    {
-        // NOTE: Async void is intentional here. This provides a way
-        // to call an async method from the constructor while
-        // communicating intent to fire and forget, and allow
-        // handling of exceptions
-        public static async void SafeFireAndForget(this Task task,
-            bool returnToCallingContext,
-            Action<Exception> onException = null)
-        {
-            try
-            {
-                await task.ConfigureAwait(returnToCallingContext);
-            }
-
-            // if the provided action is not null, catch and
-            // pass the thrown exception
-            catch (Exception ex) when (onException != null)
-            {
-                onException(ex);
-            }
-        }
     }
 }

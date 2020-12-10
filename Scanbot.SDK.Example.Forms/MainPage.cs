@@ -110,7 +110,7 @@ namespace Scanbot.SDK.Example.Forms
 
                 // Run document detection on it
                 await importedPage.DetectDocumentAsync();
-                Pages.Instance.List.Add(importedPage);
+                await Pages.Instance.Add(importedPage);
                 await Navigation.PushAsync(new ImageResultsPage());
             }
         }
@@ -314,7 +314,7 @@ namespace Scanbot.SDK.Example.Forms
             if (!SDKUtils.CheckLicense(this)) { return; }
 
             await SBSDK.Operations.CleanUp();
-            Pages.Instance.List.Clear();
+            await Pages.Instance.Clear();
             
             var message = "Cleanup done. All scanned images " +
             "and generated files (PDF, TIFF, etc) have been removed.";

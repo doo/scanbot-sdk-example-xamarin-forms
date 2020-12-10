@@ -63,6 +63,17 @@ namespace Scanbot.SDK.Example.Forms
         {
             return await Database.DeleteAsync(DBPage.From(page));
         }
+
+        public async Task<int> Clear()
+        {
+            var mapping = Database.TableMappings.First(mapping => mapping.TableName == "DBPage");
+            if (mapping != null)
+            {
+                return await Database.DeleteAllAsync(mapping);
+            }
+
+            return -1;
+        }
     }
 
     /*

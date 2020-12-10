@@ -68,5 +68,11 @@ namespace Scanbot.SDK.Example.Forms
             }
             return true;
         }
+
+        public async Task<int> Clear()
+        {
+            List.Clear();
+            return await PageStorage.Instance.Clear();
+        }
     }
 }

@@ -146,10 +146,17 @@ namespace Scanbot.SDK.Example.Forms
 
         }
 
-        private void OnDeleteButtonClick(object sender, EventArgs e)
+        private async void OnDeleteButtonClick(object sender, EventArgs e)
         {
-            Pages.Instance.List.Clear();
-            ReloadData();
+            var message = "Do you really want to delete all image data?";
+            var result = await this.DisplayAlert("Attention!", message, "Yes", "No");
+            if (result)
+            {
+                await Pages.Instance.Clear();
+                await SBSDK.Operations.CleanUp();
+                ReloadData();
+            }
+            
         }
 
         void ReloadData()

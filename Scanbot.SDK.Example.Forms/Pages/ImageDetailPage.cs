@@ -70,7 +70,7 @@ namespace Scanbot.SDK.Example.Forms
 
         async void OnDeleteButtonClick(object sender, EventArgs e)
         {
-            Pages.Instance.RemoveSelection();
+            await Pages.Instance.RemoveSelection();
             Image.Source = null;
             await Navigation.PopAsync();
         }

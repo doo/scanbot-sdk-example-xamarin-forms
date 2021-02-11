@@ -46,6 +46,7 @@ namespace Scanbot.SDK.Example.Forms
             if (!SDKUtils.CheckPage(this, Pages.Instance.SelectedPage)) { return; }
 
             var result = await SBSDK.UI.LaunchCroppingScreenAsync(Pages.Instance.SelectedPage);
+            await Pages.Instance.UpdateSelection();
 
             Image.Source = null;
             Image.Source = Pages.Instance.SelectedPage.Document;
@@ -63,13 +64,13 @@ namespace Scanbot.SDK.Example.Forms
             Enum.TryParse(action, out filter);
             CurrentFilter = filter;
 
-            await Pages.Instance.SelectedPage.SetFilterAsync(filter);
+            await Pages.Instance.UpdateFilterForSelection(filter);
             Image.Source = Pages.Instance.SelectedPage.DocumentPreview;
         }
 
         async void OnDeleteButtonClick(object sender, EventArgs e)
         {
-            Pages.Instance.RemoveCurrent();
+            await Pages.Instance.RemoveSelection();
             Image.Source = null;
             await Navigation.PopAsync();
         }

@@ -92,7 +92,8 @@ namespace Scanbot.SDK.Example.Forms
                 PolygonColor = Color.Red,
                 PolygonColorOK = Color.Green,
                 BottomBarBackgroundColor = Color.Blue,
-                PageCounterButtonTitle = "%d Page(s)"
+                PageCounterButtonTitle = "%d Page(s)",
+                
             };
             var result = await SBSDK.UI.LaunchDocumentScannerAsync(configuration);
             if (result.Status == OperationResult.Ok)
@@ -100,6 +101,7 @@ namespace Scanbot.SDK.Example.Forms
                 foreach (var page in result.Pages)
                 {
                     Pages.Instance.List.Add(page);
+                    
                 }
             }
         }
@@ -146,10 +148,17 @@ namespace Scanbot.SDK.Example.Forms
 
         }
 
-        private void OnDeleteButtonClick(object sender, EventArgs e)
+        private async void OnDeleteButtonClick(object sender, EventArgs e)
         {
-            Pages.Instance.List.Clear();
-            ReloadData();
+            var message = "Do you really want to delete all image data?";
+            var result = await this.DisplayAlert("Attention!", message, "Yes", "No");
+            if (result)
+            {
+                await Pages.Instance.Clear();
+                await SBSDK.Operations.CleanUp();
+                ReloadData();
+            }
+            
         }
 
         void ReloadData()

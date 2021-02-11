@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using ScanbotSDK.Xamarin;
 using ScanbotSDK.Xamarin.Forms;
 using Xamarin.Essentials;
 using Xamarin.Forms;
@@ -54,7 +55,6 @@ namespace Scanbot.SDK.Example.Forms
             table.Root.Add(new TableSection("MISCELLANEOUS")
             {
                 ViewUtils.CreateCell("View License Info", ViewLicenseInfoClicked),
-                ViewUtils.CreateCell("Cleanup", CleanupClicked),
                 ViewUtils.CreateCell("Learn more about Scanbot SDK", LearnMoreClicked, App.ScanbotRed),
                 ViewUtils.CreateCopyrightCell()
             });
@@ -86,12 +86,13 @@ namespace Scanbot.SDK.Example.Forms
             {
                 foreach (var page in result.Pages)
                 {
-                    Pages.Instance.List.Add(page);
+                    await Pages.Instance.Add(page);
 
                     var blur = await SBSDK.Operations.EstimateBlurriness(page.Document);
                     Console.WriteLine("Estimated blurriness for detected document: " + blur);
 
                 }
+
                 await Navigation.PushAsync(new ImageResultsPage());
             }
         }
@@ -108,7 +109,7 @@ namespace Scanbot.SDK.Example.Forms
 
                 // Run document detection on it
                 await importedPage.DetectDocumentAsync();
-                Pages.Instance.List.Add(importedPage);
+                await Pages.Instance.Add(importedPage);
                 await Navigation.PushAsync(new ImageResultsPage());
             }
         }
@@ -302,21 +303,6 @@ namespace Scanbot.SDK.Example.Forms
                     }
             );
             await RunWorkflow(workflow);
-        }
-
-        /**
-         * MISCELLANEOUS
-         */
-        async void CleanupClicked(object sender, EventArgs e)
-        {
-            if (!SDKUtils.CheckLicense(this)) { return; }
-
-            await SBSDK.Operations.CleanUp();
-            Pages.Instance.List.Clear();
-            
-            var message = "Cleanup done. All scanned images " +
-            "and generated files (PDF, TIFF, etc) have been removed.";
-            ViewUtils.Alert(this, "Cleanup complete!", message);
         }
 
         void ViewLicenseInfoClicked(object sender, EventArgs e)

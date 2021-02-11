@@ -92,7 +92,8 @@ namespace Scanbot.SDK.Example.Forms
                 PolygonColor = Color.Red,
                 PolygonColorOK = Color.Green,
                 BottomBarBackgroundColor = Color.Blue,
-                PageCounterButtonTitle = "%d Page(s)"
+                PageCounterButtonTitle = "%d Page(s)",
+                
             };
             var result = await SBSDK.UI.LaunchDocumentScannerAsync(configuration);
             if (result.Status == OperationResult.Ok)
@@ -100,6 +101,7 @@ namespace Scanbot.SDK.Example.Forms
                 foreach (var page in result.Pages)
                 {
                     Pages.Instance.List.Add(page);
+                    
                 }
             }
         }

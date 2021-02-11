@@ -66,7 +66,7 @@ namespace Scanbot.SDK.Example.Forms
 
         public async Task<int> Clear()
         {
-            var mapping = Database.TableMappings.First(mapping => mapping.TableName == "DBPage");
+            var mapping = Database.TableMappings.First(tables => tables.TableName == "DBPage");
             if (mapping != null)
             {
                 return await Database.DeleteAllAsync(mapping);

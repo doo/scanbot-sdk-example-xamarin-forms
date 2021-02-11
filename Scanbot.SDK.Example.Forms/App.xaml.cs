@@ -12,7 +12,10 @@ namespace Scanbot.SDK.Example.Forms
         public App()
         {
             InitializeComponent();
+#pragma warning disable CS4014
+            // There's no requirement to await this, can just disable warning
             InitializeAsync();
+#pragma warning restore CS4014 
 
             var content = new MainPage();
             MainPage = new NavigationPage(content)

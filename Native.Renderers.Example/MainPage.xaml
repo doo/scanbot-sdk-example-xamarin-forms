@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Native.Renderers.Example"
+             x:Class="Native.Renderers.Example.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <StackLayout>
+                <Label Text="Barcode Scanner Example" HorizontalTextAlignment="Center" TextColor="White" FontSize="24"/>
+            </StackLayout>
+        </Frame>
+
+        <local:BarcodeCameraView x:Name="cameraView" HeightRequest="150"/>
+        <Button x:Name="start" Text="Start"/>
+        <Button x:Name="stop" Text="Stop"/>
+        <Label x:Name="resultsLabel" Margin="32,0,32,0" HorizontalTextAlignment="Center" TextColor="White" FontSize="16"/>
+    </StackLayout>
+
+</ContentPage>

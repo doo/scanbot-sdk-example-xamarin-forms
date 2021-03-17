@@ -8,6 +8,9 @@ namespace Native.Renderers.Example.Forms
 {
     public partial class MainPage : ContentPage
     {
+
+        private bool isCameraOn = false;
+
         public MainPage()
         {
             InitializeComponent();
@@ -18,10 +21,10 @@ namespace Native.Renderers.Example.Forms
         {
             cameraView.OnBarcodeScanResult = (result) =>
             {
-                string text = "Results: \n";
+                string text = "";
                 foreach (string barcodeText in result.Barcodes.Select((item) => item.Text))
                 {
-                    text += "\n" + barcodeText;
+                    text += barcodeText + "\n";
                 }
 
                 Device.BeginInvokeOnMainThread(() =>
@@ -35,26 +38,44 @@ namespace Native.Renderers.Example.Forms
         {
             base.OnAppearing();
 
-            start.Clicked += OnStartClick;
-            stop.Clicked += OnStopClick;
+            scanButton.Clicked += OnScanButtonPressed;
+            infoButton.Clicked += OnInfoButtonPressed;
         }
 
         protected override void OnDisappearing()
         {
             base.OnDisappearing();
 
-            start.Clicked -= OnStartClick;
-            stop.Clicked -= OnStopClick;
+            scanButton.Clicked -= OnScanButtonPressed;
+            infoButton.Clicked -= OnInfoButtonPressed;
         }
 
-        private void OnStartClick(object sender, EventArgs e)
+        private void OnScanButtonPressed(object sender, EventArgs e)
         {
-            cameraView.Resume();
+            if (!SBSDK.IsLicenseValid) {
+                ShowExpiredLicenseAlert();
+                return;
+            }
+
+            if (isCameraOn)
+            {
+                scanButton.Text = "START SCANNING";
+                cameraView.Pause();
+            }
+            else {
+                scanButton.Text = "STOP SCANNING";
+                cameraView.Resume();
+            }
+
+            isCameraOn = !isCameraOn;
         }
 
-        private void OnStopClick(object sender, EventArgs e)
-        {
-            cameraView.Pause();
+        private void OnInfoButtonPressed(object sender, EventArgs e) {
+            DisplayAlert("Info", SBSDK.IsLicenseValid ? "Your SDK License is valid." : "Your SDK License has expired.", "Close");
+        }
+
+        private void ShowExpiredLicenseAlert() {
+            DisplayAlert("Error", "Your SDK license has expired", "Close");
         }
     }
 }

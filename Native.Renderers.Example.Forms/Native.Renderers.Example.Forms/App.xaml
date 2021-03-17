@@ -4,5 +4,13 @@
              x:Class="Native.Renderers.Example.Forms.App">
     <Application.Resources>
 
+        <!-- (Style) Simple Gray Line Separator -->
+        <Style x:Key="Separator" TargetType="BoxView">
+            <Setter Property="HeightRequest" Value="1" />
+            <Setter Property="HorizontalOptions" Value="FillAndExpand" />
+            <Setter Property="Color" Value="Gray" />
+            <Setter Property="Opacity" Value="0.5" />
+        </Style>
+
     </Application.Resources>
 </Application>

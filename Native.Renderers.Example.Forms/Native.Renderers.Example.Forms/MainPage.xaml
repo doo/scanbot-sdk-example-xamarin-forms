@@ -4,17 +4,35 @@
              xmlns:local="clr-namespace:Native.Renderers.Example.Forms.Views"
              x:Class="Native.Renderers.Example.Forms.MainPage">
 
-    <StackLayout>
-        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
-            <StackLayout>
-                <Label Text="Barcode Scanner Example" HorizontalTextAlignment="Center" TextColor="White" FontSize="24"/>
+    <StackLayout BackgroundColor="#e2e2e2" Spacing="0">
+        <Frame BackgroundColor="#c8193c" Padding="16" CornerRadius="0">
+            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                <Label Text="Barcode Scanner Example" VerticalOptions="Center" HorizontalTextAlignment="Start" TextColor="White" FontSize="18"/>
+                <ImageButton x:Name="infoButton" Source="ic_info.png" HorizontalOptions="EndAndExpand" VerticalOptions="Center" BackgroundColor="Transparent" WidthRequest="24" HeightRequest="24"/>
             </StackLayout>
         </Frame>
 
-        <local:BarcodeCameraView x:Name="cameraView" HeightRequest="150"/>
-        <Button x:Name="start" Text="Start"/>
-        <Button x:Name="stop" Text="Stop"/>
-        <Label x:Name="resultsLabel" Margin="32,0,32,0" HorizontalTextAlignment="Center" TextColor="White" FontSize="16"/>
+        <local:BarcodeCameraView x:Name="cameraView" HeightRequest="250" BackgroundColor="#1f1f1f"/>
+
+        <BoxView Style="{StaticResource Separator}"/>
+
+        <Label TextColor="Black"
+               FontSize="16"
+               Margin="16, 16">
+            <Label.Text>
+               Press the button below and start scanning to try out this demo.
+            </Label.Text>
+        </Label>
+
+        <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand" Margin="16, 16, 16, 32">
+            <Button x:Name="scanButton" Text="START SCANNING" CornerRadius="10" Padding="24, 16" BackgroundColor="#c8193c" TextColor="White"/>
+        </StackLayout>
+
+        <BoxView Style="{StaticResource Separator}"/>
+        <StackLayout BackgroundColor="#d2d2d2" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+            <Label Text="Results Preview (LIVE)" FontAttributes="Bold" Margin="16,16,16,16" FontSize="16" TextColor="Black"/>
+            <Label x:Name="resultsLabel" Margin="16,0,16,0" HorizontalTextAlignment="Start" TextColor="Black" FontSize="16"/>
+        </StackLayout>
     </StackLayout>
 
 </ContentPage>

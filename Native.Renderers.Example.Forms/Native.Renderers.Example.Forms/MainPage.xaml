@@ -16,15 +16,7 @@
 
         <BoxView Style="{StaticResource Separator}"/>
 
-        <Label TextColor="Black"
-               FontSize="16"
-               Margin="16, 16">
-            <Label.Text>
-               Press the button below and start scanning to try out this demo.
-            </Label.Text>
-        </Label>
-
-        <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand" Margin="16, 16, 16, 32">
+        <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand" Margin="16, 32, 16, 32">
             <Button x:Name="scanButton" Text="START SCANNING" CornerRadius="10" Padding="24, 16" BackgroundColor="#c8193c" TextColor="White"/>
         </StackLayout>
 

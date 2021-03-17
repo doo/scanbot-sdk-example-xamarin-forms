@@ -3,6 +3,7 @@ using System;
 using ScanbotSDK.Xamarin.Forms;
 using Xamarin.Forms;
 using System.Linq;
+using Native.Renderers.Example.Forms.Common;
 
 namespace Native.Renderers.Example.Forms
 {
@@ -58,6 +59,10 @@ namespace Native.Renderers.Example.Forms
             {
                 cameraView.Resume();
             }
+
+            if (ScanbotSDKConfiguration.LICENSE_KEY.Equals("")) {
+                ShowTrialLicenseAlert();
+            }
         }
 
         protected override void OnDisappearing()
@@ -97,6 +102,10 @@ namespace Native.Renderers.Example.Forms
 
         private void ShowExpiredLicenseAlert() {
             DisplayAlert("Error", "Your SDK license has expired", "Close");
+        }
+
+        private void ShowTrialLicenseAlert() {
+            DisplayAlert("Welcome", "You are using the Trial SDK License. The SDK will be active for one minute.", "Close");
         }
     }
 }

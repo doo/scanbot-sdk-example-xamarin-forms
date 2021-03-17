@@ -12,7 +12,15 @@
             </StackLayout>
         </Frame>
 
+        <!-- =============================================================================================================
+
+        Here we include our BarcodeCameraView. This view will be overriden by our native implementation because of
+        the custom renderers that we have created. See: BarcodeCameraView.cs and AndroidBarcodeCameraRenderer.cs.
+        Remember to define an xmlns attribute on the XAML root element to access your Views (in this case xmlns:local) -->
+
         <local:BarcodeCameraView x:Name="cameraView" HeightRequest="250" BackgroundColor="#1f1f1f"/>
+
+        <!--==========================================================================================================-->
 
         <BoxView Style="{StaticResource Separator}"/>
 

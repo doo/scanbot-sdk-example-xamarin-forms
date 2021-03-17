@@ -15,48 +15,81 @@ using Android.Widget;
 using Xamarin.Forms;
 using Native.Renderers.Example.Forms.Droid.Renderers;
 
+/*
+    This is the Android Custom Renderer that will provide the actual implementation for BarcodeCameraView.
+    We use the 'ExportRenderer' assembly directive to specify that we want to attach AndroidBarcodeCameraRenderer to
+    BarcodeCameraView.
+
+    Syntax:
+
+    [assembly: ExportRenderer(typeof([FORMS_VIEW_CLASS]), typeof([CUSTOM_RENDERER_CLASS]))]
+
+    ---
+ */
 [assembly: ExportRenderer(typeof(BarcodeCameraView), typeof(AndroidBarcodeCameraRenderer))]
 namespace Native.Renderers.Example.Forms.Droid.Renderers
 {
+    /*
+       By extending 'ViewRenderer' we specify that we want our custom renderer to target 'BarcodeCameraView' and
+       override it with our native view 'ScanbotCameraView'
+    */
     public class AndroidBarcodeCameraRenderer : ViewRenderer<BarcodeCameraView, ScanbotCameraView>, ICameraOpenCallback
     {
-        static string LOG_TAG = typeof(AndroidBarcodeCameraRenderer).Name;
-
         public BarcodeCameraView.BarcodeScannerResultHandler HandleScanResult;
-        protected ScanbotCameraView cameraView;
         protected DocumentAutoSnappingController autoSnappingController;
         protected BarcodeDetectorFrameHandler barcodeDetectorFrameHandler;
+
+        // This is the view that we want to override 'BarcodeCameraView' with
+        protected ScanbotCameraView cameraView;
 
         private readonly int REQUEST_PERMISSION_CODE = 200;
 
         public AndroidBarcodeCameraRenderer(Context context) : base(context)
         {
+            // We initialize our native view when the renderer is created
             cameraView = new ScanbotCameraView(context);
         }
 
+        /*
+            This is probably the most important method that belongs to a ViewRenderer.
+            You must override this in order to actually implement the renderer.
+            OnElementChanged is called whenever the View or one of its properties have changed;
+            this includes the initialization as well, therefore we initialize our native control here.
+         */
         protected override void OnElementChanged(ElementChangedEventArgs<BarcodeCameraView> e)
         {
+
+            // The SetNativeControl method should be used to instantiate the native control,
+            // and this method will also assign the control reference to the Control property
             SetNativeControl(cameraView);
 
+            // Don't forget to call the base method
             base.OnElementChanged(e);
 
-            // We use this delegate to receive the Scan Result on the Core side
-            HandleScanResult = Element.OnBarcodeScanResult;
-
-            // OnResume and OnPause must be set in order for the Camera View to work properly
-            Element.OnResume = (sender, e) =>
-            {
-                cameraView.OnResume();
-                CheckPermissions();
-            };
-
-            Element.OnPause = (sender, e) =>
-            {
-                cameraView.OnPause();
-            };
-
+            // You always have to check if Control is null before executing all the necessary operations
             if (Control != null)
             {
+                // The Element object is the instance of BarcodeCameraView as defined in the Forms
+                // core project. We've defined two delegates there, and we'll bind to them here so that
+                // these native calls will be executed whenever those methods will be called.
+                Element.OnResume = (sender, e) =>
+                {
+                    // Starts/Restarts the Camera View
+                    cameraView.OnResume();
+                    CheckPermissions();
+                };
+
+                Element.OnPause = (sender, e) =>
+                {
+                    // Stops/Pauses the Camera View
+                    cameraView.OnPause();
+                };
+
+                // Similarly, we have defined a delegate in our BarcodeCameraView implementation,
+                // so that we can trigger it whenever the Scanner will return a valid result.
+                // We store it in the HandleScanResult so that we can invoke it later.
+                HandleScanResult = Element.OnBarcodeScanResult;
+
                 // In this example we demonstrate how to lock the orientation of the UI (Activity)
                 // as well as the orientation of the taken picture to portrait.
                 cameraView.LockToPortrait(true);
@@ -77,10 +110,12 @@ namespace Native.Renderers.Example.Forms.Droid.Renderers
                     // barcodeAutoSnappingController.SetSensitivity(1f);
                 }
 
+                // Our Custom Renderer implements ICameraOpenCallback, to get notified whenever the Camera's been opened
                 cameraView.SetCameraOpenCallback(this);
             }
         }
 
+        // ICameraOpenCallback implementation
         public void OnCameraOpened()
         {
             cameraView.PostDelayed(() =>
@@ -98,6 +133,7 @@ namespace Native.Renderers.Example.Forms.Droid.Renderers
             }, 500);
         }
 
+        // We call this method whenever a succesful result is returned from our Scanner
         private bool HandleSuccess(BarcodeScanningResult result)
         {
             if (result == null) { return false; }
@@ -118,6 +154,7 @@ namespace Native.Renderers.Example.Forms.Droid.Renderers
             return true;
         }
 
+        // We call this method whenever a result is returned from our Scanner
         bool HandleFrameHandlerResult(FrameHandlerResult result)
         {
             if (result is FrameHandlerResult.Success success)
@@ -136,6 +173,7 @@ namespace Native.Renderers.Example.Forms.Droid.Renderers
             return false;
         }
 
+        // Utility method to check if the user has given permissions to access the Camera
         private void CheckPermissions()
         {
             if (Context == null || Context.GetActivity() == null)
@@ -153,10 +191,13 @@ namespace Native.Renderers.Example.Forms.Droid.Renderers
     }
 }
 
+// Here we define a custom BarcodeDetectorResultHandler. Whenever a result is ready, the frame handler
+// will call the Handle method on this object. To make this more flexible, we allow to
+// specify a delegate through the constructor.
 class BarcodeDetectorResultHandler : BarcodeDetectorFrameHandler.BarcodeDetectorResultHandler
 {
     public delegate bool HandleResultFunction(FrameHandlerResult result);
-    private HandleResultFunction handleResultFunc;
+    private readonly HandleResultFunction handleResultFunc;
 
     public BarcodeDetectorResultHandler(HandleResultFunction handleResultFunc)
     {

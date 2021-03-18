@@ -117,7 +117,7 @@ namespace Native.Renderers.Example.Forms
 
             resultsPreviewLayout.BackgroundColor = Color.White;
 
-            // We hide the start/stop button because this functionality is not supported yet on iOS
+            // We hide the start/stop button because this functionality is not supported on iOS
             buttonsLayout.IsVisible = false;
         }
     }

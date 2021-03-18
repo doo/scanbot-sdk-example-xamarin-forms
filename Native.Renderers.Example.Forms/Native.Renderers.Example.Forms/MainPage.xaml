@@ -1,11 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
              xmlns:local="clr-namespace:Native.Renderers.Example.Forms.Views"
+             ios:Page.UseSafeArea="true"
+             BackgroundColor="#c8193c"
              x:Class="Native.Renderers.Example.Forms.MainPage">
-
+    
     <StackLayout BackgroundColor="#e2e2e2" Spacing="0">
-        <Frame BackgroundColor="#c8193c" Padding="16" CornerRadius="0">
+        <Frame BackgroundColor="#c8193c" Padding="16" CornerRadius="0" HasShadow="False">
             <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
                 <Label Text="Barcode Scanner Example" VerticalOptions="Center" HorizontalTextAlignment="Start" TextColor="White" FontSize="18"/>
                 <ImageButton x:Name="infoButton" Source="ic_info.png" HorizontalOptions="EndAndExpand" VerticalOptions="Center" BackgroundColor="Transparent" WidthRequest="24" HeightRequest="24"/>

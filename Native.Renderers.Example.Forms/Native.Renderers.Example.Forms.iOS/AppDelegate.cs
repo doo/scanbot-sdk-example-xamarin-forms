@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 
 using Foundation;
+using Native.Renderers.Example.Forms.Common;
+using ScanbotSDK.Xamarin.Forms;
 using UIKit;
 
 namespace Native.Renderers.Example.Forms.iOS
@@ -24,6 +26,11 @@ namespace Native.Renderers.Example.Forms.iOS
         {
             global::Xamarin.Forms.Forms.Init();
             LoadApplication(new App());
+
+            SBSDKInitializer.Initialize(app, ScanbotSDKConfiguration.LICENSE_KEY, new SBSDKConfiguration
+            {
+                EnableLogging = ScanbotSDKConfiguration.IS_DEBUG
+            });
 
             return base.FinishedLaunching(app, options);
         }

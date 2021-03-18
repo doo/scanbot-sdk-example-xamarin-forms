@@ -14,6 +14,7 @@ using System.Linq;
 using Android.Widget;
 using Xamarin.Forms;
 using Native.Renderers.Example.Forms.Droid.Renderers;
+using ScanbotSDK.Xamarin.Forms.Android;
 
 /*
     This is the Android Custom Renderer that will provide the actual implementation for BarcodeCameraView.
@@ -125,18 +126,11 @@ namespace Native.Renderers.Example.Forms.Droid.Renderers
 
         private bool HandleSuccess(BarcodeScanningResult result)
         {
-            if (result == null) { return false; }
+            if (result == null) { return false; }            
 
             ScanbotSDK.Xamarin.Forms.BarcodeScanningResult outResult = new ScanbotSDK.Xamarin.Forms.BarcodeScanningResult
             {
-                Barcodes = result.BarcodeItems.Select((item) =>
-                {
-                    var barcode = new ScanbotSDK.Xamarin.Forms.Barcode
-                    {
-                        Text = item.Text
-                    };
-                    return barcode;
-                }).ToList()
+                Barcodes = result.BarcodeItems.ToFormsBarcodeList()
             };
 
             HandleScanResult?.Invoke(outResult);

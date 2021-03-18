@@ -33,9 +33,8 @@ namespace Native.Renderers.Example.Forms
             cameraView.OnBarcodeScanResult = (result) =>
             {
                 string text = "";
-                foreach (string barcodeText in result.Barcodes.Select((item) => item.Text))
-                {
-                    text += barcodeText + "\n";
+                foreach (Barcode barcode in result.Barcodes) {
+                    text += string.Format("{0} ({1})\n", barcode.Text, barcode.Format.ToString().ToUpper());
                 }
 
                 Device.BeginInvokeOnMainThread(() =>

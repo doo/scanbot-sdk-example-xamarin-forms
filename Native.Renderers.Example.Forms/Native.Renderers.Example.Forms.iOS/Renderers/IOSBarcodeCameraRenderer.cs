@@ -76,29 +76,14 @@ namespace Native.Renderers.Example.Forms.iOS.Renderers
         }
     }
 
-    // Since we cannot directly inherit from SBSDKBarcodeScannerViewControllerDelegate in our ViewRenderer
+    // Since we cannot directly inherit from SBSDKBarcodeScannerViewControllerDelegate in our ViewRenderer,
     // we have created this wrapper class to allow binding to its events through the use of delegates
     public class BarcodeScannerDelegate : SBSDKBarcodeScannerViewControllerDelegate
     {
         public delegate void OnDetectHandler(SBSDKBarcodeScannerResult[] codes);
-        public delegate void OnCaptureHandler(UIImage barcodeImage);
-        public delegate void OnChangeViewFinderHandler(CGRect rect);
-        public delegate bool OnShouldDetectHandler();
-
-        public OnDetectHandler OnDetect;
-        public OnCaptureHandler OnCapture;
-        public OnChangeViewFinderHandler OnChangeViewFinder;
         
-        public override void DidCapture(SBSDKBarcodeScannerViewController controller, UIImage barcodeImage)
-        {
-            OnCapture?.Invoke(barcodeImage);
-        }
-
-        public override void DidChangeViewFinder(SBSDKBarcodeScannerViewController controller, CGRect rect)
-        {
-            OnChangeViewFinder?.Invoke(rect);
-        }
-
+        public OnDetectHandler OnDetect;
+        
         public override void DidDetect(SBSDKBarcodeScannerViewController controller, SBSDKBarcodeScannerResult[] codes)
         {
             OnDetect?.Invoke(codes);
@@ -112,44 +97,24 @@ namespace Native.Renderers.Example.Forms.iOS.Renderers
 
     public class IOSBarcodeCameraView : UIView
     {
+        public SBSDKBarcodeScannerViewController Controller { get; private set; }
+        public BarcodeScannerDelegate ScannerDelegate { get; private set; }
 
-        public SBSDKBarcodeScannerViewController ScannerViewController { get => scannerViewController; }
-        public BarcodeScannerDelegate ScannerDelegate
+        public IOSBarcodeCameraView(UIViewController parent, CGRect frame) : base(frame)
         {
-            get => scannerDelegate;
-
-            private set
-            {
-                scannerViewController.Delegate = value;
-                scannerDelegate = value;
-            }
-        }
-
-        private BarcodeScannerDelegate scannerDelegate;
-        private SBSDKBarcodeScannerViewController scannerViewController;
-
-        private readonly UIViewController parentViewController;
-
-        public IOSBarcodeCameraView(UIViewController parentViewController, CGRect frame) : base(frame)
-        {
-            this.parentViewController = parentViewController;
-            SetupViews();
+            Controller = new SBSDKBarcodeScannerViewController(parent, this);
+            ScannerDelegate = new BarcodeScannerDelegate();
+            Controller.Delegate = ScannerDelegate;
         }
 
         public void StartCamera()
         {
-            scannerViewController.CameraSession.StartSession();
+            Controller.CameraSession.StartSession();
         }
 
         public void StopCamera()
         {
-            scannerViewController.CameraSession.StopSession();
-        }
-
-        private void SetupViews()
-        {
-            scannerViewController = new SBSDKBarcodeScannerViewController(parentViewController, this);
-            ScannerDelegate = new BarcodeScannerDelegate();
+            Controller.CameraSession.StopSession();
         }
     }
 }

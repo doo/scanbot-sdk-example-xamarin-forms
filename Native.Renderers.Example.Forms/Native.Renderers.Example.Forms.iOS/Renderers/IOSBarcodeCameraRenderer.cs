@@ -7,6 +7,7 @@ using Native.Renderers.Example.Forms.iOS.Renderers;
 using Native.Renderers.Example.Forms.Views;
 using ScanbotSDK.iOS;
 using ScanbotSDK.Xamarin.Forms;
+using ScanbotSDK.Xamarin.Forms.iOS;
 using UIKit;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.iOS;
@@ -37,7 +38,6 @@ namespace Native.Renderers.Example.Forms.iOS.Renderers
 
         protected override void OnElementChanged(ElementChangedEventArgs<BarcodeCameraView> e)
         {
-
             if (CurrentViewController == null) { return; }
 
             double x = e.NewElement.X;
@@ -69,17 +69,9 @@ namespace Native.Renderers.Example.Forms.iOS.Renderers
 
         private void HandleBarcodeScannerResults(SBSDKBarcodeScannerResult[] codes)
         {
-            List<Barcode> barcodes = codes
-                .Select((code) => new Barcode()
-                {
-                    Text = code.RawTextString,
-                    Format = code.Type.ToFormsBarcodeFormat().Value
-                })
-                .ToList();
-
             barcodeScannerResultHandler?.Invoke(new BarcodeScanningResult()
             {
-                Barcodes = barcodes
+                Barcodes = codes.ToFormsBarcodes()
             });
         }
     }
@@ -96,30 +88,25 @@ namespace Native.Renderers.Example.Forms.iOS.Renderers
         public OnDetectHandler OnDetect;
         public OnCaptureHandler OnCapture;
         public OnChangeViewFinderHandler OnChangeViewFinder;
-        public OnShouldDetectHandler OnShouldDetect;
-
+        
         public override void DidCapture(SBSDKBarcodeScannerViewController controller, UIImage barcodeImage)
         {
-            base.DidCapture(controller, barcodeImage);
             OnCapture?.Invoke(barcodeImage);
         }
 
         public override void DidChangeViewFinder(SBSDKBarcodeScannerViewController controller, CGRect rect)
         {
-            base.DidChangeViewFinder(controller, rect);
             OnChangeViewFinder?.Invoke(rect);
         }
 
         public override void DidDetect(SBSDKBarcodeScannerViewController controller, SBSDKBarcodeScannerResult[] codes)
         {
-            base.DidDetect(controller, codes);
             OnDetect?.Invoke(codes);
         }
 
         public override bool ShouldDetect(SBSDKBarcodeScannerViewController controller)
         {
-            bool result = base.ShouldDetect(controller);
-            return OnShouldDetect?.Invoke() ?? result;
+            return true;
         }
     }
 

@@ -28,10 +28,8 @@ namespace Native.Renderers.Example.Forms
         private void SetupViews()
         {
 
-            // Determines whether the camera should be ON or OFF at start
             IsCameraOn = false;
 
-            // Here we determine what should happen when the Scanner returns a valid result
             cameraView.OnBarcodeScanResult = (result) =>
             {
                 string text = "";
@@ -54,7 +52,6 @@ namespace Native.Renderers.Example.Forms
             scanButton.Clicked += OnScanButtonPressed;
             infoButton.Clicked += OnInfoButtonPressed;
 
-            // If the camera is ON we tell it to START, since the Page will soon be visible
             if (IsCameraOn)
             {
                 cameraView.Resume();
@@ -72,7 +69,6 @@ namespace Native.Renderers.Example.Forms
             scanButton.Clicked -= OnScanButtonPressed;
             infoButton.Clicked -= OnInfoButtonPressed;
 
-            // If the camera is ON we tell it to STOP, since the Page will soon not be visible anymore
             if (IsCameraOn) {
                 cameraView.Pause();
             }

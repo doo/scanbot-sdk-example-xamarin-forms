@@ -38,15 +38,12 @@ namespace Native.Renderers.Example.Forms.Droid.Renderers
         public BarcodeCameraView.BarcodeScannerResultHandler HandleScanResult;
         protected DocumentAutoSnappingController autoSnappingController;
         protected BarcodeDetectorFrameHandler barcodeDetectorFrameHandler;
-
-        // This is the view that we want to override 'BarcodeCameraView' with
         protected ScanbotCameraView cameraView;
 
         private readonly int REQUEST_PERMISSION_CODE = 200;
 
         public AndroidBarcodeCameraRenderer(Context context) : base(context)
         {
-            // We initialize our native view when the renderer is created
             cameraView = new ScanbotCameraView(context);
         }
 
@@ -63,10 +60,8 @@ namespace Native.Renderers.Example.Forms.Droid.Renderers
             // and this method will also assign the control reference to the Control property
             SetNativeControl(cameraView);
 
-            // Don't forget to call the base method
             base.OnElementChanged(e);
 
-            // You always have to check if Control is null before executing all the necessary operations
             if (Control != null)
             {
                 // The Element object is the instance of BarcodeCameraView as defined in the Forms
@@ -74,20 +69,17 @@ namespace Native.Renderers.Example.Forms.Droid.Renderers
                 // these native calls will be executed whenever those methods will be called.
                 Element.OnResume = (sender, e) =>
                 {
-                    // Starts/Restarts the Camera View
                     cameraView.OnResume();
                     CheckPermissions();
                 };
 
                 Element.OnPause = (sender, e) =>
                 {
-                    // Stops/Pauses the Camera View
                     cameraView.OnPause();
                 };
 
                 // Similarly, we have defined a delegate in our BarcodeCameraView implementation,
                 // so that we can trigger it whenever the Scanner will return a valid result.
-                // We store it in the HandleScanResult so that we can invoke it later.
                 HandleScanResult = Element.OnBarcodeScanResult;
 
                 // In this example we demonstrate how to lock the orientation of the UI (Activity)
@@ -110,13 +102,11 @@ namespace Native.Renderers.Example.Forms.Droid.Renderers
                     // barcodeAutoSnappingController.SetSensitivity(1f);
                 }
 
-                // Our Custom Renderer implements ICameraOpenCallback, to get notified whenever the Camera's been opened
                 cameraView.SetCameraOpenCallback(this);
             }
         }
 
-        // ICameraOpenCallback implementation
-        public void OnCameraOpened()
+        void ICameraOpenCallback.OnCameraOpened()
         {
             cameraView.PostDelayed(() =>
             {
@@ -133,7 +123,6 @@ namespace Native.Renderers.Example.Forms.Droid.Renderers
             }, 500);
         }
 
-        // We call this method whenever a succesful result is returned from our Scanner
         private bool HandleSuccess(BarcodeScanningResult result)
         {
             if (result == null) { return false; }
@@ -154,7 +143,6 @@ namespace Native.Renderers.Example.Forms.Droid.Renderers
             return true;
         }
 
-        // We call this method whenever a result is returned from our Scanner
         bool HandleFrameHandlerResult(FrameHandlerResult result)
         {
             if (result is FrameHandlerResult.Success success)
@@ -173,7 +161,6 @@ namespace Native.Renderers.Example.Forms.Droid.Renderers
             return false;
         }
 
-        // Utility method to check if the user has given permissions to access the Camera
         private void CheckPermissions()
         {
             if (Context == null || Context.GetActivity() == null)

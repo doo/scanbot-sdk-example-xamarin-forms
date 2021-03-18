@@ -76,7 +76,6 @@
     <None Include="Info.plist" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Renderers\IOSBarcodeCameraRenderer.cs" />
-    <Compile Include="Helpers\SBSDKBarcodeType_Extension.cs" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
@@ -154,6 +153,5 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Renderers\" />
-    <Folder Include="Helpers\" />
   </ItemGroup>
 </Project>

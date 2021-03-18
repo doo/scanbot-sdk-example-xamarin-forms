@@ -25,14 +25,14 @@
 
         <!--==========================================================================================================-->
 
-        <BoxView Style="{StaticResource Separator}"/>
-
-        <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand" Margin="16, 32, 16, 32">
-            <Button x:Name="scanButton" Text="START SCANNING" CornerRadius="10" Padding="24, 16" BackgroundColor="#c8193c" TextColor="White"/>
+        <StackLayout x:Name="buttonsLayout">
+            <BoxView Style="{StaticResource Separator}"/>
+                <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand" Margin="16, 32, 16, 32">
+                    <Button x:Name="scanButton" Text="START SCANNING" CornerRadius="10" Padding="24, 16" BackgroundColor="#c8193c" TextColor="White"/>
+                </StackLayout>
+            <BoxView Style="{StaticResource Separator}"/>
         </StackLayout>
-
-        <BoxView Style="{StaticResource Separator}"/>
-        <StackLayout BackgroundColor="#d2d2d2" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+        <StackLayout x:Name="resultsPreviewLayout" BackgroundColor="#d2d2d2" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
             <Label Text="Results Preview (LIVE)" FontAttributes="Bold" Margin="16,16,16,16" FontSize="16" TextColor="Black"/>
             <Label x:Name="resultsLabel" Margin="16,0,16,0" HorizontalTextAlignment="Start" TextColor="Black" FontSize="16"/>
         </StackLayout>

@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using CoreGraphics;
-using Native.Renderers.Example.Forms.iOS.Helpers;
 using Native.Renderers.Example.Forms.iOS.Renderers;
 using Native.Renderers.Example.Forms.Views;
 using ScanbotSDK.iOS;
@@ -55,16 +54,6 @@ namespace Native.Renderers.Example.Forms.iOS.Renderers
             cameraView.ScannerDelegate.OnDetect = HandleBarcodeScannerResults;
 
             barcodeScannerResultHandler = Element.OnBarcodeScanResult;
-
-            Element.OnResume = (sender, args) =>
-            {
-                cameraView.StartCamera();
-            };
-
-            Element.OnPause = (sender, args) =>
-            {
-                cameraView.StopCamera();
-            };
         }
 
         private void HandleBarcodeScannerResults(SBSDKBarcodeScannerResult[] codes)
@@ -105,16 +94,6 @@ namespace Native.Renderers.Example.Forms.iOS.Renderers
             Controller = new SBSDKBarcodeScannerViewController(parent, this);
             ScannerDelegate = new BarcodeScannerDelegate();
             Controller.Delegate = ScannerDelegate;
-        }
-
-        public void StartCamera()
-        {
-            Controller.CameraSession.StartSession();
-        }
-
-        public void StopCamera()
-        {
-            Controller.CameraSession.StopSession();
         }
     }
 }

@@ -109,9 +109,16 @@ namespace Native.Renderers.Example.Forms
 
         private void SetupIOSAppearance()
         {
+            if (Device.RuntimePlatform != Device.iOS) { return; }
+
             var safeInsets = On<iOS>().SafeAreaInsets();
             safeInsets.Bottom = 0;
             Padding = safeInsets;
+
+            resultsPreviewLayout.BackgroundColor = Color.White;
+
+            // We hide the start/stop button because this functionality is not supported yet on iOS
+            buttonsLayout.IsVisible = false;
         }
     }
 }

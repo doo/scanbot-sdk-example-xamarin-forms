@@ -38,11 +38,7 @@ namespace Scanbot.SDK.Example.Forms
 
         private BarcodeTypes()
         {
-            var original = All;
-            // MSIPlessey is still beta, not recommended for production use
-            original.Remove(BarcodeFormat.MSIPlessey);
-
-            foreach (var item in original)
+            foreach (var item in All)
             {
                 List.Add(item, true);
             }

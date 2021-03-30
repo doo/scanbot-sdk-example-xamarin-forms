@@ -12,12 +12,13 @@ namespace Native.Renderers.Example.Forms
     public partial class MainPage : ContentPage
     {
 
-        private bool isCameraOn;
-        private bool IsCameraOn {
-            get => isCameraOn;
+        private bool isDetectionOn;
+        private bool IsDetectionOn {
+            get => isDetectionOn;
             set {
-                isCameraOn = value;
+                isDetectionOn = value;
                 scanButton.Text = value ? "STOP SCANNING" : "START SCANNING";
+                RefreshCamera();
             }
         }
 
@@ -29,8 +30,7 @@ namespace Native.Renderers.Example.Forms
 
         private void SetupViews()
         {
-
-            IsCameraOn = false;
+            IsDetectionOn = false;
 
             cameraView.OnBarcodeScanResult = (result) =>
             {
@@ -50,15 +50,14 @@ namespace Native.Renderers.Example.Forms
         {
             base.OnAppearing();
 
+            RefreshCamera();
+
             SetupIOSAppearance();
 
             scanButton.Clicked += OnScanButtonPressed;
             infoButton.Clicked += OnInfoButtonPressed;
 
-            if (IsCameraOn)
-            {
-                cameraView.Resume();
-            }
+            cameraView.Resume();
 
             if (ScanbotSDKConfiguration.LICENSE_KEY.Equals("")) {
                 ShowTrialLicenseAlert();
@@ -72,9 +71,7 @@ namespace Native.Renderers.Example.Forms
             scanButton.Clicked -= OnScanButtonPressed;
             infoButton.Clicked -= OnInfoButtonPressed;
 
-            if (IsCameraOn) {
-                cameraView.Pause();
-            }
+            cameraView.Pause();
         }
 
         private void OnScanButtonPressed(object sender, EventArgs e)
@@ -84,15 +81,18 @@ namespace Native.Renderers.Example.Forms
                 return;
             }
 
-            if (IsCameraOn)
-            {
-                cameraView.Pause();
-            }
-            else {
-                cameraView.Resume();
-            }
+            IsDetectionOn = !IsDetectionOn;
+        }
 
-            IsCameraOn = !IsCameraOn;
+        private void RefreshCamera() {
+            if (IsDetectionOn)
+            {
+                cameraView.StartDetection();
+            }
+            else
+            {
+                cameraView.StopDetection();
+            }
         }
 
         private void OnInfoButtonPressed(object sender, EventArgs e) {

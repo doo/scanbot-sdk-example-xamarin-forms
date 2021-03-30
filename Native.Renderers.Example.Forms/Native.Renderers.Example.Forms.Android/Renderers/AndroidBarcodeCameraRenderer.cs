@@ -15,6 +15,7 @@ using Android.Widget;
 using Xamarin.Forms;
 using Native.Renderers.Example.Forms.Droid.Renderers;
 using ScanbotSDK.Xamarin.Forms.Android;
+using Android.Views;
 
 /*
     This is the Android Custom Renderer that will provide the actual implementation for BarcodeCameraView.
@@ -41,11 +42,36 @@ namespace Native.Renderers.Example.Forms.Droid.Renderers
         protected BarcodeDetectorFrameHandler barcodeDetectorFrameHandler;
         protected ScanbotCameraView cameraView;
 
+        private IO.Scanbot.Sdk.UI.Camera.FinderOverlayView _finderOverlayView;
+        private IO.Scanbot.Sdk.UI.Camera.FinderOverlayView finderOverlayView {
+            get {
+                if (_finderOverlayView == null) {
+                    _finderOverlayView = Context.GetActivity().FindViewById<IO.Scanbot.Sdk.UI.Camera.FinderOverlayView>(Resource.Id.barcode_finder_overlay);
+                }
+
+                return _finderOverlayView;
+            }
+        }
+
         private readonly int REQUEST_PERMISSION_CODE = 200;
 
         public AndroidBarcodeCameraRenderer(Context context) : base(context)
         {
-            cameraView = new ScanbotCameraView(context);
+            cameraView = (ScanbotCameraView) LayoutInflater
+                    .From(context)
+                    .Inflate(Resource.Layout.barcode_camera_view, null, false);
+        }
+
+        private void StartDetection() {
+            cameraView.OnResume();
+            barcodeDetectorFrameHandler.Enabled = true;
+            finderOverlayView.Visibility = ViewStates.Visible;
+            CheckPermissions();
+        }
+
+        private void StopDetection() {
+            barcodeDetectorFrameHandler.Enabled = false;
+            finderOverlayView.Visibility = ViewStates.Invisible;
         }
 
         /*
@@ -66,17 +92,26 @@ namespace Native.Renderers.Example.Forms.Droid.Renderers
             if (Control != null)
             {
                 // The Element object is the instance of BarcodeCameraView as defined in the Forms
-                // core project. We've defined two delegates there, and we'll bind to them here so that
+                // core project. We've defined some delegates there, and we'll bind to them here so that
                 // these native calls will be executed whenever those methods will be called.
-                Element.OnResume = (sender, e) =>
+                Element.OnResumeHandler = (sender, e) =>
                 {
                     cameraView.OnResume();
-                    CheckPermissions();
                 };
 
-                Element.OnPause = (sender, e) =>
+                Element.OnPauseHandler = (sender, e) =>
                 {
                     cameraView.OnPause();
+                };
+
+                Element.StartDetectionHandler = (sender, e) =>
+                {
+                    StartDetection();
+                };
+
+                Element.StopDetectionHandler = (sender, e) =>
+                {
+                    StopDetection();
                 };
 
                 // Similarly, we have defined a delegate in our BarcodeCameraView implementation,

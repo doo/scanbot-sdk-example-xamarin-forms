@@ -21,8 +21,17 @@
         the custom renderers that we have created. See: BarcodeCameraView.cs and AndroidBarcodeCameraRenderer.cs.
         Remember to define an xmlns attribute on the XAML root element to access your Views (in this case xmlns:local) -->
 
-        <local:BarcodeCameraView x:Name="cameraView" HeightRequest="250" BackgroundColor="#1f1f1f"/>
-
+        <Grid HorizontalOptions="FillAndExpand" HeightRequest="250">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+               <local:BarcodeCameraView x:Name="cameraView" Grid.Column="0" Grid.Row="0" BackgroundColor="#1f1f1f"/>
+               <local:FinderOverlayView x:Name="finderOverlayView" Grid.Column="0" Grid.Row="0"/>
+        </Grid>
+       
         <!--==========================================================================================================-->
 
         <StackLayout x:Name="buttonsLayout">

@@ -16,6 +16,7 @@ using Xamarin.Forms;
 using Native.Renderers.Example.Forms.Droid.Renderers;
 using ScanbotSDK.Xamarin.Forms.Android;
 using Android.Views;
+using System.Collections.Generic;
 
 /*
     This is the Android Custom Renderer that will provide the actual implementation for BarcodeCameraView.
@@ -35,31 +36,36 @@ namespace Native.Renderers.Example.Forms.Droid.Renderers
        By extending 'ViewRenderer' we specify that we want our custom renderer to target 'BarcodeCameraView' and
        override it with our native view 'ScanbotCameraView'
     */
-    public class AndroidBarcodeCameraRenderer : ViewRenderer<BarcodeCameraView, ScanbotCameraView>, ICameraOpenCallback
+    public class AndroidBarcodeCameraRenderer : ViewRenderer<BarcodeCameraView, FrameLayout>, ICameraOpenCallback
     {
         public BarcodeCameraView.BarcodeScannerResultHandler HandleScanResult;
         protected DocumentAutoSnappingController autoSnappingController;
         protected BarcodeDetectorFrameHandler barcodeDetectorFrameHandler;
+        protected FrameLayout cameraLayout;
         protected ScanbotCameraView cameraView;
-
-        private IO.Scanbot.Sdk.UI.Camera.FinderOverlayView _finderOverlayView;
-        private IO.Scanbot.Sdk.UI.Camera.FinderOverlayView finderOverlayView {
-            get {
-                if (_finderOverlayView == null) {
-                    _finderOverlayView = Context.GetActivity().FindViewById<IO.Scanbot.Sdk.UI.Camera.FinderOverlayView>(Resource.Id.barcode_finder_overlay);
-                }
-
-                return _finderOverlayView;
-            }
-        }
+        protected IO.Scanbot.Sdk.UI.Camera.FinderOverlayView finderOverlayView;
 
         private readonly int REQUEST_PERMISSION_CODE = 200;
 
         public AndroidBarcodeCameraRenderer(Context context) : base(context)
         {
-            cameraView = (ScanbotCameraView) LayoutInflater
-                    .From(context)
-                    .Inflate(Resource.Layout.barcode_camera_view, null, false);
+            SetupViews(context);
+        }
+
+        private void SetupViews(Context context) {
+
+            cameraLayout = (FrameLayout)LayoutInflater
+                .FromContext(context)
+                .Inflate(Resource.Layout.barcode_camera_view, null, false);
+
+            cameraView = cameraLayout.FindViewById<ScanbotCameraView>(Resource.Id.barcode_camera);
+
+            finderOverlayView = cameraLayout.FindViewById<IO.Scanbot.Sdk.UI.Camera.FinderOverlayView>(Resource.Id.barcode_finder_overlay);
+            finderOverlayView.MinFinderPadding = 80;
+            finderOverlayView.RequiredAspectRatios = new List<IO.Scanbot.Sdk.UI.Camera.FinderAspectRatio>
+            {
+                new IO.Scanbot.Sdk.UI.Camera.FinderAspectRatio(1, 1)
+            };
         }
 
         private void StartDetection() {
@@ -85,7 +91,7 @@ namespace Native.Renderers.Example.Forms.Droid.Renderers
 
             // The SetNativeControl method should be used to instantiate the native control,
             // and this method will also assign the control reference to the Control property
-            SetNativeControl(cameraView);
+            SetNativeControl(cameraLayout);
 
             base.OnElementChanged(e);
 

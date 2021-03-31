@@ -73,7 +73,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="MainApplication.cs" />
     <Compile Include="Renderers\AndroidBarcodeCameraRenderer.cs" />
-    <Compile Include="Renderers\AndroidFinderOverlayViewRenderer.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -99,10 +98,6 @@
     <AndroidResource Include="Resources\drawable\ic_info.png">
       <SubType></SubType>
       <Generator></Generator>
-    </AndroidResource>
-    <AndroidResource Include="Resources\layout\finder_overlay_view.xml">
-      <SubType></SubType>
-      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\barcode_camera_view.xml">
       <SubType></SubType>

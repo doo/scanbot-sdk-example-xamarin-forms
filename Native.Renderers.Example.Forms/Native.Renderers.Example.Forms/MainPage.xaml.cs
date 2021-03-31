@@ -114,11 +114,6 @@ namespace Native.Renderers.Example.Forms
             var safeInsets = On<iOS>().SafeAreaInsets();
             safeInsets.Bottom = 0;
             Padding = safeInsets;
-
-            resultsPreviewLayout.BackgroundColor = Color.White;
-
-            // We hide the start/stop button because this functionality is not supported on iOS
-            buttonsLayout.IsVisible = false;
         }
     }
 }

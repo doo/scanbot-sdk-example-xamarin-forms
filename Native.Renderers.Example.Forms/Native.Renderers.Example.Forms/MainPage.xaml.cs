@@ -114,9 +114,6 @@ namespace Native.Renderers.Example.Forms
             var safeInsets = On<iOS>().SafeAreaInsets();
             safeInsets.Bottom = 0;
             Padding = safeInsets;
-
-            resultsPreviewLayout.BackgroundColor = Color.White;
-            buttonsLayout.IsVisible = false;
         }
     }
 }

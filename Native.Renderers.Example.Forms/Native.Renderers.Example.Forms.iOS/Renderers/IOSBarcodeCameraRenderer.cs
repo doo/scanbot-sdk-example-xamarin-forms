@@ -51,7 +51,18 @@ namespace Native.Renderers.Example.Forms.iOS.Renderers
 
             if (Control == null) { return; }
 
+            cameraView.Controller.ShouldUseFinderFrame = true;
             cameraView.ScannerDelegate.OnDetect = HandleBarcodeScannerResults;
+
+            Element.StartDetectionHandler = (args, sender) =>
+            {
+                cameraView.Controller.CameraSession.ResumeDetection();
+            };
+
+            Element.StopDetectionHandler = (args, sender) =>
+            {
+                cameraView.Controller.CameraSession.PauseDetection();
+            };
 
             barcodeScannerResultHandler = Element.OnBarcodeScanResult;
         }

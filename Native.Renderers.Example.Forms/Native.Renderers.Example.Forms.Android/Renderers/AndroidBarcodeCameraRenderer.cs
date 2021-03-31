@@ -10,13 +10,13 @@ using Android;
 using Android.Content.PM;
 using AndroidX.Core.App;
 using IO.Scanbot.Sdk.Barcode.Entity;
-using System.Linq;
 using Android.Widget;
 using Xamarin.Forms;
 using Native.Renderers.Example.Forms.Droid.Renderers;
 using ScanbotSDK.Xamarin.Forms.Android;
 using Android.Views;
 using System.Collections.Generic;
+using IO.Scanbot.Sdk.UI.Camera;
 
 /*
     This is the Android Custom Renderer that will provide the actual implementation for BarcodeCameraView.
@@ -34,7 +34,7 @@ namespace Native.Renderers.Example.Forms.Droid.Renderers
 {
     /*
        By extending 'ViewRenderer' we specify that we want our custom renderer to target 'BarcodeCameraView' and
-       override it with our native view 'ScanbotCameraView'
+       override it with our native view, which is a 'FrameLayout' in this case (see layout/barcode_camera_view.xml)
     */
     public class AndroidBarcodeCameraRenderer : ViewRenderer<BarcodeCameraView, FrameLayout>, ICameraOpenCallback
     {
@@ -43,7 +43,7 @@ namespace Native.Renderers.Example.Forms.Droid.Renderers
         protected BarcodeDetectorFrameHandler barcodeDetectorFrameHandler;
         protected FrameLayout cameraLayout;
         protected ScanbotCameraView cameraView;
-        protected IO.Scanbot.Sdk.UI.Camera.FinderOverlayView finderOverlayView;
+        protected FinderOverlayView finderOverlayView;
 
         private readonly int REQUEST_PERMISSION_CODE = 200;
 
@@ -54,17 +54,20 @@ namespace Native.Renderers.Example.Forms.Droid.Renderers
 
         private void SetupViews(Context context) {
 
+            // We instantiate our views from the layout XML
             cameraLayout = (FrameLayout)LayoutInflater
                 .FromContext(context)
                 .Inflate(Resource.Layout.barcode_camera_view, null, false);
 
+            // Here we retrieve the Camera View...
             cameraView = cameraLayout.FindViewById<ScanbotCameraView>(Resource.Id.barcode_camera);
 
-            finderOverlayView = cameraLayout.FindViewById<IO.Scanbot.Sdk.UI.Camera.FinderOverlayView>(Resource.Id.barcode_finder_overlay);
+            // ...and here we retrieve and configure the Finder Overlay View
+            finderOverlayView = cameraLayout.FindViewById<FinderOverlayView>(Resource.Id.barcode_finder_overlay);
             finderOverlayView.MinFinderPadding = 80;
-            finderOverlayView.RequiredAspectRatios = new List<IO.Scanbot.Sdk.UI.Camera.FinderAspectRatio>
+            finderOverlayView.RequiredAspectRatios = new List<FinderAspectRatio>
             {
-                new IO.Scanbot.Sdk.UI.Camera.FinderAspectRatio(1, 1)
+                new FinderAspectRatio(1, 1)
             };
         }
 

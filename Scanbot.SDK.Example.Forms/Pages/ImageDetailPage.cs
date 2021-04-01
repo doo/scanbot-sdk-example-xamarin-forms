@@ -20,7 +20,6 @@ namespace Scanbot.SDK.Example.Forms
                 HorizontalOptions = LayoutOptions.FillAndExpand,
                 BackgroundColor = Color.LightGray,
                 Aspect = Aspect.AspectFit,
-                Source = Pages.Instance.SelectedPage.DocumentPreview
             };
             Image.SizeChanged += delegate
             {
@@ -38,6 +37,15 @@ namespace Scanbot.SDK.Example.Forms
             BottomBar.AddClickEvent(BottomBar.CropButton, OnCropButtonClick);
             BottomBar.AddClickEvent(BottomBar.FilterButton, OnFilterButtonClick);
             BottomBar.AddClickEvent(BottomBar.DeleteButton, OnDeleteButtonClick);
+
+            LoadImage();
+        }
+
+        async void LoadImage()
+        {
+            // If encryption is enabled, load the decrypted document.
+            // Else accessible via Document or DocumentPreview
+            Image.Source = await Pages.Instance.SelectedPage.DecryptedDocument();
         }
 
         async void OnCropButtonClick(object sender, EventArgs e)
@@ -49,7 +57,7 @@ namespace Scanbot.SDK.Example.Forms
             await Pages.Instance.UpdateSelection();
 
             Image.Source = null;
-            Image.Source = Pages.Instance.SelectedPage.Document;
+            LoadImage();
         }
 
         async void OnFilterButtonClick(object sender, EventArgs e)
@@ -65,7 +73,7 @@ namespace Scanbot.SDK.Example.Forms
             CurrentFilter = filter;
 
             await Pages.Instance.UpdateFilterForSelection(filter);
-            Image.Source = Pages.Instance.SelectedPage.DocumentPreview;
+            LoadImage();
         }
 
         async void OnDeleteButtonClick(object sender, EventArgs e)

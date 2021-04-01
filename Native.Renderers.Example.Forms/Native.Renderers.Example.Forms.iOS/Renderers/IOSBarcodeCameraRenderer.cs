@@ -70,7 +70,6 @@ namespace Native.Renderers.Example.Forms.iOS.Renderers
     public class BarcodeScannerDelegate : SBSDKBarcodeScannerViewControllerDelegate
     {
         public delegate void OnDetectHandler(SBSDKBarcodeScannerResult[] codes);
-        
         public OnDetectHandler OnDetect;
         
         public override void DidDetect(SBSDKBarcodeScannerViewController controller, SBSDKBarcodeScannerResult[] codes)

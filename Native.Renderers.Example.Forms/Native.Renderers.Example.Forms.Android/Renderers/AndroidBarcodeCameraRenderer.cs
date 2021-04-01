@@ -36,9 +36,9 @@ namespace Native.Renderers.Example.Forms.Droid.Renderers
        By extending 'ViewRenderer' we specify that we want our custom renderer to target 'BarcodeCameraView' and
        override it with our native view, which is a 'FrameLayout' in this case (see layout/barcode_camera_view.xml)
     */
-    public class AndroidBarcodeCameraRenderer : ViewRenderer<BarcodeCameraView, FrameLayout>, ICameraOpenCallback
+    class AndroidBarcodeCameraRenderer : ViewRenderer<BarcodeCameraView, FrameLayout>, ICameraOpenCallback
     {
-        public BarcodeCameraView.BarcodeScannerResultHandler HandleScanResult;
+        protected BarcodeCameraView.BarcodeScannerResultHandler HandleScanResult;
         protected DocumentAutoSnappingController autoSnappingController;
         protected BarcodeDetectorFrameHandler barcodeDetectorFrameHandler;
         protected FrameLayout cameraLayout;
@@ -181,7 +181,7 @@ namespace Native.Renderers.Example.Forms.Droid.Renderers
             return true;
         }
 
-        bool HandleFrameHandlerResult(FrameHandlerResult result)
+        private bool HandleFrameHandlerResult(FrameHandlerResult result)
         {
             if (result is FrameHandlerResult.Success success)
             {
@@ -214,24 +214,24 @@ namespace Native.Renderers.Example.Forms.Droid.Renderers
             }
         }
     }
-}
 
-// Here we define a custom BarcodeDetectorResultHandler. Whenever a result is ready, the frame handler
-// will call the Handle method on this object. To make this more flexible, we allow to
-// specify a delegate through the constructor.
-class BarcodeDetectorResultHandler : BarcodeDetectorFrameHandler.BarcodeDetectorResultHandler
-{
-    public delegate bool HandleResultFunction(FrameHandlerResult result);
-    private readonly HandleResultFunction handleResultFunc;
-
-    public BarcodeDetectorResultHandler(HandleResultFunction handleResultFunc)
+    // Here we define a custom BarcodeDetectorResultHandler. Whenever a result is ready, the frame handler
+    // will call the Handle method on this object. To make this more flexible, we allow to
+    // specify a delegate through the constructor.
+    class BarcodeDetectorResultHandler : BarcodeDetectorFrameHandler.BarcodeDetectorResultHandler
     {
-        this.handleResultFunc = handleResultFunc;
-    }
+        public delegate bool HandleResultFunction(FrameHandlerResult result);
+        public readonly HandleResultFunction handleResultFunc;
 
-    public override bool Handle(FrameHandlerResult result)
-    {
-        handleResultFunc(result);
-        return false;
+        public BarcodeDetectorResultHandler(HandleResultFunction handleResultFunc)
+        {
+            this.handleResultFunc = handleResultFunc;
+        }
+
+        public override bool Handle(FrameHandlerResult result)
+        {
+            handleResultFunc(result);
+            return false;
+        }
     }
 }

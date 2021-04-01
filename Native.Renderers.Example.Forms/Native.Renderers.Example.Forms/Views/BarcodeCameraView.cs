@@ -21,21 +21,35 @@ namespace Native.Renderers.Example.Forms.Views
         public BarcodeScannerResultHandler OnBarcodeScanResult;
 
         // This event is defined from our native control through the Custom Renderer.
-        // We call this from our Page whenever we want to start/restart our camera view,
-        // in accord to the view lifecycle as well (eg. OnAppearing)
-        public EventHandler<EventArgs> OnResume;
+        // We call this from our Page in accord to the view lifecycle (OnAppearing)
+        public EventHandler<EventArgs> OnResumeHandler;
         public void Resume()
         {
-            OnResume?.Invoke(this, EventArgs.Empty);
+            OnResumeHandler?.Invoke(this, EventArgs.Empty);
         }
 
         // This event is defined from our native control through the Custom Renderer.
-        // We call this from our Page whenever we want to stop/pause our camera view,
-        // in accord to the view lifecycle as well (eg. OnDisappearing)
-        public EventHandler<EventArgs> OnPause;
+        // We call this from our Page in accord to the view lifecycle (OnDisappearing)
+        public EventHandler<EventArgs> OnPauseHandler;
         public void Pause()
         {
-            OnPause?.Invoke(this, EventArgs.Empty);
+            OnPauseHandler?.Invoke(this, EventArgs.Empty);
+        }
+
+        // This event is defined from our native control through the Custom Renderer.
+        // We call this from our Page when we want to start detecting barcodes.
+        public EventHandler<EventArgs> StartDetectionHandler;
+        public void StartDetection()
+        {
+            StartDetectionHandler?.Invoke(this, EventArgs.Empty);
+        }
+
+        // This event is defined from our native control through the Custom Renderer.
+        // We call this from our Page when we want to stop detecting barcodes.
+        public EventHandler<EventArgs> StopDetectionHandler;
+        public void StopDetection()
+        {
+            StopDetectionHandler?.Invoke(this, EventArgs.Empty);
         }
 
         public BarcodeCameraView()

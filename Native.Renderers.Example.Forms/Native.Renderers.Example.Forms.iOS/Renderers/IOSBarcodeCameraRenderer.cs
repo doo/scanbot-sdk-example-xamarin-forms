@@ -14,7 +14,7 @@ using Xamarin.Forms.Platform.iOS;
 [assembly: ExportRenderer(typeof(BarcodeCameraView), typeof(IOSBarcodeCameraRenderer))]
 namespace Native.Renderers.Example.Forms.iOS.Renderers
 {
-    public class IOSBarcodeCameraRenderer : ViewRenderer<BarcodeCameraView, IOSBarcodeCameraView>
+    class IOSBarcodeCameraRenderer : ViewRenderer<BarcodeCameraView, IOSBarcodeCameraView>
     {
 
         private IOSBarcodeCameraView cameraView;
@@ -67,10 +67,9 @@ namespace Native.Renderers.Example.Forms.iOS.Renderers
 
     // Since we cannot directly inherit from SBSDKBarcodeScannerViewControllerDelegate in our ViewRenderer,
     // we have created this wrapper class to allow binding to its events through the use of delegates
-    public class BarcodeScannerDelegate : SBSDKBarcodeScannerViewControllerDelegate
+    class BarcodeScannerDelegate : SBSDKBarcodeScannerViewControllerDelegate
     {
         public delegate void OnDetectHandler(SBSDKBarcodeScannerResult[] codes);
-        
         public OnDetectHandler OnDetect;
         
         public override void DidDetect(SBSDKBarcodeScannerViewController controller, SBSDKBarcodeScannerResult[] codes)
@@ -84,7 +83,7 @@ namespace Native.Renderers.Example.Forms.iOS.Renderers
         }
     }
 
-    public class IOSBarcodeCameraView : UIView
+    class IOSBarcodeCameraView : UIView
     {
         public SBSDKBarcodeScannerViewController Controller { get; private set; }
         public BarcodeScannerDelegate ScannerDelegate { get; private set; }

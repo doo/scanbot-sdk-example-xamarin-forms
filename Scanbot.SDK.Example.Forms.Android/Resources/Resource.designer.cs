@@ -24051,31 +24051,34 @@ namespace Scanbot.SDK.Example.Forms.Droid
 			public const int view_tree_saved_state_registry_owner = 2131296702;
 			
 			// aapt resource value: 0x7F0901BF
-			public const int visible = 2131296703;
+			public const int view_tree_view_model_store_owner = 2131296703;
 			
 			// aapt resource value: 0x7F0901C0
-			public const int visible_removing_fragment_view_tag = 2131296704;
-			
-			// aapt resource value: 0x7F0901C2
-			public const int withinBounds = 2131296706;
+			public const int visible = 2131296704;
 			
 			// aapt resource value: 0x7F0901C1
-			public const int withText = 2131296705;
+			public const int visible_removing_fragment_view_tag = 2131296705;
 			
 			// aapt resource value: 0x7F0901C3
-			public const int wordbox_preview = 2131296707;
+			public const int withinBounds = 2131296707;
+			
+			// aapt resource value: 0x7F0901C2
+			public const int withText = 2131296706;
 			
 			// aapt resource value: 0x7F0901C4
-			public const int workflowCameraView = 2131296708;
+			public const int wordbox_preview = 2131296708;
 			
 			// aapt resource value: 0x7F0901C5
-			public const int wrap = 2131296709;
+			public const int workflowCameraView = 2131296709;
 			
 			// aapt resource value: 0x7F0901C6
-			public const int wrap_content = 2131296710;
+			public const int wrap = 2131296710;
 			
 			// aapt resource value: 0x7F0901C7
-			public const int zero_corner_chip = 2131296711;
+			public const int wrap_content = 2131296711;
+			
+			// aapt resource value: 0x7F0901C8
+			public const int zero_corner_chip = 2131296712;
 			
 			static Id()
 			{

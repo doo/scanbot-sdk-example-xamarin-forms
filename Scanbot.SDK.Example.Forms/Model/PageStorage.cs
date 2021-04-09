@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.IO;
 using System.Linq;
+using System.Threading;
 using System.Threading.Tasks;
 using ScanbotSDK.Xamarin;
 using ScanbotSDK.Xamarin.Forms;
@@ -84,12 +85,6 @@ namespace Scanbot.SDK.Example.Forms
         [PrimaryKey]
         public string Id { get; set; }
 
-        public string Document { get; set; }
-        public string Original { get; set; }
-        public string DocumentPreview { get; set; }
-        public string OriginalPreview { get; set; }
-        public string AvailablePreview { get; set; }
-
         public int Filter { get; set; }
         public int DetectionStatus { get; set; }
 
@@ -108,11 +103,6 @@ namespace Scanbot.SDK.Example.Forms
             var result = new DBPage
             {
                 Id = page.Id,
-                Document = ImageToPath(page.Document),
-                Original = ImageToPath(page.Original),
-                DocumentPreview = ImageToPath(page.DocumentPreview),
-                OriginalPreview = ImageToPath(page.OriginalPreview),
-                AvailablePreview = ImageToPath(page.AvailablePreview),
                 Filter = (int)page.Filter,
                 DetectionStatus = (int)page.DetectionStatus
             };
@@ -146,11 +136,6 @@ namespace Scanbot.SDK.Example.Forms
             result.Add(new Point(X3, Y3));
             result.Add(new Point(X4, Y4));
             return result.ToArray();
-        }
-
-        public static string ImageToPath(ImageSource source)
-        {
-            return ((FileImageSource)source)?.File;
         }
 
     }

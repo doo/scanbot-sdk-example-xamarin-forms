@@ -88,9 +88,10 @@ namespace Scanbot.SDK.Example.Forms
                 {
                     await Pages.Instance.Add(page);
 
-                    var blur = await SBSDK.Operations.EstimateBlurriness(page.Document);
+                    // If encryption is enabled, load the decrypted document.
+                    // Else accessible via page.Document
+                    var blur = await SBSDK.Operations.EstimateBlurriness(await page.DecryptedDocument());
                     Console.WriteLine("Estimated blurriness for detected document: " + blur);
-
                 }
 
                 await Navigation.PushAsync(new ImageResultsPage());

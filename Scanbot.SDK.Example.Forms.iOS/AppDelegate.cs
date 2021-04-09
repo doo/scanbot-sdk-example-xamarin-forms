@@ -1,7 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 
 using Foundation;
 using ScanbotSDK.Xamarin.Forms;
@@ -31,7 +29,12 @@ namespace Scanbot.SDK.Example.Forms.iOS
             {
                 EnableLogging = true,
                 StorageBaseDirectory = GetDemoStorageBaseDirectory(),
-                DetectorType = DocumentDetectorType.MLBased
+                DetectorType = DocumentDetectorType.MLBased,
+                Encryption = new ScanbotSDK.Xamarin.SBSDKEncryption
+                {
+                    Mode = ScanbotSDK.Xamarin.EncryptionMode.AES256,
+                    Password = "S0m3W3irDL0ngPa$$w0rdino!!!!"
+                }
             });
 
             global::Xamarin.Forms.Forms.Init();

@@ -24,14 +24,16 @@ namespace Scanbot.SDK.Example.Forms
             };
         }
 
-        protected override void OnBindingContextChanged()
+        protected override async void OnBindingContextChanged()
         {
             if (BindingContext == null)
             {
                 return;
             }
             Source = (IScannedPage)BindingContext;
-            Document.Source = Source.Document;
+            // If encryption is enabled, load the decrypted document.
+            // Else accessible via page.Document
+            Document.Source = await Source.DecryptedDocument();
 
             base.OnBindingContextChanged();
         }

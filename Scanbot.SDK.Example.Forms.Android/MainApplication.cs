@@ -43,7 +43,12 @@ namespace Scanbot.SDK.Example.Forms.Droid
                 EnableLogging = true,
                 // If no StorageBaseDirectory is specified, the default will be used
                 StorageBaseDirectory = GetDemoStorageBaseDirectory(),
-                DetectorType = DocumentDetectorType.MLBased
+                DetectorType = DocumentDetectorType.MLBased,
+                Encryption = new ScanbotSDK.Xamarin.SBSDKEncryption
+                {
+                    Mode = ScanbotSDK.Xamarin.EncryptionMode.AES256,
+                    Password = "S0m3W3irDL0ngPa$$w0rdino!!!!"
+                }
             };
             SBSDKInitializer.Initialize(this, LICENSE_KEY, configuration);
         }

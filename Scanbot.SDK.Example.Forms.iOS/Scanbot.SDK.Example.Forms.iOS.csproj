@@ -50,7 +50,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <MtouchArch>ARM64</MtouchArch>
-    <CodesignKey>Apple Development: Aare Undo (Y4WP83KB9J)</CodesignKey>
+    <CodesignKey>iPhone Developer</CodesignKey>
     <MtouchDebug>true</MtouchDebug>
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
     <MtouchLink>None</MtouchLink>
@@ -59,7 +59,6 @@
     <OnDemandResourcesPrefetchOrder></OnDemandResourcesPrefetchOrder>
     <NoWarn></NoWarn>
     <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
-    <CodesignProvision>VS: WildCard Development</CodesignProvision>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
     <DebugType>none</DebugType>
@@ -146,7 +145,7 @@
       <Version>1.7.335</Version>
     </PackageReference>
     <PackageReference Include="ScanbotSDK.Xamarin.Forms">
-      <Version>3.3.0-rc3</Version>
+      <Version>3.3.0-rc4</Version>
     </PackageReference>
   </ItemGroup>
   <ItemGroup>

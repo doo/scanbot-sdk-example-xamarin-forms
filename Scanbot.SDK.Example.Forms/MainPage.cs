@@ -323,7 +323,6 @@ namespace Scanbot.SDK.Example.Forms
             await Browser.OpenAsync(uri, BrowserLaunchMode.SystemPreferred);
         }
 
-
         async Task RunWorkflow(IWorkflow workflow)
         {
             var config = new WorkflowScannerConfiguration

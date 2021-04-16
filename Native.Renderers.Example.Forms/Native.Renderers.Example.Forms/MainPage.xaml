@@ -22,7 +22,7 @@
         Remember to define an xmlns attribute on the XAML root element to access your Views (in this case xmlns:local) -->
 
         <local:BarcodeCameraView x:Name="cameraView" HeightRequest="250" BackgroundColor="#1f1f1f"/>
-
+       
         <!--==========================================================================================================-->
 
         <StackLayout x:Name="buttonsLayout">

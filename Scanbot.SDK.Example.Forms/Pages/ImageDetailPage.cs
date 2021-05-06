@@ -46,6 +46,7 @@ namespace Scanbot.SDK.Example.Forms
             // If encryption is enabled, load the decrypted document.
             // Else accessible via Document or DocumentPreview
             Image.Source = await Pages.Instance.SelectedPage.DecryptedDocument();
+            //Image.Source = Pages.Instance.SelectedPage.Document;
         }
 
         async void OnCropButtonClick(object sender, EventArgs e)

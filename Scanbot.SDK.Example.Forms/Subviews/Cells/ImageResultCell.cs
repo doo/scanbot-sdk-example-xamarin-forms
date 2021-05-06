@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Runtime.CompilerServices;
+﻿
 using ScanbotSDK.Xamarin.Forms;
 using Xamarin.Forms;
 
@@ -33,8 +31,8 @@ namespace Scanbot.SDK.Example.Forms
             Source = (IScannedPage)BindingContext;
             // If encryption is enabled, load the decrypted document.
             // Else accessible via page.Document
-            Document.Source = await Source.DecryptedDocument();
-
+            Document.Source = await Source.DecryptedDocumentPreview();
+            //Document.Source = Source.DocumentPreview;
             base.OnBindingContextChanged();
         }
 

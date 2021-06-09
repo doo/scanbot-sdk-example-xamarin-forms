@@ -3,6 +3,10 @@ using Kotlin.Jvm.Functions;
 
 namespace Native.Renderers.Example.Forms.Droid.Renderers
 {
+    /**
+     * Snippet from: 
+     * https://stackoverflow.com/questions/64013415/pass-lambda-function-to-c-sharp-generated-code-of-kotlin-in-xamarin-android-bind
+     */
     class Function1Impl<T> : Java.Lang.Object, IFunction1 where T : Java.Lang.Object
     {
         private readonly Action<T> OnInvoked;

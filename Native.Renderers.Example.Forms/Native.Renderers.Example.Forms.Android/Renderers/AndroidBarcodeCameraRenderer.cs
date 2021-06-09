@@ -136,12 +136,15 @@ namespace Native.Renderers.Example.Forms.Droid.Renderers
                 var detector = new IO.Scanbot.Sdk.ScanbotSDK(Context.GetActivity()).BarcodeDetector();
                 barcodeDetectorFrameHandler = BarcodeDetectorFrameHandler.Attach(cameraView, detector);
 
+                detector.ModifyConfig(new Function1Impl<BarcodeScannerConfigBuilder>((response) => {
+                    response.SetSaveCameraPreviewFrame(true);
+                }));
+
                 if (barcodeDetectorFrameHandler is BarcodeDetectorFrameHandler handler)
                 {
                     handler.SetDetectionInterval(1000);
                     handler.AddResultHandler(new BarcodeDetectorResultHandler((result) => HandleFrameHandlerResult(result)));
-                    handler.SaveCameraPreviewFrame(true);
-
+                    
                     // Uncomment to enable auto-snapping (eg. single barcode scan)
                     // var barcodeAutoSnappingController = BarcodeAutoSnappingController.Attach(cameraView, handler);
                     // barcodeAutoSnappingController.SetSensitivity(1f);

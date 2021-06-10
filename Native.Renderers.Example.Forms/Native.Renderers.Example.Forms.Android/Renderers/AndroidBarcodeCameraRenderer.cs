@@ -173,11 +173,12 @@ namespace Native.Renderers.Example.Forms.Droid.Renderers
 
         private bool HandleSuccess(BarcodeScanningResult result)
         {
-            if (result == null) { return false; }            
+            if (result == null) { return false; }
 
             ScanbotSDK.Xamarin.Forms.BarcodeScanningResult outResult = new ScanbotSDK.Xamarin.Forms.BarcodeScanningResult
             {
-                Barcodes = result.BarcodeItems.ToFormsBarcodeList()
+                Barcodes = result.BarcodeItems.ToFormsBarcodeList(),
+                Image = result.PreviewFrame.ToImageSource()
             };
 
             HandleScanResult?.Invoke(outResult);

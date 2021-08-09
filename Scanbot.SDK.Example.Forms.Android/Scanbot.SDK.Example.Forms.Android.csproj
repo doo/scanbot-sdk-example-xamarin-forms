@@ -128,6 +128,9 @@
     <AndroidAsset Include="Assets\SBSDKLanguageData\deu.traineddata" />
     <AndroidAsset Include="Assets\SBSDKLanguageData\osd.traineddata" />
   </ItemGroup>
+  <ItemGroup>
+    <ProguardConfiguration Include="proguard.cfg" />
+  </ItemGroup>
   <Import Project="..\Scanbot.SDK.Example.Forms\Scanbot.SDK.Example.Forms.projitems" Label="Shared" />
  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

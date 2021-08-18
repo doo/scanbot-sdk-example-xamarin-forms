@@ -14,7 +14,7 @@ updates:
     reviewers:
       - "rutkayb"
       - "marcosaia1812"
-    target-branch: "dependency-update"
+      - "Sarbjyotsingh"
     
   - package-ecosystem: "nuget" # See documentation for possible values
     directory: "/Native.Renderers.Example.Forms" # Location of package manifests
@@ -24,4 +24,4 @@ updates:
     reviewers:
       - "rutkayb"
       - "marcosaia1812"
-    target-branch: "dependency-update"
+      - "Sarbjyotsingh"

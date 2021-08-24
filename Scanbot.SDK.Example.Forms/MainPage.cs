@@ -44,6 +44,7 @@ namespace Scanbot.SDK.Example.Forms
             {
                 ViewUtils.CreateCell("MRZ Scanner", MRZScannerClicked),
                 ViewUtils.CreateCell("EHIC Scanner", EHICScannerClicked),
+                ViewUtils.CreateCell("Generic Document Recognizer", GenericDocumentRecognizerClicked)
             });
             table.Root.Add(new TableSection("WORKFLOWS")
             {
@@ -305,6 +306,29 @@ namespace Scanbot.SDK.Example.Forms
                     }
             );
             await RunWorkflow(workflow);
+        }
+
+        async void GenericDocumentRecognizerClicked(object sender, EventArgs e)
+        {
+            if (!SDKUtils.CheckLicense(this)) { return; }
+
+            var configuration = new GenericDocumentRecognizerConfiguration
+            {
+                // TODO: Needs testing
+                // DetailsActionColor = Color.Blue,
+                // DetailsBackgroundColor = Color.Yellow,
+                // CancelButtonTitle = "CANCEL TEST",
+                // ScanFrontSideTitle = "FRONT SIDE TITLE",
+                // TopBarButtonsInactiveColor = Color.Tomato,
+                // TopBarButtonsColor = Color.Green,
+                DocumentType = GenericDocumentType.DeIdCard
+            };
+            var result = await SBSDK.UI.LaunchGenericDocumentRecognizerAsync(configuration);
+            if (result.Status == OperationResult.Ok)
+            {
+                var message = SDKUtils.ParseGDRResult(result);
+                ViewUtils.Alert(this, "GDR Result", message);
+            }
         }
 
         void ViewLicenseInfoClicked(object sender, EventArgs e)

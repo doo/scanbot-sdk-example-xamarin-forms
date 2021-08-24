@@ -145,5 +145,15 @@ namespace Scanbot.SDK.Example.Forms
             }
             return builder.ToString();
         }
+
+        public static string ParseGDRResult(GenericDocumentRecognizerResult result)
+        {
+            var builder = new StringBuilder();
+            var firstDocument = result.Documents.First();
+            return string.Join("\n", firstDocument.Fields
+                .Where((f) => f != null && f.Type != null && f.Type.Name != null && f.Value != null && f.Value.Text != null)
+                .Select((f) => string.Format("{0}: {1}", f.Type.Name, f.Value.Text))
+            );
+        }
     }
 }

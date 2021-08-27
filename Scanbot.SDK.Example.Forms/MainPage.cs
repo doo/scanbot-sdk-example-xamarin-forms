@@ -314,13 +314,6 @@ namespace Scanbot.SDK.Example.Forms
 
             var configuration = new GenericDocumentRecognizerConfiguration
             {
-                // TODO: Needs testing
-                // DetailsActionColor = Color.Blue,
-                // DetailsBackgroundColor = Color.Yellow,
-                // CancelButtonTitle = "CANCEL TEST",
-                // ScanFrontSideTitle = "FRONT SIDE TITLE",
-                // TopBarButtonsInactiveColor = Color.Tomato,
-                // TopBarButtonsColor = Color.Green,
                 DocumentType = GenericDocumentType.DeIdCard
             };
             var result = await SBSDK.UI.LaunchGenericDocumentRecognizerAsync(configuration);

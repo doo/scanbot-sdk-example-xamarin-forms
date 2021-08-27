@@ -12,11 +12,14 @@
 
   <ItemGroup>
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2012" />
-    <PackageReference Include="Xamarin.Essentials" Version="1.6.1" />
-    <PackageReference Include="ScanbotSDK.Xamarin.Forms" Version="3.4.0" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.7.0" />
+    <PackageReference Include="ScanbotSDK.Xamarin.Forms" Version="3.5.0" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\" />
     <Folder Include="Common\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="ScanbotSDK.Xamarin.Forms" />
   </ItemGroup>
 </Project>

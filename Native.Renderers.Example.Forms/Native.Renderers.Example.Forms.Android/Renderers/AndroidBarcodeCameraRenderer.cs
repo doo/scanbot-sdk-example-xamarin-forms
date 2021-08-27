@@ -142,7 +142,7 @@ namespace Native.Renderers.Example.Forms.Droid.Renderers
 
                 if (barcodeDetectorFrameHandler is BarcodeDetectorFrameHandler handler)
                 {
-                    handler.SetDetectionInterval(1000);
+                    handler.SetDetectionInterval(0);
                     handler.AddResultHandler(new BarcodeDetectorResultHandler((result) => HandleFrameHandlerResult(result)));
                     
                     // Uncomment to enable auto-snapping (eg. single barcode scan)

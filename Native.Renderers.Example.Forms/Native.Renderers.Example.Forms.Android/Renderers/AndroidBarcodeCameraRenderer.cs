@@ -133,7 +133,7 @@ namespace Native.Renderers.Example.Forms.Droid.Renderers
 
                 // Here we create the BarcodeDetectorFrameHandler which will take care of detecting
                 // barcodes in your video frames
-                var detector = new IO.Scanbot.Sdk.ScanbotSDK(Context.GetActivity()).BarcodeDetector();
+                var detector = new IO.Scanbot.Sdk.ScanbotSDK(Context.GetActivity()).CreateBarcodeDetector();
                 barcodeDetectorFrameHandler = BarcodeDetectorFrameHandler.Attach(cameraView, detector);
 
                 detector.ModifyConfig(new Function1Impl<BarcodeScannerConfigBuilder>((response) => {

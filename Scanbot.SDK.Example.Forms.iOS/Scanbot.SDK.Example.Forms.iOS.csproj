@@ -145,7 +145,7 @@
       <Version>1.7.335</Version>
     </PackageReference>
     <PackageReference Include="ScanbotSDK.Xamarin.Forms">
-      <Version>3.5.0</Version>
+      <Version>3.6.0-beta1</Version>
     </PackageReference>
   </ItemGroup>
   <ItemGroup>

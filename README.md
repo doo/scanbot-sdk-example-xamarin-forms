@@ -10,7 +10,7 @@ The Scanbot SDK brings scanning and document creation capabilities to your mobil
 The Scanbot SDK is available as a NuGet package for the Xamarin.Forms platform:
 [ScanbotSDK.Xamarin.Forms](https://www.nuget.org/packages/ScanbotSDK.Xamarin.Forms)
 
-
+ 
 ## Requirements
 [Microsoft Visual Studio](https://www.visualstudio.com) with [Xamarin Platform](https://www.xamarin.com)
 (For iOS Visual Studio for Mac **7.4+**)

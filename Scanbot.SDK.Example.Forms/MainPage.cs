@@ -37,6 +37,7 @@ namespace Scanbot.SDK.Example.Forms
             table.Root.Add(new TableSection("BARCODE DETECTOR")
             {
                 ViewUtils.CreateCell("Scan QR- & Barcodes", BarcodeScannerClicked),
+                ViewUtils.CreateCell("Scan Multiple QR- & Barcodes", BatchBarcodeScannerClicked),
                 ViewUtils.CreateCell("Import Image & Detect Barcodes", ImportandDetectBarcodesClicked),
                 ViewUtils.CreateCell("Set Barcode Formats Filter", SetBarcodeFormatsFilterClicked),
             });
@@ -146,6 +147,23 @@ namespace Scanbot.SDK.Example.Forms
                 var barcodes = result.Barcodes;
 
                 await Navigation.PushAsync(new BarcodeResultsPage(source, barcodes));
+            }
+        }
+
+        async void BatchBarcodeScannerClicked(object sender, EventArgs e)
+        {
+            if (!SDKUtils.CheckLicense(this)) { return; }
+            var config = new BatchBarcodeScannerConfiguration();
+            config.BarcodeFormats = BarcodeTypes.Instance.AcceptedTypes;
+            var result = await SBSDK.UI.LaunchBatchBarcodeScannerAsync(config);
+            if (result.Status == OperationResult.Ok) {
+                if (result.Barcodes.Count == 0)
+                {
+                    ViewUtils.Alert(this, "Oops!", "No barcodes found, please try again");
+                    return;
+                }
+
+                await Navigation.PushAsync(new BarcodeResultsPage(null, result.Barcodes));
             }
         }
 

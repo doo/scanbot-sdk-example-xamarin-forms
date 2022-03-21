@@ -39,6 +39,7 @@ namespace Scanbot.SDK.Example.Forms
                 ViewUtils.CreateCell("Scan QR- & Barcodes", BarcodeScannerClicked),
                 ViewUtils.CreateCell("Scan Multiple QR- & Barcodes", BatchBarcodeScannerClicked),
                 ViewUtils.CreateCell("Import Image & Detect Barcodes", ImportandDetectBarcodesClicked),
+                 ViewUtils.CreateCell("Import images & Detect Barcodes", ImportImagesAndDetectBarcodesTapped),
                 ViewUtils.CreateCell("Set Barcode Formats Filter", SetBarcodeFormatsFilterClicked),
             });
             table.Root.Add(new TableSection("DATA DETECTORS")
@@ -156,7 +157,8 @@ namespace Scanbot.SDK.Example.Forms
             var config = new BatchBarcodeScannerConfiguration();
             config.BarcodeFormats = BarcodeTypes.Instance.AcceptedTypes;
             var result = await SBSDK.UI.LaunchBatchBarcodeScannerAsync(config);
-            if (result.Status == OperationResult.Ok) {
+            if (result.Status == OperationResult.Ok)
+            {
                 if (result.Barcodes.Count == 0)
                 {
                     ViewUtils.Alert(this, "Oops!", "No barcodes found, please try again");
@@ -244,9 +246,9 @@ namespace Scanbot.SDK.Example.Forms
                         args.SetError(message, ValidationErrorShowMode.Alert);
                         return;
                     }
-                        // run some additional validations here
-                        //result.MachineReadableZone.Fields...
-                    }
+                    // run some additional validations here
+                    //result.MachineReadableZone.Fields...
+                }
             );
 
             await RunWorkflow(workflow);
@@ -294,10 +296,10 @@ namespace Scanbot.SDK.Example.Forms
                         args.SetError(message, ValidationErrorShowMode.Alert);
                         return;
                     }
-                        // run some additional validations here
-                        //result.DisabilityCertificate.Dates....
-                        //result.DisabilityCertificate.Checkboxes...
-                    }
+                    // run some additional validations here
+                    //result.DisabilityCertificate.Dates....
+                    //result.DisabilityCertificate.Checkboxes...
+                }
             );
             await RunWorkflow(workflow);
         }
@@ -319,9 +321,9 @@ namespace Scanbot.SDK.Example.Forms
                             "Please try again.", ValidationErrorShowMode.Alert);
                         return;
                     }
-                        // run some additional validations here
-                        //result.PayForm.RecognizedFields...
-                    }
+                    // run some additional validations here
+                    //result.PayForm.RecognizedFields...
+                }
             );
             await RunWorkflow(workflow);
         }
@@ -383,5 +385,21 @@ namespace Scanbot.SDK.Example.Forms
             }
         }
 
+        /// <summary>
+        /// Import images and detect barcodes from all the images.
+        /// Navigates all the barcode result list to the next page.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        /// <returns></returns>
+        void ImportImagesAndDetectBarcodesTapped(object sender, EventArgs e)
+        {
+            if (!SDKUtils.CheckLicense(this)) { return; }
+            DependencyService.Get<IMultiImagePicker>().PickPhotosAsync(completionHandler: async (imageSources) =>
+            {
+                List<Barcode> barcodes = await SBSDK.Operations.DetectBarcodesFrom(imageSources);
+                await Navigation.PushAsync(new BarcodeResultsPage(barcodes));
+            });
+        }
     }
 }

@@ -32,6 +32,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Subviews\ActionBar\BottomActionButton.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Pages\ImageDetailPage.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\PageStorage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DependencyServices\IMultiImagePicker.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)Utils\" />
@@ -41,5 +42,6 @@
     <Folder Include="$(MSBuildThisFileDirectory)Assets\" />
     <Folder Include="$(MSBuildThisFileDirectory)Subviews\Cells\" />
     <Folder Include="$(MSBuildThisFileDirectory)Subviews\ActionBar\" />
+    <Folder Include="$(MSBuildThisFileDirectory)DependencyServices\" />
   </ItemGroup>
 </Project>

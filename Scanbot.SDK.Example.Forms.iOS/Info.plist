@@ -42,5 +42,9 @@
 	<string>Scanbot SDK requires camera access in order to scan documents</string>
 	<key>UIFileSharingEnabled</key>
 	<true/>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>Scanbot SDK requires photos app access in order to scan documents</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Scanbot SDK requires photos app access in order to scan documents</string>
 </dict>
 </plist>

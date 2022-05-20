@@ -283,14 +283,14 @@ namespace Scanbot.SDK.Example.Forms
                     new AspectRatio(148.0, 105.0)
                 };
 
-            workflow.AddScanDisabilityCertificateStep(
+            workflow.AddScanMedicalCertificateStep(
                 title: "Scan Disability Certificate",
                 message: "Please align the DC form in the frame.",
                 requiredAspectRatios: ratios,
                 resultValidationHandler: (o, args) =>
                 {
-                    var result = args.Result as IWorkflowDisabilityCertificateResult;
-                    if (!result.DisabilityCertificate.RecognitionSuccessful)
+                    var result = args.Result as IWorkflowMedicalCertificateResult;
+                    if (!result.MedicalCertificate.RecognitionSuccessful)
                     {
                         string message = "Could not extract data. Please try again.";
                         args.SetError(message, ValidationErrorShowMode.Alert);

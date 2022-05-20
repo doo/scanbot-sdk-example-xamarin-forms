@@ -80,15 +80,15 @@ namespace Scanbot.SDK.Example.Forms
                     sb.AppendLine("Payform not recognized");
                 }
             }
-            if (result is IWorkflowDisabilityCertificateResult dcResult)
+            if (result is IWorkflowMedicalCertificateResult dcResult)
             {
-                if (dcResult.DisabilityCertificate.RecognitionSuccessful)
+                if (dcResult.MedicalCertificate.RecognitionSuccessful)
                 {
-                    foreach (var cb in dcResult.DisabilityCertificate.Checkboxes)
+                    foreach (var cb in dcResult.MedicalCertificate.Checkboxes)
                     {
                         sb.AppendFormat("{0}: {1}\n", cb.Type, cb.IsChecked ? "Yes" : "No");
                     }
-                    foreach (var date in dcResult.DisabilityCertificate.Dates)
+                    foreach (var date in dcResult.MedicalCertificate.Dates)
                     {
                         sb.AppendFormat("{0}: {1}\n", date.Type, date.DateString);
                     }

@@ -52,7 +52,7 @@ namespace Scanbot.SDK.Example.Forms
             {
                 ViewUtils.CreateCell("Scan MRZ + Image", WorkflowMRZClicked),
                 ViewUtils.CreateCell("Scan QR Code and Document Image", WorkflowQRClicked),
-                ViewUtils.CreateCell("Scan Disability Certificate", WorkflowDCClicked),
+                ViewUtils.CreateCell("Scan Medical Certificate", WorkflowDCClicked),
                 ViewUtils.CreateCell("Scan Payform", WorkflowPayformClicked)
             });
             table.Root.Add(new TableSection("MISCELLANEOUS")
@@ -134,6 +134,7 @@ namespace Scanbot.SDK.Example.Forms
 
             var config = new BarcodeScannerConfiguration();
             config.BarcodeFormats = BarcodeTypes.Instance.AcceptedTypes;
+            config.AllowedInterfaceOrientations = UIInterfaceOrientationMask.LandscapeLeft;
             //config.BarcodeFormats = new List<BarcodeFormat> { BarcodeFormat.UpcA };
             var result = await SBSDK.UI.LaunchBarcodeScannerAsync(config);
             if (result.Status == OperationResult.Ok)
@@ -277,15 +278,15 @@ namespace Scanbot.SDK.Example.Forms
 
             var workflow = SBSDK.UI.CreateWorkflow();
             var ratios = new[] {
-                    // DC form A5 portrait (e.g. white sheet, AUB Muster 1b/E (1/2018))
+                    // MC form A5 portrait (e.g. white sheet, AUB Muster 1b/E (1/2018))
                     new AspectRatio(148.0, 210.0),
-                    // DC form A6 landscape (e.g. yellow sheet, AUB Muster 1b (1.2018))
+                    // MC form A6 landscape (e.g. yellow sheet, AUB Muster 1b (1.2018))
                     new AspectRatio(148.0, 105.0)
                 };
 
             workflow.AddScanMedicalCertificateStep(
-                title: "Scan Disability Certificate",
-                message: "Please align the DC form in the frame.",
+                title: "Scan Medical Certificate",
+                message: "Please align the MC form in the frame.",
                 requiredAspectRatios: ratios,
                 resultValidationHandler: (o, args) =>
                 {
@@ -297,8 +298,8 @@ namespace Scanbot.SDK.Example.Forms
                         return;
                     }
                     // run some additional validations here
-                    //result.DisabilityCertificate.Dates....
-                    //result.DisabilityCertificate.Checkboxes...
+                    //result.MedicalCertificate.Dates....
+                    //result.MedicalCertificate.Checkboxes...
                 }
             );
             await RunWorkflow(workflow);

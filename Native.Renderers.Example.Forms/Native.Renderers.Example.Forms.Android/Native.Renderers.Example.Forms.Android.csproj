@@ -59,13 +59,13 @@
     <Reference Include="Mono.Android.Export" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2012" />
-    <PackageReference Include="Xamarin.Essentials" Version="1.7.0" />
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2401" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.7.3" />
     <PackageReference Include="ScanbotSDK.Xamarin.Forms">
-      <Version>3.6.0-alpha1</Version>
+      <Version>3.7.0-beta4</Version>
     </PackageReference>
     <PackageReference Include="ScanbotSDK.Xamarin">
-      <Version>3.6.0-alpha1</Version>
+      <Version>3.7.0-beta4</Version>
     </PackageReference>
   </ItemGroup>
   <ItemGroup>

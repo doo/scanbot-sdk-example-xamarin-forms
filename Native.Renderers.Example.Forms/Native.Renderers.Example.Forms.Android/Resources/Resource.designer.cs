@@ -10551,6 +10551,7 @@ namespace Native.Renderers.Example.Forms.Droid
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Xml.standalone_badge_gravity_bottom_start = global::Native.Renderers.Example.Forms.Droid.Resource.Xml.standalone_badge_gravity_bottom_start;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Xml.standalone_badge_gravity_top_start = global::Native.Renderers.Example.Forms.Droid.Resource.Xml.standalone_badge_gravity_top_start;
 			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Xml.standalone_badge_offset = global::Native.Renderers.Example.Forms.Droid.Resource.Xml.standalone_badge_offset;
+			global::ScanbotSDK.Xamarin.Forms.Android.Resource.Xml.xamarin_essentials_fileprovider_file_paths = global::Native.Renderers.Example.Forms.Droid.Resource.Xml.xamarin_essentials_fileprovider_file_paths;
 			global::Xamarin.Essentials.Resource.Attribute.alpha = global::Native.Renderers.Example.Forms.Droid.Resource.Attribute.alpha;
 			global::Xamarin.Essentials.Resource.Attribute.font = global::Native.Renderers.Example.Forms.Droid.Resource.Attribute.font;
 			global::Xamarin.Essentials.Resource.Attribute.fontProviderAuthority = global::Native.Renderers.Example.Forms.Droid.Resource.Attribute.fontProviderAuthority;

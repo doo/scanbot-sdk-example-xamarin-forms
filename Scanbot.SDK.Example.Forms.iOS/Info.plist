@@ -10,6 +10,8 @@
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
@@ -42,5 +44,9 @@
 	<string>Scanbot SDK requires camera access in order to scan documents</string>
 	<key>UIFileSharingEnabled</key>
 	<true/>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>Scanbot SDK requires photos app access in order to scan documents</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Scanbot SDK requires photos app access in order to scan documents</string>
 </dict>
 </plist>

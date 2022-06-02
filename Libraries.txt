@@ -1,5 +1,5 @@
 
-Open Source libraries used in the Scanbot SDK for Xamarin and Xamarin.Forms version 3.6.0:
+Open Source libraries used in the Scanbot SDK for Xamarin and Xamarin.Forms version 3.7.0:
 
 Xamarin Component for ReactiveX RxJava and RxAndroid for Xamarin.Android:
 Xamarin Component for JetBrains Kotlin for Xamarin.Android:
@@ -59,8 +59,7 @@ SOFTWARE.
 
 ------------------------------------------------------------------------------------------------------------------------
 
-
-Open Source libraries used in the Scanbot SDK for Android version 1.89.0:
+Open Source libraries used in the Scanbot SDK for Android version 1.92.0:
 
 Apache Commons Codec
 
@@ -85,7 +84,7 @@ limitations under the License.
 
 CWAC-Camera
 
-Version 0.6.41
+Version 0.6.42
 (https://github.com/doo/cwac-camera)
 (https://github.com/commonsguy/cwac-camera/)
 
@@ -844,10 +843,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 ------------------------------------------------------------------------------------------------------------------------
 
-
-
-Open Source libraries used in the Scanbot SDK for iOS version 1.21.2:
-
+Open Source libraries used in the Scanbot SDK for iOS version 1.25.1:
 
 BOOST C++ Libraries
 
@@ -1112,6 +1108,7 @@ LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
 ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
 (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
 
 
 Leptonica 1.71

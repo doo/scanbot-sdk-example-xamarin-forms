@@ -39,6 +39,7 @@ namespace Scanbot.SDK.Example.Forms
                 ViewUtils.CreateCell("Scan QR- & Barcodes", BarcodeScannerClicked),
                 ViewUtils.CreateCell("Scan Multiple QR- & Barcodes", BatchBarcodeScannerClicked),
                 ViewUtils.CreateCell("Import Image & Detect Barcodes", ImportandDetectBarcodesClicked),
+                 ViewUtils.CreateCell("Import images & Detect Barcodes", ImportImagesAndDetectBarcodesTapped),
                 ViewUtils.CreateCell("Set Barcode Formats Filter", SetBarcodeFormatsFilterClicked),
             });
             table.Root.Add(new TableSection("DATA DETECTORS")
@@ -51,7 +52,7 @@ namespace Scanbot.SDK.Example.Forms
             {
                 ViewUtils.CreateCell("Scan MRZ + Image", WorkflowMRZClicked),
                 ViewUtils.CreateCell("Scan QR Code and Document Image", WorkflowQRClicked),
-                ViewUtils.CreateCell("Scan Disability Certificate", WorkflowDCClicked),
+                ViewUtils.CreateCell("Scan Medical Certificate", WorkflowDCClicked),
                 ViewUtils.CreateCell("Scan Payform", WorkflowPayformClicked)
             });
             table.Root.Add(new TableSection("MISCELLANEOUS")
@@ -133,6 +134,7 @@ namespace Scanbot.SDK.Example.Forms
 
             var config = new BarcodeScannerConfiguration();
             config.BarcodeFormats = BarcodeTypes.Instance.AcceptedTypes;
+            config.AllowedInterfaceOrientations = UIInterfaceOrientationMask.LandscapeLeft;
             //config.BarcodeFormats = new List<BarcodeFormat> { BarcodeFormat.UpcA };
             var result = await SBSDK.UI.LaunchBarcodeScannerAsync(config);
             if (result.Status == OperationResult.Ok)
@@ -156,7 +158,8 @@ namespace Scanbot.SDK.Example.Forms
             var config = new BatchBarcodeScannerConfiguration();
             config.BarcodeFormats = BarcodeTypes.Instance.AcceptedTypes;
             var result = await SBSDK.UI.LaunchBatchBarcodeScannerAsync(config);
-            if (result.Status == OperationResult.Ok) {
+            if (result.Status == OperationResult.Ok)
+            {
                 if (result.Barcodes.Count == 0)
                 {
                     ViewUtils.Alert(this, "Oops!", "No barcodes found, please try again");
@@ -244,9 +247,9 @@ namespace Scanbot.SDK.Example.Forms
                         args.SetError(message, ValidationErrorShowMode.Alert);
                         return;
                     }
-                        // run some additional validations here
-                        //result.MachineReadableZone.Fields...
-                    }
+                    // run some additional validations here
+                    //result.MachineReadableZone.Fields...
+                }
             );
 
             await RunWorkflow(workflow);
@@ -275,29 +278,29 @@ namespace Scanbot.SDK.Example.Forms
 
             var workflow = SBSDK.UI.CreateWorkflow();
             var ratios = new[] {
-                    // DC form A5 portrait (e.g. white sheet, AUB Muster 1b/E (1/2018))
+                    // MC form A5 portrait (e.g. white sheet, AUB Muster 1b/E (1/2018))
                     new AspectRatio(148.0, 210.0),
-                    // DC form A6 landscape (e.g. yellow sheet, AUB Muster 1b (1.2018))
+                    // MC form A6 landscape (e.g. yellow sheet, AUB Muster 1b (1.2018))
                     new AspectRatio(148.0, 105.0)
                 };
 
-            workflow.AddScanDisabilityCertificateStep(
-                title: "Scan Disability Certificate",
-                message: "Please align the DC form in the frame.",
+            workflow.AddScanMedicalCertificateStep(
+                title: "Scan Medical Certificate",
+                message: "Please align the MC form in the frame.",
                 requiredAspectRatios: ratios,
                 resultValidationHandler: (o, args) =>
                 {
-                    var result = args.Result as IWorkflowDisabilityCertificateResult;
-                    if (!result.DisabilityCertificate.RecognitionSuccessful)
+                    var result = args.Result as IWorkflowMedicalCertificateResult;
+                    if (!result.MedicalCertificate.RecognitionSuccessful)
                     {
                         string message = "Could not extract data. Please try again.";
                         args.SetError(message, ValidationErrorShowMode.Alert);
                         return;
                     }
-                        // run some additional validations here
-                        //result.DisabilityCertificate.Dates....
-                        //result.DisabilityCertificate.Checkboxes...
-                    }
+                    // run some additional validations here
+                    //result.MedicalCertificate.Dates....
+                    //result.MedicalCertificate.Checkboxes...
+                }
             );
             await RunWorkflow(workflow);
         }
@@ -319,9 +322,9 @@ namespace Scanbot.SDK.Example.Forms
                             "Please try again.", ValidationErrorShowMode.Alert);
                         return;
                     }
-                        // run some additional validations here
-                        //result.PayForm.RecognizedFields...
-                    }
+                    // run some additional validations here
+                    //result.PayForm.RecognizedFields...
+                }
             );
             await RunWorkflow(workflow);
         }
@@ -383,5 +386,21 @@ namespace Scanbot.SDK.Example.Forms
             }
         }
 
+        /// <summary>
+        /// Import images and detect barcodes from all the images.
+        /// Navigates all the barcode result list to the next page.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        /// <returns></returns>
+        void ImportImagesAndDetectBarcodesTapped(object sender, EventArgs e)
+        {
+            if (!SDKUtils.CheckLicense(this)) { return; }
+            DependencyService.Get<IMultiImagePicker>().PickPhotosAsync(completionHandler: async (imageSources) =>
+            {
+                List<Barcode> barcodes = await SBSDK.Operations.DetectBarcodesFrom(imageSources);
+                await Navigation.PushAsync(new BarcodeResultsPage(barcodes));
+            });
+        }
     }
 }

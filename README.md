@@ -17,7 +17,7 @@ The Scanbot SDK is available as a NuGet package for the Xamarin.Forms platform:
 
 
 ## Documentation
-The documentation of the current Scanbot SDK Xamarin release can be found [here:](https://docs.scanbot.io/document-scanner-sdk/xamarin/introduction/)
+The documentation of the current Scanbot SDK Xamarin release can be found [here](https://docs.scanbot.io/document-scanner-sdk/xamarin/introduction/)
 
 
 ## Please note

@@ -46,7 +46,8 @@ namespace Scanbot.SDK.Example.Forms
             {
                 ViewUtils.CreateCell("MRZ Scanner", MRZScannerClicked),
                 ViewUtils.CreateCell("EHIC Scanner", EHICScannerClicked),
-                ViewUtils.CreateCell("Generic Document Recognizer", GenericDocumentRecognizerClicked)
+                ViewUtils.CreateCell("Generic Document Recognizer", GenericDocumentRecognizerClicked),
+                ViewUtils.CreateCell("Check Recognizer", CheckRecognizerClicked),
             });
             table.Root.Add(new TableSection("WORKFLOWS")
             {
@@ -134,7 +135,7 @@ namespace Scanbot.SDK.Example.Forms
 
             var config = new BarcodeScannerConfiguration();
             config.BarcodeFormats = BarcodeTypes.Instance.AcceptedTypes;
-            config.AllowedInterfaceOrientations = UIInterfaceOrientationMask.LandscapeLeft;
+            config.OrientationLockMode = InterfaceOrientation.Landscape;
             //config.BarcodeFormats = new List<BarcodeFormat> { BarcodeFormat.UpcA };
             var result = await SBSDK.UI.LaunchBarcodeScannerAsync(config);
             if (result.Status == OperationResult.Ok)
@@ -343,6 +344,30 @@ namespace Scanbot.SDK.Example.Forms
                 var message = SDKUtils.ParseGDRResult(result);
                 ViewUtils.Alert(this, "GDR Result", message);
             }
+        }
+
+        async void CheckRecognizerClicked(object sender, EventArgs e)
+        {
+            if (!SDKUtils.CheckLicense(this)) { return; }
+
+            var configuration = new CheckRecognizerConfiguration
+            {
+                AcceptedCheckStandards = new List<CheckStandard>() {
+                    CheckStandard.USA,
+                    CheckStandard.AUS,
+                    CheckStandard.IND,
+                    CheckStandard.FRA,
+                    CheckStandard.KWT,
+                }
+            };
+
+            var result = await SBSDK.UI.LaunchCheckRecognizerAsync(configuration);
+            if (result.Status == OperationResult.Ok)
+            {
+                var message = SDKUtils.ParseCheckResult(result);
+                ViewUtils.Alert(this, "Check Result", message);
+            }
+
         }
 
         void ViewLicenseInfoClicked(object sender, EventArgs e)

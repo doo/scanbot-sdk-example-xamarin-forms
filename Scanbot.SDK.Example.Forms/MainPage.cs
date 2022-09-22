@@ -134,7 +134,7 @@ namespace Scanbot.SDK.Example.Forms
 
             var config = new BarcodeScannerConfiguration();
             config.BarcodeFormats = BarcodeTypes.Instance.AcceptedTypes;
-            config.AllowedInterfaceOrientations = UIInterfaceOrientationMask.LandscapeLeft;
+            config.OrientationLockMode = InterfaceOrientation.Landscape;
             //config.BarcodeFormats = new List<BarcodeFormat> { BarcodeFormat.UpcA };
             var result = await SBSDK.UI.LaunchBarcodeScannerAsync(config);
             if (result.Status == OperationResult.Ok)

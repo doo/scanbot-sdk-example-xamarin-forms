@@ -198,8 +198,8 @@ namespace Scanbot.SDK.Example.Forms
 
             MrzScannerConfiguration configuration = new MrzScannerConfiguration
             {
-                FinderWidthRelativeToDeviceWidth = 0.95,
-                FinderHeightRelativeToDeviceWidth = 0.2,
+                FinderWidthRelativeToDeviceWidth = 5,
+                FinderHeightRelativeToDeviceWidth = 1,
             };
 
             var result = await SBSDK.UI.LaunchMrzScannerAsync(configuration);

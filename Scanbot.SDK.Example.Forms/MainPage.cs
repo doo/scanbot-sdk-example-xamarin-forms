@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 using ScanbotSDK.Xamarin;
 using ScanbotSDK.Xamarin.Forms;
@@ -423,8 +424,24 @@ namespace Scanbot.SDK.Example.Forms
             if (!SDKUtils.CheckLicense(this)) { return; }
             DependencyService.Get<IMultiImagePicker>().PickPhotosAsync(completionHandler: async (imageSources) =>
             {
-                List<Barcode> barcodes = await SBSDK.Operations.DetectBarcodesFrom(imageSources);
-                await Navigation.PushAsync(new BarcodeResultsPage(barcodes));
+                List<Barcode> barcodes = null;
+                bool canNavigate = false;
+                var filteredImageSource = imageSources.Where(source => !source.IsEmpty)?.ToList() ?? new List<ImageSource>();
+                if (filteredImageSource.Count > 0)
+                {
+                    canNavigate = true;
+                    barcodes = await SBSDK.Operations.DetectBarcodesFrom(filteredImageSource);
+                }
+
+                if (imageSources == null || imageSources.Any(source => source.IsEmpty))
+                {
+                    await DisplayAlert("Alert", "Unable to pick atleast of the images.", "Ok");
+                }
+
+                if (canNavigate)
+                {
+                    await Navigation.PushAsync(new BarcodeResultsPage(barcodes));
+                }
             });
         }
     }

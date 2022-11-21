@@ -104,7 +104,7 @@ namespace Scanbot.SDK.Example.Forms
             List = new ListView();
             List.BackgroundColor = Color.White;
             List.ItemTemplate = new DataTemplate(typeof(BarcodeCell));
-            List.RowHeight = ROWHEIGHT;
+            List.HasUnevenRows = true;
             List.ItemsSource = Barcodes;
         }
 

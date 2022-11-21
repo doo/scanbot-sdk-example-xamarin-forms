@@ -2,10 +2,15 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using GMImagePicker;
+using ImageIO;
+using OpenTK;
 using Photos;
+using PhotosUI;
 using Scanbot.SDK.Example.Forms.iOS;
 using UIKit;
 using Xamarin.Forms;
+using Xamarin.Forms.PlatformConfiguration.iOSSpecific;
+
 [assembly: Dependency(typeof(MultiImagePicker))]
 namespace Scanbot.SDK.Example.Forms.iOS
 {
@@ -25,7 +30,7 @@ namespace Scanbot.SDK.Example.Forms.iOS
 			picker.DisplayAlbumsNumberOfAssets = true;
 			picker.MediaTypes = new[] { PHAssetMediaType.Image };
 			picker.GridSortOrder = SortOrder.Descending;
-			picker.ModalPresentationStyle = UIModalPresentationStyle.FullScreen;
+			picker.ModalPresentationStyle = UIKit.UIModalPresentationStyle.FullScreen;
 
 			// Cancelled
 			picker.Canceled += (sender, e) =>
@@ -37,10 +42,15 @@ namespace Scanbot.SDK.Example.Forms.iOS
 			picker.FinishedPickingAssets += async (sender, args) =>
 			{
 				var list = new List<ImageSource>();
+				ImageSource imageSource = ImageSource.FromFile(string.Empty); // empty source
+				string filePath = string.Empty;
 				foreach (PHAsset asset in args?.Assets)
 				{
-					var filePath = await GetAbsoluteUrl(asset);
-					var imageSource = ImageSource.FromFile(filePath);
+					filePath = await GetAbsoluteUrl(asset);
+					if (!string.IsNullOrEmpty(filePath))
+					{
+						imageSource = ImageSource.FromFile(filePath);
+					}
 					list.Add(imageSource);
 				}
 				completionHandler?.Invoke(list);
@@ -64,7 +74,7 @@ namespace Scanbot.SDK.Example.Forms.iOS
 			var optionEditing = new PHContentEditingInputRequestOptions();
 			PHContentEditingHandler handler = (contentEditingInput, info) =>
 			{
-				taskSource.TrySetResult(contentEditingInput.FullSizeImageUrl.Path);
+				taskSource.TrySetResult(contentEditingInput?.FullSizeImageUrl?.Path);
 			};
 
 			asset.RequestContentEditingInput(optionEditing, completionHandler: handler);

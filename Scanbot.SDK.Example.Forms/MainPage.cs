@@ -435,7 +435,7 @@ namespace Scanbot.SDK.Example.Forms
 
                 if (imageSources == null || imageSources.Any(source => source.IsEmpty))
                 {
-                    await DisplayAlert("Alert", "Unable to pick atleast of the images.", "Ok");
+                    await DisplayAlert("Alert", "Unable to pick at least 1 of the images.", "Ok");
                 }
 
                 if (canNavigate)

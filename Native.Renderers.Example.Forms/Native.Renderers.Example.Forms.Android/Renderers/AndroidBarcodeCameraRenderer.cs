@@ -64,7 +64,7 @@ namespace Native.Renderers.Example.Forms.Droid.Renderers
 
             // ...and here we retrieve and configure the Finder Overlay View
             finderOverlayView = cameraLayout.FindViewById<FinderOverlayView>(Resource.Id.barcode_finder_overlay);
-            finderOverlayView.MinFinderPadding = 80;
+            finderOverlayView.SetFinderMinPadding(80);
             finderOverlayView.RequiredAspectRatios = new List<FinderAspectRatio>
             {
                 new FinderAspectRatio(1, 1)

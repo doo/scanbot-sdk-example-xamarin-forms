@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 using ScanbotSDK.Xamarin;
 using ScanbotSDK.Xamarin.Forms;
@@ -46,7 +47,8 @@ namespace Scanbot.SDK.Example.Forms
             {
                 ViewUtils.CreateCell("MRZ Scanner", MRZScannerClicked),
                 ViewUtils.CreateCell("EHIC Scanner", EHICScannerClicked),
-                ViewUtils.CreateCell("Generic Document Recognizer", GenericDocumentRecognizerClicked)
+                ViewUtils.CreateCell("Generic Document Recognizer", GenericDocumentRecognizerClicked),
+                ViewUtils.CreateCell("Check Recognizer", CheckRecognizerClicked),
             });
             table.Root.Add(new TableSection("WORKFLOWS")
             {
@@ -134,7 +136,6 @@ namespace Scanbot.SDK.Example.Forms
 
             var config = new BarcodeScannerConfiguration();
             config.BarcodeFormats = BarcodeTypes.Instance.AcceptedTypes;
-            config.AllowedInterfaceOrientations = UIInterfaceOrientationMask.LandscapeLeft;
             //config.BarcodeFormats = new List<BarcodeFormat> { BarcodeFormat.UpcA };
             var result = await SBSDK.UI.LaunchBarcodeScannerAsync(config);
             if (result.Status == OperationResult.Ok)
@@ -197,8 +198,8 @@ namespace Scanbot.SDK.Example.Forms
 
             MrzScannerConfiguration configuration = new MrzScannerConfiguration
             {
-                FinderWidthRelativeToDeviceWidth = 0.95,
-                FinderHeightRelativeToDeviceWidth = 0.2,
+                FinderWidthRelativeToDeviceWidth = 5,
+                FinderHeightRelativeToDeviceWidth = 1,
             };
 
             var result = await SBSDK.UI.LaunchMrzScannerAsync(configuration);
@@ -345,6 +346,30 @@ namespace Scanbot.SDK.Example.Forms
             }
         }
 
+        async void CheckRecognizerClicked(object sender, EventArgs e)
+        {
+            if (!SDKUtils.CheckLicense(this)) { return; }
+
+            var configuration = new CheckRecognizerConfiguration
+            {
+                AcceptedCheckStandards = new List<CheckStandard>() {
+                    CheckStandard.USA,
+                    CheckStandard.AUS,
+                    CheckStandard.IND,
+                    CheckStandard.FRA,
+                    CheckStandard.KWT,
+                }
+            };
+
+            var result = await SBSDK.UI.LaunchCheckRecognizerAsync(configuration);
+            if (result.Status == OperationResult.Ok)
+            {
+                var message = SDKUtils.ParseCheckResult(result);
+                ViewUtils.Alert(this, "Check Result", message);
+            }
+
+        }
+
         void ViewLicenseInfoClicked(object sender, EventArgs e)
         {
             bool valid = SBSDK.Operations.IsLicenseValid;
@@ -398,8 +423,24 @@ namespace Scanbot.SDK.Example.Forms
             if (!SDKUtils.CheckLicense(this)) { return; }
             DependencyService.Get<IMultiImagePicker>().PickPhotosAsync(completionHandler: async (imageSources) =>
             {
-                List<Barcode> barcodes = await SBSDK.Operations.DetectBarcodesFrom(imageSources);
-                await Navigation.PushAsync(new BarcodeResultsPage(barcodes));
+                List<Barcode> barcodes = null;
+                bool canNavigate = false;
+                var filteredImageSource = imageSources.Where(source => !source.IsEmpty)?.ToList() ?? new List<ImageSource>();
+                if (filteredImageSource.Count > 0)
+                {
+                    canNavigate = true;
+                    barcodes = await SBSDK.Operations.DetectBarcodesFrom(filteredImageSource);
+                }
+
+                if (imageSources == null || imageSources.Any(source => source.IsEmpty))
+                {
+                    await DisplayAlert("Alert", "Unable to pick at least 1 of the images.", "Ok");
+                }
+
+                if (canNavigate)
+                {
+                    await Navigation.PushAsync(new BarcodeResultsPage(barcodes));
+                }
             });
         }
     }

@@ -1,5 +1,5 @@
 
-Open Source libraries used in the Scanbot SDK for Xamarin and Xamarin.Forms version 3.8.0:
+Open Source libraries used in the Scanbot SDK for Xamarin and Xamarin.Forms version 3.8.1:
 
 Xamarin Component for ReactiveX RxJava and RxAndroid for Xamarin.Android:
 Xamarin Component for JetBrains Kotlin for Xamarin.Android:

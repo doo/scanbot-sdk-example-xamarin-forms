@@ -1,6 +1,6 @@
 # Scanbot Barcode & Document Scanning Example App for Xamarin.Forms
 
-This example app shows how to integrate the [Scanbot Barcode Scanner SDK](https://scanbot.io/developer/android-barcode-scanner/), [Scanbot Document Scanner SDK](https://scanbot.io/developer/android-document-scanner-sdk/), and [Scanbot Data Capture SDK](https://scanbot.io/developer/android-data-capture/) for Xamarin.Forms.
+This example app shows how to integrate the [Scanbot Barcode Scanner SDK](https://scanbot.io/developer/xamarin-barcode-scanner/), [Scanbot Document Scanner SDK](https://scanbot.io/developer/xamarin-document-scanner/), and [Scanbot Data Capture SDK](https://scanbot.io/developer/xamarin-data-capture/) for Xamarin.
 
 The Scanbot SDK is available as a NuGet package for the Xamarin.Forms platform:
 [ScanbotSDK.Xamarin.Forms](https://www.nuget.org/packages/ScanbotSDK.Xamarin.Forms)

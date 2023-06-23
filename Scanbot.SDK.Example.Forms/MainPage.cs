@@ -49,6 +49,7 @@ namespace Scanbot.SDK.Example.Forms
                 ViewUtils.CreateCell("EHIC Scanner", EHICScannerClicked),
                 ViewUtils.CreateCell("Generic Document Recognizer", GenericDocumentRecognizerClicked),
                 ViewUtils.CreateCell("Check Recognizer", CheckRecognizerClicked),
+                ViewUtils.CreateCell("Text Data Scanner", TextDataScannerClicked),
             });
             table.Root.Add(new TableSection("WORKFLOWS")
             {
@@ -368,6 +369,25 @@ namespace Scanbot.SDK.Example.Forms
                 ViewUtils.Alert(this, "Check Result", message);
             }
 
+        }
+
+        async void TextDataScannerClicked(object sender, EventArgs e)
+        {
+            if (!SDKUtils.CheckLicense(this)) { return; }
+
+            var step = new TextDataScannerStep("Scan your text", "", 1.0f, new AspectRatio(3, 1));
+            var configuration = new TextDataScannerConfiguration(step)
+            {
+                CancelButtonTitle = "Cancel",
+                FlashEnabled = false,
+            };
+
+            var result = await SBSDK.UI.LaunchTextDataScannerAsync(configuration);
+            if (result.Status == OperationResult.Ok)
+            {
+                var message = SDKUtils.ParseTextDataScannerResult(result);
+                ViewUtils.Alert(this, "Text Data Scanner Result", message);
+            }
         }
 
         void ViewLicenseInfoClicked(object sender, EventArgs e)

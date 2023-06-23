@@ -162,5 +162,10 @@ namespace Scanbot.SDK.Example.Forms
                 .Select((f) => string.Format("{0}: {1}", f.Type.Name, f.Value.Text))
             );
         }
+
+        public static string ParseTextDataScannerResult(TextDataScannerResult result)
+        {
+            return string.Format("{0} (confidence: {1})", result.Text, result.Confidence);
+        }
     }
 }

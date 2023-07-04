@@ -1,9 +1,7 @@
-﻿
-using System;
+﻿using System;
+using Native.Renderers.Example.Forms.Common;
 using ScanbotSDK.Xamarin.Forms;
 using Xamarin.Forms;
-using System.Linq;
-using Native.Renderers.Example.Forms.Common;
 using Xamarin.Forms.PlatformConfiguration;
 using Xamarin.Forms.PlatformConfiguration.iOSSpecific;
 

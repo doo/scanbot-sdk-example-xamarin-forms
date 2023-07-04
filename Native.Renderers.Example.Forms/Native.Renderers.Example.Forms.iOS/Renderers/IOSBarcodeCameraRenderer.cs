@@ -1,6 +1,4 @@
-﻿
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Linq;
 using CoreGraphics;
 using Native.Renderers.Example.Forms.iOS.Renderers;
 using Native.Renderers.Example.Forms.Views;

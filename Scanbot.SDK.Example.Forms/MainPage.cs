@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
-using ScanbotSDK.Xamarin;
 using ScanbotSDK.Xamarin.Forms;
 using Xamarin.Essentials;
 using Xamarin.Forms;
@@ -50,13 +48,6 @@ namespace Scanbot.SDK.Example.Forms
                 ViewUtils.CreateCell("Generic Document Recognizer", GenericDocumentRecognizerClicked),
                 ViewUtils.CreateCell("Check Recognizer", CheckRecognizerClicked),
                 ViewUtils.CreateCell("Text Data Scanner", TextDataScannerClicked),
-            });
-            table.Root.Add(new TableSection("WORKFLOWS")
-            {
-                ViewUtils.CreateCell("Scan MRZ + Image", WorkflowMRZClicked),
-                ViewUtils.CreateCell("Scan QR Code and Document Image", WorkflowQRClicked),
-                ViewUtils.CreateCell("Scan Medical Certificate", WorkflowDCClicked),
-                ViewUtils.CreateCell("Scan Payform", WorkflowPayformClicked)
             });
             table.Root.Add(new TableSection("MISCELLANEOUS")
             {
@@ -137,7 +128,8 @@ namespace Scanbot.SDK.Example.Forms
 
             var config = new BarcodeScannerConfiguration();
             config.BarcodeFormats = BarcodeTypes.Instance.AcceptedTypes;
-            //config.BarcodeFormats = new List<BarcodeFormat> { BarcodeFormat.UpcA };
+            config.BarcodeImageGenerationType = BarcodeImageGenerationType.FromVideoFrame;
+            config.OverlayConfiguration = GetSelectionOverlayConfig();
             var result = await SBSDK.UI.LaunchBarcodeScannerAsync(config);
             if (result.Status == OperationResult.Ok)
             {
@@ -159,6 +151,7 @@ namespace Scanbot.SDK.Example.Forms
             if (!SDKUtils.CheckLicense(this)) { return; }
             var config = new BatchBarcodeScannerConfiguration();
             config.BarcodeFormats = BarcodeTypes.Instance.AcceptedTypes;
+            config.OverlayConfiguration = GetSelectionOverlayConfig();
             var result = await SBSDK.UI.LaunchBatchBarcodeScannerAsync(config);
             if (result.Status == OperationResult.Ok)
             {
@@ -222,113 +215,6 @@ namespace Scanbot.SDK.Example.Forms
                 var message = SDKUtils.ParseEHICResult(result);
                 ViewUtils.Alert(this, "MRZ Scanner result", message);
             }
-        }
-
-        async void WorkflowMRZClicked(object sender, EventArgs e)
-        {
-            if (!SDKUtils.CheckLicense(this)) { return; }
-
-            var workflow = SBSDK.UI.CreateWorkflow();
-            var ratios = new[] {
-                    new AspectRatio(85.0, 54.0), // ID card
-                    new AspectRatio(125.0, 88.0) // Passport
-                };
-
-            workflow.AddScanMachineReadableZoneStep(
-                title: "Scan ID card or passport",
-                message: "Please align your ID card or passport in the frame.",
-                requiredAspectRatios: ratios,
-                resultValidationHandler: (o, args) =>
-                {
-                    var result = args.Result as IWorkflowMachineReadableZoneResult;
-                    if (result.MachineReadableZone == null
-                    || result.MachineReadableZone.CheckDigitsCount == 0)
-                    {
-                        var message = "Recognition was not successful. " +
-                        "Please try again and scan the side with MRZ area.";
-                        args.SetError(message, ValidationErrorShowMode.Alert);
-                        return;
-                    }
-                    // run some additional validations here
-                    //result.MachineReadableZone.Fields...
-                }
-            );
-
-            await RunWorkflow(workflow);
-        }
-
-        async void WorkflowQRClicked(object sender, EventArgs e)
-        {
-            if (!SDKUtils.CheckLicense(this)) { return; }
-
-            var workflow = SBSDK.UI.CreateWorkflow();
-            workflow.AddScanBarcodeStep(
-                "Scan Step 1/2", "Please scan a QR code.",
-                new[] { BarcodeFormat.QrCode }, new AspectRatio(1.0, 1.0)
-            );
-
-            workflow.AddScanDocumentPageStep(
-                "Scan Step 2/2",
-                "Please scan a document.");
-
-            await RunWorkflow(workflow);
-        }
-
-        async void WorkflowDCClicked(object sender, EventArgs e)
-        {
-            if (!SDKUtils.CheckLicense(this)) { return; }
-
-            var workflow = SBSDK.UI.CreateWorkflow();
-            var ratios = new[] {
-                    // MC form A5 portrait (e.g. white sheet, AUB Muster 1b/E (1/2018))
-                    new AspectRatio(148.0, 210.0),
-                    // MC form A6 landscape (e.g. yellow sheet, AUB Muster 1b (1.2018))
-                    new AspectRatio(148.0, 105.0)
-                };
-
-            workflow.AddScanMedicalCertificateStep(
-                title: "Scan Medical Certificate",
-                message: "Please align the MC form in the frame.",
-                requiredAspectRatios: ratios,
-                resultValidationHandler: (o, args) =>
-                {
-                    var result = args.Result as IWorkflowMedicalCertificateResult;
-                    if (!result.MedicalCertificate.RecognitionSuccessful)
-                    {
-                        string message = "Could not extract data. Please try again.";
-                        args.SetError(message, ValidationErrorShowMode.Alert);
-                        return;
-                    }
-                    // run some additional validations here
-                    //result.MedicalCertificate.Dates....
-                    //result.MedicalCertificate.Checkboxes...
-                }
-            );
-            await RunWorkflow(workflow);
-        }
-
-        async void WorkflowPayformClicked(object sender, EventArgs e)
-        {
-            if (!SDKUtils.CheckLicense(this)) { return; }
-
-            var workflow = SBSDK.UI.CreateWorkflow();
-            workflow.AddScanPayFormStep(
-                title: "PayForm Scanner",
-                message: "Please scan a SEPA PayForm",
-                resultValidationHandler: (o, args) =>
-                {
-                    var result = args.Result as IWorkflowPayFormResult;
-                    if (result.PayForm == null || result.PayForm.RecognizedFields.Count == 0)
-                    {
-                        args.SetError("Recognition was not successful. " +
-                            "Please try again.", ValidationErrorShowMode.Alert);
-                        return;
-                    }
-                    // run some additional validations here
-                    //result.PayForm.RecognizedFields...
-                }
-            );
-            await RunWorkflow(workflow);
         }
 
         async void GenericDocumentRecognizerClicked(object sender, EventArgs e)
@@ -407,30 +293,6 @@ namespace Scanbot.SDK.Example.Forms
             await Browser.OpenAsync(uri, BrowserLaunchMode.SystemPreferred);
         }
 
-        async Task RunWorkflow(IWorkflow workflow)
-        {
-            var config = new WorkflowScannerConfiguration
-            {
-                IgnoreBadAspectRatio = true,
-            };
-            var result = await SBSDK.UI.LaunchWorkflowScannerAsync(workflow, config);
-            if (result.Status == OperationResult.Ok)
-            {
-                var results = result.Results;
-
-                ViewUtils.Alert(this, "Result:", SDKUtils.ParseWorkflowResults(results));
-
-                foreach (var item in results)
-                {
-                    // Not all StepResults contain a captured page, try to find the one that has it
-                    if (item.CapturedPage != null)
-                    {
-                        Pages.Instance.List.Add(item.CapturedPage);
-                    }
-                }
-            }
-        }
-
         /// <summary>
         /// Import images and detect barcodes from all the images.
         /// Navigates all the barcode result list to the next page.
@@ -462,6 +324,14 @@ namespace Scanbot.SDK.Example.Forms
                     await Navigation.PushAsync(new BarcodeResultsPage(barcodes));
                 }
             });
+        }
+
+        private SelectionOverlayConfiguration GetSelectionOverlayConfig()
+        {
+            var config = new SelectionOverlayConfiguration(false, OverlayFormat.Code,
+                Color.Yellow, Color.Yellow, Color.Black,
+                Color.Red, Color.Red, Color.Black);
+            return config;
         }
     }
 }

@@ -1,9 +1,7 @@
 ﻿
 using Native.Renderers.Example.Forms.Views;
-using IO.Scanbot.Sdk.Camera;
 using Android.Content;
 using Xamarin.Forms.Platform.Android;
-using IO.Scanbot.Sdk.Barcode;
 using AndroidX.Core.Content;
 using Android;
 using Android.Content.PM;
@@ -16,8 +14,6 @@ using ScanbotSDK.Xamarin.Forms.Android;
 using Android.Views;
 using IO.Scanbot.Sdk.UI.Camera;
 using IO.Scanbot.Sdk.Barcode.UI;
-using Android.Graphics;
-using BarcodeItem = IO.Scanbot.Sdk.Barcode.Entity.BarcodeItem;
 
 /*
     This is the Android Custom Renderer that will provide the actual implementation for BarcodeCameraView.
@@ -39,11 +35,8 @@ namespace Native.Renderers.Example.Forms.Droid.Renderers
     */
     class AndroidBarcodeCameraRenderer : ViewRenderer<BarcodeCameraView, FrameLayout>
     {
-        protected BarcodeDetectorFrameHandler barcodeDetectorFrameHandler;
         protected FrameLayout cameraLayout;
         protected BarcodeScannerView cameraView;
-        protected FinderOverlayView finderOverlayView;
-
         private readonly int REQUEST_PERMISSION_CODE = 200;
 
         public AndroidBarcodeCameraRenderer(Context context) : base(context)
@@ -60,18 +53,6 @@ namespace Native.Renderers.Example.Forms.Droid.Renderers
 
             // Here we retrieve the Camera View...
             cameraView = cameraLayout.FindViewById<BarcodeScannerView>(Resource.Id.barcode_camera);
-        }
-
-        private void StartDetection() {
-            cameraView.ViewController.OnResume();
-            barcodeDetectorFrameHandler.Enabled = true;
-            finderOverlayView.Visibility = ViewStates.Visible;
-            CheckPermissions();
-        }
-
-        private void StopDetection() {
-            barcodeDetectorFrameHandler.Enabled = false;
-            finderOverlayView.Visibility = ViewStates.Invisible;
         }
 
         /*
@@ -106,12 +87,13 @@ namespace Native.Renderers.Example.Forms.Droid.Renderers
 
                 Element.StartDetectionHandler = (sender, e) =>
                 {
-                    StartDetection();
+                    cameraView.ViewController.OnResume();
+                    CheckPermissions();
                 };
 
                 Element.StopDetectionHandler = (sender, e) =>
                 {
-                    StopDetection();
+
                 };
 
                 // Here we create the BarcodeDetectorFrameHandler which will take care of detecting
@@ -120,15 +102,6 @@ namespace Native.Renderers.Example.Forms.Droid.Renderers
                 detector.ModifyConfig(new Function1Impl<BarcodeScannerConfigBuilder>((response) => {
                     response.SetSaveCameraPreviewFrame(false);
                 }));
-
-                if (barcodeDetectorFrameHandler is BarcodeDetectorFrameHandler handler)
-                {
-                    handler.SetDetectionInterval(0);
-                    
-                    // Uncomment to enable auto-snapping (eg. single barcode scan)
-                    // var barcodeAutoSnappingController = BarcodeAutoSnappingController.Attach(cameraView, handler);
-                    // barcodeAutoSnappingController.SetSensitivity(1f);
-                }
 
                 cameraView.InitCamera(new CameraUiSettings(false));
                 // result delegate
@@ -144,15 +117,7 @@ namespace Native.Renderers.Example.Forms.Droid.Renderers
                 BarcodeScannerViewWrapper.InitDetectionBehavior(cameraView, detector, resultHandler, null);
                 cameraView.ViewController.AutoSnappingEnabled = true;
                 cameraView.ViewController.SetAutoSnappingSensitivity(1f);
-
-                FindViewById<Android.Widget.Button>(Resource.Id.flash).Click += delegate
-                {
-                    //flashEnabled = !flashEnabled;
-                    cameraView.ViewController.UseFlash(Element.IsFlashEnabled);
-                };
-               
-                //finderOverlayView.SetFinderMinPadding(80);
-                //finderOverlayView.RequiredAspectRatios = new List<AspectRatio> { new AspectRatio(1, 1) };
+                SetSelectionOverlayConfiguration();
             }
         }
 

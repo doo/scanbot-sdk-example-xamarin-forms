@@ -4,19 +4,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <io.scanbot.sdk.camera.ScanbotCameraView
+    <io.scanbot.sdk.barcode.ui.BarcodeScannerView
         android:id="@+id/barcode_camera"
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:finder_view_id="@id/barcode_finder_overlay"
     />
-
-    <io.scanbot.sdk.ui.camera.FinderOverlayView
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:id="@+id/barcode_finder_overlay"
-        app:min_padding="64dp"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
 </FrameLayout>

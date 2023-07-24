@@ -77,7 +77,8 @@ namespace Native.Renderers.Example.Forms.iOS.Renderers
         public delegate void OnDetectHandler(SBSDKBarcodeScannerResult[] codes);
         public OnDetectHandler OnDetect;
 
-        public override void DidDetect(SBSDKBarcodeScannerViewController controller, SBSDKBarcodeScannerResult[] codes, UIImage image)
+
+        public override void DidDetectBarcodes(SBSDKBarcodeScannerViewController controller, SBSDKBarcodeScannerResult[] codes)
         {
             OnDetect?.Invoke(codes);
         }
@@ -99,6 +100,7 @@ namespace Native.Renderers.Example.Forms.iOS.Renderers
             Controller = new SBSDKBarcodeScannerViewController(parentViewController, this);
             ScannerDelegate = new BarcodeScannerDelegate();
             Controller.Delegate = ScannerDelegate;
+            Controller.AcceptedBarcodeTypes = SBSDKBarcodeType.AllTypes;
         }
     }
 }

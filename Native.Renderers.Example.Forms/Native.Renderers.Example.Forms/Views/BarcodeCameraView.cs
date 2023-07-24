@@ -52,6 +52,16 @@ namespace Native.Renderers.Example.Forms.Views
             StopDetectionHandler?.Invoke(this, EventArgs.Empty);
         }
 
+        /// <summary>
+        /// Shows an AR overlay in the camera view.
+        /// </summary>
+        public SelectionOverlayConfiguration OverlayConfiguration { get; set; }
+
+        /// <summary>
+        /// Flash enabled.
+        /// </summary>
+        public bool IsFlashEnabled { get; set; }
+
         public BarcodeCameraView()
         {
             OnBarcodeScanResult = HandleBarcodeScanResult;

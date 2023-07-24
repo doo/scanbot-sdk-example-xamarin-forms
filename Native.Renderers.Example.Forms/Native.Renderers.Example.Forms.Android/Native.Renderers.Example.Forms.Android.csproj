@@ -62,13 +62,16 @@
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2545" />
     <PackageReference Include="Xamarin.Essentials" Version="1.7.4" />
     <PackageReference Include="ScanbotSDK.Xamarin.Forms">
-      <Version>3.9.0-beta.1</Version>
+      <Version>3.9.0-beta.3</Version>
     </PackageReference>
     <PackageReference Include="ScanbotSDK.Xamarin">
-      <Version>3.9.0-beta.1</Version>
+      <Version>3.9.0-beta.3</Version>
     </PackageReference>
     <PackageReference Include="Xamarin.AndroidX.Lifecycle.LiveData">
       <Version>2.5.1.1</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Google.Android.Material">
+      <Version>1.7.0.1</Version>
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
@@ -78,6 +81,7 @@
     <Compile Include="Renderers\AndroidBarcodeCameraRenderer.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Renderers\Function1Impl.cs" />
+    <Compile Include="Renderers\BarcodeScannerDelegates.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />

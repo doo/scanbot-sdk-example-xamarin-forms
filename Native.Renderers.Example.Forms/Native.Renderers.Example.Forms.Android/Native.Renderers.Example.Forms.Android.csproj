@@ -62,10 +62,10 @@
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2545" />
     <PackageReference Include="Xamarin.Essentials" Version="1.7.4" />
     <PackageReference Include="ScanbotSDK.Xamarin.Forms">
-      <Version>3.8.3-beta.2</Version>
+      <Version>3.8.3</Version>
     </PackageReference>
     <PackageReference Include="ScanbotSDK.Xamarin">
-      <Version>3.8.3-beta.2</Version>
+      <Version>3.8.3</Version>
     </PackageReference>
     <PackageReference Include="Xamarin.AndroidX.Lifecycle.LiveData">
       <Version>2.5.1.1</Version>

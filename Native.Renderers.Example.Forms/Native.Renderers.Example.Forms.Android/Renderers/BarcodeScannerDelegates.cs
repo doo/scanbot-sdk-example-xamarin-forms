@@ -1,4 +1,5 @@
 ﻿using System;
+using IO.Scanbot.Sdk;
 using IO.Scanbot.Sdk.Barcode;
 using IO.Scanbot.Sdk.Barcode.Entity;
 using IO.Scanbot.Sdk.Barcode.UI;
@@ -24,9 +25,12 @@ namespace Native.Renderers.Example.Forms.Droid.Renderers
     {
         public BarcodeScanningResult Result { get; private set; }
 
-        public BarcodeEventArgs(Java.Lang.Object value)
+        public SdkLicenseError Error { get; private set; }
+
+        public BarcodeEventArgs(Java.Lang.Object value, SdkLicenseError error)
         {
             Result = (BarcodeScanningResult)value;
+            Error = error;
         }
     }
 
@@ -37,13 +41,10 @@ namespace Native.Renderers.Example.Forms.Droid.Renderers
     {
         public EventHandler<BarcodeEventArgs> Success;
 
-        public override bool HandleResult(BarcodeScanningResult result, IO.Scanbot.Sdk.SdkLicenseError error)
+        public override bool HandleResult(BarcodeScanningResult result, SdkLicenseError error)
         {
-            if (!SBSDK.IsLicenseValid())
-            {
-                return false;
-            }
-            Success?.Invoke(this, new BarcodeEventArgs(result));
+            if (result == null) return false;
+            Success?.Invoke(this, new BarcodeEventArgs(result, error));
             return false;
         }
     }
@@ -56,6 +57,7 @@ namespace Native.Renderers.Example.Forms.Droid.Renderers
 
         public void OnSelectionOverlayBarcodeClicked(BarcodeItem barcodeItem)
         {
+            if (barcodeItem == null) return;
             SelectionOverlayBarcodeClicked?.Invoke(null, barcodeItem);
         }
 

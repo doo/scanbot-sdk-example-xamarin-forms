@@ -28,8 +28,6 @@ namespace Native.Renderers.Example.Forms
 
         private void SetupViews()
         {
-            IsDetectionOn = false;
-
             cameraView.OnBarcodeScanResult = (result) =>
             {
                 string text = "";
@@ -42,6 +40,7 @@ namespace Native.Renderers.Example.Forms
                     resultsLabel.Text = text;
                 });
             };
+            cameraView.OverlayConfiguration = new SelectionOverlayConfiguration(true, OverlayFormat.CodeAndType, Color.Yellow, Color.Yellow, Color.Black, Color.Red, Color.Red, Color.Black);
         }
 
         protected override void OnAppearing()
@@ -55,11 +54,23 @@ namespace Native.Renderers.Example.Forms
             scanButton.Clicked += OnScanButtonPressed;
             infoButton.Clicked += OnInfoButtonPressed;
 
-            cameraView.Resume();
+            ResumeCamera();
 
             if (ScanbotSDKConfiguration.LICENSE_KEY.Equals("")) {
                 ShowTrialLicenseAlert();
             }
+        }
+
+        private void ResumeCamera()
+        {
+            IsDetectionOn = true;
+            cameraView.Resume();
+        }
+
+        private void PauseCamera()
+        {
+            IsDetectionOn = false;
+            cameraView.Pause();
         }
 
         protected override void OnDisappearing()
@@ -69,7 +80,7 @@ namespace Native.Renderers.Example.Forms
             scanButton.Clicked -= OnScanButtonPressed;
             infoButton.Clicked -= OnInfoButtonPressed;
 
-            cameraView.Pause();
+            PauseCamera();
         }
 
         private void OnScanButtonPressed(object sender, EventArgs e)

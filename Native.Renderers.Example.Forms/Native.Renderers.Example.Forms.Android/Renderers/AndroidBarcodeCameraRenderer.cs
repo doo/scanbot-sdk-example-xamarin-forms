@@ -14,6 +14,8 @@ using ScanbotSDK.Xamarin.Forms.Android;
 using Android.Views;
 using IO.Scanbot.Sdk.UI.Camera;
 using IO.Scanbot.Sdk.Barcode.UI;
+using System.Collections.Generic;
+using AndroidBarcode = IO.Scanbot.Sdk.Barcode.Entity.BarcodeItem;
 
 /*
     This is the Android Custom Renderer that will provide the actual implementation for BarcodeCameraView.
@@ -35,9 +37,11 @@ namespace Native.Renderers.Example.Forms.Droid.Renderers
     */
     class AndroidBarcodeCameraRenderer : ViewRenderer<BarcodeCameraView, FrameLayout>
     {
+        bool flashEnabled;
         protected FrameLayout cameraLayout;
         protected BarcodeScannerView cameraView;
         private readonly int REQUEST_PERMISSION_CODE = 200;
+        BarcodeResultDelegate resultHandler;
 
         public AndroidBarcodeCameraRenderer(Context context) : base(context)
         {
@@ -93,7 +97,7 @@ namespace Native.Renderers.Example.Forms.Droid.Renderers
 
                 Element.StopDetectionHandler = (sender, e) =>
                 {
-
+                    cameraView.ViewController.OnPause();
                 };
 
                 // Here we create the BarcodeDetectorFrameHandler which will take care of detecting
@@ -105,21 +109,35 @@ namespace Native.Renderers.Example.Forms.Droid.Renderers
 
                 cameraView.InitCamera(new CameraUiSettings(false));
                 // result delegate
-                var resultHandler = new BarcodeResultDelegate();
+                resultHandler = new BarcodeResultDelegate();
                 resultHandler.Success += OnBarcodeResult;
 
                 // scanner delegates
-                //var scannerViewCallback = new BarcodeScannerViewCallback();
-                //scannerViewCallback.CameraOpen = OnCameraOpened;
-                //scannerViewCallback.PictureTaken += OnPictureTaken;
-                //scannerViewCallback.SelectionOverlayBarcodeClicked += OnSelectionOverlayBarcodeClicked;
+                var scannerViewCallback = new BarcodeScannerViewCallback();
+                scannerViewCallback.CameraOpen = OnCameraOpened;
+                scannerViewCallback.SelectionOverlayBarcodeClicked += OnSelectionOverlayBarcodeClicked;
 
-                BarcodeScannerViewWrapper.InitDetectionBehavior(cameraView, detector, resultHandler, null);
-                cameraView.ViewController.AutoSnappingEnabled = true;
-                cameraView.ViewController.SetAutoSnappingSensitivity(1f);
+                BarcodeScannerViewWrapper.InitDetectionBehavior(cameraView, detector, resultHandler, scannerViewCallback);
                 SetSelectionOverlayConfiguration();
             }
         }
+
+        private void OnSelectionOverlayBarcodeClicked(object sender, AndroidBarcode e)
+        {
+            var items = new List<AndroidBarcode> { e };
+            var args = new BarcodeEventArgs(new BarcodeScanningResult(items, new Java.Util.Date().Time), null);
+            OnBarcodeResult(this, args);
+        }
+
+        public void OnCameraOpened()
+        {
+            cameraView.PostDelayed(delegate
+            {
+                cameraView.ViewController.UseFlash(flashEnabled);
+                cameraView.ViewController.ContinuousFocus();
+            }, 300);
+        }
+
 
         private void SetSelectionOverlayConfiguration()
         {
@@ -144,6 +162,12 @@ namespace Native.Renderers.Example.Forms.Droid.Renderers
                 {
                     cameraView.SelectionOverlayController.SetTextContainerHighlightedColor(Element.OverlayConfiguration.HighlightedTextContainerColor.Value.ToAndroid());
                 }
+
+                // if selection overlay is set than we get barcode results from it's own OnSelectionOverlayBarcodeClicked handler. So we don't need below result handler.
+                if (resultHandler != null)
+                {
+                    resultHandler.Success -= OnBarcodeResult;
+                }
             }
         }
 
@@ -159,7 +183,8 @@ namespace Native.Renderers.Example.Forms.Droid.Renderers
 
                 Element.OnBarcodeScanResult?.Invoke(outResult);
             }
-            else
+
+            if (e.Error != null)
             {
                 cameraView.Post(() => Toast.MakeText(Context.GetActivity(), "License has expired!", ToastLength.Long).Show());
             }

@@ -16,6 +16,7 @@ using IO.Scanbot.Sdk.UI.Camera;
 using IO.Scanbot.Sdk.Barcode.UI;
 using System.Collections.Generic;
 using AndroidBarcode = IO.Scanbot.Sdk.Barcode.Entity.BarcodeItem;
+using ScanbotSDK.Xamarin.Forms;
 
 /*
     This is the Android Custom Renderer that will provide the actual implementation for BarcodeCameraView.
@@ -125,7 +126,7 @@ namespace Native.Renderers.Example.Forms.Droid.Renderers
         private void OnSelectionOverlayBarcodeClicked(object sender, AndroidBarcode e)
         {
             var items = new List<AndroidBarcode> { e };
-            var args = new BarcodeEventArgs(new BarcodeScanningResult(items, new Java.Util.Date().Time), null);
+            var args = new BarcodeEventArgs(new IO.Scanbot.Sdk.Barcode.Entity.BarcodeScanningResult(items, new Java.Util.Date().Time), null);
             OnBarcodeResult(this, args);
         }
 
@@ -144,6 +145,7 @@ namespace Native.Renderers.Example.Forms.Droid.Renderers
             if (Element?.OverlayConfiguration?.Enabled == true)
             {
                 cameraView.SelectionOverlayController.SetEnabled(Element.OverlayConfiguration.Enabled);
+                cameraView.SelectionOverlayController.SetTextFormat(Element.OverlayConfiguration.OverlayTextFormat.ToAndroid());
                 cameraView.SelectionOverlayController.SetPolygonColor(Element.OverlayConfiguration.PolygonColor.ToAndroid());
                 cameraView.SelectionOverlayController.SetTextColor(Element.OverlayConfiguration.TextColor.ToAndroid());
                 cameraView.SelectionOverlayController.SetTextContainerColor(Element.OverlayConfiguration.TextContainerColor.ToAndroid());
@@ -202,6 +204,25 @@ namespace Native.Renderers.Example.Forms.Droid.Renderers
             if (ContextCompat.CheckSelfPermission(activity, Manifest.Permission.Camera) != Permission.Granted)
             {
                 ActivityCompat.RequestPermissions(activity, new string[] { Manifest.Permission.Camera }, REQUEST_PERMISSION_CODE);
+            }
+        }
+    }
+
+    public static class Extension
+    {
+        // --------------------------------
+        // Overlay Text Format
+        // --------------------------------
+        public static BarcodeOverlayTextFormat ToAndroid(this OverlayFormat format)
+        {
+            switch (format)
+            {
+                case OverlayFormat.None:
+                    return BarcodeOverlayTextFormat.None;
+                case OverlayFormat.Code:
+                    return BarcodeOverlayTextFormat.Code;
+                default:
+                    return BarcodeOverlayTextFormat.CodeAndType;
             }
         }
     }

@@ -9,7 +9,6 @@ namespace Native.Renderers.Example.Forms
 {
     public partial class MainPage : ContentPage
     {
-
         private bool isDetectionOn;
         private bool IsDetectionOn {
             get => isDetectionOn;
@@ -54,23 +53,9 @@ namespace Native.Renderers.Example.Forms
             scanButton.Clicked += OnScanButtonPressed;
             infoButton.Clicked += OnInfoButtonPressed;
 
-            ResumeCamera();
-
             if (ScanbotSDKConfiguration.LICENSE_KEY.Equals("")) {
                 ShowTrialLicenseAlert();
             }
-        }
-
-        private void ResumeCamera()
-        {
-            IsDetectionOn = true;
-            cameraView.Resume();
-        }
-
-        private void PauseCamera()
-        {
-            IsDetectionOn = false;
-            cameraView.Pause();
         }
 
         protected override void OnDisappearing()
@@ -93,7 +78,14 @@ namespace Native.Renderers.Example.Forms
             IsDetectionOn = !IsDetectionOn;
         }
 
-        private void RefreshCamera() {
+        private void PauseCamera()
+        {
+            IsDetectionOn = false;
+            cameraView.Pause();
+        }
+
+        private void RefreshCamera()
+        {
             if (IsDetectionOn)
             {
                 cameraView.StartDetection();

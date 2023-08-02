@@ -1,6 +1,4 @@
-﻿
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Linq;
 using CoreGraphics;
 using Native.Renderers.Example.Forms.iOS.Renderers;
 using Native.Renderers.Example.Forms.Views;
@@ -16,7 +14,6 @@ namespace Native.Renderers.Example.Forms.iOS.Renderers
 {
     class IOSBarcodeCameraRenderer : ViewRenderer<BarcodeCameraView, IOSBarcodeCameraView>
     {
-
         private IOSBarcodeCameraView cameraView;
         private UIViewController CurrentViewController
         {
@@ -26,7 +23,6 @@ namespace Native.Renderers.Example.Forms.iOS.Renderers
                 {
                     return window.RootViewController;
                 }
-
                 return null;
             }
         }
@@ -68,6 +64,7 @@ namespace Native.Renderers.Example.Forms.iOS.Renderers
                 cameraView.Initialize(pageRendererVc);
                 cameraView.ScannerDelegate.OnDetect = HandleBarcodeScannerResults;
                 barcodeScannerResultHandler = Element.OnBarcodeScanResult;
+                cameraView.SetSelectionOverlayConfiguration(Element.OverlayConfiguration);
             }
         }
     }
@@ -79,7 +76,8 @@ namespace Native.Renderers.Example.Forms.iOS.Renderers
         public delegate void OnDetectHandler(SBSDKBarcodeScannerResult[] codes);
         public OnDetectHandler OnDetect;
 
-        public override void DidDetect(SBSDKBarcodeScannerViewController controller, SBSDKBarcodeScannerResult[] codes, UIImage image)
+
+        public override void DidDetectBarcodes(SBSDKBarcodeScannerViewController controller, SBSDKBarcodeScannerResult[] codes)
         {
             OnDetect?.Invoke(codes);
         }
@@ -95,12 +93,48 @@ namespace Native.Renderers.Example.Forms.iOS.Renderers
         public SBSDKBarcodeScannerViewController Controller { get; private set; }
         public BarcodeScannerDelegate ScannerDelegate { get; private set; }
 
-        public IOSBarcodeCameraView(CGRect frame) : base(frame) {}
+        public IOSBarcodeCameraView(CGRect frame) : base(frame) { }
 
-        public void Initialize(UIViewController parentViewController) {
+        public void Initialize(UIViewController parentViewController)
+        {
             Controller = new SBSDKBarcodeScannerViewController(parentViewController, this);
             ScannerDelegate = new BarcodeScannerDelegate();
             Controller.Delegate = ScannerDelegate;
+            Controller.AcceptedBarcodeTypes = SBSDKBarcodeType.AllTypes;
+        }
+
+        internal void SetSelectionOverlayConfiguration(SelectionOverlayConfiguration config)
+        {
+            if (config != null && config.Enabled)
+            {
+                Controller.SelectionOverlayEnabled = config.Enabled;
+                Controller.AutomaticSelectionEnabled = config.AutomaticSelectionEnabled;
+                Controller.SelectionOverlayTextFormat = config.OverlayTextFormat.ToNative();
+
+                Controller.SelectionPolygonColor = config.PolygonColor.ToUIColor();
+                Controller.SelectionTextColor = config.TextColor.ToUIColor();
+                Controller.SelectionTextContainerColor = config.TextContainerColor.ToUIColor();
+
+                Controller.SelectionHighlightedPolygonColor = config.HighlightedPolygonColor?.ToUIColor();
+                Controller.SelectionHighlightedTextColor = config.HighlightedTextColor?.ToUIColor();
+                Controller.SelectionHighlightedTextColor = config.HighlightedTextContainerColor?.ToUIColor();
+            }
+        }
+    }
+
+    public static class Extension
+    {
+        public static SBSDKBarcodeOverlayFormat ToNative(this OverlayFormat overlayTextFormat)
+        {
+            switch (overlayTextFormat)
+            {
+                case OverlayFormat.None:
+                    return SBSDKBarcodeOverlayFormat.None;
+                case OverlayFormat.Code:
+                    return SBSDKBarcodeOverlayFormat.Code;
+                default:
+                    return SBSDKBarcodeOverlayFormat.CodeAndType;
+            }
         }
     }
 }

@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-
-using Foundation;
+﻿using Foundation;
 using Native.Renderers.Example.Forms.Common;
 using ScanbotSDK.Xamarin.Forms;
 using UIKit;

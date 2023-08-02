@@ -11,7 +11,7 @@ namespace Native.Renderers.Example.Forms.Droid
 #if DEBUG
     [Application(Debuggable = true, LargeHeap = true, Theme = "@style/MainTheme")]
 #else
-    [Application(Debuggable = false, LargeHeap = true, Theme = "@style/AppTheme")]
+    [Application(Debuggable = false, LargeHeap = true, Theme = "@style/MainTheme")]
 #endif
     public class MainApplication : Application
     {

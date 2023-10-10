@@ -36,7 +36,7 @@ namespace Native.Renderers.Example.Forms.Droid.Renderers
        By extending 'ViewRenderer' we specify that we want our custom renderer to target 'BarcodeCameraView' and
        override it with our native view, which is a 'FrameLayout' in this case (see layout/barcode_camera_view.xml)
     */
-    class AndroidBarcodeCameraRenderer : ViewRenderer<BarcodeCameraView, FrameLayout>
+    class AndroidBarcodeCameraRenderer : ViewRenderer<BarcodeCameraView, FrameLayout>, BarcodePolygonsView.IBarcodeHighlightDelegate, BarcodePolygonsView.IBarcodeAppearanceDelegate
     {
         bool flashEnabled;
         protected FrameLayout cameraLayout;
@@ -123,12 +123,7 @@ namespace Native.Renderers.Example.Forms.Droid.Renderers
             }
         }
 
-        private void OnSelectionOverlayBarcodeClicked(object sender, AndroidBarcode e)
-        {
-            var items = new List<AndroidBarcode> { e };
-            var args = new BarcodeEventArgs(new IO.Scanbot.Sdk.Barcode.Entity.BarcodeScanningResult(items, new Java.Util.Date().Time), null);
-            OnBarcodeResult(this, args);
-        }
+        #region Registered Handlers
 
         public void OnCameraOpened()
         {
@@ -139,38 +134,11 @@ namespace Native.Renderers.Example.Forms.Droid.Renderers
             }, 300);
         }
 
-
-        private void SetSelectionOverlayConfiguration()
+        private void OnSelectionOverlayBarcodeClicked(object sender, AndroidBarcode e)
         {
-            if (Element?.OverlayConfiguration?.Enabled == true)
-            {
-                cameraView.SelectionOverlayController.SetEnabled(Element.OverlayConfiguration.Enabled);
-                cameraView.SelectionOverlayController.SetTextFormat(Element.OverlayConfiguration.OverlayTextFormat.ToAndroid());
-                cameraView.SelectionOverlayController.SetPolygonColor(Element.OverlayConfiguration.PolygonColor.ToAndroid());
-                cameraView.SelectionOverlayController.SetTextColor(Element.OverlayConfiguration.TextColor.ToAndroid());
-                cameraView.SelectionOverlayController.SetTextContainerColor(Element.OverlayConfiguration.TextContainerColor.ToAndroid());
-
-                if (Element.OverlayConfiguration.HighlightedPolygonColor != null)
-                {
-                    cameraView.SelectionOverlayController.SetPolygonHighlightedColor(Element.OverlayConfiguration.HighlightedPolygonColor.Value.ToAndroid());
-                }
-
-                if (Element.OverlayConfiguration.HighlightedTextColor != null)
-                {
-                    cameraView.SelectionOverlayController.SetTextHighlightedColor(Element.OverlayConfiguration.HighlightedTextColor.Value.ToAndroid());
-                }
-
-                if (Element.OverlayConfiguration.HighlightedTextContainerColor != null)
-                {
-                    cameraView.SelectionOverlayController.SetTextContainerHighlightedColor(Element.OverlayConfiguration.HighlightedTextContainerColor.Value.ToAndroid());
-                }
-
-                // if selection overlay is set than we get barcode results from it's own OnSelectionOverlayBarcodeClicked handler. So we don't need below result handler.
-                if (resultHandler != null)
-                {
-                    resultHandler.Success -= OnBarcodeResult;
-                }
-            }
+            var items = new List<AndroidBarcode> { e };
+            var args = new BarcodeEventArgs(new IO.Scanbot.Sdk.Barcode.Entity.BarcodeScanningResult(items, new Java.Util.Date().Time), null);
+            OnBarcodeResult(this, args);
         }
 
         private void OnBarcodeResult(object sender, BarcodeEventArgs e)
@@ -192,6 +160,8 @@ namespace Native.Renderers.Example.Forms.Droid.Renderers
             }
         }
 
+        #endregion
+
         private void CheckPermissions()
         {
             if (Context == null || Context.GetActivity() == null)
@@ -206,6 +176,98 @@ namespace Native.Renderers.Example.Forms.Droid.Renderers
                 ActivityCompat.RequestPermissions(activity, new string[] { Manifest.Permission.Camera }, REQUEST_PERMISSION_CODE);
             }
         }
+
+        #region Overlay Configuration
+
+        private void SetSelectionOverlayConfiguration()
+        {
+            if (Element?.OverlayConfiguration?.Enabled == true)
+            {
+                cameraView.SelectionOverlayController.SetEnabled(Element.OverlayConfiguration.Enabled);
+                cameraView.SelectionOverlayController.SetBarcodeHighlightedDelegate(this);
+                cameraView.SelectionOverlayController.SetBarcodeAppearanceDelegate(this);
+                
+                if (resultHandler != null)
+                {
+                    resultHandler.Success -= OnBarcodeResult;
+                }
+            }
+        }
+
+        public bool ShouldHighlight(AndroidBarcode barcodeItem)
+        {
+            return Element?.OverlayConfiguration?.AutomaticSelectionEnabled ?? false;
+        }
+
+        public BarcodePolygonsView.BarcodePolygonStyle GetPolygonStyle(BarcodePolygonsView.BarcodePolygonStyle defaultStyle, AndroidBarcode barcodeItem)
+        {
+            return GetOverlayPolygonStyle(defaultStyle);
+        }
+
+        public BarcodePolygonsView.BarcodeTextViewStyle GetTextViewStyle(BarcodePolygonsView.BarcodeTextViewStyle defaultStyle, AndroidBarcode barcodeItem)
+        {
+            return GetOverlayTextStyle(defaultStyle);
+        }
+
+        private BarcodePolygonsView.BarcodePolygonStyle GetOverlayPolygonStyle(BarcodePolygonsView.BarcodePolygonStyle defaultStyle)
+        {
+            if (Element.OverlayConfiguration != null)
+            {
+                var polygonColor = Element.OverlayConfiguration.PolygonColor.ToAndroid();
+                var polygonHighlightedColor = defaultStyle.StrokeHighlightedColor;
+                if (Element.OverlayConfiguration.HighlightedPolygonColor != null)
+                {
+                    polygonHighlightedColor = Element.OverlayConfiguration.HighlightedPolygonColor.Value.ToAndroid();
+                }
+
+                var polygonStyle = new BarcodePolygonsView.BarcodePolygonStyle(drawPolygon: defaultStyle.DrawPolygon,
+                   useFill: false, // default fill is true. Please set true if you want to fill color into the barcode polygon.
+                   useFillHighlighted:defaultStyle.UseFillHighlighted,
+                   cornerRadius: defaultStyle.CornerRadius,
+                   strokeWidth: defaultStyle.StrokeWidth,
+                   strokeColor: polygonColor,
+                   strokeHighlightedColor: polygonHighlightedColor,
+                   fillColor: defaultStyle.FillColor,
+                   fillHighlightedColor: defaultStyle.FillHighlightedColor,
+                   shouldDrawShadows: defaultStyle.ShouldDrawShadows);
+
+                return polygonStyle;
+            }
+            return defaultStyle;
+        }
+
+        private BarcodePolygonsView.BarcodeTextViewStyle GetOverlayTextStyle(BarcodePolygonsView.BarcodeTextViewStyle defaultStyle)
+        {
+            if (Element.OverlayConfiguration != null)
+            {
+                var textColor = Element.OverlayConfiguration.TextColor.ToAndroid();
+                var textContainerColor = Element.OverlayConfiguration.TextContainerColor.ToAndroid();
+                var textFormat = Element.OverlayConfiguration.OverlayTextFormat.ToAndroid();
+
+                var textHighlightedColor = defaultStyle.TextHighlightedColor;
+                if (Element.OverlayConfiguration.HighlightedTextColor != null)
+                {
+                    textHighlightedColor = Element.OverlayConfiguration.HighlightedTextColor.Value.ToAndroid();
+                }
+
+                var textContainerHighlightedColor = defaultStyle.TextContainerHighlightedColor;
+                if (Element.OverlayConfiguration.HighlightedTextContainerColor != null)
+                {
+                    textContainerHighlightedColor = Element.OverlayConfiguration.HighlightedTextContainerColor.Value.ToAndroid();
+                }
+
+                var textStyle = new BarcodePolygonsView.BarcodeTextViewStyle(
+                    textColor: textColor,
+                    textHighlightedColor: textHighlightedColor,
+                    textContainerColor: textContainerColor,
+                    textContainerHighlightedColor: textContainerHighlightedColor,
+                    textFormat: textFormat);
+                return textStyle;
+            }
+            return defaultStyle;
+        }
+
+        #endregion
     }
 
     public static class Extension

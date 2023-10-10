@@ -39,7 +39,11 @@ namespace Native.Renderers.Example.Forms
                     resultsLabel.Text = text;
                 });
             };
-            cameraView.OverlayConfiguration = new SelectionOverlayConfiguration(true, OverlayFormat.CodeAndType, Color.Yellow, Color.Yellow, Color.Black, Color.Red, Color.Red, Color.Black);
+
+            cameraView.OverlayConfiguration = new SelectionOverlayConfiguration(
+                automaticSelectionEnabled: false, overlayFormat: OverlayFormat.Code,
+                polygon: Color.Black, text: Color.Black, textContainer: Color.White,
+                highlightedPolygonColor: Color.Red, highlightedTextColor: Color.Red, highlightedTextContainerColor: Color.Black);
         }
 
         protected override void OnAppearing()

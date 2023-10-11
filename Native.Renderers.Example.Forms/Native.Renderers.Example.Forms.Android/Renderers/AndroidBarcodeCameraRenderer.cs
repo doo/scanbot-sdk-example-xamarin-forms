@@ -108,7 +108,7 @@ namespace Native.Renderers.Example.Forms.Droid.Renderers
                     response.SetSaveCameraPreviewFrame(false);
                 }));
 
-                cameraView.InitCamera(new CameraUiSettings(false));
+                cameraView.InitCamera(new CameraUiSettings(true));
                 // result delegate
                 resultHandler = new BarcodeResultDelegate();
                 resultHandler.Success += OnBarcodeResult;
@@ -144,6 +144,8 @@ namespace Native.Renderers.Example.Forms.Droid.Renderers
         {
             if (Element?.OverlayConfiguration?.Enabled == true)
             {
+                // Important to set to 0 when the AR Overlay is used
+                cameraView.ViewController.BarcodeDetectionInterval = 0;
                 cameraView.SelectionOverlayController.SetEnabled(Element.OverlayConfiguration.Enabled);
                 cameraView.SelectionOverlayController.SetTextFormat(Element.OverlayConfiguration.OverlayTextFormat.ToAndroid());
                 cameraView.SelectionOverlayController.SetPolygonColor(Element.OverlayConfiguration.PolygonColor.ToAndroid());

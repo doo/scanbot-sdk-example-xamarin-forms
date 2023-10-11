@@ -54,9 +54,9 @@ namespace Scanbot.SDK.Example.Forms
         {
             var builder = new StringBuilder();
             builder.AppendLine($"DocumentType: {result.DocumentType}");
-            foreach (var field in result.Fields)
+            foreach (var field in result.Document.Fields)
             {
-                builder.AppendLine($"{field.Name}: {field.Value} ({field.Confidence:F2})");
+                builder.AppendLine($"{field.Type.Name}: {field.Value.Text} ({field.Value.Confidence:F2})");
             }
             return builder.ToString();
         }

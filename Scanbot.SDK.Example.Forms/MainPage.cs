@@ -48,6 +48,7 @@ namespace Scanbot.SDK.Example.Forms
                 ViewUtils.CreateCell("Generic Document Recognizer", GenericDocumentRecognizerClicked),
                 ViewUtils.CreateCell("Check Recognizer", CheckRecognizerClicked),
                 ViewUtils.CreateCell("Text Data Scanner", TextDataScannerClicked),
+                ViewUtils.CreateCell("Vin Data Scanner", VinDataScannerClicked),
             });
             table.Root.Add(new TableSection("MISCELLANEOUS")
             {
@@ -128,7 +129,7 @@ namespace Scanbot.SDK.Example.Forms
 
             var config = new BarcodeScannerConfiguration();
             config.BarcodeFormats = BarcodeTypes.Instance.AcceptedTypes;
-            config.BarcodeImageGenerationType = BarcodeImageGenerationType.FromVideoFrame;
+            config.ConfirmationDialogConfiguration = GetConfirmationDialog();
             config.OverlayConfiguration = GetSelectionOverlayConfig();
             var result = await SBSDK.UI.LaunchBarcodeScannerAsync(config);
             if (result.Status == OperationResult.Ok)
@@ -332,6 +333,36 @@ namespace Scanbot.SDK.Example.Forms
                 Color.Yellow, Color.Yellow, Color.Black,
                 Color.Red, Color.Red, Color.Black);
             return config;
+        }
+
+        private async void VinDataScannerClicked(object sender, EventArgs e)
+        {
+            var configuration = new VINScannerConfiguration();
+            configuration.FinderAspectRatio = new AspectRatio(7, 1);
+            configuration.GuidanceText = "Please place the number inside finder area.";
+            var result = await SBSDK.UI.LaunchVINScannerAsync(configuration);
+            if (result?.Status == OperationResult.Ok && result?.ValidationSuccessful == true)
+            {
+                var message = result.Text;
+                ViewUtils.Alert(this, "VIN Scanner result", message);
+            }
+        }
+
+         /// <summary>
+        /// Init the Confirmation Dialog.
+        /// </summary>
+        /// <returns></returns>
+        private BarcodeConfirmationDialogConfiguration GetConfirmationDialog()
+        {
+            return new BarcodeConfirmationDialogConfiguration
+            {
+                Title = "Confirmation Dialog",
+                Message = "Your barcode is scanned.",
+                ConfirmButtonTitle = "Confirm",
+                RetryButtonTitle = "Retry",
+                DialogTextFormat = BarcodeDialogFormat.TypeAndCode,
+                ResultWithConfirmation = true,
+            };
         }
     }
 }

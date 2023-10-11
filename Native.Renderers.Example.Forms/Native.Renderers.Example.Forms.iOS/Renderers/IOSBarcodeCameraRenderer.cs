@@ -1,6 +1,5 @@
 ﻿using System.Linq;
 using CoreGraphics;
-using GameController;
 using Native.Renderers.Example.Forms.iOS.Renderers;
 using Native.Renderers.Example.Forms.Views;
 using ScanbotSDK.iOS;

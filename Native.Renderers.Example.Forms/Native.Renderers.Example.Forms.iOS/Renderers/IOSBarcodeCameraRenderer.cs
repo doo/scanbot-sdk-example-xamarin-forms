@@ -103,21 +103,34 @@ namespace Native.Renderers.Example.Forms.iOS.Renderers
             Controller.AcceptedBarcodeTypes = SBSDKBarcodeType.AllTypes;
         }
 
-        internal void SetSelectionOverlayConfiguration(SelectionOverlayConfiguration config)
+        internal void SetSelectionOverlayConfiguration(SelectionOverlayConfiguration configuration)
         {
-            if (config != null && config.Enabled)
+            if (configuration != null && configuration.Enabled)
             {
-                Controller.SelectionOverlayEnabled = config.Enabled;
-                Controller.AutomaticSelectionEnabled = config.AutomaticSelectionEnabled;
-                Controller.SelectionOverlayTextFormat = config.OverlayTextFormat.ToNative();
+                var overlayConfiguration = new SBSDKBarcodeTrackingOverlayConfiguration();
 
-                Controller.SelectionPolygonColor = config.PolygonColor.ToUIColor();
-                Controller.SelectionTextColor = config.TextColor.ToUIColor();
-                Controller.SelectionTextContainerColor = config.TextContainerColor.ToUIColor();
+                var polygonStyle = new SBSDKBarcodeTrackedViewPolygonStyle();
+                polygonStyle.PolygonColor = configuration.PolygonColor.ToUIColor();
+                polygonStyle.PolygonSelectedColor = configuration.HighlightedPolygonColor?.ToUIColor();
 
-                Controller.SelectionHighlightedPolygonColor = config.HighlightedPolygonColor?.ToUIColor();
-                Controller.SelectionHighlightedTextColor = config.HighlightedTextColor?.ToUIColor();
-                Controller.SelectionHighlightedTextColor = config.HighlightedTextContainerColor?.ToUIColor();
+                // use below properties if you want to set background color to the polygon. As of now they are set to clear
+                // eg: to show translucent color over barcode. 
+                polygonStyle.PolygonBackgroundColor = UIColor.Clear;
+                polygonStyle.PolygonBackgroundSelectedColor = UIColor.Clear;
+
+                var textStyle = new SBSDKBarcodeTrackedViewTextStyle();
+                textStyle.TrackingOverlayTextFormat = configuration.OverlayTextFormat.ToNative();
+                textStyle.TextColor = configuration.TextColor.ToUIColor();
+                textStyle.SelectedTextColor = configuration.HighlightedTextColor?.ToUIColor();
+                textStyle.TextBackgroundColor = configuration.TextContainerColor.ToUIColor();
+                textStyle.TextBackgroundSelectedColor= configuration.HighlightedTextContainerColor?.ToUIColor();
+
+                overlayConfiguration.IsAutomaticSelectionEnabled = configuration.AutomaticSelectionEnabled;
+                overlayConfiguration.TextStyle = textStyle;
+                overlayConfiguration.PolygonStyle = polygonStyle;
+
+                Controller.IsTrackingOverlayEnabled = configuration.Enabled;
+                Controller.TrackingOverlayController.Configuration = overlayConfiguration;
             }
         }
     }

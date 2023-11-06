@@ -108,7 +108,7 @@ namespace Native.Renderers.Example.Forms.Droid.Renderers
                     response.SetSaveCameraPreviewFrame(false);
                 }));
 
-                cameraView.InitCamera(new CameraUiSettings(false));
+                cameraView.InitCamera(new CameraUiSettings(true));
                 // result delegate
                 resultHandler = new BarcodeResultDelegate();
                 resultHandler.Success += OnBarcodeResult;

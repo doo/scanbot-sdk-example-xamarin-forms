@@ -1,16 +1,3 @@
----
-title: Third-party Libraries | Xamarin Document Scanner
-sidebar_label: Third-party Libraries
-description: Developer documentation Scanbot Xamarin Document Scanner SDK. Guides, API references, and code samples to help you start building with Scanbot SDKs. ➜ Get started.
-image: https://docs.scanbot.io/img/hero/hero-image-nobg.png
----
-
-import TrialCta from '/docs/shared/_trial_cta.mdx';
-
-# Third-party Libraries | Xamarin Document Scanner
-
-```text
-
 Open Source libraries used in the Scanbot SDK for Xamarin and Xamarin.Forms version 3.10.0:
 
 Xamarin Component for ReactiveX RxJava and RxAndroid for Xamarin.Android:
@@ -4756,5 +4743,3 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
-```

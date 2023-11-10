@@ -1,9 +1,5 @@
-Open Source libraries used in the Scanbot SDK for Xamarin and Xamarin.Forms version 3.10.0:
+Open Source libraries used in the Scanbot SDK for Xamarin and Xamarin.Forms version 3.10.1-beta.1:
 
-Xamarin Component for ReactiveX RxJava and RxAndroid for Xamarin.Android:
-Xamarin Component for JetBrains Kotlin for Xamarin.Android:
-Xamarin Component for Square Okio for Xamarin.Android:
-Xamarin.Google.Android.Material:
 Xamarin.AndroidX:
 
 The MIT License (MIT)
@@ -16,7 +12,8 @@ The above copyright notice and this permission notice shall be included in all c
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-xamarin/AndroidSupportComponents:
+Xamarin.GooglePlayServicesComponents:
+
 The MIT License (MIT)
 
 Copyright (c) .NET Foundation Contributors

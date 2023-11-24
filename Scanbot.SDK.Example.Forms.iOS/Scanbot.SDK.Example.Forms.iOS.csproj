@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -147,7 +147,7 @@
       <Version>2.5.1</Version>
     </PackageReference>
     <PackageReference Include="Xamarin.Forms">
-      <Version>5.0.0.2612</Version>
+      <Version>5.0.0.2622</Version>
     </PackageReference>
     <PackageReference Include="ScanbotSDK.Xamarin.Forms">
       <Version>3.10.2</Version>

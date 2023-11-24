@@ -1,4 +1,4 @@
-Open Source libraries used in the Scanbot SDK for Xamarin and Xamarin.Forms version 3.10.2-beta.1:
+Open Source libraries used in the Scanbot SDK for Xamarin and Xamarin.Forms version 3.10.2:
 
 Xamarin.AndroidX:
 

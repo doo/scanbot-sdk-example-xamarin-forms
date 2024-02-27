@@ -17,6 +17,7 @@ using IO.Scanbot.Sdk.Barcode.UI;
 using System.Collections.Generic;
 using AndroidBarcode = IO.Scanbot.Sdk.Barcode.Entity.BarcodeItem;
 using ScanbotSDK.Xamarin.Forms;
+using IO.Scanbot.Barcodescanner.Model;
 
 /*
     This is the Android Custom Renderer that will provide the actual implementation for BarcodeCameraView.
@@ -43,6 +44,7 @@ namespace Native.Renderers.Example.Forms.Droid.Renderers
         protected BarcodeScannerView cameraView;
         private readonly int REQUEST_PERMISSION_CODE = 200;
         BarcodeResultDelegate resultHandler;
+        private bool showToast;
 
         public AndroidBarcodeCameraRenderer(Context context) : base(context)
         {
@@ -136,14 +138,26 @@ namespace Native.Renderers.Example.Forms.Droid.Renderers
 
         private void OnSelectionOverlayBarcodeClicked(object sender, AndroidBarcode e)
         {
-            var items = new List<AndroidBarcode> { e };
-            var args = new BarcodeEventArgs(new IO.Scanbot.Sdk.Barcode.Entity.BarcodeScanningResult(items, new Java.Util.Date().Time), null);
-            OnBarcodeResult(this, args);
+            ScanbotSDK.Xamarin.Forms.BarcodeScanningResult outResult = new ScanbotSDK.Xamarin.Forms.BarcodeScanningResult
+            {
+                Barcodes = new List<Barcode> { e.ToFormsBarcode() },
+                Image = e.Image.ToImageSource()
+            };
+
+            Element.OnBarcodeScanResult?.Invoke(outResult);
         }
 
         private void OnBarcodeResult(object sender, BarcodeEventArgs e)
         {
-            if (e.Result != null)
+            if (!SBSDK.IsLicenseValid && !showToast)
+            {
+                showToast = true;
+                cameraView.Post(() => Toast.MakeText(Context.GetActivity(), "License has expired!", ToastLength.Long).Show());
+                return;
+            }
+
+            var overlayEnabled = Element.OverlayConfiguration?.Enabled ?? false;
+            if (overlayEnabled == false || Element.OverlayConfiguration?.AutomaticSelectionEnabled == true)
             {
                 ScanbotSDK.Xamarin.Forms.BarcodeScanningResult outResult = new ScanbotSDK.Xamarin.Forms.BarcodeScanningResult
                 {
@@ -152,11 +166,6 @@ namespace Native.Renderers.Example.Forms.Droid.Renderers
                 };
 
                 Element.OnBarcodeScanResult?.Invoke(outResult);
-            }
-
-            if (e.Error != null)
-            {
-                cameraView.Post(() => Toast.MakeText(Context.GetActivity(), "License has expired!", ToastLength.Long).Show());
             }
         }
 
@@ -186,11 +195,6 @@ namespace Native.Renderers.Example.Forms.Droid.Renderers
                 cameraView.SelectionOverlayController.SetEnabled(Element.OverlayConfiguration.Enabled);
                 cameraView.SelectionOverlayController.SetBarcodeHighlightedDelegate(this);
                 cameraView.SelectionOverlayController.SetBarcodeAppearanceDelegate(this);
-                
-                if (resultHandler != null)
-                {
-                    resultHandler.Success -= OnBarcodeResult;
-                }
             }
         }
 

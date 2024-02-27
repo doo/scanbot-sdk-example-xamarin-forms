@@ -74,6 +74,8 @@
     <None Include="Info.plist" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Renderers\IOSBarcodeCameraRenderer.cs" />
+    <Compile Include="Utils\ViewUtils.cs" />
+    <Compile Include="Delegates\BarcodeScannerDelegates.cs" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
@@ -135,12 +137,14 @@
   <ItemGroup>
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2612" />
     <PackageReference Include="ScanbotSDK.Xamarin.Forms">
-      <Version>3.10.2</Version>
+      <Version>4.2.0-beta.1</Version>
     </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
     <Folder Include="Renderers\" />
+    <Folder Include="Utils\" />
+    <Folder Include="Delegates\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Native.Renderers.Example.Forms\Native.Renderers.Example.Forms.csproj">

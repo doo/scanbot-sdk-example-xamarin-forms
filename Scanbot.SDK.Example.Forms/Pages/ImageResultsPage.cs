@@ -123,16 +123,26 @@ namespace Scanbot.SDK.Example.Forms
             if (action.Equals(parameters[0]))
             {
                 var fileUri = await SBSDK.Operations
-                .CreatePdfAsync(Pages.Instance.DocumentSources, PDFPageSize.FixedA4);
+                .CreatePdfAsync(Pages.Instance.DocumentSources, PDFPageSize.A4);
                 ViewUtils.Alert(this, "Success: ", "Wrote documents to: " + fileUri.AbsolutePath);
             }
             else if (action.Equals(parameters[1]))
             {
                 string path = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
                 string pdfFilePath = Path.Combine(path, Guid.NewGuid() + ".pdf");
-                var languages = new[] { "en" };
-                var result = await SBSDK.Operations.PerformOcrAsync(Pages.Instance.DocumentSources, languages, pdfFilePath);
-                // Or do something else with the results: result.Pages...
+
+                var ocrConfig = SBSDK.Operations.OcrConfigs;
+                // Uncomment below code to use the old OCR approach. Use [OCRMode.Legacy] and set the required [InstalledLanguages] property.
+                //var languages = new List<string> { "en", "de" };
+                //var ocrConfig = new OcrConfigs
+                //{
+                //    InstalledLanguages = languages,
+                //    OcrMode = OCRMode.Legacy,
+                //    LanguageDataPath = ocrConfig.LanguageDataPath
+                //};
+
+                var result = await SBSDK.Operations.PerformOcrAsync(Pages.Instance.DocumentSources, ocrConfig, pdfFilePath);
+                // Or do something else with the result: result.Pages...
                 ViewUtils.Alert(this, "PDF with OCR layer stored: ", pdfFilePath);
             }
             else if (action.Equals(parameters[2]))

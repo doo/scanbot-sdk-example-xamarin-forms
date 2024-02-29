@@ -10,9 +10,11 @@ namespace Native.Renderers.Example.Forms
     public partial class MainPage : ContentPage
     {
         private bool isDetectionOn;
-        private bool IsDetectionOn {
+        private bool IsDetectionOn
+        {
             get => isDetectionOn;
-            set {
+            set
+            {
                 isDetectionOn = value;
                 scanButton.Text = value ? "STOP SCANNING" : "START SCANNING";
                 RefreshCamera();
@@ -27,23 +29,12 @@ namespace Native.Renderers.Example.Forms
 
         private void SetupViews()
         {
-            cameraView.OnBarcodeScanResult = (result) =>
-            {
-                string text = "";
-                foreach (Barcode barcode in result.Barcodes) {
-                    text += string.Format("{0} ({1})\n", barcode.Text, barcode.Format.ToString().ToUpper());
-                }
-
-                Device.BeginInvokeOnMainThread(() =>
-                {
-                    resultsLabel.Text = text;
-                });
-            };
-
+            cameraView.OnBarcodeScanResult = HandleBarcodeScanningResult;
             cameraView.OverlayConfiguration = new SelectionOverlayConfiguration(
-                automaticSelectionEnabled: false, overlayFormat: OverlayFormat.Code,
+                automaticSelectionEnabled: true, overlayFormat: OverlayFormat.Code,
                 polygon: Color.Black, text: Color.Black, textContainer: Color.White,
                 highlightedPolygonColor: Color.Red, highlightedTextColor: Color.Red, highlightedTextContainerColor: Color.Black);
+            cameraView.ImageGenerationType = BarcodeImageGenerationType.CapturedImage;
         }
 
         protected override void OnAppearing()
@@ -57,7 +48,8 @@ namespace Native.Renderers.Example.Forms
             scanButton.Clicked += OnScanButtonPressed;
             infoButton.Clicked += OnInfoButtonPressed;
 
-            if (ScanbotSDKConfiguration.LICENSE_KEY.Equals("")) {
+            if (ScanbotSDKConfiguration.LICENSE_KEY.Equals(""))
+            {
                 ShowTrialLicenseAlert();
             }
         }
@@ -74,12 +66,15 @@ namespace Native.Renderers.Example.Forms
 
         private void OnScanButtonPressed(object sender, EventArgs e)
         {
-            if (!SBSDK.IsLicenseValid) {
+            if (!SBSDK.IsLicenseValid && !IsDetectionOn)
+            {
                 ShowExpiredLicenseAlert();
                 return;
             }
 
             IsDetectionOn = !IsDetectionOn;
+            cameraView.IsVisible = true;
+            cameraViewImage.IsVisible = false;
         }
 
         private void PauseCamera()
@@ -93,6 +88,7 @@ namespace Native.Renderers.Example.Forms
             if (IsDetectionOn)
             {
                 cameraView.StartDetection();
+                resultsLabel.Text = string.Empty;
             }
             else
             {
@@ -100,15 +96,18 @@ namespace Native.Renderers.Example.Forms
             }
         }
 
-        private void OnInfoButtonPressed(object sender, EventArgs e) {
+        private void OnInfoButtonPressed(object sender, EventArgs e)
+        {
             DisplayAlert("Info", SBSDK.IsLicenseValid ? "Your SDK License is valid." : "Your SDK License has expired.", "Close");
         }
 
-        private void ShowExpiredLicenseAlert() {
+        private void ShowExpiredLicenseAlert()
+        {
             DisplayAlert("Error", "Your SDK license has expired", "Close");
         }
 
-        private void ShowTrialLicenseAlert() {
+        private void ShowTrialLicenseAlert()
+        {
             DisplayAlert("Welcome", "You are using the Trial SDK License. The SDK will be active for one minute.", "Close");
         }
 
@@ -119,9 +118,30 @@ namespace Native.Renderers.Example.Forms
             var safeInsets = On<iOS>().SafeAreaInsets();
             safeInsets.Bottom = 0;
             Padding = safeInsets;
+        }
 
-            resultsPreviewLayout.BackgroundColor = Color.White;
-            buttonsLayout.IsVisible = false;
+        private void HandleBarcodeScanningResult(BarcodeScanningResult result)
+        {
+            string text = string.Empty;
+            Barcode barcodeItem = null;
+            foreach (Barcode barcode in result.Barcodes)
+            {
+                text += string.Format("{0} ({1})\n", barcode.Text, barcode.Format.ToString().ToUpper());
+                barcodeItem = barcode;
+            }
+
+            Device.BeginInvokeOnMainThread(() =>
+            {
+                resultsLabel.Text = text;
+                if (cameraView.ImageGenerationType == BarcodeImageGenerationType.CapturedImage)
+                {
+                    IsDetectionOn = false;
+                    cameraView.IsVisible = false;
+                    cameraViewImage.IsVisible = true;
+                    cameraViewImage.Source = barcodeItem?.Image;
+                    cameraViewImage.Aspect = Aspect.AspectFit;
+                }
+            });
         }
     }
 }

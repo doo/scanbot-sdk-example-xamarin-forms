@@ -1,11 +1,16 @@
-﻿using System.Linq;
-using CoreGraphics;
+﻿using CoreGraphics;
+
+using System.Linq;
+
 using Native.Renderers.Example.Forms.iOS.Renderers;
 using Native.Renderers.Example.Forms.Views;
+
 using ScanbotSDK.iOS;
 using ScanbotSDK.Xamarin.Forms;
 using ScanbotSDK.Xamarin.Forms.iOS;
+
 using UIKit;
+
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.iOS;
 
@@ -42,6 +47,30 @@ namespace Native.Renderers.Example.Forms.iOS.Renderers
             SetNativeControl(cameraView);
 
             base.OnElementChanged(e);
+
+            Element.OnResumeHandler = (sender, e1) =>
+            {
+                cameraView.Controller.UnfreezeCamera();
+                cameraView.ScannerDelegate.isScanning = true;
+            };
+
+            Element.StartDetectionHandler = (sender, e2) =>
+            {
+                cameraView.Controller.UnfreezeCamera();
+                cameraView.ScannerDelegate.isScanning = true;
+            };
+
+            Element.OnPauseHandler = (sender, e3) =>
+            {
+                cameraView.Controller.FreezeCamera();
+                cameraView.ScannerDelegate.isScanning = false;
+            };
+
+            Element.StopDetectionHandler = (sender, e4) =>
+            {
+                cameraView.Controller.FreezeCamera();
+                cameraView.ScannerDelegate.isScanning = false;
+            };
         }
 
         public override void LayoutSubviews()
@@ -57,32 +86,33 @@ namespace Native.Renderers.Example.Forms.iOS.Renderers
         }
     }
 
-    internal class IOSBarcodeCameraView : UIView
+    class IOSBarcodeCameraView : UIView
     {
         public bool initialised = false;
         public SBSDKBarcodeScannerViewController Controller { get; private set; }
-        private BarcodeScannerDelegate scannerDelegate;
+        public BarcodeScannerDelegate ScannerDelegate { get; private set; }
+        internal bool IsInitialised = false;
         private BarcodeCameraView element;
-
         public IOSBarcodeCameraView(CGRect frame) : base(frame) { }
 
         public void Initialize(UIViewController parentViewController)
         {
             initialised = true;
             Controller = new SBSDKBarcodeScannerViewController(parentViewController, this);
-            scannerDelegate = new BarcodeScannerDelegate();
-            Controller.Delegate = scannerDelegate;
+            ScannerDelegate = new BarcodeScannerDelegate();
+            Controller.Delegate = ScannerDelegate;
         }
 
         internal void SetBarcodeConfigurations(BarcodeCameraView element)
         {
             this.element = element;
             Controller.AcceptedBarcodeTypes = SBSDKBarcodeType.AllTypes;
-            scannerDelegate.OnDetect = HandleBarcodeScannerResults;
+            Controller.BarcodeImageGenerationType = element.ImageGenerationType.ToNative();
+            ScannerDelegate.OnDetect = HandleBarcodeScannerResults;
             SetSelectionOverlayConfiguration(element.OverlayConfiguration);
         }
 
-        internal void SetSelectionOverlayConfiguration(SelectionOverlayConfiguration configuration)
+        private void SetSelectionOverlayConfiguration(SelectionOverlayConfiguration configuration)
         {
             if (configuration != null && configuration.Enabled)
             {
@@ -105,6 +135,7 @@ namespace Native.Renderers.Example.Forms.iOS.Renderers
                 textStyle.TextBackgroundSelectedColor = configuration.HighlightedTextContainerColor?.ToUIColor();
 
                 overlayConfiguration.IsAutomaticSelectionEnabled = configuration.AutomaticSelectionEnabled;
+                overlayConfiguration.IsSelectable = true;
                 overlayConfiguration.TextStyle = textStyle;
                 overlayConfiguration.PolygonStyle = polygonStyle;
 
@@ -141,22 +172,6 @@ namespace Native.Renderers.Example.Forms.iOS.Renderers
             {
                 Barcodes = new System.Collections.Generic.List<Barcode> { barcode.ToFormsBarcode() }
             });
-        }
-    }
-
-    public static class Extension
-    {
-        public static SBSDKBarcodeOverlayFormat ToNative(this OverlayFormat overlayTextFormat)
-        {
-            switch (overlayTextFormat)
-            {
-                case OverlayFormat.None:
-                    return SBSDKBarcodeOverlayFormat.None;
-                case OverlayFormat.Code:
-                    return SBSDKBarcodeOverlayFormat.Code;
-                default:
-                    return SBSDKBarcodeOverlayFormat.CodeAndType;
-            }
         }
     }
 }

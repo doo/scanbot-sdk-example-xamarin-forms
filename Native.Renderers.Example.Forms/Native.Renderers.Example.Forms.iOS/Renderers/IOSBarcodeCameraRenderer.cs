@@ -1,5 +1,7 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
 using CoreGraphics;
+using HomeKit;
 using Native.Renderers.Example.Forms.iOS.Renderers;
 using Native.Renderers.Example.Forms.Views;
 using ScanbotSDK.iOS;
@@ -42,6 +44,30 @@ namespace Native.Renderers.Example.Forms.iOS.Renderers
             SetNativeControl(cameraView);
 
             base.OnElementChanged(e);
+
+            Element.OnResumeHandler = (sender, e1) =>
+            {
+                cameraView.Controller.UnfreezeCamera();
+                cameraView.ScannerDelegate.isScanning = true;
+            };
+
+            Element.StartDetectionHandler = (sender, e2) =>
+            {
+                cameraView.Controller.UnfreezeCamera();
+                cameraView.ScannerDelegate.isScanning = true;
+            };
+
+            Element.OnPauseHandler = (sender, e3) =>
+            {
+                cameraView.Controller.FreezeCamera();
+                cameraView.ScannerDelegate.isScanning = false;
+            };
+
+            Element.StopDetectionHandler = (sender, e4) =>
+            {
+                cameraView.Controller.FreezeCamera();
+                cameraView.ScannerDelegate.isScanning = false;
+            };
         }
 
         public override void LayoutSubviews()
@@ -57,32 +83,55 @@ namespace Native.Renderers.Example.Forms.iOS.Renderers
         }
     }
 
-    internal class IOSBarcodeCameraView : UIView
+    // Since we cannot directly inherit from SBSDKBarcodeScannerViewControllerDelegate in our ViewRenderer,
+    // we have created this wrapper class to allow binding to its events through the use of delegates
+    class BarcodeScannerDelegate : SBSDKBarcodeScannerViewControllerDelegate
+    {
+        internal bool isScanning = true;
+        public delegate void OnDetectHandler(SBSDKBarcodeScannerResult[] codes);
+        public OnDetectHandler OnDetect;
+
+        public override void DidDetectBarcodes(SBSDKBarcodeScannerViewController controller, SBSDKBarcodeScannerResult[] codes)
+        {
+            if (controller.BarcodeImageGenerationType == SBSDKBarcodeImageGenerationType.CapturedImage)
+            {
+                isScanning = false; // it will restrict further scans and stop scanning when the image is captured.
+            }
+            OnDetect?.Invoke(codes);
+        }
+
+        public override bool ShouldDetectBarcodes(SBSDKBarcodeScannerViewController controller)
+        {
+            return isScanning;
+        }
+    }
+
+    class IOSBarcodeCameraView : UIView
     {
         public bool initialised = false;
         public SBSDKBarcodeScannerViewController Controller { get; private set; }
-        private BarcodeScannerDelegate scannerDelegate;
+        internal BarcodeScannerDelegate ScannerDelegate;
         private BarcodeCameraView element;
-
         public IOSBarcodeCameraView(CGRect frame) : base(frame) { }
 
         public void Initialize(UIViewController parentViewController)
         {
             initialised = true;
             Controller = new SBSDKBarcodeScannerViewController(parentViewController, this);
-            scannerDelegate = new BarcodeScannerDelegate();
-            Controller.Delegate = scannerDelegate;
+            ScannerDelegate = new BarcodeScannerDelegate();
+            Controller.Delegate = ScannerDelegate;
         }
 
         internal void SetBarcodeConfigurations(BarcodeCameraView element)
         {
             this.element = element;
             Controller.AcceptedBarcodeTypes = SBSDKBarcodeType.AllTypes;
-            scannerDelegate.OnDetect = HandleBarcodeScannerResults;
+            Controller.BarcodeImageGenerationType = element.ImageGenerationType.ToNative();
+            ScannerDelegate.OnDetect = HandleBarcodeScannerResults;
             SetSelectionOverlayConfiguration(element.OverlayConfiguration);
         }
 
-        internal void SetSelectionOverlayConfiguration(SelectionOverlayConfiguration configuration)
+        private void SetSelectionOverlayConfiguration(SelectionOverlayConfiguration configuration)
         {
             if (configuration != null && configuration.Enabled)
             {
@@ -156,6 +205,21 @@ namespace Native.Renderers.Example.Forms.iOS.Renderers
                     return SBSDKBarcodeOverlayFormat.Code;
                 default:
                     return SBSDKBarcodeOverlayFormat.CodeAndType;
+            }
+        }
+
+        public static SBSDKBarcodeImageGenerationType ToNative(this BarcodeImageGenerationType imageGenerationType)
+        {
+            switch (imageGenerationType)
+            {
+                case BarcodeImageGenerationType.None:
+                    return SBSDKBarcodeImageGenerationType.None;
+                case BarcodeImageGenerationType.CapturedImage:
+                    return SBSDKBarcodeImageGenerationType.CapturedImage;
+                case BarcodeImageGenerationType.FromVideoFrame:
+                    return SBSDKBarcodeImageGenerationType.FromVideoFrame;
+                default:
+                    return SBSDKBarcodeImageGenerationType.None;
             }
         }
     }

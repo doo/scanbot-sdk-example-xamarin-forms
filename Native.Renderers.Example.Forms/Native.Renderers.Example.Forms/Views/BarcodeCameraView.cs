@@ -58,6 +58,12 @@ namespace Native.Renderers.Example.Forms.Views
         public SelectionOverlayConfiguration OverlayConfiguration { get; set; }
 
         /// <summary>
+        /// Specifies the way of barcode images generation or disables this generation at all.
+        /// Use, if you want to receive a full sized image with barcodes.
+        /// </summary>
+        public BarcodeImageGenerationType ImageGenerationType { get; set; }
+
+        /// <summary>
         /// Flash enabled.
         /// </summary>
         public bool IsFlashEnabled { get; set; }

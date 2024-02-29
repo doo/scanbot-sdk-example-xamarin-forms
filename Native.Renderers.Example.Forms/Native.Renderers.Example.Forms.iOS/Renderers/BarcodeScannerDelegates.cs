@@ -1,8 +1,7 @@
-﻿using Native.Renderers.Example.Forms.iOS.Utils;
+﻿using Foundation;
 using ScanbotSDK.iOS;
-using ScanbotSDK.Xamarin.Forms;
 
-namespace Native.Renderers.Example.Forms.iOS
+namespace Native.Renderers.Example.Forms.iOS.Renderers
 {
     // Since we cannot directly inherit from SBSDKBarcodeScannerViewControllerDelegate in our ViewRenderer,
     // we have created this wrapper class to allow binding to its events through the use of delegates
@@ -23,25 +22,19 @@ namespace Native.Renderers.Example.Forms.iOS
 
         public override bool ShouldDetectBarcodes(SBSDKBarcodeScannerViewController controller)
         {
-            if (!SBSDK.IsLicenseValid)
-            {
-                ViewUtils.ShowAlert("License Expired!", "Ok");
-                return false;
-            }
-
             return isScanning;
         }
     }
 
-    internal class BarcodeTrackingOverlayDelegate : SBSDKBarcodeTrackingOverlayControllerDelegate
+    class BarcodeTrackingOverlayDelegate : SBSDKBarcodeTrackingOverlayControllerDelegate
     {
         public delegate void DidTapOnBarcodeAROverlay(SBSDKBarcodeScannerResult barcode);
         public DidTapOnBarcodeAROverlay DidTapBarcodeOverlay;
 
+        [Export("barcodeTrackingOverlay:didTapOnBarcode:")]
         public override void DidTapOnBarcode(SBSDKBarcodeTrackingOverlayController controller, SBSDKBarcodeScannerResult barcode)
         {
             DidTapBarcodeOverlay?.Invoke(barcode);
         }
     }
 }
-

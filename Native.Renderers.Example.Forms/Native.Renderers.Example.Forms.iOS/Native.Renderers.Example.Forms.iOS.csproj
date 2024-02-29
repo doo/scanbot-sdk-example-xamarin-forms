@@ -74,8 +74,9 @@
     <None Include="Info.plist" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Renderers\IOSBarcodeCameraRenderer.cs" />
-    <Compile Include="Utils\ViewUtils.cs" />
+    <Compile Include="Renderers\Extensions.cs" />
     <Compile Include="Delegates\BarcodeScannerDelegates.cs" />
+    <Compile Include="Utils\ViewUtils.cs" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />

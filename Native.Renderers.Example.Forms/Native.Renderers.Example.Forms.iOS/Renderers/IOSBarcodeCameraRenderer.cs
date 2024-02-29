@@ -1,13 +1,16 @@
-﻿using System;
+﻿using CoreGraphics;
+
 using System.Linq;
-using CoreGraphics;
-using HomeKit;
+
 using Native.Renderers.Example.Forms.iOS.Renderers;
 using Native.Renderers.Example.Forms.Views;
+
 using ScanbotSDK.iOS;
 using ScanbotSDK.Xamarin.Forms;
 using ScanbotSDK.Xamarin.Forms.iOS;
+
 using UIKit;
+
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.iOS;
 
@@ -83,34 +86,12 @@ namespace Native.Renderers.Example.Forms.iOS.Renderers
         }
     }
 
-    // Since we cannot directly inherit from SBSDKBarcodeScannerViewControllerDelegate in our ViewRenderer,
-    // we have created this wrapper class to allow binding to its events through the use of delegates
-    class BarcodeScannerDelegate : SBSDKBarcodeScannerViewControllerDelegate
-    {
-        internal bool isScanning = true;
-        public delegate void OnDetectHandler(SBSDKBarcodeScannerResult[] codes);
-        public OnDetectHandler OnDetect;
-
-        public override void DidDetectBarcodes(SBSDKBarcodeScannerViewController controller, SBSDKBarcodeScannerResult[] codes)
-        {
-            if (controller.BarcodeImageGenerationType == SBSDKBarcodeImageGenerationType.CapturedImage)
-            {
-                isScanning = false; // it will restrict further scans and stop scanning when the image is captured.
-            }
-            OnDetect?.Invoke(codes);
-        }
-
-        public override bool ShouldDetectBarcodes(SBSDKBarcodeScannerViewController controller)
-        {
-            return isScanning;
-        }
-    }
-
     class IOSBarcodeCameraView : UIView
     {
         public bool initialised = false;
         public SBSDKBarcodeScannerViewController Controller { get; private set; }
-        internal BarcodeScannerDelegate ScannerDelegate;
+        public BarcodeScannerDelegate ScannerDelegate { get; private set; }
+        internal bool IsInitialised = false;
         private BarcodeCameraView element;
         public IOSBarcodeCameraView(CGRect frame) : base(frame) { }
 
@@ -154,6 +135,7 @@ namespace Native.Renderers.Example.Forms.iOS.Renderers
                 textStyle.TextBackgroundSelectedColor = configuration.HighlightedTextContainerColor?.ToUIColor();
 
                 overlayConfiguration.IsAutomaticSelectionEnabled = configuration.AutomaticSelectionEnabled;
+                overlayConfiguration.IsSelectable = true;
                 overlayConfiguration.TextStyle = textStyle;
                 overlayConfiguration.PolygonStyle = polygonStyle;
 
@@ -190,37 +172,6 @@ namespace Native.Renderers.Example.Forms.iOS.Renderers
             {
                 Barcodes = new System.Collections.Generic.List<Barcode> { barcode.ToFormsBarcode() }
             });
-        }
-    }
-
-    public static class Extension
-    {
-        public static SBSDKBarcodeOverlayFormat ToNative(this OverlayFormat overlayTextFormat)
-        {
-            switch (overlayTextFormat)
-            {
-                case OverlayFormat.None:
-                    return SBSDKBarcodeOverlayFormat.None;
-                case OverlayFormat.Code:
-                    return SBSDKBarcodeOverlayFormat.Code;
-                default:
-                    return SBSDKBarcodeOverlayFormat.CodeAndType;
-            }
-        }
-
-        public static SBSDKBarcodeImageGenerationType ToNative(this BarcodeImageGenerationType imageGenerationType)
-        {
-            switch (imageGenerationType)
-            {
-                case BarcodeImageGenerationType.None:
-                    return SBSDKBarcodeImageGenerationType.None;
-                case BarcodeImageGenerationType.CapturedImage:
-                    return SBSDKBarcodeImageGenerationType.CapturedImage;
-                case BarcodeImageGenerationType.FromVideoFrame:
-                    return SBSDKBarcodeImageGenerationType.FromVideoFrame;
-                default:
-                    return SBSDKBarcodeImageGenerationType.None;
-            }
         }
     }
 }

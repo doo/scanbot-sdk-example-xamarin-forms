@@ -67,6 +67,11 @@ namespace Scanbot.SDK.Example.Forms
         {
             if (!SDKUtils.CheckLicense(this)) { return; }
 
+            var openCamera = await SDKUtils.CheckCameraPermisions();
+
+            if (!openCamera)
+                return;
+
             var configuration = new DocumentScannerConfiguration
             {
                 CameraPreviewMode = CameraPreviewMode.FitIn,

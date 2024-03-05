@@ -2,8 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 using ScanbotSDK.Xamarin.Forms;
+using Xamarin.Essentials;
 using Xamarin.Forms;
+using static Xamarin.Essentials.Permissions;
 
 namespace Scanbot.SDK.Example.Forms
 {
@@ -92,6 +95,50 @@ namespace Scanbot.SDK.Example.Forms
         public static string ParseTextDataScannerResult(TextDataScannerResult result)
         {
             return string.Format("{0} (confidence: {1})", result.Text, result.Confidence);
+        }
+
+
+        public static async Task<bool> CheckCameraPermisions()
+        {
+            var permissionGranted = false;
+            var status = await Permissions.CheckStatusAsync<Permissions.Camera>();
+            switch (status)
+            {
+                case PermissionStatus.Denied:
+                    // permissions denied by the user earlier.
+                    // please prompt yout own popup here to ask for permissions.
+                    await MainThread.InvokeOnMainThreadAsync(PromtCameraPermissions);
+                    break;
+                case PermissionStatus.Disabled:
+                    System.Diagnostics.Debug.WriteLine("Disabled");
+                    break;
+
+                case PermissionStatus.Granted:
+                    // User allowed the permissions
+                    permissionGranted = true;
+                    break;
+
+                case PermissionStatus.Restricted:
+                    System.Diagnostics.Debug.WriteLine("Restricted");
+                    break;
+
+                case PermissionStatus.Unknown:
+                    // Initial State
+                    await Permissions.RequestAsync<Permissions.Camera>();
+                    permissionGranted = await CheckCameraPermisions();
+                    break;
+            }
+
+            return permissionGranted;
+        }
+
+        private static async Task PromtCameraPermissions()
+        {
+            var result = await App.Current.MainPage.DisplayAlert("Permission needed", "The application will need the Camera permissions for this action", accept: "Go to settings", cancel: "Cancel");
+            if (result)
+            {
+                AppInfo.ShowSettingsUI();
+            }
         }
     }
 }

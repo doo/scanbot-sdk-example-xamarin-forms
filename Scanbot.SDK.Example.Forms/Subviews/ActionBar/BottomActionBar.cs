@@ -36,7 +36,11 @@ namespace Scanbot.SDK.Example.Forms
             HeightRequest = HEIGHT;
             HorizontalOptions = LayoutOptions.Fill;
             VerticalOptions = LayoutOptions.EndAndExpand;
-            Padding = new Thickness(29, 0);
+
+            if (Device.RuntimePlatform == Device.iOS)
+            {
+                Padding = new Thickness(29, 0);
+            }
 
             if (isDetailPage)
             {
@@ -62,6 +66,7 @@ namespace Scanbot.SDK.Example.Forms
             button.Margin = new Thickness(0, 0, 5, 0);
             button.FontSize = 14;
             button.HeightRequest = HEIGHT;
+            button.BackgroundColor = Color.Transparent;
             if (alignRight)
             {
                 button.HorizontalOptions = LayoutOptions.EndAndExpand;

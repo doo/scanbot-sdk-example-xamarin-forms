@@ -29,7 +29,6 @@
     <Compile Include="$(MSBuildThisFileDirectory)Subviews\Cells\BarcodeFormatCell.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Subviews\Cells\ImageResultCell.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Subviews\ActionBar\BottomActionBar.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Subviews\ActionBar\BottomActionButton.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Pages\ImageDetailPage.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\PageStorage.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)DependencyServices\IMultiImagePicker.cs" />

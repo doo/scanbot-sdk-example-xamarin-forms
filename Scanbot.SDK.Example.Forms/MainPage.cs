@@ -172,7 +172,10 @@ namespace Scanbot.SDK.Example.Forms
 
             if (source != null)
             {
-                var barcodes = await SBSDK.Operations.DetectBarcodesFrom(source);
+                var barcodes = await SBSDK.Operations.DetectBarcodesFrom(source, new DetectBarcodesFromImageOptions
+                {
+                    BarcodeFormats = BarcodeTypes.Instance.AcceptedTypes
+                });
                 await Navigation.PushAsync(new BarcodeResultsPage(source, barcodes));
             }
         }

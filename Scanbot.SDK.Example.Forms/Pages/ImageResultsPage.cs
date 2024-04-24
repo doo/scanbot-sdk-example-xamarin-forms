@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using Foundation;
 using ScanbotSDK.Xamarin;
 using ScanbotSDK.Xamarin.Forms;
 using Xamarin.Essentials;
@@ -119,7 +120,6 @@ namespace Scanbot.SDK.Example.Forms
                 foreach (var page in result.Pages)
                 {
                     Pages.Instance.List.Add(page);
-                    
                 }
             }
         }
@@ -146,22 +146,29 @@ namespace Scanbot.SDK.Example.Forms
             }
             else if (action.Equals(parameters[1]))
             {
-                string path = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
-                string pdfFilePath = Path.Combine(path, Guid.NewGuid() + ".pdf");
+                try
+                {
+                    string path = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
+                    string pdfFilePath = Path.Combine(path, Guid.NewGuid() + ".pdf");
 
-                var ocrConfig = SBSDK.Operations.OcrConfigs;
-                // Uncomment below code to use the old OCR approach. Use [OCRMode.Legacy] and set the required [InstalledLanguages] property.
-                //var languages = new List<string> { "en", "de" };
-                //var ocrConfig = new OcrConfigs
-                //{
-                //    InstalledLanguages = languages,
-                //    OcrMode = OCRMode.Legacy,
-                //    LanguageDataPath = ocrConfig.LanguageDataPath
-                //};
+                    var ocrConfig = SBSDK.Operations.OcrConfigs;
+                    // Uncomment below code to use the old OCR approach. Use [OCRMode.Legacy] and set the required [InstalledLanguages] property.
+                    //var languages = new List<string> { "en", "de" };
+                    //var ocrConfig = new OcrConfigs
+                    //{
+                    //    InstalledLanguages = languages,
+                    //    OcrMode = OCRMode.Legacy,
+                    //    LanguageDataPath = ocrConfig.LanguageDataPath
+                    //};
 
-                var result = await SBSDK.Operations.PerformOcrAsync(Pages.Instance.DocumentSources, ocrConfig, pdfFilePath);
-                // Or do something else with the result: result.Pages...
-                ViewUtils.Alert(this, "PDF with OCR layer stored: ", pdfFilePath);
+                    var result = await SBSDK.Operations.PerformOcrAsync(Pages.Instance.DocumentSources, ocrConfig, pdfFilePath);
+                    // Or do something else with the result: result.Pages...
+                    ViewUtils.Alert(this, "PDF with OCR layer stored: ", pdfFilePath);
+                }
+                catch (Exception error)
+                {
+                    ViewUtils.Alert(this, "Error", error.Message);
+                }
             }
             else if (action.Equals(parameters[2]))
             {

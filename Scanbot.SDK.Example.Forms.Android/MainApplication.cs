@@ -56,6 +56,7 @@ namespace Scanbot.SDK.Example.Forms.Droid
                 // encrypted.
             };
             SBSDKInitializer.Initialize(this, LICENSE_KEY, configuration);
+            App.IsEncryptionEnabled = configuration.Encryption != null;
         }
 
         string GetDemoStorageBaseDirectory()

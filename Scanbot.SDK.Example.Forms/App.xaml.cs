@@ -9,6 +9,8 @@ namespace Scanbot.SDK.Example.Forms
     {
         public static Color ScanbotRed = Color.FromRgb(200, 25, 60);
 
+        public static bool IsEncryptionEnabled = false;
+
         public App()
         {
             InitializeComponent();

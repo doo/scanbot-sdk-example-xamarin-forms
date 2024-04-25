@@ -5,66 +5,82 @@ namespace Scanbot.SDK.Example.Forms
 {
     public class BottomActionBar : StackLayout
     {
+        internal const string CROP = "CROP";
+        internal const string FILTER = "FILTER";
+        internal const string QUALITY = "QUALITY";
+        internal const string DELETE = "DELETE";
+        internal const string ADD = "ADD";
+        internal const string SAVE = "SAVE";
+        internal const string DELETE_ALL = "DELETE ALL";
+
         public const int HEIGHT = 50;
+
+        public Action<string> ButtonClicked;
 
         // Pseudo-universal bottom action bar for multiple pages:
         // These are initialized in Image Results Page
-        public BottomActionButton AddButton { get; private set; }
-        public BottomActionButton SaveButton { get; private set; }
-        public BottomActionButton DeleteAllButton { get; private set; }
+        public Button AddButton { get; private set; }
+        public Button SaveButton { get; private set; }
+        public Button DeleteAllButton { get; private set; }
 
         // Whereas these are initialized in Image Details Page
-        public BottomActionButton CropButton { get; private set; }
-        public BottomActionButton FilterButton { get; private set; }
-        public BottomActionButton DeleteButton { get; private set; }
+        public Button CropButton { get; private set; }
+        public Button FilterButton { get; private set; }
+        public Button CheckQuality { get; private set; }
+        public Button DeleteButton { get; private set; }
 
         public BottomActionBar(bool isDetailPage)
         {
             BackgroundColor = App.ScanbotRed;
             Orientation = StackOrientation.Horizontal;
             HeightRequest = HEIGHT;
-            HorizontalOptions = LayoutOptions.FillAndExpand;
+            HorizontalOptions = LayoutOptions.Fill;
             VerticalOptions = LayoutOptions.EndAndExpand;
+
+            if (Device.RuntimePlatform == Device.iOS)
+            {
+                Padding = new Thickness(29, 0);
+            }
 
             if (isDetailPage)
             {
-                CropButton = new BottomActionButton("crop.png", "CROP");
-                CreateButton(CropButton);
-                FilterButton = new BottomActionButton("filter.png", "FILTER");
-                CreateButton(FilterButton);
-                DeleteButton = new BottomActionButton("delete.png", "DELETE");
-                CreateButton(DeleteButton, true);
+                CropButton = CreateButton(CROP);
+                FilterButton = CreateButton(FILTER);
+                CheckQuality = CreateButton(QUALITY);
+                DeleteButton = CreateButton(DELETE, true);
             }
             else
             {
-                AddButton = new BottomActionButton("add.png", "ADD");
-                CreateButton(AddButton);
-                SaveButton = new BottomActionButton("save.png", "SAVE");
-                CreateButton(SaveButton);
-                DeleteAllButton = new BottomActionButton("delete.png", "DELETE ALL");
-                CreateButton(DeleteAllButton, true);
+                AddButton = CreateButton(ADD);
+                SaveButton = CreateButton(SAVE);
+                DeleteAllButton = CreateButton(DELETE_ALL, true);
             }
         }
 
-        void CreateButton(BottomActionButton button, bool alignRight = false)
+        Button CreateButton(string text, bool alignRight = false)
         {
+            var button = new Button();
+            button.Text = text;
+            button.TextColor = Color.White;
+            button.VerticalOptions = LayoutOptions.Center;
+            button.Margin = new Thickness(0, 0, 5, 0);
+            button.FontSize = 14;
             button.HeightRequest = HEIGHT;
+            button.BackgroundColor = Color.Transparent;
             if (alignRight)
             {
                 button.HorizontalOptions = LayoutOptions.EndAndExpand;
             }
 
             Children.Add(button);
+
+            button.Clicked += Button_Click;
+            return button;
         }
 
-        public void AddClickEvent(BottomActionButton button, EventHandler action)
+        private void Button_Click(object sender, EventArgs e)
         {
-            var recognizer = new TapGestureRecognizer();
-            recognizer.Tapped += action;
-
-            button.GestureRecognizers.Add(recognizer);
+            ButtonClicked?.Invoke((sender as Button).Text);
         }
-
     }
-
 }

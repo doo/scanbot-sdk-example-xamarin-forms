@@ -88,9 +88,8 @@ namespace Scanbot.SDK.Example.Forms
 
                     // If encryption is enabled, load the decrypted document.
                     // Else accessible via page.Document
-                    var blur = await SBSDK.Operations.EstimateBlurriness(await page.DecryptedDocument());
-                    //var blur = await SBSDK.Operations.EstimateBlurriness(page.Document);
-                    Console.WriteLine("Estimated blurriness for detected document: " + blur);
+                    var quality = await SBSDK.Operations.DetectDocumentQualityAsync(await page.DecryptedDocument());
+                    Console.WriteLine("Estimated quality for detected document: " + quality);
                 }
 
                 await Navigation.PushAsync(new ImageResultsPage());
@@ -173,7 +172,10 @@ namespace Scanbot.SDK.Example.Forms
 
             if (source != null)
             {
-                var barcodes = await SBSDK.Operations.DetectBarcodesFrom(source);
+                var barcodes = await SBSDK.Operations.DetectBarcodesFrom(source, new DetectBarcodesFromImageOptions
+                {
+                    BarcodeFormats = BarcodeTypes.Instance.AcceptedTypes
+                });
                 await Navigation.PushAsync(new BarcodeResultsPage(source, barcodes));
             }
         }

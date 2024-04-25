@@ -34,26 +34,52 @@ namespace Scanbot.SDK.Example.Forms
                 Children = { Image, BottomBar }
             };
 
-            BottomBar.AddClickEvent(BottomBar.CropButton, OnCropButtonClick);
-            BottomBar.AddClickEvent(BottomBar.FilterButton, OnFilterButtonClick);
-            BottomBar.AddClickEvent(BottomBar.DeleteButton, OnDeleteButtonClick);
+            BottomBar.ButtonClicked += OnBottomBar_Clicked;
 
             LoadImage();
+        }
+
+        private void OnBottomBar_Clicked(string buttonTitle)
+        {
+            if (!SDKUtils.CheckLicense(this)) { return; }
+            if (!SDKUtils.CheckPage(this, Pages.Instance.SelectedPage)) { return; }
+
+            switch (buttonTitle)
+            {
+                case BottomActionBar.CROP:
+                    OnCropButtonClick();
+                    break;
+
+                case BottomActionBar.FILTER:
+                    OnFilterButtonClick();
+                    break;
+
+                case BottomActionBar.QUALITY:
+                    OnCheckQualityClick();
+                    break;
+
+                case BottomActionBar.DELETE:
+                    OnDeleteButtonClick();
+                    break;
+            }
         }
 
         async void LoadImage()
         {
             // If encryption is enabled, load the decrypted document.
             // Else accessible via Document or DocumentPreview
-            Image.Source = await Pages.Instance.SelectedPage.DecryptedDocument();
-            //Image.Source = Pages.Instance.SelectedPage.Document;
+            if (App.IsEncryptionEnabled)
+            {
+                Image.Source = await Pages.Instance.SelectedPage.DecryptedDocument();
+            }
+            else
+            {
+                Image.Source = Pages.Instance.SelectedPage.Document;
+            }
         }
 
-        async void OnCropButtonClick(object sender, EventArgs e)
+        async void OnCropButtonClick()
         {
-            if (!SDKUtils.CheckLicense(this)) { return; }
-            if (!SDKUtils.CheckPage(this, Pages.Instance.SelectedPage)) { return; }
-
             await SBSDK.UI.LaunchCroppingScreenAsync(Pages.Instance.SelectedPage);
             await Pages.Instance.UpdateSelection();
 
@@ -61,11 +87,8 @@ namespace Scanbot.SDK.Example.Forms
             LoadImage();
         }
 
-        async void OnFilterButtonClick(object sender, EventArgs e)
+        async void OnFilterButtonClick()
         {
-            if (!SDKUtils.CheckLicense(this)) { return; }
-            if (!SDKUtils.CheckPage(this, Pages.Instance.SelectedPage)) { return; }
-
             var buttons = Enum.GetNames(typeof(ImageFilter));
             var action = await DisplayActionSheet("Filter", "Cancel", null, buttons);
 
@@ -77,12 +100,28 @@ namespace Scanbot.SDK.Example.Forms
             LoadImage();
         }
 
-        async void OnDeleteButtonClick(object sender, EventArgs e)
+        async void OnDeleteButtonClick()
         {
             await Pages.Instance.RemoveSelection();
             Image.Source = null;
             await Navigation.PopAsync();
         }
 
+        private async void OnCheckQualityClick()
+        {
+            ImageSource imageSource;
+            // Please use the DecryptedDocunent() to retrieve the document when encryption is enabled.
+            if (App.IsEncryptionEnabled)
+            {
+                imageSource = await Pages.Instance.SelectedPage.DecryptedDocument();
+            }
+            else
+            {
+                imageSource = Pages.Instance.SelectedPage.Document;
+            }
+           
+            var quality = await SBSDK.Operations.DetectDocumentQualityAsync(imageSource);
+            await DisplayAlert("Alert", "The Document Quality is: " + quality.ToString(), "Ok");
+        }
     }
 }

@@ -2,6 +2,7 @@
 using System.IO;
 
 using Foundation;
+using ScanbotSDK.Xamarin;
 using ScanbotSDK.Xamarin.Forms;
 using UIKit;
 
@@ -25,17 +26,24 @@ namespace Scanbot.SDK.Example.Forms.iOS
             ImagePicker.Forms.iOS.DependencyManager.Register();
 
             Console.WriteLine("Scanbot SDK Example: Initializing Scanbot SDK...");
-            SBSDKInitializer.Initialize(app, LICENSE_KEY, new SBSDKConfiguration
+            var configuration = new SBSDKConfiguration
             {
                 EnableLogging = true,
                 StorageBaseDirectory = GetDemoStorageBaseDirectory(),
                 DetectorType = DocumentDetectorType.MLBased,
-                Encryption = new ScanbotSDK.Xamarin.SBSDKEncryption
-                {
-                    Mode = ScanbotSDK.Xamarin.EncryptionMode.AES256,
-                    Password = "S0m3W3irDL0ngPa$$w0rdino!!!!"
-                }
-            });
+                // Uncomment the below to test our encyption functionality.
+                //Encryption = new SBSDKEncryption
+                //{
+                //    Mode = EncryptionMode.AES256,
+                //    Password = "S0m3W3irDL0ngPa$$w0rdino!!!!"
+                //}
+                // Note: all the images and files exported through the SDK will
+                // not be openable from external applications, since they will be
+                // encrypted.
+            };
+
+            SBSDKInitializer.Initialize(app, LICENSE_KEY, configuration);
+            App.IsEncryptionEnabled = configuration.Encryption != null;
 
             global::Xamarin.Forms.Forms.Init();
             LoadApplication(new App());

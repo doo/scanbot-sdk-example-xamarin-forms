@@ -4,6 +4,8 @@ using ScanbotSDK.Xamarin;
 using ScanbotSDK.Xamarin.Forms;
 using Xamarin.Essentials;
 using Xamarin.Forms;
+using Application = Xamarin.Forms.Application;
+using ListView = Xamarin.Forms.ListView;
 
 namespace Scanbot.SDK.Example.Forms
 {
@@ -52,13 +54,28 @@ namespace Scanbot.SDK.Example.Forms
                 Children = { Loader, Stack }
             };
 
-            BottomBar.AddClickEvent(BottomBar.AddButton, OnAddButtonClick);
-            BottomBar.AddClickEvent(BottomBar.SaveButton, OnSaveButtonClick);
-            BottomBar.AddClickEvent(BottomBar.DeleteAllButton, OnDeleteButtonClick);
-
+            BottomBar.ButtonClicked += OnBottomBar_Clicked;
             List.ItemTapped += OnItemClick;
 
             (Content as AbsoluteLayout).SizeChanged += Content_SizeChanged;
+        }
+
+        private void OnBottomBar_Clicked(string buttonTitle)
+        {
+            switch (buttonTitle)
+            {
+                case BottomActionBar.ADD:
+                    OnAddButtonClick();
+                    break;
+
+                case BottomActionBar.SAVE:
+                    OnSaveButtonClick();
+                    break;
+
+                case BottomActionBar.DELETE_ALL:
+                    OnDeleteButtonClick();
+                    break;
+            }
         }
 
         private void Content_SizeChanged(object sender, EventArgs e)
@@ -82,7 +99,7 @@ namespace Scanbot.SDK.Example.Forms
             Navigation.PushAsync(new ImageDetailPage());
         }
 
-        async void OnAddButtonClick(object sender, EventArgs e)
+        async void OnAddButtonClick()
         {
             var configuration = new DocumentScannerConfiguration
             {
@@ -92,8 +109,7 @@ namespace Scanbot.SDK.Example.Forms
                 PolygonColor = Color.Red,
                 PolygonColorOK = Color.Green,
                 BottomBarBackgroundColor = Color.Blue,
-                PageCounterButtonTitle = "%d Page(s)",
-                
+                PageCounterButtonTitle = "%d Page(s)"
             };
             var result = await SBSDK.UI.LaunchDocumentScannerAsync(configuration);
             if (result.Status == OperationResult.Ok)
@@ -101,12 +117,11 @@ namespace Scanbot.SDK.Example.Forms
                 foreach (var page in result.Pages)
                 {
                     Pages.Instance.List.Add(page);
-                    
                 }
             }
         }
 
-        async void OnSaveButtonClick(object sender, EventArgs e)
+        async void OnSaveButtonClick()
         {
             var parameters = new string[] {"PDF", "PDF with OCR", "TIFF (1-bit, B&W)" };
             string action = await DisplayActionSheet("Save Image as", "Cancel", null, parameters);
@@ -123,17 +138,34 @@ namespace Scanbot.SDK.Example.Forms
             if (action.Equals(parameters[0]))
             {
                 var fileUri = await SBSDK.Operations
-                .CreatePdfAsync(Pages.Instance.DocumentSources, PDFPageSize.FixedA4);
+                .CreatePdfAsync(Pages.Instance.DocumentSources, PDFPageSize.A4);
                 ViewUtils.Alert(this, "Success: ", "Wrote documents to: " + fileUri.AbsolutePath);
             }
             else if (action.Equals(parameters[1]))
             {
-                string path = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
-                string pdfFilePath = Path.Combine(path, Guid.NewGuid() + ".pdf");
-                var languages = new[] { "en" };
-                var result = await SBSDK.Operations.PerformOcrAsync(Pages.Instance.DocumentSources, languages, pdfFilePath);
-                // Or do something else with the results: result.Pages...
-                ViewUtils.Alert(this, "PDF with OCR layer stored: ", pdfFilePath);
+                try
+                {
+                    string path = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
+                    string pdfFilePath = Path.Combine(path, Guid.NewGuid() + ".pdf");
+
+                    var ocrConfig = SBSDK.Operations.OcrConfigs;
+                    // Uncomment below code to use the old OCR approach. Use [OCRMode.Legacy] and set the required [InstalledLanguages] property.
+                    //var languages = new List<string> { "en", "de" };
+                    //var ocrConfig = new OcrConfigs
+                    //{
+                    //    InstalledLanguages = languages,
+                    //    OcrMode = OCRMode.Legacy,
+                    //    LanguageDataPath = ocrConfig.LanguageDataPath
+                    //};
+
+                    var result = await SBSDK.Operations.PerformOcrAsync(Pages.Instance.DocumentSources, ocrConfig, pdfFilePath);
+                    // Or do something else with the result: result.Pages...
+                    ViewUtils.Alert(this, "PDF with OCR layer stored: ", pdfFilePath);
+                }
+                catch (Exception error)
+                {
+                    ViewUtils.Alert(this, "Error", error.Message);
+                }
             }
             else if (action.Equals(parameters[2]))
             {
@@ -148,7 +180,7 @@ namespace Scanbot.SDK.Example.Forms
 
         }
 
-        private async void OnDeleteButtonClick(object sender, EventArgs e)
+        private async void OnDeleteButtonClick()
         {
             var message = "Do you really want to delete all image data?";
             var result = await this.DisplayAlert("Attention!", message, "Yes", "No");
@@ -158,7 +190,6 @@ namespace Scanbot.SDK.Example.Forms
                 await SBSDK.Operations.CleanUp();
                 ReloadData();
             }
-            
         }
 
         void ReloadData()

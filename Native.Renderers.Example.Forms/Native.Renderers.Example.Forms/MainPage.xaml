@@ -6,36 +6,37 @@
              ios:Page.UseSafeArea="true"
              BackgroundColor="#c8193c"
              x:Class="Native.Renderers.Example.Forms.MainPage">
-    
-    <StackLayout BackgroundColor="#e2e2e2" Spacing="0">
-        <Frame BackgroundColor="#c8193c" Padding="16" CornerRadius="0" HasShadow="False">
-            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
-                <Label Text="Barcode Scanner Example" VerticalOptions="Center" HorizontalTextAlignment="Start" TextColor="White" FontSize="18"/>
-                <ImageButton x:Name="infoButton" Source="ic_info.png" HorizontalOptions="EndAndExpand" VerticalOptions="Center" BackgroundColor="Transparent" WidthRequest="24" HeightRequest="24"/>
-            </StackLayout>
-        </Frame>
+    <ScrollView>
+        <StackLayout BackgroundColor="#e2e2e2" Spacing="0">
+            <Frame BackgroundColor="#c8193c" Padding="16" CornerRadius="0" HasShadow="False">
+                <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                    <Label Text="Barcode Scanner Example" VerticalOptions="Center" HorizontalTextAlignment="Start" TextColor="White" FontSize="18"/>
+                    <ImageButton x:Name="infoButton" Source="ic_info.png" HorizontalOptions="EndAndExpand" VerticalOptions="Center" BackgroundColor="Transparent" WidthRequest="24" HeightRequest="24"/>
+                </StackLayout>
+            </Frame>
 
-        <!-- =============================================================================================================
+            <!-- =============================================================================================================
 
         Here we include our BarcodeCameraView. This view will be overriden by our native implementation because of
         the custom renderers that we have created. See: BarcodeCameraView.cs and AndroidBarcodeCameraRenderer.cs.
         Remember to define an xmlns attribute on the XAML root element to access your Views (in this case xmlns:local) -->
+            <Grid>
+                <Image x:Name="cameraViewImage" HeightRequest="250" BackgroundColor="WhiteSmoke"/>
+                <local:BarcodeCameraView x:Name="cameraView" HeightRequest="250" BackgroundColor="#1f1f1f"/>
+            </Grid>
+            <!--==========================================================================================================-->
 
-        <local:BarcodeCameraView x:Name="cameraView" HeightRequest="250" BackgroundColor="#1f1f1f"/>
-       
-        <!--==========================================================================================================-->
-
-        <StackLayout x:Name="buttonsLayout">
-            <BoxView Style="{StaticResource Separator}"/>
+            <StackLayout x:Name="buttonsLayout">
+                <BoxView Style="{StaticResource Separator}"/>
                 <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand" Margin="16, 32, 16, 32">
                     <Button x:Name="scanButton" Text="START SCANNING" CornerRadius="10" Padding="24, 16" BackgroundColor="#c8193c" TextColor="White"/>
                 </StackLayout>
-            <BoxView Style="{StaticResource Separator}"/>
+                <BoxView Style="{StaticResource Separator}"/>
+            </StackLayout>
+            <StackLayout x:Name="resultsPreviewLayout" BackgroundColor="#d2d2d2" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                <Label Text="Results Preview (LIVE)" FontAttributes="Bold" Margin="16,16,16,16" FontSize="16" TextColor="Black"/>
+                <Label x:Name="resultsLabel" Margin="16,0,16,0" HorizontalTextAlignment="Start" TextColor="Black" FontSize="16"/>
+            </StackLayout>
         </StackLayout>
-        <StackLayout x:Name="resultsPreviewLayout" BackgroundColor="#d2d2d2" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
-            <Label Text="Results Preview (LIVE)" FontAttributes="Bold" Margin="16,16,16,16" FontSize="16" TextColor="Black"/>
-            <Label x:Name="resultsLabel" Margin="16,0,16,0" HorizontalTextAlignment="Start" TextColor="Black" FontSize="16"/>
-        </StackLayout>
-    </StackLayout>
-
+    </ScrollView>
 </ContentPage>

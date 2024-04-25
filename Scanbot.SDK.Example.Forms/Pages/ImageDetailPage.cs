@@ -68,8 +68,14 @@ namespace Scanbot.SDK.Example.Forms
         {
             // If encryption is enabled, load the decrypted document.
             // Else accessible via Document or DocumentPreview
-            Image.Source = await Pages.Instance.SelectedPage.DecryptedDocument();
-            //Image.Source = Pages.Instance.SelectedPage.Document;
+            if (App.IsEncryptionEnabled)
+            {
+                Image.Source = await Pages.Instance.SelectedPage.DecryptedDocument();
+            }
+            else
+            {
+                Image.Source = Pages.Instance.SelectedPage.Document;
+            }
         }
 
         async void OnCropButtonClick()
@@ -103,10 +109,17 @@ namespace Scanbot.SDK.Example.Forms
 
         private async void OnCheckQualityClick()
         {
+            ImageSource imageSource;
             // Please use the DecryptedDocunent() to retrieve the document when encryption is enabled.
-            //Pages.Instance.SelectedPage.DecryptedDocument();
-
-            var imageSource = Pages.Instance.SelectedPage.Document;
+            if (App.IsEncryptionEnabled)
+            {
+                imageSource = await Pages.Instance.SelectedPage.DecryptedDocument();
+            }
+            else
+            {
+                imageSource = Pages.Instance.SelectedPage.Document;
+            }
+           
             var quality = await SBSDK.Operations.DetectDocumentQualityAsync(imageSource);
             await DisplayAlert("Alert", "The Document Quality is: " + quality.ToString(), "Ok");
         }

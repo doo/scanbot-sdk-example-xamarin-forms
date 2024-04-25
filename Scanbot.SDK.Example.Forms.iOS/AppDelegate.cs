@@ -26,7 +26,7 @@ namespace Scanbot.SDK.Example.Forms.iOS
             ImagePicker.Forms.iOS.DependencyManager.Register();
 
             Console.WriteLine("Scanbot SDK Example: Initializing Scanbot SDK...");
-            SBSDKInitializer.Initialize(app, LICENSE_KEY, new SBSDKConfiguration
+            var configuration = new SBSDKConfiguration
             {
                 EnableLogging = true,
                 StorageBaseDirectory = GetDemoStorageBaseDirectory(),
@@ -40,7 +40,10 @@ namespace Scanbot.SDK.Example.Forms.iOS
                 // Note: all the images and files exported through the SDK will
                 // not be openable from external applications, since they will be
                 // encrypted.
-            });
+            };
+
+            SBSDKInitializer.Initialize(app, LICENSE_KEY, configuration);
+            App.IsEncryptionEnabled = configuration.Encryption != null;
 
             global::Xamarin.Forms.Forms.Init();
             LoadApplication(new App());

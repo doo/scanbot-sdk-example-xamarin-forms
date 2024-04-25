@@ -1,11 +1,9 @@
 ﻿using System;
 using System.IO;
-using Foundation;
 using ScanbotSDK.Xamarin;
 using ScanbotSDK.Xamarin.Forms;
 using Xamarin.Essentials;
 using Xamarin.Forms;
-using Xamarin.Forms.PlatformConfiguration.iOSSpecific;
 using Application = Xamarin.Forms.Application;
 using ListView = Xamarin.Forms.ListView;
 
@@ -111,8 +109,7 @@ namespace Scanbot.SDK.Example.Forms
                 PolygonColor = Color.Red,
                 PolygonColorOK = Color.Green,
                 BottomBarBackgroundColor = Color.Blue,
-                PageCounterButtonTitle = "%d Page(s)",
-                
+                PageCounterButtonTitle = "%d Page(s)"
             };
             var result = await SBSDK.UI.LaunchDocumentScannerAsync(configuration);
             if (result.Status == OperationResult.Ok)

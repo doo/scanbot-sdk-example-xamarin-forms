@@ -68,7 +68,7 @@
   <ItemGroup>
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2612" />
     <PackageReference Include="ScanbotSDK.Xamarin.Forms">
-      <Version>4.2.0</Version>
+      <Version>4.2.1-alpha.1</Version>
     </PackageReference>
   </ItemGroup>
   <ItemGroup>

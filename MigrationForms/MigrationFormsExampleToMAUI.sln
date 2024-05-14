@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MigrationFormsExampleToMAUI", "MigrationFormsExampleToMAUI\MigrationFormsExampleToMAUI.csproj", "{D2BB8C7B-5986-4FAA-93E2-5C4C2F5D8ACA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D2BB8C7B-5986-4FAA-93E2-5C4C2F5D8ACA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2BB8C7B-5986-4FAA-93E2-5C4C2F5D8ACA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2BB8C7B-5986-4FAA-93E2-5C4C2F5D8ACA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2BB8C7B-5986-4FAA-93E2-5C4C2F5D8ACA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

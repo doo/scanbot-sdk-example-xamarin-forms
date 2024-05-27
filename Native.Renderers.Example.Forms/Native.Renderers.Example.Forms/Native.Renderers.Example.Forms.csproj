@@ -8,7 +8,7 @@
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2612" />
-    <PackageReference Include="ScanbotSDK.Xamarin.Forms" Version="4.2.1-alpha.1" />
+    <PackageReference Include="ScanbotSDK.Xamarin.Forms" Version="4.2.1-alpha.2" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\" />

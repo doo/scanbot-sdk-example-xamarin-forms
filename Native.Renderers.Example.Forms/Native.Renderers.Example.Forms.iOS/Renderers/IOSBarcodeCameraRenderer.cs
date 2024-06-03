@@ -105,6 +105,10 @@ namespace Native.Renderers.Example.Forms.iOS.Renderers
             ScannerDelegate = new BarcodeScannerDelegate();
             Controller.Delegate = ScannerDelegate;
             EnableFinder();
+
+            // Enable Pinch to zoom.
+            Controller.ZoomConfiguration = new SBSDKBaseScannerZoomConfiguration();
+            Controller.ZoomConfiguration.PinchToZoomEnabled = true;
         }
 
         internal void SetBarcodeConfigurations(BarcodeCameraView element)
@@ -116,31 +120,32 @@ namespace Native.Renderers.Example.Forms.iOS.Renderers
             SetSelectionOverlayConfiguration(element.OverlayConfiguration);
         }
 
+        /// <summary>
+        /// Enable Finder and customise the Finder size.
+        /// </summary>
         internal void EnableFinder()
         {
-            
-
             var finderConfig = new SBSDKBaseScannerViewFinderConfiguration();
             finderConfig.ViewFinderEnabled = true;
 
-            var finderWidth = Frame.Width / 4; // one fourth FinderWidth
-            var remainingWidth = Frame.Width - finderWidth; // one fourth FinderWidth
-            var horizontalInsets = remainingWidth / 2; // horizontal inset for finder
+            // Uncomment below code to customise the Finder size.
 
+            //var finderWidth = Frame.Width / 4; // one fourth FinderWidth
+            //var remainingWidth = Frame.Width - finderWidth; // one fourth FinderWidth
+            //var horizontalInsets = remainingWidth / 2; // horizontal inset for finder
 
-            var finderHeight = Frame.Height / 4; // one fourth FinderHeight
-            var remainingHeight = Frame.Height - finderHeight; // one fourth FinderHeight
-            var verticalInsets = remainingHeight / 2; // vertical inset for finder
+            //var finderHeight = Frame.Height / 4; // one fourth FinderHeight
+            //var remainingHeight = Frame.Height - finderHeight; // one fourth FinderHeight
+            //var verticalInsets = remainingHeight / 2; // vertical inset for finder
 
-            finderConfig.AspectRatio = new SBSDKAspectRatio(1, 1);
-            finderConfig.MinimumInset = new UIEdgeInsets(verticalInsets, horizontalInsets, verticalInsets, horizontalInsets);
+            //finderConfig.AspectRatio = new SBSDKAspectRatio(1, 1);
+            //finderConfig.MinimumInset = new UIEdgeInsets(verticalInsets, horizontalInsets, verticalInsets, horizontalInsets);
+
             finderConfig.BackgroundColor = UIColor.Black.ColorWithAlpha(0.4f);
             finderConfig.LineColor = UIColor.Black;
             finderConfig.LineWidth = 2;
 
             Controller.ViewFinderConfiguration = finderConfig;
-            Controller.ZoomConfiguration = new SBSDKBaseScannerZoomConfiguration();
-            Controller.ZoomConfiguration.PinchToZoomEnabled = true;
         }
 
         private void SetSelectionOverlayConfiguration(SelectionOverlayConfiguration configuration)

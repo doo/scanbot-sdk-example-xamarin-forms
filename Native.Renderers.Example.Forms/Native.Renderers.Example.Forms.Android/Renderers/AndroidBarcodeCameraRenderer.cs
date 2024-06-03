@@ -18,6 +18,10 @@ using System.Collections.Generic;
 using AndroidBarcode = IO.Scanbot.Sdk.Barcode.Entity.BarcodeItem;
 using ScanbotSDK.Xamarin.Forms;
 using IO.Scanbot.Barcodescanner.Model;
+using Android.Util;
+using Java.Lang;
+using IO.Scanbot.Sdk.UI.View.Camera;
+using System;
 
 /*
     This is the Android Custom Renderer that will provide the actual implementation for BarcodeCameraView.
@@ -70,7 +74,6 @@ namespace Native.Renderers.Example.Forms.Droid.Renderers
          */
         protected override void OnElementChanged(ElementChangedEventArgs<BarcodeCameraView> e)
         {
-
             // The SetNativeControl method should be used to instantiate the native control,
             // and this method will also assign the control reference to the Control property
             SetNativeControl(cameraLayout);
@@ -106,7 +109,8 @@ namespace Native.Renderers.Example.Forms.Droid.Renderers
                 // Here we create the BarcodeDetectorFrameHandler which will take care of detecting
                 // barcodes in your video frames
                 var detector = new IO.Scanbot.Sdk.ScanbotSDK(Context.GetActivity()).CreateBarcodeDetector();
-                detector.ModifyConfig(new Function1Impl<BarcodeScannerConfigBuilder>((response) => {
+                detector.ModifyConfig(new Function1Impl<BarcodeScannerConfigBuilder>((response) =>
+                {
                     response.SetSaveCameraPreviewFrame(false);
                 }));
 
@@ -122,7 +126,44 @@ namespace Native.Renderers.Example.Forms.Droid.Renderers
 
                 BarcodeScannerViewWrapper.InitDetectionBehavior(cameraView, detector, resultHandler, scannerViewCallback);
                 SetSelectionOverlayConfiguration();
+
+                EnableFinder();
+
+                //enable pinch zoom
+                cameraView.CameraXView.UsePinchToZoom(true);
             }
+        }
+
+        internal void EnableFinder()
+        {
+            int height = Resources.DisplayMetrics.HeightPixels;
+            int width = Resources.DisplayMetrics.WidthPixels;
+
+            var finderWidth = width / 4; // one fourth FinderWidth
+            var remainingWidth = width - finderWidth; // one fourth FinderWidth
+            var horizontalInsets = remainingWidth / 2; // horizontal inset for finder
+
+            var finderHeight = height / 4; // one fourth FinderHeight
+            var remainingHeight = height - finderHeight; // one fourth FinderHeight
+            var verticalInsets = remainingHeight / 2; // vertical inset for finder
+
+            var colour = Android.Graphics.Color.Argb(80, 0, 0, 0);
+
+            cameraView.FinderViewController.SetFinderEnabled(true);
+            cameraView.FinderViewController.SetOverlayColor(colour);
+            cameraView.FinderViewController.SetStrokeColor(Android.Graphics.Color.White);
+            cameraView.FinderViewController.SetStrokeWidth(2);
+            cameraView.FinderViewController.SetRequiredAspectRatios(new List<IO.Scanbot.Sdk.AspectRatio> {
+                                                                    new IO.Scanbot.Sdk.AspectRatio(1, 1)
+            });
+
+
+            // left, top, right, bottom
+            cameraView.FinderViewController.SetFinderInset(Integer.ValueOf(horizontalInsets),
+                                                            Integer.ValueOf(verticalInsets),
+                                                            Integer.ValueOf(horizontalInsets),
+                                                            Integer.ValueOf(verticalInsets));
+
         }
 
         #region Registered Handlers
@@ -290,6 +331,12 @@ namespace Native.Renderers.Example.Forms.Droid.Renderers
                 default:
                     return BarcodeOverlayTextFormat.CodeAndType;
             }
+        }
+
+
+        public static Integer ToInteger(this int number)
+        {
+            return Integer.ValueOf(number);
         }
     }
 }

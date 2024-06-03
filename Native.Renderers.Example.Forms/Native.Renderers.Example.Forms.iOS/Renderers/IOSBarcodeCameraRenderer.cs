@@ -13,6 +13,7 @@ using UIKit;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.iOS;
+using GameController;
 
 [assembly: ExportRenderer(typeof(BarcodeCameraView), typeof(IOSBarcodeCameraRenderer))]
 namespace Native.Renderers.Example.Forms.iOS.Renderers
@@ -52,12 +53,14 @@ namespace Native.Renderers.Example.Forms.iOS.Renderers
             {
                 cameraView.Controller.UnfreezeCamera();
                 cameraView.ScannerDelegate.isScanning = true;
+                cameraView.EnableFinder();
             };
 
             Element.StartDetectionHandler = (sender, e2) =>
             {
                 cameraView.Controller.UnfreezeCamera();
                 cameraView.ScannerDelegate.isScanning = true;
+                cameraView.EnableFinder();
             };
 
             Element.OnPauseHandler = (sender, e3) =>
@@ -101,6 +104,7 @@ namespace Native.Renderers.Example.Forms.iOS.Renderers
             Controller = new SBSDKBarcodeScannerViewController(parentViewController, this);
             ScannerDelegate = new BarcodeScannerDelegate();
             Controller.Delegate = ScannerDelegate;
+            EnableFinder();
         }
 
         internal void SetBarcodeConfigurations(BarcodeCameraView element)
@@ -110,6 +114,33 @@ namespace Native.Renderers.Example.Forms.iOS.Renderers
             Controller.BarcodeImageGenerationType = element.ImageGenerationType.ToNative();
             ScannerDelegate.OnDetect = HandleBarcodeScannerResults;
             SetSelectionOverlayConfiguration(element.OverlayConfiguration);
+        }
+
+        internal void EnableFinder()
+        {
+            
+
+            var finderConfig = new SBSDKBaseScannerViewFinderConfiguration();
+            finderConfig.ViewFinderEnabled = true;
+
+            var finderWidth = Frame.Width / 4; // one fourth FinderWidth
+            var remainingWidth = Frame.Width - finderWidth; // one fourth FinderWidth
+            var horizontalInsets = remainingWidth / 2; // horizontal inset for finder
+
+
+            var finderHeight = Frame.Height / 4; // one fourth FinderHeight
+            var remainingHeight = Frame.Height - finderHeight; // one fourth FinderHeight
+            var verticalInsets = remainingHeight / 2; // vertical inset for finder
+
+            finderConfig.AspectRatio = new SBSDKAspectRatio(1, 1);
+            finderConfig.MinimumInset = new UIEdgeInsets(verticalInsets, horizontalInsets, verticalInsets, horizontalInsets);
+            finderConfig.BackgroundColor = UIColor.Black.ColorWithAlpha(0.4f);
+            finderConfig.LineColor = UIColor.Black;
+            finderConfig.LineWidth = 2;
+
+            Controller.ViewFinderConfiguration = finderConfig;
+            Controller.ZoomConfiguration = new SBSDKBaseScannerZoomConfiguration();
+            Controller.ZoomConfiguration.PinchToZoomEnabled = true;
         }
 
         private void SetSelectionOverlayConfiguration(SelectionOverlayConfiguration configuration)

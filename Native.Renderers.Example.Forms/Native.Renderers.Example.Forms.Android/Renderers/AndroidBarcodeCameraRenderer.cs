@@ -136,17 +136,6 @@ namespace Native.Renderers.Example.Forms.Droid.Renderers
 
         internal void EnableFinder()
         {
-            int height = Resources.DisplayMetrics.HeightPixels;
-            int width = Resources.DisplayMetrics.WidthPixels;
-
-            var finderWidth = width / 4; // one fourth FinderWidth
-            var remainingWidth = width - finderWidth; // one fourth FinderWidth
-            var horizontalInsets = remainingWidth / 2; // horizontal inset for finder
-
-            var finderHeight = height / 4; // one fourth FinderHeight
-            var remainingHeight = height - finderHeight; // one fourth FinderHeight
-            var verticalInsets = remainingHeight / 2; // vertical inset for finder
-
             var colour = Android.Graphics.Color.Argb(80, 0, 0, 0);
 
             cameraView.FinderViewController.SetFinderEnabled(true);
@@ -157,13 +146,25 @@ namespace Native.Renderers.Example.Forms.Droid.Renderers
                                                                     new IO.Scanbot.Sdk.AspectRatio(1, 1)
             });
 
+            // Uncomment below code to customise the Finder size.
+
+            // Uncomment below to calculate according to the device height and width
+            //int height = Resources.DisplayMetrics.HeightPixels;
+            //int width = Resources.DisplayMetrics.WidthPixels;
+
+            //var finderWidth = width / 4; // one fourth FinderWidth
+            //var remainingWidth = width - finderWidth; // one fourth FinderWidth
+            //var horizontalInsets = remainingWidth / 2; // horizontal inset for finder
+
+            //var finderHeight = height / 4; // one fourth FinderHeight
+            //var remainingHeight = height - finderHeight; // one fourth FinderHeight
+            //var verticalInsets = remainingHeight / 2; // vertical inset for finder
 
             // left, top, right, bottom
-            cameraView.FinderViewController.SetFinderInset(Integer.ValueOf(horizontalInsets),
-                                                            Integer.ValueOf(verticalInsets),
-                                                            Integer.ValueOf(horizontalInsets),
-                                                            Integer.ValueOf(verticalInsets));
-
+            //cameraView.FinderViewController.SetFinderInset(Integer.ValueOf(100),
+            //                                                Integer.ValueOf(100),
+            //                                                Integer.ValueOf(100),
+            //                                                Integer.ValueOf(100));
         }
 
         #region Registered Handlers
@@ -331,12 +332,6 @@ namespace Native.Renderers.Example.Forms.Droid.Renderers
                 default:
                     return BarcodeOverlayTextFormat.CodeAndType;
             }
-        }
-
-
-        public static Integer ToInteger(this int number)
-        {
-            return Integer.ValueOf(number);
         }
     }
 }

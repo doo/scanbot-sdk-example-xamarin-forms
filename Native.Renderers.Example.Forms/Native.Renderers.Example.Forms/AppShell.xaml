@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Shell xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:forms="clr-namespace:Native.Renderers.Example.Forms;assembly=Native.Renderers.Example.Forms"
+             x:Class="Native.Renderers.Example.Forms.AppShell">
+    <FlyoutItem Title="Home Page" > 
+    <ShellContent ContentTemplate="{DataTemplate forms:MainPage}"/> 
+    </FlyoutItem> 
+</Shell>

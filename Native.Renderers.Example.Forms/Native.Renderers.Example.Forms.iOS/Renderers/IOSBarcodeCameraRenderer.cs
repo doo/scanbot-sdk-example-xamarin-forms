@@ -20,23 +20,10 @@ namespace Native.Renderers.Example.Forms.iOS.Renderers
     class IOSBarcodeCameraRenderer : ViewRenderer<BarcodeCameraView, IOSBarcodeCameraView>
     {
         private IOSBarcodeCameraView cameraView;
-        private UIViewController CurrentViewController
-        {
-            get
-            {
-                if (UIApplication.SharedApplication.Windows.First() is UIWindow window)
-                {
-                    return window.RootViewController;
-                }
-                return null;
-            }
-        }
-
-        public IOSBarcodeCameraRenderer() : base() { }
 
         protected override void OnElementChanged(ElementChangedEventArgs<BarcodeCameraView> e)
         {
-            if (CurrentViewController == null) { return; }
+            if (UIApplication.SharedApplication.KeyWindow?.RootViewController == null) { return; }
 
             double x = e.NewElement.X;
             double y = e.NewElement.Y;
@@ -78,34 +65,73 @@ namespace Native.Renderers.Example.Forms.iOS.Renderers
             base.LayoutSubviews();
             if (Control == null) { return; }
 
-            if (cameraView?.initialised == false && CurrentViewController.ChildViewControllers.First() is PageRenderer pageRendererVc)
+            if (!cameraView.IsInitialised)
             {
-                cameraView.Initialize(pageRendererVc);
-                cameraView.SetBarcodeConfigurations(Element);
+                cameraView.Initialize(Element);
+                cameraView.SetBarcodeConfigurations();
             }
         }
     }
 
     class IOSBarcodeCameraView : UIView
     {
-        public bool initialised = false;
         public SBSDKBarcodeScannerViewController Controller { get; private set; }
         public BarcodeScannerDelegate ScannerDelegate { get; private set; }
         internal bool IsInitialised = false;
         private BarcodeCameraView element;
         public IOSBarcodeCameraView(CGRect frame) : base(frame) { }
 
-        public void Initialize(UIViewController parentViewController)
-        {
-            initialised = true;
-            Controller = new SBSDKBarcodeScannerViewController(parentViewController, this);
-            ScannerDelegate = new BarcodeScannerDelegate();
-            Controller.Delegate = ScannerDelegate;
-        }
-
-        internal void SetBarcodeConfigurations(BarcodeCameraView element)
+        public void Initialize(BarcodeCameraView element)
         {
             this.element = element;
+            IsInitialised = true;
+            Controller = new SBSDKBarcodeScannerViewController();
+            ScannerDelegate = new BarcodeScannerDelegate();
+            Controller.Delegate = ScannerDelegate;
+
+            AddBarcodeScannerToParentViewController();
+        }
+
+        private void AddBarcodeScannerToParentViewController()
+        {
+            Controller.View.Frame = Bounds;
+
+#if IOS16_0_OR_GREATER
+            // On iOS 16+ and macOS 13+ the SBSDKBarcodeScannerViewController has to be added to a parent ViewController, otherwise the transport controls won't be displayed.
+            var viewController = GetParentPageViewControllerInElementsTree(element?.ParentView) ?? UIApplication.SharedApplication.KeyWindow?.RootViewController;
+
+            // If we don't find the viewController, assume it's not Shell and still continue, the transport controls will still be displayed
+            if (viewController?.View is null)
+            {
+                // Zero out the safe area insets of the SBSDKBarcodeScannerViewController
+                UIEdgeInsets insets = viewController.View.SafeAreaInsets;
+                Controller.AdditionalSafeAreaInsets =
+                    new UIEdgeInsets(insets.Top * -1, insets.Left, insets.Bottom * -1, insets.Right);
+
+
+                // Add the View from the SBSDKBarcodeScannerViewController to the parent ViewController
+                viewController.AddChildViewController(Controller);
+                viewController.View.AddSubview(Controller.View);
+            }
+#endif
+            AddSubview(Controller.View);
+        }
+
+        private UIViewController GetParentPageViewControllerInElementsTree( Element virtualViewParentElement)
+        {
+            // Traverse up the element tree to find the nearest parent page
+            Element currentElement = virtualViewParentElement;
+            while (currentElement != null && !(currentElement is Page))
+            {
+                currentElement = currentElement.Parent;
+            }
+
+            // If a Page is found, get its corresponding ViewController
+            return (currentElement as Page)?.GetRenderer()?.ViewController;
+        }
+
+        internal void SetBarcodeConfigurations()
+        {
             Controller.AcceptedBarcodeTypes = SBSDKBarcodeType.AllTypes;
             Controller.BarcodeImageGenerationType = element.ImageGenerationType.ToNative();
             ScannerDelegate.OnDetect = HandleBarcodeScannerResults;
